@@ -43,7 +43,7 @@ node scripts/geotag-images.mjs   # after new images
 
 **Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). **2026-08-28 audit: ALL GREEN** — Wave 2 (13/13), Wave 3 (2/2), Wave 4 (6/6), Wave 5 (5/5). Production matches `main`.
 
-**Content compliance (Prof Phase 3):** Run `npm run audit:prof` after deploy. Repo report: [PROF_CONTENT_AUDIT.md](ops/PROF_CONTENT_AUDIT.md). Live content sample: [LIVE_CONTENT_AUDIT.md](ops/LIVE_CONTENT_AUDIT.md). **2026-08-28:** repo guards green (`check:content`); live 8/9 until massage-and-extras guide depth deploys.
+**Content compliance (Prof Phase 3):** Run `npm run audit:prof` after deploy. Repo report: [PROF_CONTENT_AUDIT.md](ops/PROF_CONTENT_AUDIT.md). Live content sample: [LIVE_CONTENT_AUDIT.md](ops/LIVE_CONTENT_AUDIT.md). **2026-08-28 audit: ALL GREEN** — `audit:prof` 6/6; live content 9/9 sample URLs.
 
 **Index check (post-deploy):** `site:kilimanihotmassage.co.ke` — minimum 30 URLs; goal ≫ 30 (~2,175 in sitemap).
 
@@ -242,7 +242,7 @@ See **Appendix A** for honesty rules (no fake AggregateRating).
 - [x] **9.1–9.2 · ✅ Verified live** — Home 11 FAQs + FAQPage schema + semantic H3 outline — audit 2026-08-28
 - [x] **9.3–9.5 · ✅ Verified live (content audit)** — Treatment FAQs (6–10) + FAQPage + Service schema — `check:content` + live sample
 - [x] **9.6–9.8 · ✅ Verified live (content audit)** — Tier-A area FAQs + FAQPage + Place schema — `check:content` + live sample
-- [x] **9.9–9.11 · ✅ Verified live (content audit)** — Combo, guide, masseuse FAQs — `check:content`; live guide sample pending deploy
+- [x] **9.9–9.11 · ✅ Verified live (content audit)** — Combo, guide, masseuse FAQs — `check:content` + live sample URLs
 - [x] **9.12–9.18 · ✅ Verified live** — DaySpa global schema (areaServed, hasOfferCatalog, openingHours, geo, hasMap, sameAs WhatsApp)
 - [x] **9.20 · ✅ Verified live (content audit)** — NO fake AggregateRating — `audit:live:content` JSON-LD scan
 - [x] **9.21–9.22 · ✅ Shipped** — BreadcrumbList everywhere; FAQ local flavor (Yaya, Marcus Garvey, Adlife)
