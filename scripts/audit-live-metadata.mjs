@@ -517,6 +517,13 @@ async function auditMetadataPages() {
   return rows;
 }
 
+function sitemapIncludes(xml, path) {
+  const base = `${LIVE_BASE}${path.startsWith("/") ? path : `/${path}`}`;
+  const noSlash = base.replace(/\/$/, "");
+  const withSlash = noSlash.endsWith("/") ? noSlash : `${noSlash}/`;
+  return xml.includes(`<loc>${noSlash}</loc>`) || xml.includes(`<loc>${withSlash}</loc>`);
+}
+
 async function auditTechnical() {
   const robots = await fetchLive("/robots.txt", { accept: "text/plain" });
   const sitemap = await fetchLive("/sitemap.xml", { accept: "application/xml" });
@@ -532,14 +539,17 @@ async function auditTechnical() {
 
   const urlMatches = sitemap.text.match(/<loc>[^<]+<\/loc>/g) ?? [];
   const urlCount = urlMatches.length;
-  const hasFullBody = sitemap.text.includes(
-    "https://kilimanihotmassage.co.ke/massage-treatments/full-body-massage/"
+  const hasFullBody = sitemapIncludes(
+    sitemap.text,
+    "/massage-treatments/full-body-massage/"
   );
-  const hasExtrasGuide = sitemap.text.includes(
-    "https://kilimanihotmassage.co.ke/guides/massage-and-extras-kilimani/"
+  const hasExtrasGuide = sitemapIncludes(
+    sitemap.text,
+    "/guides/massage-and-extras-kilimani/"
   );
-  const hasLavingtonNuru = sitemap.text.includes(
-    "https://kilimanihotmassage.co.ke/areas/lavington/services/nuru-massage/"
+  const hasLavingtonNuru = sitemapIncludes(
+    sitemap.text,
+    "/areas/lavington/services/nuru-massage/"
   );
 
   const minUrls = 2175;
@@ -637,27 +647,32 @@ async function auditSchema() {
   return rows;
 }
 
+function stripHtmlComments(html) {
+  return html.replace(/<!--[\s\S]*?-->/g, "");
+}
+
 async function auditOnPage() {
   const rows = [];
   for (const page of ONPAGE_CHECKS) {
     const { status, text } = await fetchLive(page.path);
+    const body = stripHtmlComments(text);
     const checkResults = page.checks.map((c) => ({
       ...c,
-      pass: status === 200 && c.pattern.test(text),
+      pass: status === 200 && c.pattern.test(body),
     }));
     const allCounts = [];
     if (page.countPattern) {
       allCounts.push({
         name: page.countName,
         min: page.countMin,
-        count: new Set((text.match(page.countPattern) ?? [])).size,
+        count: new Set((body.match(page.countPattern) ?? [])).size,
       });
     }
     for (const ec of page.extraCounts ?? []) {
       allCounts.push({
         name: ec.name,
         min: ec.min,
-        count: (text.match(ec.pattern) ?? []).length,
+        count: (body.match(ec.pattern) ?? []).length,
       });
     }
     const countResults = allCounts.map((c) => ({
@@ -808,7 +823,7 @@ Manual re-validation: [validator.schema.org](https://validator.schema.org/)
 
 ## Wave 6 — Deploy checklist
 
-**Status (2026-08-28):** cursor/keyword-targeting-ec5b merged to main and pushed to GitHub (a5253ad). Repo build: **2,263** static pages. Production host still serves pre-merge build — re-run audit after deploy.
+**Status (2026-08-28):** `main` at `0cc80ac` — FaqAccordion H3, per-page OG via `pageMetadata`, audit fixes. **Wave 5: 5/5 on-page pass live.** Remaining: **8/13 metadata** fail on deep-page OG tags until host redeploys latest `main`.
 
 1. ~~Merge cursor/keyword-targeting-ec5b → main~~ ✅ Done
 2. **Deploy** static export / host rebuild for ${LIVE_BASE} (client-managed host)
