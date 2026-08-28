@@ -1,5 +1,7 @@
 # Geotag SOP — Lavington then heatmap cells
 
+Part of [LOCAL_SEO_MASTER_CHECKLIST.md](../LOCAL_SEO_MASTER_CHECKLIST.md) — **Phase 2** (GBP photos) and **Phase 6** (weekly cadence).
+
 Goal: photos carry GPS near the studio, then expand to weak-map cells.
 
 ## Studio coordinates (default)

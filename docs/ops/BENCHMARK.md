@@ -1,5 +1,7 @@
 # Benchmark — heatmap & competitor baseline
 
+Part of [LOCAL_SEO_MASTER_CHECKLIST.md](../LOCAL_SEO_MASTER_CHECKLIST.md) — **Phase 0** (baseline) and **Phase 5/6** (re-check).
+
 Run before weekly work so Friday updates have a reference point.
 
 ## Keywords

@@ -1,5 +1,7 @@
 # GBP FAQs — paste-ready
 
+Part of [LOCAL_SEO_MASTER_CHECKLIST.md](../LOCAL_SEO_MASTER_CHECKLIST.md) — **Phase 2** (GBP FAQs, item 3.15).
+
 Keep answers short. Match NAP.
 
 1. **Where are you located?**  

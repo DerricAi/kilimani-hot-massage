@@ -1,5 +1,7 @@
 # GBP Setup — Kilimani Hot Massage
 
+Part of [LOCAL_SEO_MASTER_CHECKLIST.md](../LOCAL_SEO_MASTER_CHECKLIST.md) — **Phase 1** (quick wins) and **Phase 2** (GBP depth).
+
 Use this when claiming or completing Google Business Profile. Match site NAP exactly.
 
 **NAP lock:** Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi  

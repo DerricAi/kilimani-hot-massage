@@ -1,5 +1,7 @@
 # GBP Services List — seed for client approval
 
+Part of [LOCAL_SEO_MASTER_CHECKLIST.md](../LOCAL_SEO_MASTER_CHECKLIST.md) — **Phase 2** (GBP services, item 3.12–3.14).
+
 Primary category context: **Massage Spa**. Edit names/blurbs before paste into GBP. Top-20 blurbs are ≤300 characters.
 
 ## Top 20 (with blurbs)

@@ -46,7 +46,7 @@ npm start
 
 ## Local SEO checklist
 
-See [docs/LOCAL_SEO_CHECKLIST.md](docs/LOCAL_SEO_CHECKLIST.md) for onsite, GBP, citations, and weekly ops.
+See [docs/LOCAL_SEO_MASTER_CHECKLIST.md](docs/LOCAL_SEO_MASTER_CHECKLIST.md) for the unified onsite, GBP, citations, and weekly ops checklist.
 
 ## Image geotagging
 
