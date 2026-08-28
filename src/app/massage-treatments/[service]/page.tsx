@@ -12,6 +12,7 @@ import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { faqJsonLd, serviceJsonLd } from "@/lib/schema";
+import { absoluteTitle } from "@/lib/seo-titles";
 
 type Props = { params: Promise<{ service: string }> };
 
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = getTreatment(service);
   if (!t) return {};
   return {
-    title: t.metaTitle,
+    title: absoluteTitle(t.metaTitle),
     description: t.metaDescription,
     alternates: { canonical: absoluteUrl(`/massage-treatments/${t.slug}/`) },
   };

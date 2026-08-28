@@ -10,12 +10,14 @@ import { guides, guidePath } from "@/content/guides";
 import { site } from "@/content/site";
 import { media, treatmentImage } from "@/content/media";
 import { faqJsonLd } from "@/lib/schema";
+import { absoluteTitle, profTitleHome } from "@/lib/seo-titles";
+
+const homeTitle = profTitleHome();
 
 export const metadata: Metadata = {
-  title:
-    "BEST Massage Spa Kilimani Nairobi - Swedish, Deep Tissue, Nuru, Couples & more near me | Kilimani Hot Massage",
+  title: absoluteTitle(homeTitle),
   description:
-    "Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Swedish, deep tissue, Nuru, couples & more. Call or WhatsApp 0746 203398.",
+    "BEST Massage Spa Kilimani Nairobi — Swedish, deep tissue, Nuru, couples & more near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
   alternates: { canonical: `${site.url}/` },
 };
 

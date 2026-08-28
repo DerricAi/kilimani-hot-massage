@@ -7,6 +7,9 @@ import { WhatsAppFab, MobileDock } from "@/components/cta/Conversion";
 import { JsonLd } from "@/components/seo/MapEmbed";
 import { daySpaJsonLd } from "@/lib/schema";
 import { site } from "@/content/site";
+import { profTitleHome } from "@/lib/seo-titles";
+
+const defaultTitle = profTitleHome();
 
 const sans = Outfit({
   variable: "--font-sans",
@@ -23,26 +26,26 @@ const display = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | BEST Massage Spa Kilimani Nairobi`,
+    default: defaultTitle,
     template: `%s | ${site.name}`,
   },
   description:
-    "BEST Massage Spa Kilimani Nairobi - Swedish, Deep Tissue, Nuru, Couples & more near me. Open 24/7 on Marcus Garvey Rd. Call 0746 203398.",
+    "BEST Massage Spa Kilimani Nairobi — Swedish, deep tissue, Nuru, couples & more near me on Marcus Garvey Rd. Open 24/7. Call 0746 203398.",
   openGraph: {
     type: "website",
     locale: "en_KE",
     url: `${site.url}/`,
     siteName: site.name,
-    title: `${site.name} | BEST Massage Spa Kilimani Nairobi`,
+    title: defaultTitle,
     description:
-      "Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
+      "BEST Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
     images: [{ url: "/images/og-kilimani-hot-massage.webp" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} | BEST Massage Spa Kilimani Nairobi`,
+    title: defaultTitle,
     description:
-      "Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
+      "BEST Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
     images: ["/images/og-kilimani-hot-massage.webp"],
   },
   alternates: { canonical: `${site.url}/` },

@@ -6,9 +6,10 @@ import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { pageMetadata } from "@/lib/seo";
+import { profTitleHub } from "@/lib/seo-titles";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Massage Treatments Kilimani Nairobi",
+  title: profTitleHub("treatments"),
   description:
     "Browse Swedish, deep tissue, Nuru, couples, hot stone and more at Kilimani Hot Massage. Open 24/7 on Marcus Garvey Rd.",
   path: "/massage-treatments/",

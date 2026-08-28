@@ -6,9 +6,10 @@ import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { pageMetadata } from "@/lib/seo";
+import { profTitleHub } from "@/lib/seo-titles";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Massage Therapists in Kilimani Nairobi",
+  title: profTitleHub("masseuses"),
   description:
     "Meet our massage therapists at Kilimani Hot Massage—Amara, Zuri, Aisha, Nuru, Keisha, and Lina. Open 24/7. WhatsApp 0746 203398.",
   path: "/masseuses/",

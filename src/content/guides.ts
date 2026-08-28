@@ -26,7 +26,7 @@ const guidesBase: Guide[] = [
   {
     slug: "swedish-vs-deep-tissue-kilimani",
     title: "Swedish vs Deep Tissue Massage in Kilimani",
-    metaTitle: "Swedish vs Deep Tissue Massage Kilimani Nairobi | Guide",
+    metaTitle: "Swedish vs Deep Tissue Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Compare Swedish and deep tissue massage at our Kilimani spa on Marcus Garvey Rd. Which suits desk tension, gym recovery, or first visits? Open 24/7.",
     h1: "Swedish vs Deep Tissue: Which Massage Fits You in Kilimani?",
@@ -125,7 +125,7 @@ const guidesBase: Guide[] = [
   {
     slug: "what-to-expect-first-massage-nairobi",
     title: "What to Expect on Your First Massage in Nairobi",
-    metaTitle: "First Massage Visit Lavington Nairobi | What to Expect",
+    metaTitle: "First Massage Visit Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "First time at a Nairobi massage spa? How booking, arrival, privacy, and pressure checks work at Kilimani Hot Massage on Marcus Garvey Rd.",
     h1: "What to Expect on Your First Massage Visit in Kilimani",
@@ -224,7 +224,7 @@ const guidesBase: Guide[] = [
   {
     slug: "best-massage-for-desk-workers-nairobi",
     title: "Best Massage for Desk Workers in Nairobi",
-    metaTitle: "Best Massage for Desk Workers Nairobi | Lavington Guide",
+    metaTitle: "Best Massage for Desk Workers Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Neck, shoulder, and lower-back relief for Nairobi desk workers. Deep tissue, Swedish, and hot stone options at Kilimani Hot Massage—open 24/7.",
     h1: "Best Massage Options for Nairobi Desk Workers",
@@ -332,7 +332,7 @@ const guidesBase: Guide[] = [
   {
     slug: "nuru-massage-guide-kilimani",
     title: "Nuru Massage Guide for Lavington Guests",
-    metaTitle: "Nuru Massage Guide Lavington Nairobi | What It Is",
+    metaTitle: "Nuru Massage Guide Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "What Nuru massage involves, how privacy works, and how to book at Kilimani Hot Massage on Marcus Garvey Rd. Discreet suites, open 24/7.",
     h1: "Nuru Massage in Kilimani: A Clear Guest Guide",
@@ -446,7 +446,7 @@ const guidesBase: Guide[] = [
   {
     slug: "couples-massage-kilimani-date-night",
     title: "Couples Massage in Kilimani for Date Night",
-    metaTitle: "Couples Massage Kilimani Date Night | Booking Guide",
+    metaTitle: "Couples Massage Kilimani Date Night near me | Kilimani Hot Massage",
     metaDescription:
       "Plan a couples massage date night in Kilimani. Two tables, optional four-hands, open 24/7 on Marcus Garvey Rd. WhatsApp 0746 203398.",
     h1: "Couples Massage in Kilimani: Date-Night Guide",
@@ -560,7 +560,7 @@ const guidesBase: Guide[] = [
   {
     slug: "hot-stone-massage-benefits-nairobi",
     title: "Hot Stone Massage Benefits in Nairobi",
-    metaTitle: "Hot Stone Massage Benefits Nairobi | Lavington Guide",
+    metaTitle: "Hot Stone Massage Benefits Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "How heated stones soften tight muscle for Nairobi evenings. Benefits, who it suits, and booking at Kilimani Hot Massage—open 24/7.",
     h1: "Hot Stone Massage Benefits for Nairobi Guests",
@@ -689,7 +689,7 @@ const guidesBase: Guide[] = [
   {
     slug: "how-to-book-24-7-spa-kilimani",
     title: "How to Book a 24/7 Spa in Kilimani",
-    metaTitle: "How to Book Kilimani Hot Massage 24/7 | WhatsApp Guide",
+    metaTitle: "How to Book Kilimani Hot Massage 24/7 near me | Kilimani Hot Massage",
     metaDescription:
       "Book Kilimani Hot Massage anytime—call or WhatsApp 0746 203398. What to include in your message, therapist requests, and same-night tips.",
     h1: "How to Book Kilimani Hot Massage Anytime (24/7)",
@@ -811,7 +811,7 @@ const guidesBase: Guide[] = [
   {
     slug: "massage-near-yaya-centre-marcus-garvey",
     title: "Massage Near Yaya Centre on Marcus Garvey Rd",
-    metaTitle: "Massage Near Yaya Centre Lavington | Marcus Garvey Rd",
+    metaTitle: "Massage Near Yaya Centre Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Looking for massage near Yaya Centre? Kilimani Hot Massage is on Marcus Garvey Rd—minutes away, open 24/7. Call 0746 203398.",
     h1: "Massage Near Yaya Centre & Marcus Garvey Rd",
@@ -933,7 +933,7 @@ const guidesBase: Guide[] = [
   {
     slug: "choosing-a-masseuse-in-kilimani",
     title: "Choosing a Masseuse in Kilimani",
-    metaTitle: "Choosing a Masseuse in Kilimani Nairobi | Meet the Team",
+    metaTitle: "Choosing a Masseuse in Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "How to pick a masseuse at Kilimani Hot Massage—Amara, Zuri, Aisha, Nuru, Keisha, Lina—by specialty. Open 24/7. WhatsApp 0746 203398.",
     h1: "How to Choose a Masseuse in Kilimani",
@@ -1057,7 +1057,7 @@ const guidesBase: Guide[] = [
   {
     slug: "nairobi-areas-we-serve-massage-guide",
     title: "Nairobi Areas We Serve — Massage Guide",
-    metaTitle: "Nairobi Areas We Serve Massage Guide | Kilimani Hot Massage",
+    metaTitle: "Nairobi Areas We Serve Massage Guide near me | Kilimani Hot Massage",
     metaDescription:
       "From Lavington and Kilimani to Westlands, Karen, and the CBD—how Nairobi guests reach our Marcus Garvey Rd spa. Explore all area pages.",
     h1: "Nairobi Areas We Serve: A Massage Guest Guide",

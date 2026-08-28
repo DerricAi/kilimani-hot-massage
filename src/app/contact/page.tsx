@@ -5,9 +5,10 @@ import { MapEmbed, JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl, site } from "@/content/site";
 import { pageMetadata } from "@/lib/seo";
+import { profTitleHub } from "@/lib/seo-titles";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Contact",
+  title: profTitleHub("contact"),
   description:
     "Contact Kilimani Hot Massage on Marcus Garvey Rd, Kilimani. Call or WhatsApp 0746 203398. Open 24/7.",
   path: "/contact/",

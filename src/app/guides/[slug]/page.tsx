@@ -10,6 +10,7 @@ import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl, site } from "@/content/site";
 import { faqJsonLd } from "@/lib/schema";
+import { absoluteTitle } from "@/lib/seo-titles";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const g = getGuide(slug);
   if (!g) return {};
   return {
-    title: g.metaTitle,
+    title: absoluteTitle(g.metaTitle),
     description: g.metaDescription,
     alternates: { canonical: absoluteUrl(guidePath(g.slug)) },
     openGraph: {

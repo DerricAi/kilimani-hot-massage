@@ -3,6 +3,10 @@ import { treatments, type Treatment } from "@/content/treatments";
 import { masseuses, type Masseuse } from "@/content/masseuses";
 import { site } from "@/content/site";
 import { TIER_A_SLUGS } from "@/content/areas";
+import {
+  profTitleMasseuseCombo,
+  profTitleServiceCombo,
+} from "@/lib/seo-titles";
 
 export type FaqItem = { q: string; a: string };
 
@@ -421,7 +425,7 @@ export function buildAreaServiceCombo(
   return {
     area,
     treatment,
-    metaTitle: `${treatment.name} in ${area.name} | ${site.name}`,
+    metaTitle: profTitleServiceCombo(treatment.name, area.name),
     metaDescription: `Book ${treatment.name} for guests in ${area.name}. Studio on Marcus Garvey Rd, Kilimani. Open 24/7. Call ${site.phoneDisplay}.`,
     h1: `${treatment.name} for ${area.name}`,
     paragraphs,
@@ -443,7 +447,7 @@ export function buildAreaMasseuseCombo(
   return {
     area,
     masseuse,
-    metaTitle: `Book ${masseuse.name} in ${area.name} | ${site.name}`,
+    metaTitle: profTitleMasseuseCombo(masseuse.name, area.name),
     metaDescription: `Request ${masseuse.name} when visiting from ${area.name}. ${masseuse.tagline} Open 24/7 in Kilimani. WhatsApp ${site.phoneDisplay}.`,
     h1: `Book ${masseuse.name} — serving ${area.name}`,
     paragraphs,

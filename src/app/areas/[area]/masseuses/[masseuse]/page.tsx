@@ -13,6 +13,7 @@ import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { faqJsonLd, personJsonLd } from "@/lib/schema";
+import { absoluteTitle } from "@/lib/seo-titles";
 
 type Props = { params: Promise<{ area: string; masseuse: string }> };
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const combo = buildAreaMasseuseCombo(area, masseuse);
   if (!combo) return {};
   return {
-    title: combo.metaTitle,
+    title: absoluteTitle(combo.metaTitle),
     description: combo.metaDescription,
     alternates: {
       canonical: absoluteUrl(areaMasseusePath(area, masseuse)),

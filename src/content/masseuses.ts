@@ -17,7 +17,7 @@ export const masseuses: Masseuse[] = [
     slug: "amara",
     name: "Amara",
     tagline: "Measured pressure, quiet suites—Swedish, deep tissue, and hot stone specialist.",
-    metaTitle: "Amara Masseuse Kilimani Nairobi | Kilimani Hot Massage",
+    metaTitle: "Amara Massage Therapist Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Book Amara for Swedish, deep tissue, or hot stone massage in Kilimani. Open 24/7. WhatsApp 0746 203398.",
     h1: "Meet Amara — Masseuse in Kilimani",
@@ -59,7 +59,7 @@ export const masseuses: Masseuse[] = [
     slug: "zuri",
     name: "Zuri",
     tagline: "Scent-led evenings and paired rooms—aromatherapy, couples, and four-hands.",
-    metaTitle: "Zuri Masseuse Kilimani | Kilimani Hot Massage",
+    metaTitle: "Zuri Massage Therapist Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Book Zuri for aromatherapy, couples, or four-hands massage in Kilimani. 24/7. Call 0746 203398.",
     h1: "Meet Zuri — Masseuse in Kilimani",
@@ -103,7 +103,7 @@ export const masseuses: Masseuse[] = [
     slug: "aisha",
     name: "Aisha",
     tagline: "Consent-first Nuru and sensual work—discreet Kilimani night sessions.",
-    metaTitle: "Aisha Masseuse Kilimani Nairobi | Kilimani Hot Massage",
+    metaTitle: "Aisha Massage Therapist Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Book Aisha for Nuru, body-to-body, or sensual massage in Kilimani. WhatsApp 0746 203398.",
     h1: "Meet Aisha — Masseuse in Kilimani",
@@ -151,7 +151,7 @@ export const masseuses: Masseuse[] = [
     slug: "nuru",
     name: "Nuru",
     tagline: "Tantric ritual, lingam, and sensual massage.",
-    metaTitle: "Nuru Masseuse Kilimani | Kilimani Hot Massage",
+    metaTitle: "Nuru Massage Therapist Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Book Nuru for tantric, lingam, or sensual massage in Kilimani. Open 24/7.",
     h1: "Meet Nuru — Masseuse in Kilimani",
@@ -194,7 +194,7 @@ export const masseuses: Masseuse[] = [
     slug: "keisha",
     name: "Keisha",
     tagline: "Firm sports recovery—deep tissue for gym days and Upper Hill desk neck.",
-    metaTitle: "Keisha Masseuse Kilimani Nairobi | Kilimani Hot Massage",
+    metaTitle: "Keisha Massage Therapist Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Book Keisha for deep tissue and Swedish massage in Kilimani. Call 0746 203398.",
     h1: "Meet Keisha — Masseuse in Kilimani",
@@ -242,7 +242,7 @@ export const masseuses: Masseuse[] = [
     slug: "lina",
     name: "Lina",
     tagline: "Synchronized four-hands with Zuri—couples and aromatherapy staging expert.",
-    metaTitle: "Lina Masseuse Kilimani | Kilimani Hot Massage",
+    metaTitle: "Lina Massage Therapist Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Book Lina for couples and four-hands massage in Kilimani. WhatsApp 0746 203398.",
     h1: "Meet Lina — Masseuse in Kilimani",

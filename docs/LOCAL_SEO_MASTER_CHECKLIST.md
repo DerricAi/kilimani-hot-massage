@@ -92,7 +92,7 @@ node scripts/geotag-images.mjs   # after new images
 
 *Prof: "Close obvious gaps first." Interleave **onsite basic** + **GBP quick fixes** + **technical basics** — expect ranking movement in 4–6 weeks.*
 
-> **Title tag rule (Prof):** "60-char limit is horseshit." Use `BEST + category + city + brand + services + near me` — aim ~200 chars.
+> **Title tag rule (Prof):** "60-char limit is horseshit." Use `BEST + category + city + brand + services + near me` — aim ~200 chars. **All titles centralized in [`src/lib/seo-titles.ts`](../src/lib/seo-titles.ts)** — run `npm run check:titles` after edits.
 
 ### 1A — Onsite basic: titles, headings, NAP, maps · Pillar: Onsite
 

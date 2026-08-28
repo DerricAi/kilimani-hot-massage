@@ -19,6 +19,7 @@ import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl, site, whatsappLink } from "@/content/site";
 import { faqJsonLd } from "@/lib/schema";
 import { treatmentImage } from "@/content/media";
+import { absoluteTitle, profTitleAreaHub } from "@/lib/seo-titles";
 
 type Props = { params: Promise<{ area: string }> };
 
@@ -31,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = getArea(slug);
   if (!area) return {};
   return {
-    title: `Massage in ${area.name} Nairobi | ${site.name}`,
+    title: absoluteTitle(profTitleAreaHub(area.name)),
     description: `${area.commute}. Book massage for ${area.name} guests at Kilimani Hot Massage on Marcus Garvey Rd. Open 24/7. Call ${site.phoneDisplay}.`,
     alternates: { canonical: absoluteUrl(areaPath(area.slug)) },
   };
