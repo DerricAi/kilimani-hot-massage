@@ -3052,6 +3052,9 @@ const tierAExtra11Faqs: Record<string, { q: string; a: string }> = {
   "woodley-kenyatta-golf-course": { q: "Should Woodley golfers mention tournament weeks?", a: "Yes—Kenyatta Golf Course events affect Ngong traffic; WhatsApp 0746 203398 from Woodley Estate for Marcus Garvey Rd holds during tournament Saturdays." },
   hurlingham: { q: "Can Hurlingham guests walk from Yaya Centre?", a: "Yes—fifteen to twenty minutes dry season, five minutes by car; WhatsApp 0746 203398 from Hurlingham Rd or Yaya when walking to Marcus Garvey Rd." },
   kileleshwa: { q: "Do Kileleshwa estate gates affect punctuality?", a: "Sometimes—allow five to ten minutes; message 0746 203398 once your driver clears Ring Rd Kileleshwa gates toward Marcus Garvey Rd." },
+};
+
+const tierAExtra11Faqs2: Record<string, { q: string; a: string }> = {
   kabiro: { q: "Can Kabiro residents split rides to Marcus Garvey Rd?", a: "Mountain View neighbours often share one James Gichuru descent—0746 203398 books sequential rooms when carpooling from Kabiro hillside blocks." },
   karen: { q: "Do Karen safari returns book recovery massage?", a: "Yes—post-lodge blocks of three weekly sessions on Marcus Garvey Rd beat one crisis visit; WhatsApp 0746 203398 from Ngong Rd when returning to Karen." },
   langata: { q: "Do Langata park-day guests massage same evening?", a: "Book exiting National Park gates toward Langata Rd—0746 203398 holds Marcus Garvey Rd suites for dusty hip-focused deep tissue same night." },
@@ -3065,6 +3068,9 @@ const tierAExtra11Faqs: Record<string, { q: string; a: string }> = {
 };
 
 for (const [slug, faq] of Object.entries(tierAExtra11Faqs)) {
+  areaEnrichments[slug]?.faqs.push(faq);
+}
+for (const [slug, faq] of Object.entries(tierAExtra11Faqs2)) {
   areaEnrichments[slug]?.faqs.push(faq);
 }
 

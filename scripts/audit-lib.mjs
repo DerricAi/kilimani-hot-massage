@@ -516,6 +516,19 @@ export function parseMergedAreaEnrichments(source) {
     }
   }
 
+  const extra11bMatch = source.match(/const tierAExtra11Faqs2[\s\S]*?= \{([\s\S]*?)\n\};/);
+  if (extra11bMatch) {
+    const block = extra11bMatch[1];
+    const faqRe = /"?([a-z-]+)"?:\s*\{\s*q:\s*"((?:\\.|[^"\\])*)"\s*,\s*a:\s*"((?:\\.|[^"\\])*)"\s*\}/g;
+    let fm;
+    while ((fm = faqRe.exec(block)) !== null) {
+      const slug = fm[1];
+      if (!merged[slug]) merged[slug] = { sectionParagraphs: [], faqTexts: [], faqCount: 0 };
+      merged[slug].faqTexts.push(unescapeTsString(fm[2]), unescapeTsString(fm[3]));
+      merged[slug].faqCount = countFaqsFromTexts(merged[slug].faqTexts);
+    }
+  }
+
   const extra14Match = source.match(/const tierAExtra14Faqs[\s\S]*?= \[([\s\S]*?)\n\];/);
   if (extra14Match) {
     const block = extra14Match[1];
