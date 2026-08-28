@@ -68,3 +68,24 @@ export const KEYED_TREATMENT_SLUGS = [
 ] as const;
 
 export type KeyedTreatmentSlug = (typeof KEYED_TREATMENT_SLUGS)[number];
+
+/**
+ * Exact title phrase (before ` | Brand`) — priority keyword list, not generic
+ * "Kilimani Nairobi near me".
+ */
+export const treatmentTitlePhrase: Record<KeyedTreatmentSlug, string> = {
+  "sensual-erotic-massage": "Erotic Massage near me Kilimani",
+  "nuru-massage": "Nuru Massage near me Kilimani",
+  "lingam-massage": "Lingam Massage near me Nairobi",
+  "body-to-body-massage": "Body to Body Massage near me Kilimani",
+  "full-body-massage": "Full Body Massage near me Kilimani",
+};
+
+/** Guide slugs → keyword-led title phrase */
+export const guideTitlePhrase: Record<string, string> = {
+  "massage-and-extras-kilimani": "Massage and Extras near me Kilimani",
+  "choosing-a-masseuse-in-kilimani": "Masseuse near me Kilimani",
+  "nuru-massage-guide-kilimani": "Nuru Massage near me Kilimani",
+  "massage-near-yaya-centre-marcus-garvey": "Massage spa near me Kilimani",
+  "how-to-book-24-7-spa-kilimani": "Massage spa near me Kilimani open 24/7",
+};

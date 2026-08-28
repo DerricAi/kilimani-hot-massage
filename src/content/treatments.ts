@@ -16,13 +16,16 @@ export type Treatment = {
   tierA: boolean;
 };
 
-export const treatments: Treatment[] = [
+import { profTitleTreatmentKeyed } from "@/lib/seo-titles";
+
+type TreatmentData = Omit<Treatment, "metaTitle">;
+
+const treatmentsData: TreatmentData[] = [
   {
     slug: "swedish-massage",
     name: "Swedish Massage",
     shortName: "Swedish",
     tagline: "Classic effleurage and kneading—reset after Ngong Rd traffic or a Yaya Centre errand.",
-    metaTitle: "Swedish Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Book Swedish massage on Marcus Garvey Rd, Kilimani. Open 24/7. Call or WhatsApp 0746 203398.",
     h1: "Swedish Massage in Kilimani, Nairobi",
     summary: "Swedish massage at Kilimani Hot Massage is unhurried full-body work on Marcus Garvey Rd—warm oil, measured effleurage, and quiet suites steps from Yaya Centre and Adlife Plaza. Ideal after Ngong Rd commutes, Ring Rd Kilimani gym days, or Upper Hill deadlines when you need nervous-system calm without aggressive pressure. Therapists adjust stroke depth continuously; sessions run any hour. Many Kilimani and Kileleshwa guests book Swedish as their standing reset—WhatsApp 0746 203398 to reserve.",
@@ -141,7 +144,6 @@ export const treatments: Treatment[] = [
     name: "Deep Tissue Massage",
     shortName: "Deep Tissue",
     tagline: "Slow, targeted pressure for trap knots, gym soreness, and Kilimani desk strain.",
-    metaTitle: "Deep Tissue Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Deep tissue massage in Kilimani on Marcus Garvey Rd, Kilimani. Open 24/7. WhatsApp 0746 203398.",
     h1: "Deep Tissue Massage in Kilimani",
     summary: "Deep tissue at our Kilimani studio targets trap knots, lumbar tightness, and gym soreness with slow, informed pressure—never sharp surprise on Marcus Garvey Rd. We warm tissue first, then map desk neck, IT bands, and hip flexors common to Nairobi commutes. Keisha and Amara lead most deep bookings from Westlands and Upper Hill; open 24/7 for post-midnight recovery. Book sixty or ninety minutes when one zone needs real time.",
@@ -260,7 +262,6 @@ export const treatments: Treatment[] = [
     name: "Full Body Massage",
     shortName: "Full Body",
     tagline: "Head-to-toe oil work—Swedish flow with pressure you choose on Marcus Garvey Rd.",
-    metaTitle: "Full Body Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Full Body Massage Kilimani & full body massage near me on Marcus Garvey Rd. Warm oil, adjustable pressure, private suites. Open 24/7. WhatsApp 0746 203398.",
     h1: "Full Body Massage in Kilimani, Nairobi",
@@ -364,7 +365,6 @@ export const treatments: Treatment[] = [
     name: "Nuru Massage",
     shortName: "Nuru",
     tagline: "Warm gel glide in a dim suite—full-body contact with clear consent checkpoints.",
-    metaTitle: "Nuru Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Nuru Massage Kilimani in a private locked suite on Marcus Garvey Rd. Warm gel, consent-led, open 24/7. Call 0746 203398.",
     h1: "Nuru Massage in Kilimani, Nairobi",
@@ -484,7 +484,6 @@ export const treatments: Treatment[] = [
     name: "Body-to-Body Massage",
     shortName: "Body-to-Body",
     tagline: "Skin-to-skin flow with draping choices—discreet Marcus Garvey Rd adult sessions.",
-    metaTitle: "Body to Body Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Body to Body Massage Kilimani on Marcus Garvey Rd—skin-to-skin adult sessions in private suites. Open 24/7. WhatsApp 0746 203398.",
     h1: "Body-to-Body Massage Kilimani",
@@ -604,7 +603,6 @@ export const treatments: Treatment[] = [
     name: "Four-Hands Massage",
     shortName: "Four-Hands",
     tagline: "Two therapists, one rhythm—our most immersive upgrade on Wood Avenue nights.",
-    metaTitle: "Four Hands Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Four-hands massage in Kilimani. Two therapists, open 24/7. Call 0746 203398.",
     h1: "Four-Hands Massage in Kilimani",
     summary: "Four-hands massage at Kilimani Hot Massage pairs two trained therapists in one private suite—mirrored strokes so your back, legs, and shoulders receive simultaneous attention. Popular for celebrations, stress meltdowns after Ngong Rd weeks, and guests from Westlands who want total coverage without waiting for one therapist to finish an area. Book paired staff ahead on WhatsApp 0746 203398; open 24/7 on Marcus Garvey Rd near Yaya Centre and Valley Arcade.",
@@ -723,7 +721,6 @@ export const treatments: Treatment[] = [
     name: "Sensual / Erotic Massage",
     shortName: "Sensual",
     tagline: "Tasteful, adult-oriented sensual massage in private suites.",
-    metaTitle: "Erotic Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Erotic Massage Nairobi & Erotic Massage Kilimani in a locked private suite on Marcus Garvey Rd. Consent-led, adults only. Open 24/7. WhatsApp 0746 203398.",
     h1: "Erotic Massage in Kilimani, Nairobi",
@@ -848,7 +845,6 @@ export const treatments: Treatment[] = [
     name: "Couples Massage",
     shortName: "Couples",
     tagline: "Twin tables, matched timing—book after Adlife Plaza or Junction dinners.",
-    metaTitle: "Couples Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Couples massage in Kilimani. Two tables, open 24/7. Call 0746 203398.",
     h1: "Couples Massage in Kilimani, Nairobi",
     summary: "Couples massage at Kilimani Hot Massage means side-by-side tables, matched timing, and shared calm on Marcus Garvey Rd—popular after dinners near Yaya Centre, Adlife Plaza, or Junction Mall. Partners can choose the same modality or mix Swedish with deep tissue; Zuri stages most couples rooms. Book forty-eight hours ahead on Valentine weekends; weekday lunch slots from Kileleshwa are easier.",
@@ -967,7 +963,6 @@ export const treatments: Treatment[] = [
     name: "Aromatherapy Massage",
     shortName: "Aromatherapy",
     tagline: "Scent you choose—lavender wind-down or citrus lift over warmed oil.",
-    metaTitle: "Aromatherapy Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Aromatherapy massage on Marcus Garvey Rd, Kilimani. Open 24/7. WhatsApp 0746 203398.",
     h1: "Aromatherapy Massage Kilimani",
     summary: "Aromatherapy massage at Kilimani Hot Massage layers curated essential oils onto Swedish-based strokes—lavender for calm after Upper Hill deadlines, citrus for uplift before Westlands meetings, eucalyptus for clarity when Nairobi pollen feels heavy. Subtle scent in private suites on Marcus Garvey Rd; unscented carriers available for sensitive guests from Kilimani and Kileleshwa. Pair with hot stone or couples tables near Yaya Centre. Open 24/7—0746 203398.",
@@ -1086,7 +1081,6 @@ export const treatments: Treatment[] = [
     name: "Hot Stone Massage",
     shortName: "Hot Stone",
     tagline: "Heated basalt on guarded shoulders—rainy-season favourite near Yaya Centre.",
-    metaTitle: "Hot Stone Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Hot stone massage in Kilimani. Open 24/7. Call 0746 203398.",
     h1: "Hot Stone Massage in Kilimani",
     summary: "Hot stone massage at Kilimani Hot Massage uses smooth heated basalt placed along spine, shoulders, and legs—then glided with oil to soften tissue before deeper work. Perfect for cool Nairobi evenings after rain along Ngong Rd or air-conditioned weeks in Upper Hill towers. Therapists monitor temperature constantly in private suites on Marcus Garvey Rd near Yaya Centre. Combine with deep tissue or Swedish; open 24/7—WhatsApp 0746 203398.",
@@ -1205,7 +1199,6 @@ export const treatments: Treatment[] = [
     name: "Tantric Ritual",
     shortName: "Tantric",
     tagline: "Slow, breath-led sensual ritual in a private suite.",
-    metaTitle: "Tantric Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Tantric ritual massage in Kilimani. Discreet, 24/7. WhatsApp 0746 203398.",
     h1: "Tantric Ritual in Kilimani",
     summary: "Tantric ritual at Kilimani Hot Massage is a slow, breath-aware sensual journey in a private locked suite—presence over performance, consent over script. Low lighting, phones silenced outside, generous timing for guests from Kilimani, Westlands, and Upper Hill seeking intentional adult touch near Yaya Centre without rush. Experienced therapists guide pacing on Marcus Garvey Rd; open twenty-four seven. Enquire discreetly on 0746 203398.",
@@ -1324,7 +1317,6 @@ export const treatments: Treatment[] = [
     name: "Lingam Massage",
     shortName: "Lingam",
     tagline: "Male-focused wellness with clinical privacy—Marcus Garvey Rd, open 24/7.",
-    metaTitle: "Lingam Massage Nairobi near me | Kilimani Hot Massage",
     metaDescription:
       "Lingam Massage Nairobi in a private Kilimani suite on Marcus Garvey Rd. Consent-led, adults only. Open 24/7. Call 0746 203398.",
     h1: "Lingam Massage in Kilimani, Nairobi",
@@ -1440,6 +1432,11 @@ export const treatments: Treatment[] = [
     tierA: true,
   },
 ];
+
+export const treatments: Treatment[] = treatmentsData.map((t) => ({
+  ...t,
+  metaTitle: profTitleTreatmentKeyed(t.slug, t.name),
+}));
 
 export function getTreatment(slug: string) {
   return treatments.find((t) => t.slug === slug);
