@@ -12,7 +12,6 @@ import { absoluteUrl, site } from "@/content/site";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
-import { profTitleHome } from "@/lib/seo-titles";
 
 type Props = { params: Promise<{ slug: string }> };
 
