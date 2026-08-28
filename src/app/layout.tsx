@@ -3,7 +3,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import { TopBar, Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { WhatsAppFab, MobileDock } from "@/components/cta/Conversion";
+import { WhatsAppChatWidget } from "@/components/cta/WhatsAppChatWidget";
 import { JsonLd } from "@/components/seo/MapEmbed";
 import { daySpaJsonLd } from "@/lib/schema";
 import { site } from "@/content/site";
@@ -49,10 +49,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <JsonLd data={daySpaJsonLd()} />
         <TopBar />
         <Header />
-        <main className="flex-1 pb-16 md:pb-0">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
-        <WhatsAppFab />
-        <MobileDock />
+        <WhatsAppChatWidget />
       </body>
     </html>
   );
