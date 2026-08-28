@@ -11,7 +11,7 @@
 
 **Primary keywords:** `Massage Spa Kilimani` · `massage Kilimani` · `massage Lavington Nairobi`
 
-**Status legend:** ✅ Shipped · ⚠️ Gap · 👤 Client ops · 🔍 Verify post-launch
+**Status legend:** ✅ Shipped · ✅ Shipped (repo) · ✅ Verified live · ⚠️ Gap · 👤 Client ops · 🔍 Verify live · 🔍 Verify post-launch
 
 **Paste-ready appendices:** [GBP_SERVICES_LIST.md](ops/GBP_SERVICES_LIST.md) · [GBP_FAQS.md](ops/GBP_FAQS.md) · [CITATIONS_TRACKER.md](ops/CITATIONS_TRACKER.md) · [GEOTAG_SOP.md](ops/GEOTAG_SOP.md) · [BENCHMARK.md](ops/BENCHMARK.md)
 
@@ -32,10 +32,13 @@ npm run build
 npm run check:unique
 npm run check:titles
 npm run check:keywords
+npm run audit:live          # compare live HTML vs repo metadata (see report below)
 node scripts/geotag-images.mjs   # after new images
 ```
 
 > **Keyword map:** Priority terms → pages in [`src/content/target-keywords.ts`](../src/content/target-keywords.ts). Run `npm run check:keywords` after keyword rollout edits.
+
+**Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). As of 2026-08-28, production lags `cursor/keyword-targeting-ec5b` — titles, full-body page, massage-and-extras guide, and on-page keyword blocks fail live until deploy.
 
 **Index check (post-deploy):** `site:kilimanihotmassage.co.ke` — minimum 30 URLs; goal ≫ 30 (~2,175 in sitemap).
 
@@ -84,9 +87,9 @@ node scripts/geotag-images.mjs   # after new images
 
 ### 0C — Early schema and embed spot-check · Pillar: Onsite
 
-- [x] **1.10 · ✅ Shipped** — Schema — homepage DaySpa — Verify: validator.schema.org — Target: `daySpaJsonLd()` in `src/lib/schema.ts` via layout
-- [x] **1.11 · ✅ Shipped** — Schema — treatment FAQPage + Service — Target: `/massage-treatments/swedish-massage/`
-- [x] **1.12 · ✅ Shipped** — Schema — Tier-A area FAQPage + Place — Target: `/areas/lavington/`
+- [x] **1.10 · ✅ Verified live** — Schema — homepage DaySpa — Verify: validator.schema.org — Target: `daySpaJsonLd()` in `src/lib/schema.ts` via layout
+- [x] **1.11 · ✅ Verified live** — Schema — treatment FAQPage + Service — Target: `/massage-treatments/swedish-massage/`
+- [x] **1.12 · ✅ Verified live** — Schema — Tier-A area FAQPage + Place — Target: `/areas/lavington/`
 - [x] **1.13 · ✅ Shipped** — Maps embed — homepage — Target: `MapEmbed` on `src/app/page.tsx`
 - [x] **1.14 · ✅ Shipped** — Maps embed — footer sitewide — Target: `src/components/layout/Footer.tsx`
 
@@ -102,17 +105,17 @@ node scripts/geotag-images.mjs   # after new images
 
 **Confirm NAP (Phase 0B) still matches before editing pages.**
 
-- [x] **4.1 · ✅ Shipped** — Home title — BEST prefix — Target: `src/app/page.tsx`
-- [x] **4.2 · ✅ Shipped** — Home title — category + city (Massage Spa Kilimani)
-- [x] **4.3 · ✅ Shipped** — Home title — primary services listed
-- [x] **4.4 · ✅ Shipped** — Home title — "near me"
-- [x] **4.5 · ✅ Shipped** — Home title — brand at end
-- [x] **4.6–4.11 · ✅ Shipped** — All template titles (service, area, combo, guide, masseuse, hub)
-- [x] **4.19 · ✅ Shipped** — Keyword-aware titles — Target: [`src/lib/seo-titles.ts`](../src/lib/seo-titles.ts) + [`src/content/target-keywords.ts`](../src/content/target-keywords.ts) · Guard: `npm run check:keywords`
-- [x] **4.12–4.18 · ✅ Shipped** — Hub/contact/about titles, unique per URL, meta descriptions, no ALL-CAPS spam
+- [x] **4.1 · ✅ Shipped (repo) · 🔍 Verify live** — Home title — BEST prefix — Target: `src/app/page.tsx`
+- [x] **4.2 · ✅ Shipped (repo) · 🔍 Verify live** — Home title — category + city (Massage Spa Kilimani)
+- [x] **4.3 · ✅ Shipped (repo) · 🔍 Verify live** — Home title — primary services listed
+- [x] **4.4 · ✅ Shipped (repo) · 🔍 Verify live** — Home title — "near me"
+- [x] **4.5 · ✅ Shipped (repo) · 🔍 Verify live** — Home title — brand at end
+- [x] **4.6–4.11 · ✅ Shipped (repo) · 🔍 Verify live** — All template titles (service, area, combo, guide, masseuse, hub)
+- [x] **4.19 · ✅ Shipped (repo) · 🔍 Verify live** — Keyword-aware titles — Target: [`src/lib/seo-titles.ts`](../src/lib/seo-titles.ts) + [`src/content/target-keywords.ts`](../src/content/target-keywords.ts) · Guard: `npm run check:keywords`
+- [x] **4.12–4.18 · ✅ Shipped (repo) · 🔍 Verify live** — Hub/contact/about titles, unique per URL, meta descriptions, no ALL-CAPS spam
 - [x] **5.1 · ✅ Shipped** — One H1 per page
-- [x] **5.2 · ✅ Shipped** — Home H1 = "Massage Spa Kilimani" — Target: `src/app/page.tsx`
-- [x] **5.3 · ✅ Shipped** — Home H2 = prominent services (treatment grid + sections)
+- [x] **5.2 · ✅ Verified live** — Home H1 = "Massage Spa Kilimani" — Target: `src/app/page.tsx`
+- [x] **5.3 · ✅ Shipped (repo) · 🔍 Verify live** — Home H2 keyword section "Spa near me on Marcus Garvey Rd" + treatment grid
 - [x] **2.2 · ✅ Shipped** — Homepage visible NAP — Target: hero `site.napFooter`
 - [x] **2.3 · ✅ Shipped** — Footer sitewide NAP — Target: `Footer.tsx`
 - [x] **2.4 · ✅ Shipped** — Contact page NAP block — Target: `src/app/contact/page.tsx`
@@ -137,12 +140,12 @@ node scripts/geotag-images.mjs   # after new images
 
 ### 1C — Technical basics · Pillar: Onsite
 
-- [x] **10.1 · ✅ Shipped** — Canonical URLs — Target: `absoluteUrl()` in `src/content/site.ts`
-- [x] **10.2 · ✅ Shipped** — Trailing slash consistency
-- [x] **10.3 · ✅ Shipped** — XML sitemap (~2,175 URLs) — Target: `src/app/sitemap.ts`
-- [x] **10.4–10.5 · ✅ Shipped** — robots.txt allow + sitemap directive — Target: `src/app/robots.ts`
-- [x] **10.6–10.12 · ✅ Shipped** — metadataBase, OG, Twitter, OG image, locale, lang, mobile responsive
-- [x] **10.11 · ✅ Shipped** — `<html lang="en">` — Target: `src/app/layout.tsx`
+- [x] **10.1 · ✅ Verified live** — Canonical URLs — Target: `absoluteUrl()` in `src/content/site.ts`
+- [x] **10.2 · ✅ Verified live** — Trailing slash consistency
+- [x] **10.3 · ✅ Shipped (repo) · 🔍 Verify live** — XML sitemap (~2,189 URLs post full-body) — Target: `src/app/sitemap.ts` · Live count 2140 (2026-08-28)
+- [x] **10.4–10.5 · ✅ Verified live** — robots.txt allow + sitemap directive — Target: `src/app/robots.ts`
+- [x] **10.6–10.12 · ✅ Shipped (repo) · 🔍 Verify live** — metadataBase, OG, Twitter, OG image, locale, lang, mobile responsive
+- [x] **10.11 · ✅ Verified live** — `<html lang="en">` — Target: `src/app/layout.tsx`
 - [x] **10.20 · ✅ Shipped** — Uniqueness guard — Target: `npm run check:unique` / `scripts/check-uniqueness.mjs`
 - [x] **10.21 · ✅ Shipped** — Build passes — Target: `npm run build`
 
@@ -186,7 +189,7 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 - [x] **6.1 · ✅ Shipped** — Rank 1 homepage — Target: `src/app/page.tsx`
 - [x] **6.2–6.5 · ✅ Shipped** — Rank 2 hubs (treatments, areas, guides, masseuses)
-- [x] **6.6–6.9 · ✅ Shipped** — Rank 3 pages (12 services, ~119 areas, 11 guides, 6 masseuses)
+- [x] **6.6–6.9 · ✅ Shipped (repo) · 🔍 Verify live** — Rank 3 pages (12 services incl. full-body, ~119 areas, 11 guides incl. massage-and-extras, 6 masseuses) · Live: full-body + guide 404 (2026-08-28)
 - [x] **6.10–6.11 · ✅ Shipped** — Rank 4 combos (~1,309 service + ~714 masseuse)
 - [x] **6.12–6.14 · ✅ Shipped** — Breadcrumbs visual + JSON-LD + URL slug hierarchy — Target: `Breadcrumbs.tsx`, `breadcrumbJsonLd()`
 - [x] **6.15 · ✅ Shipped** — Treatment pages ≥1,500 words — Target: `src/content/treatments.ts`
@@ -198,7 +201,7 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 ### 3B — Heading hierarchy (remaining pages) · Pillar: Onsite
 
-- [x] **5.4–5.17 · ✅ Shipped** — Treatment/area/combo/guide/masseuse/hub H1s, H2 sections, FAQ H3s, logical outline, no keyword-stuffed H1s
+- [x] **5.4–5.17 · ✅ Shipped (repo) · 🔍 Verify live** — Treatment/area/combo/guide/masseuse/hub H1s — masseuse hub H1 stale on live
 
 ### 3C — Interlinking + anchor text (Prof 5-step method) · Pillar: Onsite
 
@@ -231,11 +234,11 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 See **Appendix A** for honesty rules (no fake AggregateRating).
 
-- [x] **9.1–9.2 · ✅ Shipped** — Home 8 FAQs + FAQPage schema
-- [x] **9.3–9.5 · ✅ Shipped** — Treatment FAQs (6–10) + FAQPage + Service schema
-- [x] **9.6–9.8 · ✅ Shipped** — Tier-A area FAQs + FAQPage + Place schema
-- [x] **9.9–9.11 · ✅ Shipped** — Combo, guide, masseuse FAQs + Person schema
-- [x] **9.12–9.18 · ✅ Shipped** — DaySpa global schema (areaServed, hasOfferCatalog, openingHours, geo, hasMap, sameAs WhatsApp)
+- [x] **9.1–9.2 · ✅ Shipped (repo) · 🔍 Verify live** — Home 11 FAQs + FAQPage schema · Live: 8 FAQs (2026-08-28)
+- [x] **9.3–9.5 · ✅ Verified live** — Treatment FAQs (6–10) + FAQPage + Service schema
+- [x] **9.6–9.8 · ✅ Verified live** — Tier-A area FAQs + FAQPage + Place schema
+- [x] **9.9–9.11 · ✅ Verified live** — Combo, guide, masseuse FAQs + Person schema
+- [x] **9.12–9.18 · ✅ Verified live** — DaySpa global schema (areaServed, hasOfferCatalog, openingHours, geo, hasMap, sameAs WhatsApp)
 - [x] **9.20 · ✅ Shipped** — NO fake AggregateRating — intentionally omitted
 - [x] **9.21–9.22 · ✅ Shipped** — BreadcrumbList everywhere; FAQ local flavor (Yaya, Marcus Garvey, Adlife)
 - [ ] **9.19 · ⚠️ Gap** — sameAs social profiles — add when `site.socials` populated
@@ -317,13 +320,13 @@ See **Appendix A** for honesty rules (no fake AggregateRating).
 | Benchmarking | 6 | 3 | 5 |
 | NAP lock | 12 | 1 | 2 |
 | GBP | 0 | 1 | 23 |
-| Title tags | 18 | 0 | 0 |
-| Headings | 17 | 0 | 0 |
-| Rank hubs | 24 | 1 | 0 |
+| Title tags | 18 (repo) | 18 verify live | 0 |
+| Headings | 17 (repo) | 2 verify live | 0 |
+| Rank hubs | 24 (repo) | 2 verify live (full-body, guide) | 0 |
 | Interlinking | 24 | 1 | 0 |
 | Formatting | 12 | 1 | 0 |
-| FAQs + schema | 21 | 1 | 1 |
-| Technical SEO | 18 | 5 | 0 |
+| FAQs + schema | 18 verified live | 3 verify live (home FAQs, titles) | 1 |
+| Technical SEO | 6 verified live | 7 verify live (OG/titles/sitemap) | 5 |
 | Citations | 1 | 0 | 17 |
 | Weekly / white-hat | 5 | 1 | 5 |
 | **Total** | **~158** | **~14** | **~53** |

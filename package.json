@@ -9,7 +9,8 @@
     "lint": "eslint",
     "check:unique": "node scripts/check-uniqueness.mjs",
     "check:titles": "node scripts/check-titles.mjs",
-    "check:keywords": "node scripts/check-keywords.mjs"
+    "check:keywords": "node scripts/check-keywords.mjs",
+    "audit:live": "node scripts/audit-live-metadata.mjs --write-report"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
