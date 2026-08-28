@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "BEST Massage Spa Kilimani Nairobi — Swedish, deep tissue, Nuru, couples & more near me on Marcus Garvey Rd. Open 24/7. Call 0746 203398.",
+    "Massage Kilimani & Spa Kilimani on Marcus Garvey Rd — massage near me, massage spa near me, Swedish, Nuru, full body & couples. Open 24/7. Call 0746 203398.",
   openGraph: {
     type: "website",
     locale: "en_KE",
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: defaultTitle,
     description:
-      "BEST Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
+      "Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
     images: [{ url: "/images/og-kilimani-hot-massage.webp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: defaultTitle,
     description:
-      "BEST Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
+      "Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.",
     images: ["/images/og-kilimani-hot-massage.webp"],
   },
   alternates: { canonical: `${site.url}/` },
