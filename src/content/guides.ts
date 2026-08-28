@@ -21,12 +21,14 @@ export type Guide = {
 };
 
 import { guideDepthSections2 } from "./guide-depth-2";
+import { profTitleGuideSlug } from "@/lib/seo-titles";
 
-const guidesBase: Guide[] = [
+type GuideData = Omit<Guide, "metaTitle">;
+
+const guidesBase: GuideData[] = [
   {
     slug: "swedish-vs-deep-tissue-kilimani",
     title: "Swedish vs Deep Tissue Massage in Kilimani",
-    metaTitle: "Swedish vs Deep Tissue Massage Kilimani Nairobi | Guide",
     metaDescription:
       "Compare Swedish and deep tissue massage at our Kilimani spa on Marcus Garvey Rd. Which suits desk tension, gym recovery, or first visits? Open 24/7.",
     h1: "Swedish vs Deep Tissue: Which Massage Fits You in Kilimani?",
@@ -125,7 +127,6 @@ const guidesBase: Guide[] = [
   {
     slug: "what-to-expect-first-massage-nairobi",
     title: "What to Expect on Your First Massage in Nairobi",
-    metaTitle: "First Massage Visit Lavington Nairobi | What to Expect",
     metaDescription:
       "First time at a Nairobi massage spa? How booking, arrival, privacy, and pressure checks work at Kilimani Hot Massage on Marcus Garvey Rd.",
     h1: "What to Expect on Your First Massage Visit in Kilimani",
@@ -224,7 +225,6 @@ const guidesBase: Guide[] = [
   {
     slug: "best-massage-for-desk-workers-nairobi",
     title: "Best Massage for Desk Workers in Nairobi",
-    metaTitle: "Best Massage for Desk Workers Nairobi | Lavington Guide",
     metaDescription:
       "Neck, shoulder, and lower-back relief for Nairobi desk workers. Deep tissue, Swedish, and hot stone options at Kilimani Hot Massage—open 24/7.",
     h1: "Best Massage Options for Nairobi Desk Workers",
@@ -332,7 +332,6 @@ const guidesBase: Guide[] = [
   {
     slug: "nuru-massage-guide-kilimani",
     title: "Nuru Massage Guide for Lavington Guests",
-    metaTitle: "Nuru Massage Guide Lavington Nairobi | What It Is",
     metaDescription:
       "What Nuru massage involves, how privacy works, and how to book at Kilimani Hot Massage on Marcus Garvey Rd. Discreet suites, open 24/7.",
     h1: "Nuru Massage in Kilimani: A Clear Guest Guide",
@@ -446,7 +445,6 @@ const guidesBase: Guide[] = [
   {
     slug: "couples-massage-kilimani-date-night",
     title: "Couples Massage in Kilimani for Date Night",
-    metaTitle: "Couples Massage Kilimani Date Night | Booking Guide",
     metaDescription:
       "Plan a couples massage date night in Kilimani. Two tables, optional four-hands, open 24/7 on Marcus Garvey Rd. WhatsApp 0746 203398.",
     h1: "Couples Massage in Kilimani: Date-Night Guide",
@@ -560,7 +558,6 @@ const guidesBase: Guide[] = [
   {
     slug: "hot-stone-massage-benefits-nairobi",
     title: "Hot Stone Massage Benefits in Nairobi",
-    metaTitle: "Hot Stone Massage Benefits Nairobi | Lavington Guide",
     metaDescription:
       "How heated stones soften tight muscle for Nairobi evenings. Benefits, who it suits, and booking at Kilimani Hot Massage—open 24/7.",
     h1: "Hot Stone Massage Benefits for Nairobi Guests",
@@ -689,7 +686,6 @@ const guidesBase: Guide[] = [
   {
     slug: "how-to-book-24-7-spa-kilimani",
     title: "How to Book a 24/7 Spa in Kilimani",
-    metaTitle: "How to Book Kilimani Hot Massage 24/7 | WhatsApp Guide",
     metaDescription:
       "Book Kilimani Hot Massage anytime—call or WhatsApp 0746 203398. What to include in your message, therapist requests, and same-night tips.",
     h1: "How to Book Kilimani Hot Massage Anytime (24/7)",
@@ -811,7 +807,6 @@ const guidesBase: Guide[] = [
   {
     slug: "massage-near-yaya-centre-marcus-garvey",
     title: "Massage Near Yaya Centre on Marcus Garvey Rd",
-    metaTitle: "Massage Near Yaya Centre Lavington | Marcus Garvey Rd",
     metaDescription:
       "Looking for massage near Yaya Centre? Kilimani Hot Massage is on Marcus Garvey Rd—minutes away, open 24/7. Call 0746 203398.",
     h1: "Massage Near Yaya Centre & Marcus Garvey Rd",
@@ -933,7 +928,6 @@ const guidesBase: Guide[] = [
   {
     slug: "choosing-a-masseuse-in-kilimani",
     title: "Choosing a Masseuse in Kilimani",
-    metaTitle: "Choosing a Masseuse in Kilimani Nairobi | Meet the Team",
     metaDescription:
       "How to pick a masseuse at Kilimani Hot Massage—Amara, Zuri, Aisha, Nuru, Keisha, Lina—by specialty. Open 24/7. WhatsApp 0746 203398.",
     h1: "How to Choose a Masseuse in Kilimani",
@@ -1055,9 +1049,95 @@ const guidesBase: Guide[] = [
     ],
   },
   {
+    slug: "massage-and-extras-kilimani",
+    title: "Massage and Extras in Kilimani — Consent-Led Guide",
+    metaDescription:
+      "Massage and extras near me on Marcus Garvey Rd—consent-led adult sessions, Nuru, erotic, and lingam options in private suites. Adults only. WhatsApp 0746 203398.",
+    h1: "Massage and Extras near me in Kilimani",
+    excerpt:
+      "What massage and extras near me means at our Kilimani studio—boundaries, booking, and links to Nuru, erotic, and lingam treatments without misleading claims.",
+    publishedAt: "2026-08-12",
+    tags: ["extras", "adult", "consent", "kilimani"],
+    relatedTreatments: [
+      "sensual-erotic-massage",
+      "nuru-massage",
+      "lingam-massage",
+      "body-to-body-massage",
+    ],
+    relatedAreas: ["kilimani", "westlands", "kileleshwa", "upper-hill"],
+    relatedGuides: ["nuru-massage-guide-kilimani", "choosing-a-masseuse-in-kilimani"],
+    sections: [
+      {
+        heading: "What massage and extras near me means here",
+        paragraphs: [
+          "Massage and extras near me searches usually mean adult bodywork beyond a basic Swedish hour—Nuru gel glide, body-to-body contact, erotic-paced touch, or lingam-focused sessions with clear boundaries. At Kilimani Hot Massage on Marcus Garvey Rd, extras never means vague hotel listings or pressure to agree to anything unstated.",
+          "Every massage and extras booking starts on WhatsApp 0746 203398: you name the modality, we confirm consent checkpoints, suite privacy, and therapist availability. Adults only; locked private rooms—not shared lobby spas near Yaya Centre.",
+          "We do not publish explicit menus online. This guide orients massage and extras near me guests toward the right treatment pages and booking etiquette so your visit stays discreet, hygienic, and consensual from Marcus Garvey Rd arrival through shower exit.",
+        ],
+      },
+      {
+        heading: "How booking works for adult sessions",
+        paragraphs: [
+          "Message treatment interest—Nuru, erotic massage, body-to-body, lingam—and preferred time. We reply with availability, directions to Marcus Garvey Rd, and what to expect at check-in. Name Aisha or Nuri for Nuru-heavy requests; mention boundaries upfront.",
+          "Same-night slots are realistic when you WhatsApp before leaving Westlands or Kilimani dinners. Overnight bookings are normal; reception answers at 3 a.m. the same as 3 p.m.",
+          "Payment and duration are confirmed in-thread. No walk-in assumptions for adult modalities—always call or WhatsApp first so suites and gel or oil supplies are staged.",
+        ],
+      },
+      {
+        heading: "Treatments that fit massage and extras intent",
+        paragraphs: [
+          "Erotic massage lives on our sensual-erotic treatment page—slow oil pacing, adult framing, spa hygiene. Nuru massage uses warmed gel and full-body glide in a dim suite. Body-to-body emphasizes skin-to-skin rhythm with draping choices discussed at intake.",
+          "Lingam massage is male-focused wellness with clinical privacy—respectful language, locked door, shower access. These are separate bookings from Swedish or deep tissue; do not expect extras to appear unrequested during a therapeutic session.",
+          "Couples and four-hands upgrades exist for shared adult evenings—message early for paired therapists. Tantric ritual is breath-led and slower; read that page if you want ritual pacing rather than oil-led extras.",
+        ],
+      },
+      {
+        heading: "Consent, privacy, and white-hat boundaries",
+        paragraphs: [
+          "Consent is verbal and ongoing—pause or adjust anytime. Therapists ask preferences before touch begins and respect stop words without question. We do not mislead searchers with fake claims or unsafe practices.",
+          "Discreet arrivals: street parking on Marcus Garvey Rd, low-profile check-in, no shared waiting room. Your visit stays between you, reception, and your therapist.",
+          "Massage and extras near me is a legitimate local search for adults seeking private Kilimani bodywork—we answer it with trained staff, clean suites, and honest WhatsApp conversations, not ambiguous online ads.",
+        ],
+      },
+      {
+        heading: "Directions and who books from across Nairobi",
+        paragraphs: [
+          "Kilimani and Kileleshwa guests arrive in five to ten minutes. Westlands hotel stays and Upper Hill offices book when lobby spas feel too visible. Valley Arcade and Yaya Centre errands often precede a same-evening extras session.",
+          "Pin Kilimani Hot Massage on Marcus Garvey Rd in ride-hail apps. We send location pins after time confirmation. First visit? Arrive five minutes early for a calm orientation to the suite and shower.",
+          "After adult sessions, most guests prefer a quiet ride home—suites stay private and reception does not delay exit.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is massage and extras near me available 24/7 in Kilimani?",
+        a: "Yes. Adult modalities run around the clock on Marcus Garvey Rd when therapists are scheduled—WhatsApp 0746 203398 before you travel for same-night confirmation.",
+      },
+      {
+        q: "Which page covers erotic massage and extras?",
+        a: "Start with our erotic massage treatment page and this guide. Nuru, body-to-body, and lingam each have dedicated treatment URLs linked above.",
+      },
+      {
+        q: "Are massage and extras sessions discreet?",
+        a: "Private locked suites, WhatsApp booking, and low-key Marcus Garvey Rd arrivals keep visits confidential from Kilimani, Westlands, or county-wide drives.",
+      },
+      {
+        q: "Can couples book massage and extras together?",
+        a: "Side-by-side couples tables and synchronised four-hands are available for adult bookings—message early so paired therapists and room setup are confirmed.",
+      },
+      {
+        q: "Do standard Swedish sessions include extras?",
+        a: "No. Therapeutic Swedish and deep tissue stay draped and modality-specific. Book erotic, Nuru, or body-to-body explicitly when that is your goal.",
+      },
+      {
+        q: "How do I ask about boundaries before booking?",
+        a: "WhatsApp 0746 203398 with your questions—we explain pacing, consent, and suite privacy without pressure before you leave Yaya Centre or Wood Avenue.",
+      },
+    ],
+  },
+  {
     slug: "nairobi-areas-we-serve-massage-guide",
     title: "Nairobi Areas We Serve — Massage Guide",
-    metaTitle: "Nairobi Areas We Serve Massage Guide | Kilimani Hot Massage",
     metaDescription:
       "From Lavington and Kilimani to Westlands, Karen, and the CBD—how Nairobi guests reach our Marcus Garvey Rd spa. Explore all area pages.",
     h1: "Nairobi Areas We Serve: A Massage Guest Guide",
@@ -1180,6 +1260,7 @@ const guidesBase: Guide[] = [
 
 export const guides: Guide[] = guidesBase.map((g) => ({
   ...g,
+  metaTitle: profTitleGuideSlug(g.slug, g.title),
   sections: [...g.sections, ...(guideDepthSections2[g.slug] ?? [])],
 }));
 

@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start -p 43127 -H 0.0.0.0",
     "lint": "eslint",
-    "check:unique": "node scripts/check-uniqueness.mjs"
+    "check:unique": "node scripts/check-uniqueness.mjs",
+    "check:titles": "node scripts/check-titles.mjs",
+    "check:keywords": "node scripts/check-keywords.mjs",
+    "audit:live": "node scripts/audit-live-metadata.mjs --write-report"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

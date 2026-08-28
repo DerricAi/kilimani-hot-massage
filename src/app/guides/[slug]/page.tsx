@@ -9,7 +9,9 @@ import { Breadcrumbs, breadcrumbJsonLd } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl, site } from "@/content/site";
+import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -21,17 +23,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const g = getGuide(slug);
   if (!g) return {};
-  return {
+  return pageMetadata({
     title: g.metaTitle,
     description: g.metaDescription,
-    alternates: { canonical: absoluteUrl(guidePath(g.slug)) },
-    openGraph: {
-      type: "article",
-      publishedTime: g.publishedAt,
-      title: g.metaTitle,
-      description: g.metaDescription,
-    },
-  };
+    path: guidePath(g.slug),
+  });
 }
 
 export default async function GuideArticlePage({ params }: Props) {
@@ -184,17 +180,7 @@ export default async function GuideArticlePage({ params }: Props) {
 
         <section className="mt-14">
           <h2 className="font-display text-2xl text-[var(--crimson)]">FAQs</h2>
-          <div className="mt-4 space-y-3">
-            {g.faqs.map((f) => (
-              <details
-                key={f.q}
-                className="rounded-lg border border-white/10 px-4 py-3"
-              >
-                <summary className="cursor-pointer">{f.q}</summary>
-                <p className="mt-2 text-sm text-[var(--muted)]">{f.a}</p>
-              </details>
-            ))}
-          </div>
+          <FaqAccordion faqs={g.faqs} className="mt-4 space-y-3" />
         </section>
 
         {moreGuides.length ? (

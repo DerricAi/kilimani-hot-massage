@@ -31,6 +31,10 @@ const treatmentImages: Record<string, { src: string; alt: string }> = {
     src: "/images/hot-stone-massage-kilimani.webp",
     alt: "Hot stone massage ambiance at Kilimani Hot Massage",
   },
+  "full-body-massage": {
+    src: "/images/swedish-massage-kilimani-suite.webp",
+    alt: "Full body massage suite at Kilimani Hot Massage, Marcus Garvey Rd",
+  },
   "couples-massage": {
     src: "/images/couples-massage-kilimani-spa.webp",
     alt: "Couples massage room preparation in Kilimani spa",

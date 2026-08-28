@@ -6,9 +6,10 @@ import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { pageMetadata } from "@/lib/seo";
+import { profTitleHub } from "@/lib/seo-titles";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Massage Guides Kilimani Nairobi | Tips & Booking",
+  title: profTitleHub("guides"),
   description:
     "Massage guides for Kilimani and Nairobi—Swedish vs deep tissue, first visits, Nuru, couples, 24/7 booking on Marcus Garvey Rd. WhatsApp 0746 203398.",
   path: "/guides/",

@@ -9,17 +9,33 @@ import { areas, areaPath } from "@/content/areas";
 import { guides, guidePath } from "@/content/guides";
 import { site } from "@/content/site";
 import { media, treatmentImage } from "@/content/media";
+import { pageMetadata } from "@/lib/seo";
+import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
+import { profTitleHome } from "@/lib/seo-titles";
 
-export const metadata: Metadata = {
-  title:
-    "BEST Massage Spa Kilimani Nairobi - Swedish, Deep Tissue, Nuru, Couples & more near me | Kilimani Hot Massage",
+const homeTitle = profTitleHome();
+
+export const metadata: Metadata = pageMetadata({
+  title: homeTitle,
   description:
-    "Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Swedish, deep tissue, Nuru, couples & more. Call or WhatsApp 0746 203398.",
-  alternates: { canonical: `${site.url}/` },
-};
+    "Massage Kilimani & Spa Kilimani on Marcus Garvey Rd — massage near me, massage spa near me, Swedish, Nuru, full body & couples. Open 24/7. Call or WhatsApp 0746 203398.",
+  path: "/",
+});
 
 const homeFaqs = [
+  {
+    q: "Is there a massage spa near me in Kilimani?",
+    a: "Yes—Kilimani Hot Massage is a massage spa near me on Marcus Garvey Rd, steps from Yaya Centre and Adlife Plaza. Swedish, Nuru, full body, couples, and private suites run 24/7. WhatsApp 0746 203398 with your ETA.",
+  },
+  {
+    q: "Do you offer private massage rooms near me on Marcus Garvey Rd?",
+    a: "Every booking gets a locked private massage room near me—not a shared hotel lobby or mall cubicle. Suites on Marcus Garvey Rd include shower access, fresh linens, and discreet street parking. Message before you leave Kilimani or Westlands.",
+  },
+  {
+    q: "Can I book a masseuse near me tonight?",
+    a: "Yes—name Amara, Zuri, Aisha, Nuri, Keisha, or Lina when you WhatsApp 0746 203398. We staff a masseuse near me any hour, including post-midnight from Ngong Rd dinners or Upper Hill deadlines.",
+  },
   {
     q: "Where exactly is the spa on Marcus Garvey Rd?",
     a: "Kilimani Hot Massage sits on Marcus Garvey Rd in Kilimani—between Yaya Centre, Adlife Plaza, and the Valley Arcade corridor. WhatsApp 0746 203398 for a pin if your driver knows the neighbourhood but not the gate.",
@@ -58,7 +74,7 @@ const whyKilimani = [
   "Locked private suites—not mall cubicles with lobby noise",
   "Marcus Garvey Rd address you can pin in ride-hail apps",
   "Six named therapists across Swedish, Nuru, couples, and sports recovery",
-  "Eleven modalities without sending you to a second location",
+  "Twelve modalities without sending you to a second location",
   "Same phone line 0746 203398 day, night, and holidays",
 ];
 
@@ -130,7 +146,7 @@ export default function HomePage() {
           {[
             { label: "Hours", value: "24 / 7 / 365" },
             { label: "Therapists", value: "6 specialists" },
-            { label: "Treatments", value: "11 modalities" },
+            { label: "Treatments", value: "12 modalities" },
             { label: "Areas served", value: "All Nairobi County" },
           ].map((stat) => (
             <div key={stat.label} className="text-center sm:text-left">
@@ -178,6 +194,34 @@ export default function HomePage() {
               <p className="mt-2 text-sm text-[var(--muted)]">{m.tagline}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="section-pad mx-auto max-w-7xl py-16">
+        <h2 className="font-display text-3xl text-[var(--off-white)] sm:text-4xl">
+          Spa near me on Marcus Garvey Rd
+        </h2>
+        <p className="mt-3 max-w-2xl text-[var(--muted)]">
+          Spa Kilimani guests and spa near me searches land here—street-front suites with Swedish,
+          Nuru, full body, couples, and adult sessions. Pick a treatment below or WhatsApp 0746
+          203398 for the fastest slot.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["swedish-massage", "full-body-massage", "nuru-massage", "couples-massage"].map(
+            (slug) => {
+              const t = treatments.find((x) => x.slug === slug);
+              if (!t) return null;
+              return (
+                <Link
+                  key={slug}
+                  href={`/massage-treatments/${slug}/`}
+                  className="rounded-full border border-white/10 px-4 py-2 text-sm text-[var(--off-white)]/85 hover:border-[var(--crimson)]/50 hover:text-[var(--crimson-light)]"
+                >
+                  {t.name}
+                </Link>
+              );
+            }
+          )}
         </div>
       </section>
 
@@ -321,19 +365,13 @@ export default function HomePage() {
         <h2 className="font-display text-3xl text-[var(--off-white)]">
           Questions before you book
         </h2>
-        <div className="mt-8 space-y-4">
-          {homeFaqs.map((f) => (
-            <details
-              key={f.q}
-              className="glass-card rounded-xl px-5 py-4"
-            >
-              <summary className="cursor-pointer font-medium text-[var(--off-white)]">
-                {f.q}
-              </summary>
-              <p className="mt-3 text-sm text-[var(--muted)]">{f.a}</p>
-            </details>
-          ))}
-        </div>
+        <FaqAccordion
+          faqs={homeFaqs}
+          className="mt-8 space-y-4"
+          detailsClassName="glass-card rounded-xl px-5 py-4"
+          summaryClassName="cursor-pointer text-[var(--off-white)]"
+          answerClassName="mt-3 text-sm text-[var(--muted)]"
+        />
       </section>
     </>
   );

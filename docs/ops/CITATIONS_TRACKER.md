@@ -1,5 +1,7 @@
 # Citations Tracker — NAP consistency
 
+Part of [LOCAL_SEO_MASTER_CHECKLIST.md](../LOCAL_SEO_MASTER_CHECKLIST.md) — **Phase 4** (citations).
+
 **Canonical NAP:** Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi  
 **Website:** https://kilimanihotmassage.co.ke/  
 **Hours:** Open 24/7

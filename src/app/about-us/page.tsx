@@ -4,9 +4,10 @@ import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl, site } from "@/content/site";
 import { pageMetadata } from "@/lib/seo";
+import { profTitleHub } from "@/lib/seo-titles";
 
 export const metadata: Metadata = pageMetadata({
-  title: "About Us",
+  title: profTitleHub("about"),
   description:
     "About Kilimani Hot Massage—premium 24/7 massage spa on Marcus Garvey Rd, Kilimani, Nairobi.",
   path: "/about-us/",

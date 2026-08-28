@@ -6,11 +6,12 @@ import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { pageMetadata } from "@/lib/seo";
+import { profTitleMasseuseHub } from "@/lib/seo-titles";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Massage Therapists in Kilimani Nairobi",
+  title: profTitleMasseuseHub(),
   description:
-    "Meet our massage therapists at Kilimani Hot Massage—Amara, Zuri, Aisha, Nuru, Keisha, and Lina. Open 24/7. WhatsApp 0746 203398.",
+    "Masseuse near me in Kilimani—Amara, Zuri, Aisha, Nuri, Keisha, and Lina in private massage rooms on Marcus Garvey Rd. Open 24/7. WhatsApp 0746 203398.",
   path: "/masseuses/",
 });
 
@@ -31,11 +32,12 @@ export default function MasseusesHubPage() {
       />
       <section className="section-pad mx-auto max-w-7xl py-10">
         <h1 className="font-display text-4xl text-[var(--off-white)] sm:text-5xl">
-          Massage Therapists in Kilimani, Nairobi
+          Masseuse near me in Kilimani, Nairobi
         </h1>
         <p className="mt-4 max-w-2xl text-[var(--muted)]">
-          Request Amara, Zuri, Aisha, Nuri, Keisha, or Lina by name. Every session happens at
-          our Marcus Garvey Rd studio—open around the clock for Kilimani and county-wide guests.
+          Request Amara, Zuri, Aisha, Nuri, Keisha, or Lina by name—each masseuse near me works
+          from private massage rooms near me on Marcus Garvey Rd, not a shared hotel lobby. Open
+          around the clock for Kilimani and county-wide guests.
         </p>
         <div className="mt-6">
           <CtaRow message="Hi, I'd like to book with a masseuse at Kilimani Hot Massage." />

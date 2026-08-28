@@ -34,7 +34,7 @@ npm start
 | Path | Purpose |
 | --- | --- |
 | `/` | Homepage |
-| `/massage-treatments/` | Treatments hub + 11 service pages |
+| `/massage-treatments/` | Treatments hub + 12 service pages |
 | `/masseuses/` | Masseuse hub + 6 profiles |
 | `/guides/` | Topical guides hub + articles |
 | `/areas/` | Nairobi County hub |
@@ -46,7 +46,23 @@ npm start
 
 ## Local SEO checklist
 
-See [docs/LOCAL_SEO_CHECKLIST.md](docs/LOCAL_SEO_CHECKLIST.md) for onsite, GBP, citations, and weekly ops.
+See [docs/LOCAL_SEO_MASTER_CHECKLIST.md](docs/LOCAL_SEO_MASTER_CHECKLIST.md) for the unified onsite, GBP, citations, and weekly ops checklist.
+
+**Live vs repo audit:** `npm run audit:live` — report at [docs/ops/LIVE_METADATA_AUDIT.md](docs/ops/LIVE_METADATA_AUDIT.md).
+
+## Production deploy
+
+Production at `https://kilimanihotmassage.co.ke` must be rebuilt from **`main`** after each release:
+
+```bash
+npm ci
+npm run build
+npm run check:titles
+npm run check:keywords
+npm run audit:live   # after deploy — expect Wave 2/5 green when live matches repo
+```
+
+Deploy the `.next` static output (or your host’s Next.js build step) to the production host, then re-run `npm run audit:live` and update checklist items from `🔍 Verify live` to `✅ Verified live` when the audit passes.
 
 ## Image geotagging
 

@@ -12,7 +12,9 @@ import { Breadcrumbs, breadcrumbJsonLd } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
+import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd, serviceJsonLd } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ area: string; service: string }> };
 
@@ -24,13 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { area, service } = await params;
   const combo = buildAreaServiceCombo(area, service);
   if (!combo) return {};
-  return {
+  return pageMetadata({
     title: combo.metaTitle,
     description: combo.metaDescription,
-    alternates: {
-      canonical: absoluteUrl(areaServicePath(area, service)),
-    },
-  };
+    path: areaServicePath(area, service),
+  });
 }
 
 export default async function AreaServicePage({ params }: Props) {
@@ -94,19 +94,13 @@ export default async function AreaServicePage({ params }: Props) {
             <h2 className="font-display text-2xl text-[var(--crimson)]">
               FAQs — {treatment.shortName} in {area.name}
             </h2>
-            <div className="mt-6 space-y-3">
-              {combo.faqs.map((f) => (
-                <details
-                  key={f.q}
-                  className="rounded-xl border border-white/10 bg-white/[0.02] px-5 py-4"
-                >
-                  <summary className="cursor-pointer font-medium text-[var(--off-white)]">
-                    {f.q}
-                  </summary>
-                  <p className="mt-3 text-sm text-[var(--muted)]">{f.a}</p>
-                </details>
-              ))}
-            </div>
+            <FaqAccordion
+              faqs={combo.faqs}
+              className="mt-6 space-y-3"
+              detailsClassName="rounded-xl border border-white/10 bg-white/[0.02] px-5 py-4"
+              summaryClassName="cursor-pointer text-[var(--off-white)]"
+              answerClassName="mt-3 text-sm text-[var(--muted)]"
+            />
           </section>
         ) : null}
 

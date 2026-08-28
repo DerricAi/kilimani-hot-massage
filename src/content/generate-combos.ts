@@ -3,6 +3,10 @@ import { treatments, type Treatment } from "@/content/treatments";
 import { masseuses, type Masseuse } from "@/content/masseuses";
 import { site } from "@/content/site";
 import { TIER_A_SLUGS } from "@/content/areas";
+import {
+  profTitleMasseuseCombo,
+  profTitleServiceComboKeyed,
+} from "@/lib/seo-titles";
 
 export type FaqItem = { q: string; a: string };
 
@@ -41,6 +45,14 @@ const serviceComboExtras: Record<string, string> = {
     "From Kilimani apartments and offices, deep tissue on Marcus Garvey Rd is the after-hours answer to laptop shoulders and commute grip along Ring Rd Kilimani.",
   "kilimani|nuru-massage":
     "Nuru sessions in Kilimani stay suite-locked and discreet—gel-led body glide for adults who want privacy steps from Marcus Garvey Rd, not a hotel spa corridor.",
+  "kilimani|body-to-body-massage":
+    "Body to Body Massage Kilimani bookings peak from Wood Avenue and Yaya Centre—locked suites on Marcus Garvey Rd with consent checkpoints before gel or oil work begins.",
+  "kilimani|sensual-erotic-massage":
+    "Erotic Massage Kilimani guests choose Marcus Garvey Rd for adult-paced touch with spa hygiene—Aisha handles many requests; boundaries confirmed on WhatsApp first.",
+  "kilimani|lingam-massage":
+    "Lingam Massage Nairobi searches from Kilimani land here—male-focused wellness in a private suite minutes from Yaya Centre, open 24/7.",
+  "kilimani|full-body-massage":
+    "Full Body Massage Kilimani is the umbrella menu entry for head-to-toe oil work—Swedish flow with pressure you choose, five minutes from Ring Rd Kilimani gyms.",
   "kilimani|couples-massage":
     "Kilimani couples book side-by-side tables after Wood Avenue dinners—Zuri stages shared suites five minutes from Yaya Centre.",
   "lavington|swedish-massage":
@@ -421,7 +433,7 @@ export function buildAreaServiceCombo(
   return {
     area,
     treatment,
-    metaTitle: `${treatment.name} in ${area.name} | ${site.name}`,
+    metaTitle: profTitleServiceComboKeyed(treatment.slug, treatment.name, area.name),
     metaDescription: `Book ${treatment.name} for guests in ${area.name}. Studio on Marcus Garvey Rd, Kilimani. Open 24/7. Call ${site.phoneDisplay}.`,
     h1: `${treatment.name} for ${area.name}`,
     paragraphs,
@@ -443,7 +455,7 @@ export function buildAreaMasseuseCombo(
   return {
     area,
     masseuse,
-    metaTitle: `Book ${masseuse.name} in ${area.name} | ${site.name}`,
+    metaTitle: profTitleMasseuseCombo(masseuse.name, area.name),
     metaDescription: `Request ${masseuse.name} when visiting from ${area.name}. ${masseuse.tagline} Open 24/7 in Kilimani. WhatsApp ${site.phoneDisplay}.`,
     h1: `Book ${masseuse.name} — serving ${area.name}`,
     paragraphs,

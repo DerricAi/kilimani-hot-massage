@@ -1,5 +1,7 @@
 # Weekly Cadence — Friday updates (Weeks 1–12)
 
+Part of [LOCAL_SEO_MASTER_CHECKLIST.md](../LOCAL_SEO_MASTER_CHECKLIST.md) — **Phase 6** (ongoing weekly cadence).
+
 Agency/client rhythm. Adapt copy; keep NAP identical. Soft CTA → WhatsApp 0746 203398 or `/contact/`.
 
 ## Recurring Friday checklist
