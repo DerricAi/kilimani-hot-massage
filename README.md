@@ -48,6 +48,8 @@ npm start
 
 See [docs/LOCAL_SEO_MASTER_CHECKLIST.md](docs/LOCAL_SEO_MASTER_CHECKLIST.md) for the unified onsite, GBP, citations, and weekly ops checklist.
 
+**Live vs repo audit:** `npm run audit:live` — report at [docs/ops/LIVE_METADATA_AUDIT.md](docs/ops/LIVE_METADATA_AUDIT.md).
+
 ## Image geotagging
 
 Optional helper:
