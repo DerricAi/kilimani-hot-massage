@@ -38,7 +38,7 @@ node scripts/geotag-images.mjs   # after new images
 
 > **Keyword map:** Priority terms → pages in [`src/content/target-keywords.ts`](../src/content/target-keywords.ts). Run `npm run check:keywords` after keyword rollout edits.
 
-**Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). As of 2026-08-28 post-fix: **5/13 metadata samples green**, hubs + on-page H1/H2 pass live; remaining gaps are **per-page OG tags** (fixed in repo via `pageMetadata`) and **FAQ semantic H3s** (`FaqAccordion`) — redeploy `main` to close.
+**Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). **2026-08-28 audit: ALL GREEN** — Wave 2 (13/13), Wave 3 (2/2), Wave 4 (6/6), Wave 5 (5/5). Production matches `main`.
 
 **Index check (post-deploy):** `site:kilimanihotmassage.co.ke` — minimum 30 URLs; goal ≫ 30 (~2,175 in sitemap).
 
@@ -110,8 +110,8 @@ node scripts/geotag-images.mjs   # after new images
 - [x] **4.3 · ✅ Verified live** — Home title — primary services listed
 - [x] **4.4 · ✅ Verified live** — Home title — "near me"
 - [x] **4.5 · ✅ Verified live** — Home title — brand at end
-- [x] **4.6–4.11 · ✅ Verified live (hubs)** · **🔍 Verify live (deep pages OG)** — Hub titles pass live; treatment/area/combo/guide OG tags need redeploy (`pageMetadata` fix on main)
-- [x] **4.19 · ✅ Shipped (repo) · 🔍 Verify live (OG on deep URLs)** — Keyword-aware titles — Guard: `npm run check:keywords`
+- [x] **4.6–4.11 · ✅ Verified live** — All template titles (service, area, combo, guide, masseuse, hub) — audit 2026-08-28
+- [x] **4.19 · ✅ Verified live** — Keyword-aware titles — Guard: `npm run check:keywords`
 - [x] **4.12–4.18 · ✅ Verified live (hubs + contact)** — Hub/contact titles + meta descriptions pass live audit (2026-08-28)
 - [x] **5.1 · ✅ Shipped** — One H1 per page
 - [x] **5.2 · ✅ Verified live** — Home H1 = "Massage Spa Kilimani" — Target: `src/app/page.tsx`
@@ -142,9 +142,9 @@ node scripts/geotag-images.mjs   # after new images
 
 - [x] **10.1 · ✅ Verified live** — Canonical URLs — Target: `absoluteUrl()` in `src/content/site.ts`
 - [x] **10.2 · ✅ Verified live** — Trailing slash consistency
-- [x] **10.3 · ✅ Verified live (count)** · **🔍 Verify live (OG redeploy)** — XML sitemap (2,259 URLs live 2026-08-28) — full-body + guide entries present
+- [x] **10.3 · ✅ Verified live** — XML sitemap (2,259 URLs live 2026-08-28) — full-body + guide entries present
 - [x] **10.4–10.5 · ✅ Verified live** — robots.txt allow + sitemap directive — Target: `src/app/robots.ts`
-- [x] **10.6–10.12 · ✅ Verified live (hubs)** · **🔍 Verify live (deep page OG)** — metadataBase, canonical, lang OK; per-page OG fixed in repo, pending host redeploy
+- [x] **10.6–10.12 · ✅ Verified live** — metadataBase, OG, Twitter, OG image, locale, lang — audit 2026-08-28
 - [x] **10.11 · ✅ Verified live** — `<html lang="en">` — Target: `src/app/layout.tsx`
 - [x] **10.20 · ✅ Shipped** — Uniqueness guard — Target: `npm run check:unique` / `scripts/check-uniqueness.mjs`
 - [x] **10.21 · ✅ Shipped** — Build passes — Target: `npm run build`
@@ -201,7 +201,7 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 ### 3B — Heading hierarchy (remaining pages) · Pillar: Onsite
 
-- [x] **5.4–5.17 · ✅ Verified live (masseuse hub + contact)** · **🔍 Verify live (FAQ H3 post-deploy)** — Masseuse hub H1 + contact private rooms block pass live; FAQ questions use semantic `<h3>` via `FaqAccordion` in repo
+- [x] **5.4–5.17 · ✅ Verified live** — Treatment/area/combo/guide/masseuse/hub H1s + FAQ H3s via FaqAccordion — audit 2026-08-28
 
 ### 3C — Interlinking + anchor text (Prof 5-step method) · Pillar: Onsite
 
@@ -226,7 +226,7 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 ### 3D — Formatting and media · Pillar: Onsite
 
-- [x] **8.1–8.10 · ✅ Shipped (repo) · 🔍 Verify live (FAQ H3)** — FAQ H3s via [`FaqAccordion.tsx`](../src/components/seo/FaqAccordion.tsx); live pending redeploy
+- [x] **8.1–8.10 · ✅ Verified live** — FAQ H3s via [`FaqAccordion.tsx`](../src/components/seo/FaqAccordion.tsx) — audit 2026-08-28
 - [x] **8.12–8.14 · ✅ Shipped** — CTA prominence, trust strip (no fake ratings), readable paragraphs
 - [ ] **8.11 · ⚠️ Gap** — Content-body keyword bold — Optional polish
 
@@ -234,7 +234,7 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 See **Appendix A** for honesty rules (no fake AggregateRating).
 
-- [x] **9.1–9.2 · ✅ Verified live (content)** · **🔍 Verify live (11 FAQ H3s)** — Home 11 FAQs + FAQPage schema on live; semantic H3 outline after FaqAccordion deploy
+- [x] **9.1–9.2 · ✅ Verified live** — Home 11 FAQs + FAQPage schema + semantic H3 outline — audit 2026-08-28
 - [x] **9.3–9.5 · ✅ Verified live** — Treatment FAQs (6–10) + FAQPage + Service schema
 - [x] **9.6–9.8 · ✅ Verified live** — Tier-A area FAQs + FAQPage + Place schema
 - [x] **9.9–9.11 · ✅ Verified live** — Combo, guide, masseuse FAQs + Person schema

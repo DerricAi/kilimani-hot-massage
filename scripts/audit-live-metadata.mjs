@@ -823,7 +823,7 @@ Manual re-validation: [validator.schema.org](https://validator.schema.org/)
 
 ## Wave 6 — Deploy checklist
 
-**Status (2026-08-28):** `main` at `0cc80ac` — FaqAccordion H3, per-page OG via `pageMetadata`, audit fixes. **Wave 5: 5/5 on-page pass live.** Remaining: **8/13 metadata** fail on deep-page OG tags until host redeploys latest `main`.
+**Status (2026-08-28):** main branch — FaqAccordion H3, per-page OG via pageMetadata, audit fixes. Wave 5: 5/5 on-page pass live. Remaining: 8/13 metadata fail on deep-page OG tags until host redeploys latest main.
 
 1. ~~Merge cursor/keyword-targeting-ec5b → main~~ ✅ Done
 2. **Deploy** static export / host rebuild for ${LIVE_BASE} (client-managed host)
