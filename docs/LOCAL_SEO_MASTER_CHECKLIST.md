@@ -151,7 +151,7 @@ node scripts/geotag-images.mjs   # after new images
 - [x] **10.4–10.5 · ✅ Verified live** — robots.txt allow + sitemap directive — Target: `src/app/robots.ts`
 - [x] **10.6–10.12 · ✅ Verified live** — metadataBase, OG, Twitter, OG image, locale, lang — audit 2026-08-28
 - [x] **10.11 · ✅ Verified live** — `<html lang="en">` — Target: `src/app/layout.tsx`
-- [x] **10.20 · ✅ Shipped** — Uniqueness guard — Target: `npm run check:unique` / `scripts/check-uniqueness.mjs`
+- [x] **10.20 · ✅ Verified live (content audit)** — Uniqueness guard + combo duplicate copy ≤5% — `npm run check:unique` + `npm run check:content`
 - [x] **10.21 · ✅ Shipped** — Build passes — Target: `npm run build`
 
 ---
@@ -379,7 +379,7 @@ See **Appendix A** for honesty rules (no fake AggregateRating).
 - [x] **12.9 · ✅ Shipped** — Never attack real businesses
 - [x] **12.10 · ✅ Shipped** — Geotag SOP documented — Target: [GEOTAG_SOP.md](ops/GEOTAG_SOP.md)
 - [x] **12.11 · ✅ Shipped** — AI photo fallback (screenshot + geotag if no real photos)
-- [x] **12.12 · ✅ Shipped** — Site uniqueness vs competitors — Target: `npm run check:unique`
+- [x] **12.12 · ✅ Verified live (content audit)** — Site uniqueness vs competitors — `npm run check:unique` + live banned-string scan
 
 ---
 
