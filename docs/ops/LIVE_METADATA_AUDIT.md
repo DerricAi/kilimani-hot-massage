@@ -1,7 +1,7 @@
 # Live Metadata Audit Report
 
 **Site:** https://kilimanihotmassage.co.ke  
-**Run:** 2026-08-28 13:56:22 UTC  
+**Run:** 2026-08-28 14:09:37 UTC  
 **Repo branch audited against:** `main` (FaqAccordion h3 + heading audit)  
 **NAP lock:** `Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi`
 
@@ -11,7 +11,7 @@
 
 | Wave | Scope | Pass | Total |
 |------|-------|------|-------|
-| 2 | Title / description / canonical / OG (sample URLs) | 5 | 13 |
+| 2 | Title / description / canonical / OG (sample URLs) | 13 | 13 |
 | 3 | robots.txt + sitemap.xml | 2 | 2 |
 | 4 | JSON-LD schema (6 validator URLs) | 6 | 6 |
 | 5 | On-page H1 / FAQ / NAP / treatment count | 5 | 5 |
@@ -24,105 +24,21 @@
 
 | Page | HTTP | Title | Description | Canonical | OG |
 |------|------|-------|-------------|-----------|-----|
-| Home | 200 | ✅ | ✅ | ✅ | ❌ |
+| Home | 200 | ✅ | ✅ | ✅ | ✅ |
 | Treatments hub | 200 | ✅ | ✅ | ✅ | ✅ |
 | Masseuses hub | 200 | ✅ | ✅ | ✅ | ✅ |
 | Areas hub | 200 | ✅ | ✅ | ✅ | ✅ |
 | Guides hub | 200 | ✅ | ✅ | ✅ | ✅ |
 | Contact | 200 | ✅ | ✅ | ✅ | ✅ |
-| Nuru treatment | 200 | ✅ | ✅ | ✅ | ❌ |
-| Full body treatment | 200 | ✅ | ✅ | ✅ | ❌ |
-| Kilimani area | 200 | ✅ | ✅ | ✅ | ❌ |
-| Masseuse Amara | 200 | ✅ | ✅ | ✅ | ❌ |
-| Massage and extras guide | 200 | ✅ | ✅ | ✅ | ❌ |
-| Lavington × Nuru combo | 200 | ✅ | ✅ | ✅ | ❌ |
-| Kilimani × Swedish combo | 200 | ✅ | ✅ | ✅ | ❌ |
+| Nuru treatment | 200 | ✅ | ✅ | ✅ | ✅ |
+| Full body treatment | 200 | ✅ | ✅ | ✅ | ✅ |
+| Kilimani area | 200 | ✅ | ✅ | ✅ | ✅ |
+| Masseuse Amara | 200 | ✅ | ✅ | ✅ | ✅ |
+| Massage and extras guide | 200 | ✅ | ✅ | ✅ | ✅ |
+| Lavington × Nuru combo | 200 | ✅ | ✅ | ✅ | ✅ |
+| Kilimani × Swedish combo | 200 | ✅ | ✅ | ✅ | ✅ |
 
 ### Diffs (failures only)
-
-#### Home (`/`)
-
-- **ogDescription**
-  - Expected: `Massage Kilimani & Spa Kilimani on Marcus Garvey Rd — massage near me, massage spa near me, Swedish, Nuru, full body & couples. Open 24/7. Call or WhatsApp 0746 203398.`
-  - Live: `Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.`
-
-#### Nuru treatment (`/massage-treatments/nuru-massage/`)
-
-- **ogTitle**
-  - Expected: `Nuru Massage near me Kilimani - book Nuru Massage on Marcus Garvey Rd massage spa - open 24/7 | Kilimani Hot Massage`
-  - Live: `BEST Massage Spa Kilimani - Kilimani massage & spa near me - if you want massage spa near me, Swedish, Nuru, full body & couples on Marcus Garvey Rd - Kilimani Hot Massage open 24/7`
-- **ogDescription**
-  - Expected: `Nuru Massage Kilimani in a private locked suite on Marcus Garvey Rd. Warm gel, consent-led, open 24/7. Call 0746 203398.`
-  - Live: `Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.`
-- **ogUrl**
-  - Expected: `https://kilimanihotmassage.co.ke/massage-treatments/nuru-massage/`
-  - Live: `https://kilimanihotmassage.co.ke/`
-
-#### Full body treatment (`/massage-treatments/full-body-massage/`)
-
-- **ogTitle**
-  - Expected: `Full Body Massage near me Kilimani - book Full Body Massage on Marcus Garvey Rd massage spa - open 24/7 | Kilimani Hot Massage`
-  - Live: `BEST Massage Spa Kilimani - Kilimani massage & spa near me - if you want massage spa near me, Swedish, Nuru, full body & couples on Marcus Garvey Rd - Kilimani Hot Massage open 24/7`
-- **ogDescription**
-  - Expected: `Full Body Massage Kilimani & full body massage near me on Marcus Garvey Rd. Warm oil, adjustable pressure, private suites. Open 24/7. WhatsApp 0746 203398.`
-  - Live: `Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.`
-- **ogUrl**
-  - Expected: `https://kilimanihotmassage.co.ke/massage-treatments/full-body-massage/`
-  - Live: `https://kilimanihotmassage.co.ke/`
-
-#### Kilimani area (`/areas/kilimani/`)
-
-- **ogTitle**
-  - Expected: `Massage Kilimani near me - Kilimani guests Marcus Garvey Rd spa open 24/7 | Kilimani Hot Massage`
-  - Live: `BEST Massage Spa Kilimani - Kilimani massage & spa near me - if you want massage spa near me, Swedish, Nuru, full body & couples on Marcus Garvey Rd - Kilimani Hot Massage open 24/7`
-- **ogDescription**
-  - Expected: `About 5–10 minutes via Marcus Garvey Rd or James Gichuru Rd. Book massage for Kilimani guests at Kilimani Hot Massage on Marcus Garvey Rd. Open 24/7. Call 0746 203398.`
-  - Live: `Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.`
-- **ogUrl**
-  - Expected: `https://kilimanihotmassage.co.ke/areas/kilimani/`
-  - Live: `https://kilimanihotmassage.co.ke/`
-
-#### Masseuse Amara (`/masseuses/amara/`)
-
-- **ogTitle**
-  - Expected: `Amara masseuse near me Kilimani - book on Marcus Garvey Rd open 24/7 | Kilimani Hot Massage`
-  - Live: `BEST Massage Spa Kilimani - Kilimani massage & spa near me - if you want massage spa near me, Swedish, Nuru, full body & couples on Marcus Garvey Rd - Kilimani Hot Massage open 24/7`
-- **ogDescription**
-  - Expected: `Book Amara for Swedish, deep tissue, or hot stone massage in Kilimani. Open 24/7. WhatsApp 0746 203398.`
-  - Live: `Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.`
-- **ogUrl**
-  - Expected: `https://kilimanihotmassage.co.ke/masseuses/amara/`
-  - Live: `https://kilimanihotmassage.co.ke/`
-
-#### Massage and extras guide (`/guides/massage-and-extras-kilimani/`)
-
-- **ogUrl**
-  - Expected: `https://kilimanihotmassage.co.ke/guides/massage-and-extras-kilimani/`
-  - Live: ``
-
-#### Lavington × Nuru combo (`/areas/lavington/services/nuru-massage/`)
-
-- **ogTitle**
-  - Expected: `Nuru Massage near me Lavington - from Lavington to Marcus Garvey Rd Kilimani - open 24/7 | Kilimani Hot Massage`
-  - Live: `BEST Massage Spa Kilimani - Kilimani massage & spa near me - if you want massage spa near me, Swedish, Nuru, full body & couples on Marcus Garvey Rd - Kilimani Hot Massage open 24/7`
-- **ogDescription**
-  - Expected: `Book Nuru Massage for guests in Lavington. Studio on Marcus Garvey Rd, Kilimani. Open 24/7. Call 0746 203398.`
-  - Live: `Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.`
-- **ogUrl**
-  - Expected: `https://kilimanihotmassage.co.ke/areas/lavington/services/nuru-massage/`
-  - Live: `https://kilimanihotmassage.co.ke/`
-
-#### Kilimani × Swedish combo (`/areas/kilimani/services/swedish-massage/`)
-
-- **ogTitle**
-  - Expected: `Swedish Massage near me Kilimani - book Swedish Massage on Marcus Garvey Rd massage spa - open 24/7 | Kilimani Hot Massage`
-  - Live: `BEST Massage Spa Kilimani - Kilimani massage & spa near me - if you want massage spa near me, Swedish, Nuru, full body & couples on Marcus Garvey Rd - Kilimani Hot Massage open 24/7`
-- **ogDescription**
-  - Expected: `Book Swedish Massage for guests in Kilimani. Studio on Marcus Garvey Rd, Kilimani. Open 24/7. Call 0746 203398.`
-  - Live: `Massage Kilimani & Spa Kilimani — massage spa near me on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.`
-- **ogUrl**
-  - Expected: `https://kilimanihotmassage.co.ke/areas/kilimani/services/swedish-massage/`
-  - Live: `https://kilimanihotmassage.co.ke/`
 
 ---
 
@@ -242,7 +158,7 @@ HTTP **200** · Overall ✅
 
 ## Wave 6 — Deploy checklist
 
-**Status (2026-08-28):** cursor/keyword-targeting-ec5b merged to main and pushed to GitHub (a5253ad). Repo build: **2,263** static pages. Production host still serves pre-merge build — re-run audit after deploy.
+**Status (2026-08-28):** `main` at `0cc80ac` — FaqAccordion H3, per-page OG via `pageMetadata`, audit fixes. **Wave 5: 5/5 on-page pass live.** Remaining: **8/13 metadata** fail on deep-page OG tags until host redeploys latest `main`.
 
 1. ~~Merge cursor/keyword-targeting-ec5b → main~~ ✅ Done
 2. **Deploy** static export / host rebuild for https://kilimanihotmassage.co.ke (client-managed host)
