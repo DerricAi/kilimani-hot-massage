@@ -107,9 +107,9 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
       {
         heading: "Kilimani's five-minute escape to Marcus Garvey Rd",
         paragraphs: [
-          "Kilimani runs on Ngong Rd energy—cafés spilling onto sidewalks, gyms on Ring Rd Kilimani, and Yaya Centre anchoring weekly errands. Kilimani Hot Massage sits one short hop away on Marcus Garvey Rd, close enough that many Kilimani professionals treat massage like a gym cooldown rather than a weekend expedition.",
-          "The commute from most Kilimani blocks is five to ten minutes via Marcus Garvey Rd or James Gichuru Rd when Yaya junction is moving. After a leg day at a Ring Rd Kilimani studio or a client dinner on Wood Avenue, drivers slip onto Marcus Garvey Rd and arrive before traffic rebuilds toward the CBD.",
-          "Kilimani guests often mention Adams Arcade or Yaya Centre when they call 0746 203398—we translate those landmarks into turn-by-turn cues toward Kilimani. Our 24/7 hours match Kilimani's late-night restaurant scene; post-midnight bookings are normal, not exceptional.",
+          "Kilimani runs on Ngong Rd energy—cafés spilling onto sidewalks, gyms on Ring Rd Kilimani, and Yaya Centre anchoring weekly errands. Massage Kilimani and Kilimani massage searches lead to Kilimani Hot Massage one short hop away on Marcus Garvey Rd—close enough that many Kilimani professionals treat bodywork like a gym cooldown rather than a weekend expedition.",
+          "Spa Kilimani guests compare mall spas with our street-front suites: locked doors, no retail foot traffic, and twenty-four-hour availability that matches Kilimani's late-night restaurant scene. The commute from most Kilimani blocks is five to ten minutes via Marcus Garvey Rd or James Gichuru Rd when Yaya junction is moving.",
+          "Kilimani guests often mention Adams Arcade or Yaya Centre when they call 0746 203398—we translate those landmarks into turn-by-turn cues toward Kilimani. Post-midnight bookings are normal, not exceptional.",
         ],
       },
       {
@@ -146,6 +146,10 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
       },
     ],
     faqs: [
+      {
+        q: "Best massage spa near me in Kilimani?",
+        a: "Kilimani Hot Massage on Marcus Garvey Rd is the massage spa near me most Kilimani guests pin—Swedish, Nuru, full body, couples, and private suites open 24/7. WhatsApp 0746 203398 from Yaya Centre or Wood Avenue for directions.",
+      },
       {
         q: "How far is Kilimani Hot Massage from Kilimani?",
         a: "Most Kilimani addresses reach our Marcus Garvey Rd spa in five to ten minutes via Marcus Garvey Rd or James Gichuru Rd. Yaya Centre is roughly one junction away from Kilimani when traffic is light.",
