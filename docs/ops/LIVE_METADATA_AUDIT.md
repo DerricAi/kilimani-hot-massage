@@ -1,7 +1,7 @@
 # Live Metadata Audit Report
 
 **Site:** https://kilimanihotmassage.co.ke  
-**Run:** 2026-08-28 14:06:26 UTC  
+**Run:** 2026-08-28 14:07:31 UTC  
 **Repo branch audited against:** `main` (FaqAccordion h3 + heading audit)  
 **NAP lock:** `Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi`
 
@@ -16,7 +16,7 @@
 | 4 | JSON-LD schema (6 validator URLs) | 6 | 6 |
 | 5 | On-page H1 / FAQ / NAP / treatment count | 5 | 5 |
 
-> **Note:** Production verified against `main` on 2026-08-28 — all audit waves green.
+> **Status:** Production matches repo — all audit waves green.
 
 ---
 
