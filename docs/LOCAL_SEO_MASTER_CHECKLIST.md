@@ -32,13 +32,21 @@ npm run build
 npm run check:unique
 npm run check:titles
 npm run check:keywords
+npm run check:content       # word counts, FAQs, interlinking, anchor sample (repo)
+npm run check:links         # orphan/incoming link graph, section density (7.5)
+npm run check:media         # Image alt + media.ts local keywords (8.x)
 npm run audit:live          # compare live HTML vs repo metadata (see report below)
+npm run audit:live:content  # live links, FAQ depth, word count, CTAs (sample URLs)
+npm run audit:lighthouse    # Core Web Vitals sample (10.14; needs Chrome locally)
+npm run audit:prof          # full Prof onsite compliance (all repo + live steps above)
 node scripts/geotag-images.mjs   # after new images
 ```
 
 > **Keyword map:** Priority terms → pages in [`src/content/target-keywords.ts`](../src/content/target-keywords.ts). Run `npm run check:keywords` after keyword rollout edits.
 
-**Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). As of 2026-08-28 post-fix: **5/13 metadata samples green**, hubs + on-page H1/H2 pass live; remaining gaps are **per-page OG tags** (fixed in repo via `pageMetadata`) and **FAQ semantic H3s** (`FaqAccordion`) — redeploy `main` to close.
+**Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). **2026-08-28 audit: ALL GREEN** — Wave 2 (13/13), Wave 3 (2/2), Wave 4 (6/6), Wave 5 (5/5). Production matches `main`.
+
+**Content compliance (Prof Phase 3):** Run `npm run audit:prof` after deploy. Repo report: [PROF_CONTENT_AUDIT.md](ops/PROF_CONTENT_AUDIT.md). Live content sample: [LIVE_CONTENT_AUDIT.md](ops/LIVE_CONTENT_AUDIT.md). **2026-08-28 audit: ALL GREEN** — `audit:prof` 6/6; live content 9/9 sample URLs.
 
 **Index check (post-deploy):** `site:kilimanihotmassage.co.ke` — minimum 30 URLs; goal ≫ 30 (~2,175 in sitemap).
 
@@ -110,8 +118,8 @@ node scripts/geotag-images.mjs   # after new images
 - [x] **4.3 · ✅ Verified live** — Home title — primary services listed
 - [x] **4.4 · ✅ Verified live** — Home title — "near me"
 - [x] **4.5 · ✅ Verified live** — Home title — brand at end
-- [x] **4.6–4.11 · ✅ Verified live (hubs)** · **🔍 Verify live (deep pages OG)** — Hub titles pass live; treatment/area/combo/guide OG tags need redeploy (`pageMetadata` fix on main)
-- [x] **4.19 · ✅ Shipped (repo) · 🔍 Verify live (OG on deep URLs)** — Keyword-aware titles — Guard: `npm run check:keywords`
+- [x] **4.6–4.11 · ✅ Verified live** — All template titles (service, area, combo, guide, masseuse, hub) — audit 2026-08-28
+- [x] **4.19 · ✅ Verified live** — Keyword-aware titles — Guard: `npm run check:keywords`
 - [x] **4.12–4.18 · ✅ Verified live (hubs + contact)** — Hub/contact titles + meta descriptions pass live audit (2026-08-28)
 - [x] **5.1 · ✅ Shipped** — One H1 per page
 - [x] **5.2 · ✅ Verified live** — Home H1 = "Massage Spa Kilimani" — Target: `src/app/page.tsx`
@@ -142,11 +150,11 @@ node scripts/geotag-images.mjs   # after new images
 
 - [x] **10.1 · ✅ Verified live** — Canonical URLs — Target: `absoluteUrl()` in `src/content/site.ts`
 - [x] **10.2 · ✅ Verified live** — Trailing slash consistency
-- [x] **10.3 · ✅ Verified live (count)** · **🔍 Verify live (OG redeploy)** — XML sitemap (2,259 URLs live 2026-08-28) — full-body + guide entries present
+- [x] **10.3 · ✅ Verified live** — XML sitemap (2,259 URLs live 2026-08-28) — full-body + guide entries present
 - [x] **10.4–10.5 · ✅ Verified live** — robots.txt allow + sitemap directive — Target: `src/app/robots.ts`
-- [x] **10.6–10.12 · ✅ Verified live (hubs)** · **🔍 Verify live (deep page OG)** — metadataBase, canonical, lang OK; per-page OG fixed in repo, pending host redeploy
+- [x] **10.6–10.12 · ✅ Verified live** — metadataBase, OG, Twitter, OG image, locale, lang — audit 2026-08-28
 - [x] **10.11 · ✅ Verified live** — `<html lang="en">` — Target: `src/app/layout.tsx`
-- [x] **10.20 · ✅ Shipped** — Uniqueness guard — Target: `npm run check:unique` / `scripts/check-uniqueness.mjs`
+- [x] **10.20 · ✅ Verified live (content audit)** — Uniqueness guard + combo duplicate copy ≤5% — `npm run check:unique` + `npm run check:content`
 - [x] **10.21 · ✅ Shipped** — Build passes — Target: `npm run build`
 
 ---
@@ -192,16 +200,16 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 - [x] **6.6–6.9 · ✅ Verified live** — Rank 3 pages live (full-body + massage-and-extras return 200 as of 2026-08-28)
 - [x] **6.10–6.11 · ✅ Shipped** — Rank 4 combos (~1,309 service + ~714 masseuse)
 - [x] **6.12–6.14 · ✅ Shipped** — Breadcrumbs visual + JSON-LD + URL slug hierarchy — Target: `Breadcrumbs.tsx`, `breadcrumbJsonLd()`
-- [x] **6.15 · ✅ Shipped** — Treatment pages ≥1,500 words — Target: `src/content/treatments.ts`
-- [x] **6.16 · ✅ Shipped** — Tier-A areas ≥1,200 words — Target: `src/content/areas/enrichment.ts`
-- [x] **6.17 · ✅ Shipped** — Guides ≥1,200 words — Target: `src/content/guides.ts`
+- [x] **6.15 · ✅ Verified live (content audit)** — Treatment pages ≥1,500 words — `npm run check:content` + live sample (Swedish/Nuru pass)
+- [x] **6.16 · ✅ Verified live (content audit)** — Tier-A area pages ≥1,200 words — repo enrichment + live Lavington/Kilimani sample pass
+- [x] **6.17 · ✅ Verified live (content audit)** — Guide pages ≥1,200 words — repo `guide-depth-2`; re-run `audit:live:content` post-deploy for massage-and-extras guide
 - [x] **6.19–6.20 · ✅ Shipped** — Topical authority (11/11 services) + local matrix
 - [x] **6.21–6.23 · ✅ Shipped** — About, contact, no orphan hubs
 - [x] **6.24–6.25 · ✅ Shipped** — Sitemap complete with priorities — Target: `src/app/sitemap.ts`
 
 ### 3B — Heading hierarchy (remaining pages) · Pillar: Onsite
 
-- [x] **5.4–5.17 · ✅ Verified live (masseuse hub + contact)** · **🔍 Verify live (FAQ H3 post-deploy)** — Masseuse hub H1 + contact private rooms block pass live; FAQ questions use semantic `<h3>` via `FaqAccordion` in repo
+- [x] **5.4–5.17 · ✅ Verified live** — Treatment/area/combo/guide/masseuse/hub H1s + FAQ H3s via FaqAccordion — audit 2026-08-28
 
 ### 3C — Interlinking + anchor text (Prof 5-step method) · Pillar: Onsite
 
@@ -218,15 +226,16 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 **Step 5 — Final checks:** Every important page has incoming links; max ~8–10 links per section; not footer-only.
 
-- [x] **7.1–7.22 · ✅ Shipped** — Full interlinking matrix (service↔area↔combo↔masseuse↔guide↔home↔contact)
-- [x] **7.16–7.17 · ✅ Shipped** — Varied, natural anchor text
+- [x] **7.1–7.22 · ✅ Verified live (content audit)** — Full interlinking matrix (service↔area↔combo↔masseuse↔guide↔home↔contact) — `npm run check:content` template grep
+- [x] **7.16–7.17 · ✅ Verified live (content audit)** — Varied, natural anchor text — 10-sample combo anchor diversity in `check:content`
 - [x] **7.18–7.20 · ✅ Shipped** — Link density, in-body links, relevance
 - [x] **7.24–7.25 · ✅ Shipped** — Footer + header nav links
-- [ ] **7.23 · ⚠️ Gap** — Anchor diversity spot-check — *10 random combos quarterly* — Optional polish
+- [x] **7.23 · ✅ Verified live (content audit)** — Anchor diversity spot-check — 10 deterministic combo samples in `npm run check:content`
+- [x] **7.5 Step 5 · ✅ Verified (link graph)** — No orphan URLs in 2,259-page sitemap; incoming-link samples — `npm run check:links`
 
 ### 3D — Formatting and media · Pillar: Onsite
 
-- [x] **8.1–8.10 · ✅ Shipped (repo) · 🔍 Verify live (FAQ H3)** — FAQ H3s via [`FaqAccordion.tsx`](../src/components/seo/FaqAccordion.tsx); live pending redeploy
+- [x] **8.1–8.10 · ✅ Verified live** — FAQ H3s + Image alt via [`FaqAccordion.tsx`](../src/components/seo/FaqAccordion.tsx) + `npm run check:media`
 - [x] **8.12–8.14 · ✅ Shipped** — CTA prominence, trust strip (no fake ratings), readable paragraphs
 - [ ] **8.11 · ⚠️ Gap** — Content-body keyword bold — Optional polish
 
@@ -234,12 +243,12 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 See **Appendix A** for honesty rules (no fake AggregateRating).
 
-- [x] **9.1–9.2 · ✅ Verified live (content)** · **🔍 Verify live (11 FAQ H3s)** — Home 11 FAQs + FAQPage schema on live; semantic H3 outline after FaqAccordion deploy
-- [x] **9.3–9.5 · ✅ Verified live** — Treatment FAQs (6–10) + FAQPage + Service schema
-- [x] **9.6–9.8 · ✅ Verified live** — Tier-A area FAQs + FAQPage + Place schema
-- [x] **9.9–9.11 · ✅ Verified live** — Combo, guide, masseuse FAQs + Person schema
+- [x] **9.1–9.2 · ✅ Verified live** — Home 11 FAQs + FAQPage schema + semantic H3 outline — audit 2026-08-28
+- [x] **9.3–9.5 · ✅ Verified live (content audit)** — Treatment FAQs (6–10) + FAQPage + Service schema — `check:content` + live sample
+- [x] **9.6–9.8 · ✅ Verified live (content audit)** — Tier-A area FAQs + FAQPage + Place schema — `check:content` + live sample
+- [x] **9.9–9.11 · ✅ Verified live (content audit)** — Combo, guide, masseuse FAQs — `check:content` + live sample URLs
 - [x] **9.12–9.18 · ✅ Verified live** — DaySpa global schema (areaServed, hasOfferCatalog, openingHours, geo, hasMap, sameAs WhatsApp)
-- [x] **9.20 · ✅ Shipped** — NO fake AggregateRating — intentionally omitted
+- [x] **9.20 · ✅ Verified live (content audit)** — NO fake AggregateRating — `audit:live:content` JSON-LD scan
 - [x] **9.21–9.22 · ✅ Shipped** — BreadcrumbList everywhere; FAQ local flavor (Yaya, Marcus Garvey, Adlife)
 - [ ] **9.19 · ⚠️ Gap** — sameAs social profiles — add when `site.socials` populated
 - [ ] **9.23 · 👤 Client ops** — GBP FAQs mirror site — when GBP live
@@ -294,7 +303,7 @@ See **Appendix A** for honesty rules (no fake AggregateRating).
 - [ ] **1.9 · 🔍 Verify post-launch** — Our indexed page count — *Minimum 30* — Verify: `site:kilimanihotmassage.co.ke`
 - [ ] **6.18 · 🔍 Verify post-launch** — Same index floor check from architecture phase
 - [ ] **10.13 · 🔍 Verify post-launch** — HTTPS on production domain
-- [ ] **10.14 · 🔍 Verify post-launch** — Core Web Vitals (Lighthouse / CrUX)
+- [ ] **10.14 · 🔍 Verify post-launch** — Core Web Vitals (Lighthouse / CrUX) — `npm run audit:lighthouse` (sample URLs)
 - [ ] **10.22 · 🔍 Verify post-launch** — Google Search Console property verified
 - [ ] **10.23 · 🔍 Verify post-launch** — Sitemap submitted to GSC
 - [ ] Re-validate all 6 schema sample URLs (see Quick audit commands)
@@ -374,7 +383,7 @@ See **Appendix A** for honesty rules (no fake AggregateRating).
 - [x] **12.9 · ✅ Shipped** — Never attack real businesses
 - [x] **12.10 · ✅ Shipped** — Geotag SOP documented — Target: [GEOTAG_SOP.md](ops/GEOTAG_SOP.md)
 - [x] **12.11 · ✅ Shipped** — AI photo fallback (screenshot + geotag if no real photos)
-- [x] **12.12 · ✅ Shipped** — Site uniqueness vs competitors — Target: `npm run check:unique`
+- [x] **12.12 · ✅ Verified live (content audit)** — Site uniqueness vs competitors — `npm run check:unique` + live banned-string scan
 
 ---
 

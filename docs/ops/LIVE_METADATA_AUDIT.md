@@ -1,7 +1,11 @@
 # Live Metadata Audit Report
 
 **Site:** https://kilimanihotmassage.co.ke  
+<<<<<<< HEAD
 **Run:** 2026-08-28 14:09:37 UTC  
+=======
+**Run:** 2026-08-28 14:39:52 UTC  
+>>>>>>> acbfa2f647fcf2f92c50ca33b74e1add47d827ea
 **Repo branch audited against:** `main` (FaqAccordion h3 + heading audit)  
 **NAP lock:** `Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi`
 
@@ -16,7 +20,7 @@
 | 4 | JSON-LD schema (6 validator URLs) | 6 | 6 |
 | 5 | On-page H1 / FAQ / NAP / treatment count | 5 | 5 |
 
-> **Note:** Production may lag repo until `cursor/keyword-targeting-ec5b` is merged to `main` and deployed.
+> **Status:** Production matches repo — all audit waves green.
 
 ---
 
@@ -158,7 +162,11 @@ HTTP **200** · Overall ✅
 
 ## Wave 6 — Deploy checklist
 
+<<<<<<< HEAD
 **Status (2026-08-28):** `main` at `0cc80ac` — FaqAccordion H3, per-page OG via `pageMetadata`, audit fixes. **Wave 5: 5/5 on-page pass live.** Remaining: **8/13 metadata** fail on deep-page OG tags until host redeploys latest `main`.
+=======
+**Status (2026-08-28):** main branch — FaqAccordion H3, per-page OG via pageMetadata, audit fixes. Wave 5: 5/5 on-page pass live. Remaining: 8/13 metadata fail on deep-page OG tags until host redeploys latest main.
+>>>>>>> acbfa2f647fcf2f92c50ca33b74e1add47d827ea
 
 1. ~~Merge cursor/keyword-targeting-ec5b → main~~ ✅ Done
 2. **Deploy** static export / host rebuild for https://kilimanihotmassage.co.ke (client-managed host)

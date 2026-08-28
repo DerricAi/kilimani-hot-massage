@@ -703,6 +703,17 @@ function buildReport({ metadata, technical, schema, onpage, runAt }) {
   const metaPass = metadata.filter((r) => r.allPass).length;
   const metaTotal = metadata.length;
 
+  const onpagePass = onpage.filter((o) => o.pass).length;
+  const allGreen =
+    metaPass === metaTotal &&
+    technical.robots.pass &&
+    technical.sitemap.pass &&
+    schema.every((s) => s.pass) &&
+    onpage.every((o) => o.pass);
+  const statusNote = allGreen
+    ? "> **Status:** Production matches repo — all audit waves green."
+    : "> **Note:** Some waves failed — redeploy main and re-run npm run audit:live.";
+
   let md = `# Live Metadata Audit Report
 
 **Site:** ${LIVE_BASE}  
@@ -719,9 +730,9 @@ function buildReport({ metadata, technical, schema, onpage, runAt }) {
 | 2 | Title / description / canonical / OG (sample URLs) | ${metaPass} | ${metaTotal} |
 | 3 | robots.txt + sitemap.xml | ${technical.robots.pass && technical.sitemap.pass ? 2 : technical.robots.pass || technical.sitemap.pass ? 1 : 0} | 2 |
 | 4 | JSON-LD schema (6 validator URLs) | ${schema.filter((s) => s.pass).length} | ${schema.length} |
-| 5 | On-page H1 / FAQ / NAP / treatment count | ${onpage.filter((o) => o.pass).length} | ${onpage.length} |
+| 5 | On-page H1 / FAQ / NAP / treatment count | ${onpagePass} | ${onpage.length} |
 
-> **Note:** Production may lag repo until \`cursor/keyword-targeting-ec5b\` is merged to \`main\` and deployed.
+${statusNote}
 
 ---
 
@@ -823,7 +834,11 @@ Manual re-validation: [validator.schema.org](https://validator.schema.org/)
 
 ## Wave 6 — Deploy checklist
 
+<<<<<<< HEAD
 **Status (2026-08-28):** \`main\` at \`0cc80ac\` — FaqAccordion H3, per-page OG via \`pageMetadata\`, audit fixes. **Wave 5: 5/5 on-page pass live.** Remaining: **8/13 metadata** fail on deep-page OG tags until host redeploys latest \`main\`.
+=======
+**Status (2026-08-28):** main branch — FaqAccordion H3, per-page OG via pageMetadata, audit fixes. Wave 5: 5/5 on-page pass live. Remaining: 8/13 metadata fail on deep-page OG tags until host redeploys latest main.
+>>>>>>> acbfa2f647fcf2f92c50ca33b74e1add47d827ea
 
 1. ~~Merge cursor/keyword-targeting-ec5b → main~~ ✅ Done
 2. **Deploy** static export / host rebuild for ${LIVE_BASE} (client-managed host)

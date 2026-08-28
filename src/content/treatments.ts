@@ -330,6 +330,15 @@ const treatmentsData: TreatmentData[] = [
           "Browse Swedish, body-to-body, and couples pages if you want to compare modalities before committing; full body remains the simplest phrase for head-to-toe oil massage near Marcus Garvey Rd.",
         ],
       },
+      {
+        heading: "Full body massage near Yaya Centre and county commutes",
+        paragraphs: [
+          "Guests searching full body massage near me after Yaya Centre errands often want one phrase that maps to a complete table session—not a partial back rub between shopping bags. Marcus Garvey Rd suites are sized for full sequences: neck and shoulders after laptop weeks, lumbar after Ngong Rd drives, legs after Ring Rd Kilimani gym days, feet before you walk home to Kileleshwa.",
+          "County commuters from Westlands, Upper Hill, Karen, and Lavington use full body massage as the neutral booking word when they are unsure whether tonight needs Swedish calm or deep tissue focus. WhatsApp 0746 203398 with full body and your pressure preference; therapists translate that into stroke depth without upselling unrelated modalities mid-session.",
+          "Hotel guests near Adlife Plaza and Valley Arcade appreciate that full body work stays draped and professional unless you explicitly book adult categories elsewhere on the menu. Discreet check-in, locked door, shower after oil—standard for every hour including post-midnight arrivals from Wood Avenue dinners or redeye flights into JKIA.",
+          "Monthly full body massage from Kilimani and Kileleshwa regulars prevents small tensions from becoming chronic headaches. Same Marcus Garvey Rd address, same NAP on every receipt: Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -355,6 +364,14 @@ const treatmentsData: TreatmentData[] = [
       {
         q: "Which therapist for firm full body pressure?",
         a: "Request Keisha or Amara for firmer back and shoulder work; Zuri for balanced medium pressure. Name your preference on WhatsApp when booking from Kilimani or Kileleshwa.",
+      },
+      {
+        q: "Why book full body massage on Marcus Garvey Rd instead of mall chairs?",
+        a: "Mall express chairs skip legs, feet, and quiet suite time. Full body at Kilimani Hot Massage covers the complete map in a private room near Yaya Centre—WhatsApp 0746 203398 to reserve.",
+      },
+      {
+        q: "Is full body massage near Yaya Centre walkable after errands?",
+        a: "Many Kilimani guests drive five minutes from Yaya Centre or Adlife Plaza to Marcus Garvey Rd. Message 0746 203398 with full body and your ETA so oil and suite temperature are ready.",
       },
     ],
     relatedSlugs: ["swedish-massage", "body-to-body-massage", "couples-massage"],
