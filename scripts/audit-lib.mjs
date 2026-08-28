@@ -341,6 +341,15 @@ export function parseGuideBlocks(source) {
       sectionParagraphs: extractParagraphsFromSections(block),
       faqCount: countFaqsInBlock(block),
       faqTexts: extractFaqTexts(block),
+      relatedTreatments: (block.match(/relatedTreatments:\s*\[([\s\S]*?)\]/)?.[1] ?? "")
+        .match(/"([a-z-]+)"/g)
+        ?.map((s) => s.replace(/"/g, "")) ?? [],
+      relatedAreas: (block.match(/relatedAreas:\s*\[([\s\S]*?)\]/)?.[1] ?? "")
+        .match(/"([a-z-]+)"/g)
+        ?.map((s) => s.replace(/"/g, "")) ?? [],
+      relatedGuides: (block.match(/relatedGuides:\s*\[([\s\S]*?)\]/)?.[1] ?? "")
+        .match(/"([a-z-]+)"/g)
+        ?.map((s) => s.replace(/"/g, "")) ?? [],
     });
   }
   return guides;
@@ -358,10 +367,25 @@ export function parseMasseuseBlocks(source) {
     masseuses.push({
       slug,
       name: extractStringField(block, "name"),
+      tagline: extractStringField(block, "tagline"),
+      shortBio: extractStringField(block, "shortBio"),
+      specialties: (block.match(/specialties:\s*\[([\s\S]*?)\]/)?.[1] ?? "")
+        .match(/"([a-z-]+)"/g)
+        ?.map((s) => s.replace(/"/g, "")) ?? [],
       faqCount: countFaqsInBlock(block),
     });
   }
   return masseuses;
+}
+
+function parseStringArray(chunk, field) {
+  const m = chunk.match(new RegExp(`${field}:\\s*\\[([\\s\\S]*?)\\]`, "m"));
+  if (!m) return [];
+  const items = [];
+  const re = /"((?:\\.|[^"\\])*)"/g;
+  let im;
+  while ((im = re.exec(m[1])) !== null) items.push(unescapeTsString(im[1]));
+  return items;
 }
 
 export function parseAreaRecords(source) {
@@ -375,15 +399,125 @@ export function parseAreaRecords(source) {
     const intro = chunk.match(/intro:\s*\n?\s*"((?:\\.|[^"\\])*)"/)?.[1];
     const introClean = intro ? unescapeTsString(intro) : "";
     const commute = chunk.match(/commute:\s*\n?\s*"((?:\\.|[^"\\])*)"/)?.[1];
+    const constituencyName =
+      chunk.match(/constituencyName:\s*"([^"]+)"/)?.[1] ?? name;
     areas.push({
       slug,
       name,
       tier,
       intro: introClean,
       commute: commute ? unescapeTsString(commute) : "",
+      constituencyName,
+      landmarks: parseStringArray(chunk, "landmarks"),
+      roads: parseStringArray(chunk, "roads"),
+      neighboringAreas: parseStringArray(chunk, "neighboringAreas"),
     });
   }
   return areas;
+}
+
+const TIER_B_PHONE = "0746 203398";
+const TIER_B_SPA = "Kilimani Hot Massage";
+const TIER_B_ADDRESS = "Marcus Garvey Rd, Kilimani";
+
+/** Mirrors generateTierBEnrichment() in enrichment.ts for word-count guards. */
+export function tierBEnrichmentText(area) {
+  const lm = area.landmarks.slice(0, 4);
+  const rd = area.roads.slice(0, 4);
+  const nb = area.neighboringAreas.slice(0, 4);
+  const sections = [
+    area.intro,
+    `${TIER_B_SPA} on ${TIER_B_ADDRESS} welcomes guests from ${area.name} in ${area.constituencyName} constituency. ${area.commute} puts our treatment rooms within practical reach whether you are coming from ${lm[0] ?? area.name}, finishing errands near ${lm[1] ?? "local shops"}, or heading in after work along ${rd[0] ?? "main roads"}.`,
+    `Call ${TIER_B_PHONE} any time—we are open 24/7. Reception knows ${area.name} routes via ${rd.slice(0, 2).join(" and ") || "major connectors"} and can send a map pin before you leave.`,
+    `When ${area.name} visitors book, they often mention ${lm.join(", ")} as their starting point. Drivers typically merge toward Marcus Garvey Rd using ${rd[0] ?? "the nearest arterial"}; if traffic stacks near ${lm[2] ?? lm[0]}, ${rd[1] ?? "alternate roads"} offers a smoother approach to our Kilimani studio on Marcus Garvey Rd.`,
+    `First-time guests from ${area.name} should tell ride-hail drivers "${TIER_B_SPA}, Marcus Garvey Rd, Kilimani." That phrasing works better than generic "massage near me" searches that scatter pins across Nairobi.`,
+    `We serve ${area.name} alongside neighbours in ${nb.join(", ") || "surrounding areas"}—many share the same commute pattern and return monthly once they know the drive time from ${lm[0] ?? area.name}.`,
+    `${area.name} professionals often book deep tissue after long days near ${lm[0] ?? "local offices"}. Swedish and aromatherapy sessions suit weekend recovery when you have crossed ${rd[2] ?? rd[0] ?? "town"} from home.`,
+    `Couples and friends visiting from ${area.name} request side-by-side rooms—plan ahead on Friday nights. Thai massage helps if you have been on your feet around ${lm[1] ?? "the neighbourhood"}.`,
+    `Unsure what to choose? WhatsApp ${TIER_B_PHONE} with your ${area.name} location and how much time you have; we will recommend a treatment length that fits your schedule and drive back via ${rd[3] ?? rd[0] ?? "your usual road"}.`,
+    `${area.commute} is typical from ${area.name} to our Kilimani studio when ${rd[0] ?? "main roads"} flow freely. Peak hours slow approaches near ${lm[2] ?? lm[0]}—many ${area.name} clients book mid-morning or after 9 p.m. to skip congestion.`,
+    `If you live closer to ${nb[0] ?? "a neighbouring area"}, you may arrive faster by approaching from ${nb[1] ?? "Lavington"} side streets rather than retracing ${rd[1] ?? "the highway"}.`,
+    `Parking on Marcus Garvey Rd is usually available; ${area.name} drivers with large vehicles should call ahead so we can suggest the widest pull-off near our gate.`,
+    `${area.name} does not stop at sunset—neither do we. Hospital shifts, late flights, and ${lm[3] ?? "local"} event nights create demand for massage after traditional spas close.`,
+    `Discreet suites off the ${area.name}–Lavington corridor appeal to guests who want calm without CBD noise. The same team answers ${TIER_B_PHONE} at noon or midnight.`,
+    `Save therapist preferences after your first visit from ${area.name}; repeat bookings through ${rd[0] ?? "your usual route"} become faster when reception already knows your pressure and scent choices.`,
+  ];
+  const faqs = [
+    `From ${area.name}, ${area.commute} to our Marcus Garvey Rd spa when ${rd[0] ?? "roads"} are clear. Rush hour near ${lm[0] ?? area.name} can add time—call ${TIER_B_PHONE} for live routing advice.`,
+    `${area.name} guests often start near ${lm.join(", ")}. We are on Marcus Garvey Rd in Kilimani—use ${TIER_B_SPA} as your ride-hail destination for accurate pins.`,
+    `Common ${area.name} routes include ${rd.join(", ")}. Reception at ${TIER_B_PHONE} can suggest the fastest option based on time of day and traffic near ${lm[1] ?? area.name}.`,
+    `Yes. ${area.name} clients book early mornings and late nights alike. We never close—ideal when your schedule around ${lm[2] ?? area.name} runs past traditional spa hours.`,
+    `${area.name} couples are welcome. Reserve weekend slots in advance; weekday evenings from ${area.name} often have availability with ${area.commute} travel time factored in.`,
+    `Street parking near Marcus Garvey Rd usually works for ${area.name} drivers. Text ${TIER_B_PHONE} if you need guidance approaching from ${rd[1] ?? rd[0] ?? area.name}.`,
+    `Deep tissue and Swedish lead bookings from ${area.name}. Tell us if you walked from ${lm[0] ?? area.name} or drove via ${rd[0] ?? "main roads"}—we will tailor focus areas.`,
+    `Yes. We serve ${area.name} plus ${nb.slice(0, 3).join(", ") || "surrounding neighbourhoods"} from one Marcus Garvey Rd location. ${area.commute} from ${area.name} is similar for many neighbours.`,
+  ];
+  const tips = [
+    `From ${area.name}, save our WhatsApp pin after your first visit—faster than searching near ${lm[0] ?? "home"} each time.`,
+    `Mid-morning slots avoid peak traffic between ${lm[1] ?? area.name} and Lavington.`,
+    `Mention ${lm[2] ?? lm[0] ?? area.name} when calling ${TIER_B_PHONE} so reception can estimate your ETA.`,
+  ];
+  return [...sections, ...faqs, ...tips].join(" ");
+}
+
+export function serviceComboMetaDescription(areaName, treatmentName) {
+  return `Book ${treatmentName} for guests in ${areaName}. Studio on Marcus Garvey Rd, Kilimani. Open 24/7. Call ${TIER_B_PHONE}.`;
+}
+
+export function masseuseComboMetaDescription(areaName, masseuseName, tagline) {
+  return `Request ${masseuseName} when visiting from ${areaName}. ${tagline} Open 24/7 in Kilimani. WhatsApp ${TIER_B_PHONE}.`;
+}
+
+/** Simplified masseuse×area combo body (mirrors buildMasseuseParagraphs, first template variant). */
+export function masseuseComboBodyText(area, masseuse) {
+  const landmark = area.landmarks[0] ?? area.name;
+  const landmark2 = area.landmarks[1] ?? landmark;
+  const road = area.roads[0] ?? "Marcus Garvey Rd";
+  const specs = (masseuse.specialties ?? []).map((s) => s.replace(/-/g, " ")).join(", ");
+  const nb = area.neighboringAreas.slice(0, 3).join(", ");
+  return [
+    `${masseuse.name} welcomes ${area.name} guests at our Marcus Garvey Rd studio. ${area.commute}`,
+    masseuse.shortBio ?? "",
+    area.intro,
+    `Near ${landmark} or ${landmark2}, message ${masseuse.name} on WhatsApp ${TIER_B_PHONE} before you leave ${area.name}.`,
+    `${masseuse.tagline ?? ""} Specialties: ${specs}. Open 24/7 for ${area.name} guests finishing late or booking early quiet.`,
+    `Guests from neighbouring wards including ${nb || "nearby areas"} share the same ${masseuse.name} booking line—mention ${area.name} for commute-aware holds.`,
+    `Full profile: /masseuses/${masseuse.slug}/. Area hub: /areas/${area.slug}/. WhatsApp ${TIER_B_PHONE} with ${masseuse.name} and ${area.name}.`,
+    `Driving from ${road} across ${area.constituencyName ?? area.name}? Name ${masseuse.name} when booking so we confirm her shift on Marcus Garvey Rd.`,
+  ].join(" ");
+}
+
+export function buildSitemapPaths(areas, treatments, masseuses, guides) {
+  const paths = new Set([
+    "/",
+    "/massage-treatments/",
+    "/areas/",
+    "/masseuses/",
+    "/guides/",
+    "/about-us/",
+    "/contact/",
+  ]);
+  for (const t of treatments) paths.add(`/massage-treatments/${t.slug}/`);
+  for (const m of masseuses) paths.add(`/masseuses/${m.slug}/`);
+  for (const g of guides) paths.add(`/guides/${g.slug}/`);
+  for (const a of areas) {
+    paths.add(`/areas/${a.slug}/`);
+    for (const t of treatments) paths.add(`/areas/${a.slug}/services/${t.slug}/`);
+    for (const m of masseuses) paths.add(`/areas/${a.slug}/masseuses/${m.slug}/`);
+  }
+  return [...paths];
+}
+
+export function normPath(path) {
+  if (path === "/" || path === "") return "/";
+  const p = path.startsWith("/") ? path : `/${path}`;
+  return p.endsWith("/") ? p : `${p}/`;
+}
+
+export function addIncoming(incoming, from, to) {
+  const t = normPath(to);
+  if (!incoming.has(t)) incoming.set(t, new Set());
+  incoming.get(t).add(normPath(from));
 }
 
 export function parseAreaEnrichmentBlock(block) {

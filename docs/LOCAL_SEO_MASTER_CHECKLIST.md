@@ -33,9 +33,12 @@ npm run check:unique
 npm run check:titles
 npm run check:keywords
 npm run check:content       # word counts, FAQs, interlinking, anchor sample (repo)
+npm run check:links         # orphan/incoming link graph, section density (7.5)
+npm run check:media         # Image alt + media.ts local keywords (8.x)
 npm run audit:live          # compare live HTML vs repo metadata (see report below)
 npm run audit:live:content  # live links, FAQ depth, word count, CTAs (sample URLs)
-npm run audit:prof          # full Prof onsite compliance (all steps above)
+npm run audit:lighthouse    # Core Web Vitals sample (10.14; needs Chrome locally)
+npm run audit:prof          # full Prof onsite compliance (all repo + live steps above)
 node scripts/geotag-images.mjs   # after new images
 ```
 
@@ -228,10 +231,11 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 - [x] **7.18–7.20 · ✅ Shipped** — Link density, in-body links, relevance
 - [x] **7.24–7.25 · ✅ Shipped** — Footer + header nav links
 - [x] **7.23 · ✅ Verified live (content audit)** — Anchor diversity spot-check — 10 deterministic combo samples in `npm run check:content`
+- [x] **7.5 Step 5 · ✅ Verified (link graph)** — No orphan URLs in 2,259-page sitemap; incoming-link samples — `npm run check:links`
 
 ### 3D — Formatting and media · Pillar: Onsite
 
-- [x] **8.1–8.10 · ✅ Verified live** — FAQ H3s via [`FaqAccordion.tsx`](../src/components/seo/FaqAccordion.tsx) — audit 2026-08-28
+- [x] **8.1–8.10 · ✅ Verified live** — FAQ H3s + Image alt via [`FaqAccordion.tsx`](../src/components/seo/FaqAccordion.tsx) + `npm run check:media`
 - [x] **8.12–8.14 · ✅ Shipped** — CTA prominence, trust strip (no fake ratings), readable paragraphs
 - [ ] **8.11 · ⚠️ Gap** — Content-body keyword bold — Optional polish
 
@@ -299,7 +303,7 @@ See **Appendix A** for honesty rules (no fake AggregateRating).
 - [ ] **1.9 · 🔍 Verify post-launch** — Our indexed page count — *Minimum 30* — Verify: `site:kilimanihotmassage.co.ke`
 - [ ] **6.18 · 🔍 Verify post-launch** — Same index floor check from architecture phase
 - [ ] **10.13 · 🔍 Verify post-launch** — HTTPS on production domain
-- [ ] **10.14 · 🔍 Verify post-launch** — Core Web Vitals (Lighthouse / CrUX)
+- [ ] **10.14 · 🔍 Verify post-launch** — Core Web Vitals (Lighthouse / CrUX) — `npm run audit:lighthouse` (sample URLs)
 - [ ] **10.22 · 🔍 Verify post-launch** — Google Search Console property verified
 - [ ] **10.23 · 🔍 Verify post-launch** — Sitemap submitted to GSC
 - [ ] Re-validate all 6 schema sample URLs (see Quick audit commands)

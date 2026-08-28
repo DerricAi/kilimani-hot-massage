@@ -18,6 +18,11 @@ import {
   parseTierASlugs,
   parseServiceComboExtras,
   comboOpeningParagraph,
+  tierBEnrichmentText,
+  serviceComboMetaDescription,
+  masseuseComboMetaDescription,
+  masseuseComboBodyText,
+  LOCAL_FLAVOR_KEYWORDS,
 } from "./audit-lib.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -90,6 +95,21 @@ for (const g of guides) {
   }
 }
 
+const TIER_B_MIN_WORDS = 700;
+const MASSEUSE_COMBO_MIN_WORDS = 150;
+const META_DUP_THRESHOLD = 0.05;
+
+for (const a of areas.filter((x) => x.tier === "B")) {
+  const enr = enrichments[a.slug];
+  const text = enr
+    ? [a.intro, ...enr.sectionParagraphs, ...enr.faqTexts].join(" ")
+    : tierBEnrichmentText(a);
+  const wc = wordCount(text);
+  if (wc < TIER_B_MIN_WORDS) {
+    fail(`Tier-B area ${a.slug}: ${wc} words (<${TIER_B_MIN_WORDS} required, checklist 6.16 extended)`);
+  }
+}
+
 // --- A2 FAQ depth ---
 const homePage = read("src/app/page.tsx");
 const homeFaqMatch = homePage.match(/const homeFaqs = \[([\s\S]*?)\];/);
@@ -142,24 +162,19 @@ for (const g of guides) {
   }
 }
 
-// Local flavor sample
-const LOCAL = ["Marcus Garvey", "Yaya", "Kilimani"];
-const treatmentSample = treatments.slice(0, 5);
-const areaSample = tierASlugs.slice(0, 3);
-let flavorMiss = 0;
-for (const t of treatmentSample) {
+// Local flavor — all Tier-A area + all treatment FAQs (9.22, fail not warn)
+const LOCAL = LOCAL_FLAVOR_KEYWORDS;
+for (const t of treatments) {
   const joined = t.faqTexts.join(" ");
   if (!LOCAL.some((k) => joined.includes(k))) {
-    flavorMiss++;
-    warn(`Treatment ${t.slug} FAQ sample: missing local flavor (${LOCAL.join(", ")})`);
+    fail(`Treatment ${t.slug} FAQs: missing local flavor (${LOCAL.join(", ")}, checklist 9.22)`);
   }
 }
-for (const slug of areaSample) {
+for (const slug of tierASlugs) {
   const enr = enrichments[slug];
   const joined = (enr?.faqTexts ?? []).join(" ");
   if (!LOCAL.some((k) => joined.includes(k))) {
-    flavorMiss++;
-    warn(`Area ${slug} FAQ sample: missing local flavor (${LOCAL.join(", ")})`);
+    fail(`Tier-A area ${slug} FAQs: missing local flavor (${LOCAL.join(", ")}, checklist 9.22)`);
   }
 }
 
@@ -264,6 +279,81 @@ if (dupRate > 5) {
   );
 }
 
+// --- A6 Combo meta description uniqueness ---
+const serviceMetaHashes = new Map();
+let serviceMetaTotal = 0;
+let serviceMetaDupes = 0;
+for (const a of areas) {
+  for (const t of treatments) {
+    serviceMetaTotal++;
+    const meta = serviceComboMetaDescription(a.name, t.name);
+    if (serviceMetaHashes.has(meta)) serviceMetaDupes++;
+    else serviceMetaHashes.set(meta, `${a.slug}|${t.slug}`);
+  }
+}
+const serviceMetaDupRate = serviceMetaTotal
+  ? (serviceMetaDupes / serviceMetaTotal) * 100
+  : 0;
+if (serviceMetaDupRate > META_DUP_THRESHOLD * 100) {
+  fail(
+    `Service combo meta duplicate rate: ${serviceMetaDupRate.toFixed(2)}% (>${META_DUP_THRESHOLD * 100}% threshold)`
+  );
+}
+
+const masseuseMetaHashes = new Map();
+let masseuseMetaTotal = 0;
+let masseuseMetaDupes = 0;
+for (const a of areas) {
+  for (const m of masseuses) {
+    masseuseMetaTotal++;
+    const meta = masseuseComboMetaDescription(a.name, m.name, m.tagline ?? "");
+    if (masseuseMetaHashes.has(meta)) masseuseMetaDupes++;
+    else masseuseMetaHashes.set(meta, `${a.slug}|${m.slug}`);
+  }
+}
+const masseuseMetaDupRate = masseuseMetaTotal
+  ? (masseuseMetaDupes / masseuseMetaTotal) * 100
+  : 0;
+if (masseuseMetaDupRate > META_DUP_THRESHOLD * 100) {
+  fail(
+    `Masseuse combo meta duplicate rate: ${masseuseMetaDupRate.toFixed(2)}% (>${META_DUP_THRESHOLD * 100}% threshold)`
+  );
+}
+
+// --- A7 Masseuse×area combo depth sample (Tier-A) ---
+const MASSEUSE_COMBO_SAMPLES = [
+  ["kilimani", "amara"],
+  ["lavington", "zuri"],
+  ["westlands", "aisha"],
+  ["karen", "nuru"],
+  ["kabiro", "keisha"],
+];
+if (!comboGen.includes('area.tier === "A" ? buildMasseuseFaqs')) {
+  fail("generate-combos.ts: Tier-A masseuse combos must include buildMasseuseFaqs");
+}
+const masseuseFaqBlock = comboGen.match(/function buildMasseuseFaqs[\s\S]*?return \[([\s\S]*?)\];/);
+const masseuseComboFaqCount = masseuseFaqBlock
+  ? (masseuseFaqBlock[1].match(/\{\s*\n\s*q:/g) ?? []).length
+  : 0;
+if (masseuseComboFaqCount < 3) {
+  fail(`Masseuse combo FAQ template: ${masseuseComboFaqCount} items (<3 for Tier-A combos)`);
+}
+for (const [areaSlug, masseuseSlug] of MASSEUSE_COMBO_SAMPLES) {
+  const area = areas.find((a) => a.slug === areaSlug);
+  const masseuse = masseuses.find((m) => m.slug === masseuseSlug);
+  if (!area || !masseuse) {
+    fail(`Masseuse combo sample ${areaSlug}|${masseuseSlug}: missing area or masseuse`);
+    continue;
+  }
+  const body = masseuseComboBodyText(area, masseuse);
+  const wc = wordCount(body);
+  if (wc < MASSEUSE_COMBO_MIN_WORDS) {
+    fail(
+      `Masseuse combo ${areaSlug}×${masseuseSlug}: ${wc} words (<${MASSEUSE_COMBO_MIN_WORDS} required)`
+    );
+  }
+}
+
 // Banned strings via child check:unique
 const uniqueRun = spawnSync("node", ["scripts/check-uniqueness.mjs"], {
   cwd: root,
@@ -282,6 +372,8 @@ console.log(`  Treatments: ${treatmentWordCounts.length} checked (≥1500)`);
 const minTreatment = Math.min(...treatmentWordCounts.map((t) => t.words));
 console.log(`  Min treatment: ${minTreatment} words`);
 console.log(`  Tier-A areas: ${tierASlugs.length} checked (≥1200)`);
+const tierBCount = areas.filter((a) => a.tier === "B").length;
+console.log(`  Tier-B areas: ${tierBCount} checked (≥${TIER_B_MIN_WORDS})`);
 console.log(`  Guides: ${guideWordCounts.length} checked (≥1200)`);
 const minGuide = Math.min(...guideWordCounts.map((g) => g.words));
 console.log(`  Min guide: ${minGuide} words`);
@@ -301,6 +393,15 @@ console.log(`  Sample anchors: ${[...uniqueAnchors].join(" | ")}`);
 
 console.log("\nA5 Combo duplicate rate");
 console.log(`  Tier-A × treatments: ${totalCombos} combos, ${dupRate.toFixed(2)}% duplicate openings`);
+console.log(`  Service combo meta dup: ${serviceMetaDupRate.toFixed(2)}%`);
+console.log(`  Masseuse combo meta dup: ${masseuseMetaDupRate.toFixed(2)}%`);
+
+console.log("\nA6 Masseuse×area combo sample");
+console.log(`  Tier-A masseuse combo FAQs: ${masseuseComboFaqCount} template items`);
+console.log(`  Samples checked: ${MASSEUSE_COMBO_SAMPLES.length} (≥${MASSEUSE_COMBO_MIN_WORDS} words)`);
+
+console.log("\nA7 Local flavor (9.22)");
+console.log(`  All ${treatments.length} treatments + ${tierASlugs.length} Tier-A areas FAQ-checked`);
 
 if (warnings.length) {
   console.log(`\nWarnings (${warnings.length}):`);

@@ -19,6 +19,8 @@ const STEPS = [
   { name: "check:titles", cmd: ["npm", "run", "check:titles"], checklist: "4.x" },
   { name: "check:keywords", cmd: ["npm", "run", "check:keywords"], checklist: "4.x" },
   { name: "check:content", cmd: ["npm", "run", "check:content"], checklist: "6.15–7.23, 9.x, 10.20" },
+  { name: "check:links", cmd: ["npm", "run", "check:links"], checklist: "7.5 Step 5" },
+  { name: "check:media", cmd: ["npm", "run", "check:media"], checklist: "8.x media" },
   { name: "audit:live", cmd: ["npm", "run", "audit:live"], checklist: "5.x, 9.x schema, 10.x metadata" },
   {
     name: "audit:live:content",
@@ -81,7 +83,9 @@ function buildProfReport(steps, runAt) {
   md += `| 6.16 | Tier-A area pages ≥1,200 words | check:content + audit:live:content |\n`;
   md += `| 6.17 | Guide pages ≥1,200 words | check:content + audit:live:content |\n`;
   md += `| 7.1–7.22 | Interlinking matrix | check:content (template grep) |\n`;
+  md += `| 7.5 Step 5 | Incoming links / orphans | check:links |\n`;
   md += `| 7.23 | Anchor diversity sample | check:content (10 combo anchors) |\n`;
+  md += `| 8.x | Image alt + media.ts | check:media |\n`;
   md += `| 8.12 | CTA present | audit:live:content |\n`;
   md += `| 9.1–9.11 | FAQ depth + local flavor | check:content + audit:live:content |\n`;
   md += `| 9.20 | No fake AggregateRating | audit:live:content |\n`;
@@ -91,6 +95,16 @@ function buildProfReport(steps, runAt) {
   const contentStep = steps.find((s) => s.name === "check:content");
   if (contentStep && !contentStep.ok) {
     md += `\n---\n\n## Repo content failures (check:content)\n\n\`\`\`\n${contentStep.stdout}${contentStep.stderr}\n\`\`\`\n`;
+  }
+
+  const linksStep = steps.find((s) => s.name === "check:links");
+  if (linksStep && !linksStep.ok) {
+    md += `\n---\n\n## Link graph failures (check:links)\n\n\`\`\`\n${linksStep.stdout}${linksStep.stderr}\n\`\`\`\n`;
+  }
+
+  const mediaStep = steps.find((s) => s.name === "check:media");
+  if (mediaStep && !mediaStep.ok) {
+    md += `\n---\n\n## Media failures (check:media)\n\n\`\`\`\n${mediaStep.stdout}${mediaStep.stderr}\n\`\`\`\n`;
   }
 
   const liveContent = steps.find((s) => s.name === "audit:live:content");

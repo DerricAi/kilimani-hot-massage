@@ -1,14 +1,14 @@
 # Live Content Audit Report
 
 **Site:** https://kilimanihotmassage.co.ke  
-**Run:** 2026-08-28 14:29:50 UTC  
+**Run:** 2026-08-28 14:39:53 UTC  
 **NAP lock:** `Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi`
 
 ---
 
 ## Live content audit (Wave 6)
 
-**Run:** 2026-08-28 14:29:50 UTC  
+**Run:** 2026-08-28 14:39:53 UTC  
 **Sample URLs:** 9  
 **Pass:** 9/9
 
