@@ -89,6 +89,18 @@ export default function ContactPage() {
           </div>
           <MapEmbed className="h-[360px] w-full" />
         </div>
+
+        <div className="mt-16 rounded-xl border border-[var(--crimson)]/25 bg-white/[0.03] p-6 lg:p-8">
+          <h2 className="font-display text-2xl text-[var(--off-white)] sm:text-3xl">
+            Private massage rooms
+          </h2>
+          <p className="mt-4 max-w-2xl text-[var(--muted)]">
+            Every session uses a locked private massage room on Marcus Garvey Rd—suites with shower
+            access, fresh linens, and street parking, open 24/7. This is not a hotel lobby spa or
+            shared mall cubicle; massage rooms near me searches should land here when you want
+            discreet Kilimani bodywork. WhatsApp 0746 203398 with your ETA and preferred therapist.
+          </p>
+        </div>
       </section>
     </>
   );
