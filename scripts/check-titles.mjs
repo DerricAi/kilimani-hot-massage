@@ -27,19 +27,35 @@ function parseRecordBlock(source, exportName) {
   return entries;
 }
 
-function titleForArea(lead, areaName) {
-  return `${lead} near me ${areaName}`;
+function profTreatmentTitleForArea(lead, areaName) {
+  if (areaName === "Kilimani") {
+    return `${lead} near me Kilimani - book ${lead} on Marcus Garvey Rd massage spa - open 24/7`;
+  }
+  return `${lead} near me ${areaName} - from ${areaName} to Marcus Garvey Rd Kilimani - open 24/7`;
 }
 
-function checkTitleString(label, title) {
+function checkTitleString(label, title, { requireProfTail = false, minLength = 0 } = {}) {
   if (title.length > 220) {
     warnings.push(`${label}: title ${title.length} chars (>220): ${title.slice(0, 60)}…`);
+  }
+  if (minLength > 0 && title.length < minLength) {
+    warnings.push(
+      `${label}: title ${title.length} chars (<${minLength}, likely too short for Prof): ${title.slice(0, 60)}…`
+    );
   }
   if (!title.includes("near me")) {
     errors.push(`${label}: missing "near me": ${title}`);
   }
   if (!title.includes("Kilimani Hot Massage")) {
     errors.push(`${label}: missing brand: ${title}`);
+  }
+  if (requireProfTail) {
+    if (!title.includes("Marcus Garvey")) {
+      errors.push(`${label}: missing Marcus Garvey Prof tail: ${title}`);
+    }
+    if (!title.includes("open 24/7") && !title.includes("Open 24/7")) {
+      errors.push(`${label}: missing open 24/7 Prof tail: ${title}`);
+    }
   }
   if (
     /Kilimani Nairobi near me/i.test(title) ||
@@ -71,8 +87,8 @@ if (Object.keys(treatmentLeads).length !== 12) {
   );
 }
 
-if (!seoTitles.includes("treatmentTitleForArea")) {
-  errors.push("seo-titles.ts: must use treatmentTitleForArea for treatment and combo titles");
+if (!seoTitles.includes("profTreatmentTitleForArea")) {
+  errors.push("seo-titles.ts: must use profTreatmentTitleForArea for treatment and combo titles");
 }
 if (!seoTitles.includes("BEST Massage Spa Kilimani")) {
   errors.push("seo-titles.ts: profTitleHome must include BEST Massage Spa Kilimani");
@@ -82,6 +98,9 @@ if (/Kilimani Nairobi near me/.test(seoTitles)) {
 }
 if (seoTitles.includes("treatmentTitlePhrase")) {
   errors.push("seo-titles.ts: remove deprecated treatmentTitlePhrase import");
+}
+if (!targetKw.includes("profTreatmentTitleForArea")) {
+  errors.push("target-keywords.ts: must export profTreatmentTitleForArea");
 }
 
 if (!treatmentsTs.includes("profTitleTreatmentKeyed")) {
@@ -108,34 +127,52 @@ const brand = "Kilimani Hot Massage";
 const expectedSamples = [
   [
     "nuru treatment Kilimani",
-    `${titleForArea(treatmentLeads["nuru-massage"], "Kilimani")} | ${brand}`,
+    `${profTreatmentTitleForArea(treatmentLeads["nuru-massage"], "Kilimani")} | ${brand}`,
+    { requireProfTail: true, minLength: 100 },
   ],
   [
     "erotic treatment Kilimani",
-    `${titleForArea(treatmentLeads["sensual-erotic-massage"], "Kilimani")} | ${brand}`,
+    `${profTreatmentTitleForArea(treatmentLeads["sensual-erotic-massage"], "Kilimani")} | ${brand}`,
+    { requireProfTail: true, minLength: 100 },
   ],
   [
     "swedish treatment Kilimani",
-    `${titleForArea(treatmentLeads["swedish-massage"], "Kilimani")} | ${brand}`,
+    `${profTreatmentTitleForArea(treatmentLeads["swedish-massage"], "Kilimani")} | ${brand}`,
+    { requireProfTail: true, minLength: 100 },
   ],
   [
     "nuru combo Lavington",
-    `${titleForArea(treatmentLeads["nuru-massage"], "Lavington")} | ${brand}`,
+    `${profTreatmentTitleForArea(treatmentLeads["nuru-massage"], "Lavington")} | ${brand}`,
+    { requireProfTail: true, minLength: 100 },
   ],
   [
     "swedish combo Westlands",
-    `${titleForArea(treatmentLeads["swedish-massage"], "Westlands")} | ${brand}`,
+    `${profTreatmentTitleForArea(treatmentLeads["swedish-massage"], "Westlands")} | ${brand}`,
+    { requireProfTail: true, minLength: 100 },
   ],
-  ["masseuse hub", `Masseuse near me Kilimani | ${brand}`],
-  ["kilimani area hub", `Massage Kilimani near me | ${brand}`],
+  [
+    "masseuse hub",
+    `Masseuse near me Kilimani - book on Marcus Garvey Rd massage spa open 24/7 | ${brand}`,
+    { requireProfTail: true, minLength: 80 },
+  ],
+  [
+    "kilimani area hub",
+    `Massage Kilimani near me - Kilimani guests Marcus Garvey Rd spa open 24/7 | ${brand}`,
+    { requireProfTail: true, minLength: 80 },
+  ],
+  [
+    "masseuse profile",
+    `Amara masseuse near me Kilimani - book on Marcus Garvey Rd open 24/7 | ${brand}`,
+    { requireProfTail: true, minLength: 80 },
+  ],
 ];
 
-for (const [label, title] of expectedSamples) {
+for (const [label, title, opts] of expectedSamples) {
   if (title.includes("undefined")) {
     errors.push(`missing treatmentKeywordLead for sample: ${label}`);
     continue;
   }
-  checkTitleString(label, title);
+  checkTitleString(label, title, opts ?? {});
 }
 
 for (const slug of uniqueTreatmentSlugs) {
@@ -156,5 +193,5 @@ if (errors.length) {
 }
 
 console.log(
-  `Title check passed (12 treatment leads + area-aware combo samples).`
+  `Title check passed (12 treatment leads + Prof hybrid title samples).`
 );

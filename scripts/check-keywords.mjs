@@ -58,7 +58,9 @@ function homeHaystack() {
 
 function treatmentPageHaystack(slug) {
   const lead = treatmentLeads[slug] ?? "";
-  const titlePhrase = lead ? `${lead} near me Kilimani` : "";
+  const titlePhrase = lead
+    ? `${lead} near me Kilimani - book ${lead} on Marcus Garvey Rd massage spa - open 24/7`
+    : "";
   const blockReLocal = new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?tierA:\\s*true`);
   const block = treatments.match(blockReLocal)?.[0] ?? "";
   return [titlePhrase, lead, seoTitles, block].join("\n");
@@ -105,8 +107,8 @@ if (Object.keys(treatmentLeads).length !== 12) {
   );
 }
 
-if (!seoTitles.includes("treatmentTitleForArea")) {
-  errors.push("seo-titles.ts must use treatmentTitleForArea for area-aware combo titles");
+if (!seoTitles.includes("profTreatmentTitleForArea")) {
+  errors.push("seo-titles.ts must use profTreatmentTitleForArea for area-aware combo titles");
 }
 
 const hardChecks = [
@@ -126,10 +128,13 @@ for (const check of hardChecks) {
   }
 }
 
-// Area-aware combo: Lavington must appear in generated title formula
-const nuruLavington = `${treatmentLeads["nuru-massage"]} near me Lavington`;
+// Area-aware combo: Lavington must appear in generated Prof title formula
+const nuruLavington = `${treatmentLeads["nuru-massage"]} near me Lavington - from Lavington to Marcus Garvey Rd Kilimani - open 24/7`;
 if (!nuruLavington.includes("Lavington")) {
   errors.push("combo title formula must include specific area name");
+}
+if (!nuruLavington.includes("Marcus Garvey")) {
+  errors.push("combo title formula must include Marcus Garvey Prof tail");
 }
 
 if (!seoTitles.includes("spa near me")) {

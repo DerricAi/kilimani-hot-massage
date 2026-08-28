@@ -134,7 +134,7 @@ export const treatmentKeywordLead: Record<TreatmentSlug, string> = {
   "lingam-massage": "Lingam Massage",
 };
 
-/** Treatment or area×service combo title phrase (before ` | Brand`). */
+/** Short keyword phrase — tests and keyword guards. */
 export function treatmentTitleForArea(
   slug: string,
   areaName: string,
@@ -142,6 +142,26 @@ export function treatmentTitleForArea(
 ): string {
   const lead = treatmentKeywordLead[slug as TreatmentSlug] ?? fallbackName;
   return `${lead} near me ${areaName}`;
+}
+
+/** Prof hybrid — keyword lead + Marcus Garvey / open 24/7 tail (before ` | Brand`). */
+export function profTreatmentTitleForArea(
+  slug: string,
+  areaName: string,
+  fallbackName: string
+): string {
+  const lead = treatmentKeywordLead[slug as TreatmentSlug] ?? fallbackName;
+  if (areaName === "Kilimani") {
+    return `${lead} near me Kilimani - book ${lead} on Marcus Garvey Rd massage spa - open 24/7`;
+  }
+  return `${lead} near me ${areaName} - from ${areaName} to Marcus Garvey Rd Kilimani - open 24/7`;
+}
+
+export const PROF_GUIDE_TAIL = "Marcus Garvey Rd Kilimani open 24/7";
+
+/** Guide keyword phrase + Prof tail (before ` | Brand`). */
+export function profGuideTitlePhrase(phrase: string): string {
+  return `${phrase} - ${PROF_GUIDE_TAIL}`;
 }
 
 /** Guide slugs → keyword-led title phrase */
