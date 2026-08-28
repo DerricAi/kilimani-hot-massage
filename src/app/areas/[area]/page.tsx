@@ -20,7 +20,8 @@ import { absoluteUrl, site, whatsappLink } from "@/content/site";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
 import { treatmentImage } from "@/content/media";
-import { absoluteTitle, profTitleAreaHub } from "@/lib/seo-titles";
+import { pageMetadata } from "@/lib/seo";
+import { profTitleAreaHub } from "@/lib/seo-titles";
 
 type Props = { params: Promise<{ area: string }> };
 
@@ -32,11 +33,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { area: slug } = await params;
   const area = getArea(slug);
   if (!area) return {};
-  return {
-    title: absoluteTitle(profTitleAreaHub(area.name)),
+  return pageMetadata({
+    title: profTitleAreaHub(area.name),
     description: `${area.commute}. Book massage for ${area.name} guests at Kilimani Hot Massage on Marcus Garvey Rd. Open 24/7. Call ${site.phoneDisplay}.`,
-    alternates: { canonical: absoluteUrl(areaPath(area.slug)) },
-  };
+    path: areaPath(area.slug),
+  });
 }
 
 export default async function AreaPage({ params }: Props) {

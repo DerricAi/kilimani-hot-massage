@@ -11,7 +11,8 @@ import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl, site } from "@/content/site";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
-import { absoluteTitle } from "@/lib/seo-titles";
+import { pageMetadata } from "@/lib/seo";
+import { profTitleHome } from "@/lib/seo-titles";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -23,17 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const g = getGuide(slug);
   if (!g) return {};
-  return {
-    title: absoluteTitle(g.metaTitle),
+  return pageMetadata({
+    title: g.metaTitle,
     description: g.metaDescription,
-    alternates: { canonical: absoluteUrl(guidePath(g.slug)) },
-    openGraph: {
-      type: "article",
-      publishedTime: g.publishedAt,
-      title: g.metaTitle,
-      description: g.metaDescription,
-    },
-  };
+    path: guidePath(g.slug),
+  });
 }
 
 export default async function GuideArticlePage({ params }: Props) {

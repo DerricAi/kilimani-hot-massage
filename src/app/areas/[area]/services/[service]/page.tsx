@@ -14,7 +14,7 @@ import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd, serviceJsonLd } from "@/lib/schema";
-import { absoluteTitle } from "@/lib/seo-titles";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ area: string; service: string }> };
 
@@ -26,13 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { area, service } = await params;
   const combo = buildAreaServiceCombo(area, service);
   if (!combo) return {};
-  return {
-    title: absoluteTitle(combo.metaTitle),
+  return pageMetadata({
+    title: combo.metaTitle,
     description: combo.metaDescription,
-    alternates: {
-      canonical: absoluteUrl(areaServicePath(area, service)),
-    },
-  };
+    path: areaServicePath(area, service),
+  });
 }
 
 export default async function AreaServicePage({ params }: Props) {

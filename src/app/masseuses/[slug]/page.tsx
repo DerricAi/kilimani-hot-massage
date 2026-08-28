@@ -10,7 +10,7 @@ import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { personJsonLd, faqJsonLd } from "@/lib/schema";
-import { absoluteTitle } from "@/lib/seo-titles";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const m = getMasseuse(slug);
   if (!m) return {};
-  return {
-    title: absoluteTitle(m.metaTitle),
+  return pageMetadata({
+    title: m.metaTitle,
     description: m.metaDescription,
-    alternates: { canonical: absoluteUrl(`/masseuses/${m.slug}/`) },
-  };
+    path: `/masseuses/${m.slug}/`,
+  });
 }
 
 export default async function MasseusePage({ params }: Props) {

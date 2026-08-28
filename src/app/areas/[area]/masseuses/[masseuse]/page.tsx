@@ -14,7 +14,7 @@ import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd, personJsonLd } from "@/lib/schema";
-import { absoluteTitle } from "@/lib/seo-titles";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ area: string; masseuse: string }> };
 
@@ -26,13 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { area, masseuse } = await params;
   const combo = buildAreaMasseuseCombo(area, masseuse);
   if (!combo) return {};
-  return {
-    title: absoluteTitle(combo.metaTitle),
+  return pageMetadata({
+    title: combo.metaTitle,
     description: combo.metaDescription,
-    alternates: {
-      canonical: absoluteUrl(areaMasseusePath(area, masseuse)),
-    },
-  };
+    path: areaMasseusePath(area, masseuse),
+  });
 }
 
 export default async function AreaMasseusePage({ params }: Props) {

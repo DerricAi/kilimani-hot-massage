@@ -372,6 +372,20 @@ const ONPAGE_CHECKS = [
   },
 ];
 
+function decodeHtmlEntities(value) {
+  return value
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/g, "'");
+}
+
+function normalizeMetaValue(value) {
+  return decodeHtmlEntities(value).trim();
+}
+
 async function fetchLive(path, { accept = "text/html" } = {}) {
   const url = path.startsWith("http") ? path : absoluteUrl(path);
   const res = await fetch(url, {
@@ -409,7 +423,16 @@ function parseHead(html) {
     html.match(/<meta\s+content=["']([^"']*)["']\s+name=["']twitter:title["']/i)?.[1] ??
     "";
   const lang = html.match(/<html[^>]*\slang=["']([^"']*)["']/i)?.[1] ?? "";
-  return { title, description, canonical, ogTitle, ogDescription, ogUrl, twitterTitle, lang };
+  return {
+    title: normalizeMetaValue(title),
+    description: normalizeMetaValue(description),
+    canonical,
+    ogTitle: normalizeMetaValue(ogTitle),
+    ogDescription: normalizeMetaValue(ogDescription),
+    ogUrl,
+    twitterTitle: normalizeMetaValue(twitterTitle),
+    lang,
+  };
 }
 
 function parseJsonLdBlocks(html) {

@@ -9,18 +9,19 @@ import { areas, areaPath } from "@/content/areas";
 import { guides, guidePath } from "@/content/guides";
 import { site } from "@/content/site";
 import { media, treatmentImage } from "@/content/media";
+import { pageMetadata } from "@/lib/seo";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
-import { absoluteTitle, profTitleHome } from "@/lib/seo-titles";
+import { profTitleHome } from "@/lib/seo-titles";
 
 const homeTitle = profTitleHome();
 
-export const metadata: Metadata = {
-  title: absoluteTitle(homeTitle),
+export const metadata: Metadata = pageMetadata({
+  title: homeTitle,
   description:
     "Massage Kilimani & Spa Kilimani on Marcus Garvey Rd — massage near me, massage spa near me, Swedish, Nuru, full body & couples. Open 24/7. Call or WhatsApp 0746 203398.",
-  alternates: { canonical: `${site.url}/` },
-};
+  path: "/",
+});
 
 const homeFaqs = [
   {

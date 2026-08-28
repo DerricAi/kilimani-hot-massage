@@ -13,7 +13,7 @@ import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd, serviceJsonLd } from "@/lib/schema";
-import { absoluteTitle } from "@/lib/seo-titles";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ service: string }> };
 
@@ -25,11 +25,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { service } = await params;
   const t = getTreatment(service);
   if (!t) return {};
-  return {
-    title: absoluteTitle(t.metaTitle),
+  return pageMetadata({
+    title: t.metaTitle,
     description: t.metaDescription,
-    alternates: { canonical: absoluteUrl(`/massage-treatments/${t.slug}/`) },
-  };
+    path: `/massage-treatments/${t.slug}/`,
+  });
 }
 
 export default async function TreatmentPage({ params }: Props) {
