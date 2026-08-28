@@ -21,7 +21,25 @@ export const targetKeywords: TargetKeyword[] = [
   { phrase: "Masseuse near me", primaryPath: "/masseuses/", tier: "head" },
   { phrase: "Massage rooms near me", primaryPath: "/", tier: "head" },
   { phrase: "Massage near me", primaryPath: "/", tier: "near-me" },
-  // Modality
+  // Modality — all 12 treatment services
+  {
+    phrase: "Swedish Massage Kilimani",
+    primaryPath: "/massage-treatments/swedish-massage/",
+    tier: "modality",
+    treatmentSlug: "swedish-massage",
+  },
+  {
+    phrase: "Deep Tissue Massage Kilimani",
+    primaryPath: "/massage-treatments/deep-tissue-massage/",
+    tier: "modality",
+    treatmentSlug: "deep-tissue-massage",
+  },
+  {
+    phrase: "Full Body Massage Kilimani",
+    primaryPath: "/massage-treatments/full-body-massage/",
+    tier: "modality",
+    treatmentSlug: "full-body-massage",
+  },
   {
     phrase: "Nuru Massage Kilimani",
     primaryPath: "/massage-treatments/nuru-massage/",
@@ -35,10 +53,10 @@ export const targetKeywords: TargetKeyword[] = [
     treatmentSlug: "body-to-body-massage",
   },
   {
-    phrase: "Lingam Massage Nairobi",
-    primaryPath: "/massage-treatments/lingam-massage/",
+    phrase: "Four Hands Massage Kilimani",
+    primaryPath: "/massage-treatments/four-hands-massage/",
     tier: "modality",
-    treatmentSlug: "lingam-massage",
+    treatmentSlug: "four-hands-massage",
   },
   {
     phrase: "Erotic Massage Kilimani",
@@ -47,10 +65,34 @@ export const targetKeywords: TargetKeyword[] = [
     treatmentSlug: "sensual-erotic-massage",
   },
   {
-    phrase: "Full Body Massage Kilimani",
-    primaryPath: "/massage-treatments/full-body-massage/",
+    phrase: "Couples Massage Kilimani",
+    primaryPath: "/massage-treatments/couples-massage/",
     tier: "modality",
-    treatmentSlug: "full-body-massage",
+    treatmentSlug: "couples-massage",
+  },
+  {
+    phrase: "Aromatherapy Massage Kilimani",
+    primaryPath: "/massage-treatments/aromatherapy-massage/",
+    tier: "modality",
+    treatmentSlug: "aromatherapy-massage",
+  },
+  {
+    phrase: "Hot Stone Massage Kilimani",
+    primaryPath: "/massage-treatments/hot-stone-massage/",
+    tier: "modality",
+    treatmentSlug: "hot-stone-massage",
+  },
+  {
+    phrase: "Tantric Massage Kilimani",
+    primaryPath: "/massage-treatments/tantric-ritual/",
+    tier: "modality",
+    treatmentSlug: "tantric-ritual",
+  },
+  {
+    phrase: "Lingam Massage Nairobi",
+    primaryPath: "/massage-treatments/lingam-massage/",
+    tier: "modality",
+    treatmentSlug: "lingam-massage",
   },
   {
     phrase: "Massage and Extras near me",
@@ -59,27 +101,48 @@ export const targetKeywords: TargetKeyword[] = [
   },
 ];
 
-export const KEYED_TREATMENT_SLUGS = [
-  "sensual-erotic-massage",
-  "nuru-massage",
-  "lingam-massage",
-  "body-to-body-massage",
+export const ALL_TREATMENT_SLUGS = [
+  "swedish-massage",
+  "deep-tissue-massage",
   "full-body-massage",
+  "nuru-massage",
+  "body-to-body-massage",
+  "four-hands-massage",
+  "sensual-erotic-massage",
+  "couples-massage",
+  "aromatherapy-massage",
+  "hot-stone-massage",
+  "tantric-ritual",
+  "lingam-massage",
 ] as const;
 
-export type KeyedTreatmentSlug = (typeof KEYED_TREATMENT_SLUGS)[number];
+export type TreatmentSlug = (typeof ALL_TREATMENT_SLUGS)[number];
 
-/**
- * Exact title phrase (before ` | Brand`) — priority keyword list, not generic
- * "Kilimani Nairobi near me".
- */
-export const treatmentTitlePhrase: Record<KeyedTreatmentSlug, string> = {
-  "sensual-erotic-massage": "Erotic Massage near me Kilimani",
-  "nuru-massage": "Nuru Massage near me Kilimani",
-  "lingam-massage": "Lingam Massage near me Nairobi",
-  "body-to-body-massage": "Body to Body Massage near me Kilimani",
-  "full-body-massage": "Full Body Massage near me Kilimani",
+/** Modality keyword lead only (no near me / location) — all 12 services. */
+export const treatmentKeywordLead: Record<TreatmentSlug, string> = {
+  "swedish-massage": "Swedish Massage",
+  "deep-tissue-massage": "Deep Tissue Massage",
+  "full-body-massage": "Full Body Massage",
+  "nuru-massage": "Nuru Massage",
+  "body-to-body-massage": "Body to Body Massage",
+  "four-hands-massage": "Four Hands Massage",
+  "sensual-erotic-massage": "Erotic Massage",
+  "couples-massage": "Couples Massage",
+  "aromatherapy-massage": "Aromatherapy Massage",
+  "hot-stone-massage": "Hot Stone Massage",
+  "tantric-ritual": "Tantric Massage",
+  "lingam-massage": "Lingam Massage",
 };
+
+/** Treatment or area×service combo title phrase (before ` | Brand`). */
+export function treatmentTitleForArea(
+  slug: string,
+  areaName: string,
+  fallbackName: string
+): string {
+  const lead = treatmentKeywordLead[slug as TreatmentSlug] ?? fallbackName;
+  return `${lead} near me ${areaName}`;
+}
 
 /** Guide slugs → keyword-led title phrase */
 export const guideTitlePhrase: Record<string, string> = {

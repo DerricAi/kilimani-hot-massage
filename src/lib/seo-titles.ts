@@ -1,8 +1,7 @@
 import { site } from "@/content/site";
 import {
   guideTitlePhrase,
-  treatmentTitlePhrase,
-  type KeyedTreatmentSlug,
+  treatmentTitleForArea,
 } from "@/content/target-keywords";
 
 /** Prof checklist 4.x — full title strings (use with metadata title.absolute). */
@@ -16,16 +15,9 @@ export function profTitleHome(): string {
   return `BEST Massage Spa Kilimani - Kilimani massage & spa near me - if you want massage spa near me, Swedish, Nuru, full body & couples on Marcus Garvey Rd - ${BRAND} open 24/7`;
 }
 
-/** Default treatment — Massage near me + Kilimani */
-export function profTitleTreatment(serviceName: string): string {
-  return withBrand(`${serviceName} near me Kilimani`);
-}
-
-/** Per-slug exact keyword phrase for treatment pages. */
+/** Treatment hub page — studio location Kilimani. */
 export function profTitleTreatmentKeyed(slug: string, name: string): string {
-  const phrase = treatmentTitlePhrase[slug as KeyedTreatmentSlug];
-  if (phrase) return withBrand(phrase);
-  return profTitleTreatment(name);
+  return withBrand(treatmentTitleForArea(slug, "Kilimani", name));
 }
 
 export function profTitleMasseuseHub(): string {
@@ -39,24 +31,13 @@ export function profTitleAreaHub(areaName: string): string {
   return withBrand(`Massage near me ${areaName}`);
 }
 
-export function profTitleServiceCombo(serviceName: string, areaName: string): string {
-  if (areaName === "Kilimani") {
-    return withBrand(`${serviceName} near me Kilimani`);
-  }
-  return withBrand(`${serviceName} near me ${areaName}`);
-}
-
-/** Tier-A Kilimani combo boost — exact modality keyword phrase. */
+/** Area×service combo — keyword lead + specific area name. */
 export function profTitleServiceComboKeyed(
   serviceSlug: string,
   serviceName: string,
   areaName: string
 ): string {
-  const phrase = treatmentTitlePhrase[serviceSlug as KeyedTreatmentSlug];
-  if (phrase && areaName === "Kilimani") {
-    return withBrand(phrase);
-  }
-  return profTitleServiceCombo(serviceName, areaName);
+  return withBrand(treatmentTitleForArea(serviceSlug, areaName, serviceName));
 }
 
 export function profTitleMasseuseCombo(masseuseName: string, areaName: string): string {

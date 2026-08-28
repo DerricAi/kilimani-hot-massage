@@ -15,6 +15,22 @@ function read(rel) {
   return readFileSync(join(root, rel), "utf8");
 }
 
+function parseRecordBlock(source, exportName) {
+  const block = source.match(
+    new RegExp(`export const ${exportName}[\\s\\S]*?\\};`)
+  )?.[0];
+  if (!block) return {};
+  const entries = {};
+  const re = /"([a-z-]+)":\s*"([^"]+)"/g;
+  let m;
+  while ((m = re.exec(block)) !== null) entries[m[1]] = m[2];
+  return entries;
+}
+
+function titleForArea(lead, areaName) {
+  return `${lead} near me ${areaName}`;
+}
+
 function checkTitleString(label, title) {
   if (title.length > 220) {
     warnings.push(`${label}: title ${title.length} chars (>220): ${title.slice(0, 60)}…`);
@@ -33,27 +49,39 @@ function checkTitleString(label, title) {
   }
 }
 
-// Homepage — profTitleHome source
 const seoTitles = read("src/lib/seo-titles.ts");
 const targetKw = read("src/content/target-keywords.ts");
 const treatmentsTs = read("src/content/treatments.ts");
 const masseusesTs = read("src/content/masseuses.ts");
 const guidesTs = read("src/content/guides.ts");
 
+const treatmentLeads = parseRecordBlock(targetKw, "treatmentKeywordLead");
+
+const slugRe = /slug:\s*"([a-z-]+)"/g;
+const treatmentSlugs = [];
+let sm;
+while ((sm = slugRe.exec(treatmentsTs)) !== null) {
+  if (sm[1] !== "string") treatmentSlugs.push(sm[1]);
+}
+const uniqueTreatmentSlugs = [...new Set(treatmentSlugs.filter((s) => s.includes("-")))];
+
+if (Object.keys(treatmentLeads).length !== 12) {
+  errors.push(
+    `treatmentKeywordLead must have 12 entries (found ${Object.keys(treatmentLeads).length})`
+  );
+}
+
+if (!seoTitles.includes("treatmentTitleForArea")) {
+  errors.push("seo-titles.ts: must use treatmentTitleForArea for treatment and combo titles");
+}
 if (!seoTitles.includes("BEST Massage Spa Kilimani")) {
   errors.push("seo-titles.ts: profTitleHome must include BEST Massage Spa Kilimani");
 }
-if (!seoTitles.includes("spa near me")) {
-  errors.push("seo-titles.ts: profTitleHome must include spa near me");
-}
-if (!seoTitles.includes("Kilimani massage")) {
-  errors.push("seo-titles.ts: profTitleHome must include Kilimani massage");
-}
-if (!seoTitles.includes("massage spa near me")) {
-  errors.push("seo-titles.ts: profTitleHome must include massage spa near me");
-}
 if (/Kilimani Nairobi near me/.test(seoTitles)) {
   errors.push("seo-titles.ts: remove deprecated Kilimani Nairobi near me pattern");
+}
+if (seoTitles.includes("treatmentTitlePhrase")) {
+  errors.push("seo-titles.ts: remove deprecated treatmentTitlePhrase import");
 }
 
 if (!treatmentsTs.includes("profTitleTreatmentKeyed")) {
@@ -76,34 +104,44 @@ if (!seoTs.includes("absoluteTitle(title)")) {
   errors.push("seo.ts: pageMetadata must use absoluteTitle()");
 }
 
-// Sample expected titles from keyword phrase map
 const brand = "Kilimani Hot Massage";
-const phraseRe = /"([a-z-]+)":\s*"([^"]+)"/g;
-const treatmentPhrases = {};
-let m;
-const phraseBlock = targetKw.match(
-  /export const treatmentTitlePhrase[\s\S]*?\};/
-)?.[0];
-if (phraseBlock) {
-  while ((m = phraseRe.exec(phraseBlock)) !== null) {
-    treatmentPhrases[m[1]] = m[2];
-  }
-}
-
 const expectedSamples = [
-  ["nuru-massage", `${treatmentPhrases["nuru-massage"]} | ${brand}`],
-  ["sensual-erotic-massage", `${treatmentPhrases["sensual-erotic-massage"]} | ${brand}`],
-  ["swedish default", `Swedish Massage near me Kilimani | ${brand}`],
+  [
+    "nuru treatment Kilimani",
+    `${titleForArea(treatmentLeads["nuru-massage"], "Kilimani")} | ${brand}`,
+  ],
+  [
+    "erotic treatment Kilimani",
+    `${titleForArea(treatmentLeads["sensual-erotic-massage"], "Kilimani")} | ${brand}`,
+  ],
+  [
+    "swedish treatment Kilimani",
+    `${titleForArea(treatmentLeads["swedish-massage"], "Kilimani")} | ${brand}`,
+  ],
+  [
+    "nuru combo Lavington",
+    `${titleForArea(treatmentLeads["nuru-massage"], "Lavington")} | ${brand}`,
+  ],
+  [
+    "swedish combo Westlands",
+    `${titleForArea(treatmentLeads["swedish-massage"], "Westlands")} | ${brand}`,
+  ],
   ["masseuse hub", `Masseuse near me Kilimani | ${brand}`],
-  ["kilimani area", `Massage Kilimani near me | ${brand}`],
+  ["kilimani area hub", `Massage Kilimani near me | ${brand}`],
 ];
 
 for (const [label, title] of expectedSamples) {
   if (title.includes("undefined")) {
-    errors.push(`missing treatmentTitlePhrase for sample: ${label}`);
+    errors.push(`missing treatmentKeywordLead for sample: ${label}`);
     continue;
   }
   checkTitleString(label, title);
+}
+
+for (const slug of uniqueTreatmentSlugs) {
+  if (!treatmentLeads[slug]) {
+    errors.push(`treatmentKeywordLead missing slug: ${slug}`);
+  }
 }
 
 if (warnings.length) {
@@ -118,5 +156,5 @@ if (errors.length) {
 }
 
 console.log(
-  `Title check passed (keyword-led titles via seo-titles.ts + ${Object.keys(treatmentPhrases).length} keyed treatments).`
+  `Title check passed (12 treatment leads + area-aware combo samples).`
 );

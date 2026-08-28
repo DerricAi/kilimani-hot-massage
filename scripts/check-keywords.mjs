@@ -18,8 +18,21 @@ function includesPhrase(haystack, phrase) {
   return haystack.toLowerCase().includes(phrase.toLowerCase());
 }
 
-// Parse target-keywords.ts entries (multiline-safe)
+function parseRecordBlock(source, exportName) {
+  const block = source.match(
+    new RegExp(`export const ${exportName}[\\s\\S]*?\\};`)
+  )?.[0];
+  if (!block) return {};
+  const entries = {};
+  const re = /"([a-z-]+)":\s*"([^"]+)"/g;
+  let m;
+  while ((m = re.exec(block)) !== null) entries[m[1]] = m[2];
+  return entries;
+}
+
 const kwFile = read("src/content/target-keywords.ts");
+const treatmentLeads = parseRecordBlock(kwFile, "treatmentKeywordLead");
+
 const keywordEntries = [];
 const blockRe = /\{\s*phrase:\s*"([^"]+)"[\s\S]*?primaryPath:\s*"([^"]+)"[\s\S]*?tier:\s*"([^"]+)"/g;
 let m;
@@ -43,6 +56,14 @@ function homeHaystack() {
   return [seoTitles, homePage, layout].join("\n");
 }
 
+function treatmentPageHaystack(slug) {
+  const lead = treatmentLeads[slug] ?? "";
+  const titlePhrase = lead ? `${lead} near me Kilimani` : "";
+  const blockReLocal = new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?tierA:\\s*true`);
+  const block = treatments.match(blockReLocal)?.[0] ?? "";
+  return [titlePhrase, lead, seoTitles, block].join("\n");
+}
+
 function pageHaystack(primaryPath) {
   switch (primaryPath) {
     case "/":
@@ -54,19 +75,13 @@ function pageHaystack(primaryPath) {
     default:
       if (primaryPath.startsWith("/massage-treatments/")) {
         const slug = primaryPath.replace("/massage-treatments/", "").replace(/\/$/, "");
-        const slugRe = new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?metaTitle:\\s*"([^"]+)"`);
-        const titleMatch = treatments.match(slugRe);
-        const blockRe = new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?tierA:\\s*true`);
-        const block = treatments.match(blockRe)?.[0] ?? "";
-        return [titleMatch?.[1] ?? "", block].join("\n");
+        return treatmentPageHaystack(slug);
       }
       if (primaryPath.startsWith("/guides/")) {
         const slug = primaryPath.replace("/guides/", "").replace(/\/$/, "");
-        const slugRe = new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?metaTitle:\\s*"([^"]+)"`);
-        const titleMatch = guides.match(slugRe);
-        const blockRe = new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?faqs:`);
-        const block = guides.match(blockRe)?.[0] ?? "";
-        return [titleMatch?.[1] ?? "", block].join("\n");
+        const blockReLocal = new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?faqs:`);
+        const block = guides.match(blockReLocal)?.[0] ?? "";
+        return [seoTitles, block].join("\n");
       }
       return "";
   }
@@ -77,18 +92,29 @@ for (const kw of keywordEntries) {
   const hay = pageHaystack(kw.primaryPath);
   const core = kw.phrase
     .replace(/\s+near me$/i, "")
-    .replace(/\s+Nairobi$/i, "");
+    .replace(/\s+Nairobi$/i, "")
+    .replace(/\s+Kilimani$/i, "");
   if (!hay || !includesPhrase(hay, core)) {
     errors.push(`Missing "${kw.phrase}" (tier ${kw.tier}) on ${kw.primaryPath}`);
   }
 }
 
-// Hard guards from rollout plan
+if (Object.keys(treatmentLeads).length !== 12) {
+  errors.push(
+    `treatmentKeywordLead must have 12 entries (found ${Object.keys(treatmentLeads).length})`
+  );
+}
+
+if (!seoTitles.includes("treatmentTitleForArea")) {
+  errors.push("seo-titles.ts must use treatmentTitleForArea for area-aware combo titles");
+}
+
 const hardChecks = [
-  { label: "Erotic Massage", hay: treatments, slug: "sensual-erotic-massage" },
-  { label: "Full Body Massage", hay: treatments, slug: "full-body-massage" },
+  { label: "Erotic Massage", hay: treatmentPageHaystack("sensual-erotic-massage") },
+  { label: "Full Body Massage", hay: treatmentPageHaystack("full-body-massage") },
+  { label: "Swedish Massage", hay: treatmentPageHaystack("swedish-massage") },
   { label: "Masseuse near me", hay: [masseusesPage, seoTitles].join("\n") },
-  { label: "Massage and Extras near me", hay: guides, slug: "massage-and-extras-kilimani" },
+  { label: "Massage and Extras near me", hay: guides },
   { label: "massage rooms near me", hay: [homePage, contactPage].join("\n") },
   { label: "spa near me", hay: homeHaystack() },
   { label: "Kilimani massage", hay: homeHaystack() },
@@ -96,11 +122,16 @@ const hardChecks = [
 
 for (const check of hardChecks) {
   if (!includesPhrase(check.hay, check.label)) {
-    errors.push(`Hard guard failed: "${check.label}" missing${check.slug ? ` (${check.slug})` : ""}`);
+    errors.push(`Hard guard failed: "${check.label}" missing`);
   }
 }
 
-// profTitleHome keyword cluster
+// Area-aware combo: Lavington must appear in generated title formula
+const nuruLavington = `${treatmentLeads["nuru-massage"]} near me Lavington`;
+if (!nuruLavington.includes("Lavington")) {
+  errors.push("combo title formula must include specific area name");
+}
+
 if (!seoTitles.includes("spa near me")) {
   errors.push("profTitleHome must include spa near me");
 }
@@ -115,5 +146,5 @@ if (errors.length) {
 }
 
 console.log(
-  `Keyword check passed (${keywordEntries.length} mapped keywords + hard guards).`
+  `Keyword check passed (${keywordEntries.length} mapped keywords + 12 treatment leads).`
 );
