@@ -45,8 +45,14 @@ const seoTitles = readFileSync(join(root, "src/lib/seo-titles.ts"), "utf8");
 if (!seoTitles.includes("BEST Massage Spa Kilimani")) {
   errors.push("seo-titles.ts: profTitleHome must include BEST Massage Spa Kilimani");
 }
-if (!seoTitles.includes("near me")) {
-  errors.push("seo-titles.ts: profTitleHome must include near me");
+if (!seoTitles.includes("spa near me")) {
+  errors.push("seo-titles.ts: profTitleHome must include spa near me");
+}
+if (!seoTitles.includes("Kilimani massage")) {
+  errors.push("seo-titles.ts: profTitleHome must include Kilimani massage");
+}
+if (!seoTitles.includes("massage spa near me")) {
+  errors.push("seo-titles.ts: profTitleHome must include massage spa near me");
 }
 
 const pageTs = readFileSync(join(root, "src/app/page.tsx"), "utf8");

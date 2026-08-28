@@ -34,7 +34,7 @@ npm start
 | Path | Purpose |
 | --- | --- |
 | `/` | Homepage |
-| `/massage-treatments/` | Treatments hub + 11 service pages |
+| `/massage-treatments/` | Treatments hub + 12 service pages |
 | `/masseuses/` | Masseuse hub + 6 profiles |
 | `/guides/` | Topical guides hub + articles |
 | `/areas/` | Nairobi County hub |

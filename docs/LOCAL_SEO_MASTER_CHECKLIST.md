@@ -30,8 +30,12 @@ Work **Phase 0 → Phase 6** in order. ProfResults delivery typically maps to **
 ```bash
 npm run build
 npm run check:unique
+npm run check:titles
+npm run check:keywords
 node scripts/geotag-images.mjs   # after new images
 ```
+
+> **Keyword map:** Priority terms → pages in [`src/content/target-keywords.ts`](../src/content/target-keywords.ts). Run `npm run check:keywords` after keyword rollout edits.
 
 **Index check (post-deploy):** `site:kilimanihotmassage.co.ke` — minimum 30 URLs; goal ≫ 30 (~2,175 in sitemap).
 
@@ -104,6 +108,7 @@ node scripts/geotag-images.mjs   # after new images
 - [x] **4.4 · ✅ Shipped** — Home title — "near me"
 - [x] **4.5 · ✅ Shipped** — Home title — brand at end
 - [x] **4.6–4.11 · ✅ Shipped** — All template titles (service, area, combo, guide, masseuse, hub)
+- [x] **4.19 · ✅ Shipped** — Keyword-aware titles — Target: [`src/lib/seo-titles.ts`](../src/lib/seo-titles.ts) + [`src/content/target-keywords.ts`](../src/content/target-keywords.ts) · Guard: `npm run check:keywords`
 - [x] **4.12–4.18 · ✅ Shipped** — Hub/contact/about titles, unique per URL, meta descriptions, no ALL-CAPS spam
 - [x] **5.1 · ✅ Shipped** — One H1 per page
 - [x] **5.2 · ✅ Shipped** — Home H1 = "Massage Spa Kilimani" — Target: `src/app/page.tsx`
@@ -181,7 +186,7 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 - [x] **6.1 · ✅ Shipped** — Rank 1 homepage — Target: `src/app/page.tsx`
 - [x] **6.2–6.5 · ✅ Shipped** — Rank 2 hubs (treatments, areas, guides, masseuses)
-- [x] **6.6–6.9 · ✅ Shipped** — Rank 3 pages (11 services, ~119 areas, 10 guides, 6 masseuses)
+- [x] **6.6–6.9 · ✅ Shipped** — Rank 3 pages (12 services, ~119 areas, 11 guides, 6 masseuses)
 - [x] **6.10–6.11 · ✅ Shipped** — Rank 4 combos (~1,309 service + ~714 masseuse)
 - [x] **6.12–6.14 · ✅ Shipped** — Breadcrumbs visual + JSON-LD + URL slug hierarchy — Target: `Breadcrumbs.tsx`, `breadcrumbJsonLd()`
 - [x] **6.15 · ✅ Shipped** — Treatment pages ≥1,500 words — Target: `src/content/treatments.ts`
