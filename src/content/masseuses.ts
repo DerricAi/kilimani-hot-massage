@@ -16,7 +16,7 @@ export const masseuses: Masseuse[] = [
   {
     slug: "amara",
     name: "Amara",
-    tagline: "Swedish, deep tissue, and hot stone specialist.",
+    tagline: "Measured pressure, quiet suites—Swedish, deep tissue, and hot stone specialist.",
     metaTitle: "Amara Masseuse Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription:
       "Book Amara for Swedish, deep tissue, or hot stone massage in Kilimani. Open 24/7. WhatsApp 0746 203398.",
@@ -25,7 +25,7 @@ export const masseuses: Masseuse[] = [
       "Amara brings calm precision to classic and deep work—guests praise her steady pressure and quiet rooms.",
     longBio: [
       "Amara trained in Swedish fundamentals before specialising in deep tissue sequencing for desk and driving tension—the patterns Nairobi guests bring from Kilimani laptops, Upper Hill clinics, and Westlands commutes along Waiyaki Way. She starts every session with a clear pressure check on the back or shoulder, then adjusts without breaking rhythm, so you never have to wonder whether she heard your request for lighter or firmer work. Quiet rooms are her default; conversation is welcome if you lead, but she will not fill silence with chatter when you came to Marcus Garvey Rd to downshift.",
-      "Her Swedish sessions favour continuous oil contact and full-body flow—ideal for first visits and for recovery weeks after deeper work. When you book deep tissue, she warms tissue thoroughly before sinking into upper traps, levator scapulae, lumbar, and the glute–hip complex that task chairs lock tight. Hot stone is a natural partner in her toolkit: heat softens guarded shoulders on cool Lavington evenings before hands finish the map. Guests comparing modalities in our Swedish versus deep tissue guide often request Amara when they want one therapist who can deliver either side of that choice—or a ninety-minute hybrid.",
+      "Her Swedish sessions favour continuous oil contact and full-body flow—ideal for first visits and for recovery weeks after deeper work. When you book deep tissue, she warms tissue thoroughly before sinking into upper traps, levator scapulae, lumbar, and the glute–hip complex that task chairs lock tight. Hot stone is a natural partner in her toolkit: heat softens guarded shoulders on cool Kilimani evenings before hands finish the map. Guests comparing modalities in our Swedish versus deep tissue guide often request Amara when they want one therapist who can deliver either side of that choice—or a ninety-minute hybrid.",
       "Desk workers are a core part of her book. Mention desk neck or headset strain when you WhatsApp 0746 203398 so she prioritises cervical and thoracic work. Drivers who spent the afternoon on Ngong Rd or Mombasa Rd should flag lower-back and hip flexor focus. She reads our desk-worker guide recommendations the same way regulars do: frequency matters, and consistency with the same masseuse accelerates results across project seasons.",
       "If you are coming from Kilimani, Upper Hill, or Westlands, ask for Amara when you WhatsApp—especially for late sessions after long office days. Overnight and early-morning slots suit her calm pacing; first-time guests who skim what to expect on a first massage often feel at ease under her draping standards and unhurried intro. Couples can book her alongside another therapist when one partner wants deep tissue while the other prefers Swedish in a shared suite.",
       "Browse her specialty treatment pages for Swedish massage, deep tissue massage, and hot stone massage before you arrive if you like to decide vocabulary in advance. Area pages for Lavington, Kilimani, and Westlands list Amara with local booking landers—useful when sharing links—while every session still happens at Kilimani Hot Massage on Marcus Garvey Rd. Request her by name; if she is finishing another guest, we will quote the next realistic start rather than rush a pressure map that deserves full attention.",
@@ -58,7 +58,7 @@ export const masseuses: Masseuse[] = [
   {
     slug: "zuri",
     name: "Zuri",
-    tagline: "Aromatherapy, couples, and four-hands.",
+    tagline: "Scent-led evenings and paired rooms—aromatherapy, couples, and four-hands.",
     metaTitle: "Zuri Masseuse Kilimani | Kilimani Hot Massage",
     metaDescription:
       "Book Zuri for aromatherapy, couples, or four-hands massage in Kilimani. 24/7. Call 0746 203398.",
@@ -102,7 +102,7 @@ export const masseuses: Masseuse[] = [
   {
     slug: "aisha",
     name: "Aisha",
-    tagline: "Nuru, body-to-body, and sensual sessions.",
+    tagline: "Consent-first Nuru and sensual work—discreet Kilimani night sessions.",
     metaTitle: "Aisha Masseuse Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription:
       "Book Aisha for Nuru, body-to-body, or sensual massage in Kilimani. WhatsApp 0746 203398.",
@@ -193,7 +193,7 @@ export const masseuses: Masseuse[] = [
   {
     slug: "keisha",
     name: "Keisha",
-    tagline: "Deep tissue, Swedish, and hot stone.",
+    tagline: "Firm sports recovery—deep tissue for gym days and Upper Hill desk neck.",
     metaTitle: "Keisha Masseuse Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription:
       "Book Keisha for deep tissue and Swedish massage in Kilimani. Call 0746 203398.",
@@ -241,7 +241,7 @@ export const masseuses: Masseuse[] = [
   {
     slug: "lina",
     name: "Lina",
-    tagline: "Couples, aromatherapy, and four-hands.",
+    tagline: "Synchronized four-hands with Zuri—couples and aromatherapy staging expert.",
     metaTitle: "Lina Masseuse Kilimani | Kilimani Hot Massage",
     metaDescription:
       "Book Lina for couples and four-hands massage in Kilimani. WhatsApp 0746 203398.",

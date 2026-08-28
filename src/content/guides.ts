@@ -30,7 +30,7 @@ const guidesBase: Guide[] = [
     metaDescription:
       "Compare Swedish and deep tissue massage at our Kilimani spa on Marcus Garvey Rd. Which suits desk tension, gym recovery, or first visits? Open 24/7.",
     h1: "Swedish vs Deep Tissue: Which Massage Fits You in Kilimani?",
-    excerpt: "A clear comparison for Nairobi guests choosing between classic Swedish flow and focused deep tissue pressure—grounded in how sessions actually feel at our Marcus Garvey Rd studio.",
+    excerpt: "Pick Swedish for full-body ease or deep tissue for stubborn traps—this guide compares pressure, recovery, and booking tips at our Kilimani studio on Marcus Garvey Rd, not a generic spa menu.",
     publishedAt: "2026-08-01",
     tags: ["swedish", "deep-tissue", "beginners"],
     relatedTreatments: ["swedish-massage", "deep-tissue-massage", "hot-stone-massage"],
@@ -129,7 +129,7 @@ const guidesBase: Guide[] = [
     metaDescription:
       "First time at a Nairobi massage spa? How booking, arrival, privacy, and pressure checks work at Kilimani Hot Massage on Marcus Garvey Rd.",
     h1: "What to Expect on Your First Massage Visit in Kilimani",
-    excerpt: "A practical walkthrough of booking, arrival, draping, pressure checks, and aftercare at our 24/7 Kilimani studio on Marcus Garvey Rd—written for first-time Nairobi spa guests.",
+    excerpt: "From WhatsApp booking to shower aftercare—what happens on Marcus Garvey Rd when it is your first Kilimani massage, including draping, pressure checks, and overnight arrivals.",
     publishedAt: "2026-08-02",
     tags: ["beginners", "booking", "privacy"],
     relatedTreatments: ["swedish-massage", "aromatherapy-massage", "couples-massage"],
@@ -228,7 +228,7 @@ const guidesBase: Guide[] = [
     metaDescription:
       "Neck, shoulder, and lower-back relief for Nairobi desk workers. Deep tissue, Swedish, and hot stone options at Kilimani Hot Massage—open 24/7.",
     h1: "Best Massage Options for Nairobi Desk Workers",
-    excerpt: "How to unwind tech-neck and chair fatigue after days in Kilimani, Upper Hill, Westlands, or CBD offices—plus which modalities and therapists to request at our Marcus Garvey Rd studio.",
+    excerpt: "Trap release for Ngong Rd commutes and balcony-laptop weeks—modalities, frequency, and whether to request Amara or Keisha at Marcus Garvey Rd.",
     publishedAt: "2026-08-03",
     tags: ["deep-tissue", "wellness", "office"],
     relatedTreatments: ["deep-tissue-massage", "swedish-massage", "hot-stone-massage"],
@@ -336,7 +336,7 @@ const guidesBase: Guide[] = [
     metaDescription:
       "What Nuru massage involves, how privacy works, and how to book at Kilimani Hot Massage on Marcus Garvey Rd. Discreet suites, open 24/7.",
     h1: "Nuru Massage in Kilimani: A Clear Guest Guide",
-    excerpt: "Understand gel-based Nuru sessions, suite setup, consent-led pacing, and discreet booking at our Marcus Garvey Rd studio—written for Nairobi guests who want clarity before they arrive.",
+    excerpt: "Gel prep, suite privacy, and consent pacing for Nuru at Kilimani Hot Massage—written for guests near Yaya Centre who want clarity before a Marcus Garvey Rd booking.",
     publishedAt: "2026-08-04",
     tags: ["nuru", "signature", "privacy"],
     relatedTreatments: ["nuru-massage", "body-to-body-massage", "sensual-erotic-massage"],
@@ -450,7 +450,7 @@ const guidesBase: Guide[] = [
     metaDescription:
       "Plan a couples massage date night in Kilimani. Two tables, optional four-hands, open 24/7 on Marcus Garvey Rd. WhatsApp 0746 203398.",
     h1: "Couples Massage in Kilimani: Date-Night Guide",
-    excerpt: "How to book side-by-side tables, match or mix modalities, add four-hands, and time your evening near Valley Arcade, Yaya Centre, and the wider Kilimani–Lavington corridor.",
+    excerpt: "Side-by-side tables, mixed modalities, and four-hands upgrades after Wood Avenue or Adlife Plaza dinners—couples booking on Marcus Garvey Rd.",
     publishedAt: "2026-08-05",
     tags: ["couples", "four-hands", "date-night"],
     relatedTreatments: ["couples-massage", "four-hands-massage", "aromatherapy-massage"],
@@ -564,7 +564,7 @@ const guidesBase: Guide[] = [
     metaDescription:
       "How heated stones soften tight muscle for Nairobi evenings. Benefits, who it suits, and booking at Kilimani Hot Massage—open 24/7.",
     h1: "Hot Stone Massage Benefits for Nairobi Guests",
-    excerpt: "Why heat helps guarded shoulders and backs after Nairobi drives and air-conditioned offices—and when to pair hot stones with Swedish or deep tissue at our Marcus Garvey Rd studio.",
+    excerpt: "When basalt heat beats hands alone on guarded Kilimani shoulders—and how Amara pairs stones with Swedish or deep tissue on rainy Marcus Garvey Rd evenings.",
     publishedAt: "2026-08-06",
     tags: ["hot-stone", "recovery", "wellness"],
     relatedTreatments: ["hot-stone-massage", "deep-tissue-massage", "swedish-massage"],

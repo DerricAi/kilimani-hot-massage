@@ -1902,7 +1902,7 @@ const tierAExtra: Record<string, Partial<AreaEnrichment>> = {
         heading: "Household rhythms behind Spring Valley walls",
         paragraphs: [
           "Staff wellness quarterly: three therapists, four hours, rotating nannies and guards from Spring Valley Rd estates—employers book through single PA line.",
-          "Spouse clubs informally refer 'the Argwings place'—word-of-mouth beats brochures in diplomatic circles.",
+          "Spouse clubs informally refer 'the Marcus Garvey spa'—word-of-mouth beats brochures in diplomatic circles.",
           "Pet owners note we tolerate brief lobby waits when Spring Valley dogs accompany drivers—water bowl by reception for furry gate companions.",
           "Compound generators failing during outages push residents to spa air-conditioning—unexpectedly popular rainy-season pattern from Spring Valley.",
         ],
@@ -1954,7 +1954,7 @@ const tierAExtra: Record<string, Partial<AreaEnrichment>> = {
   "cbd-nairobi": {
     sections: [
       {
-        heading: "CBD intensity cycles and the Argwings escape",
+        heading: "CBD intensity cycles and the Marcus Garvey escape",
         paragraphs: [
           "Nairobi CBD breathes in tides—morning hawker setup, lunch Kenyatta Ave chaos, evening Tom Mboya Street commerce, overnight cleaners and auditors. Each tide carries different massage needs; 24/7 coverage matches CBD metabolism unlike nine-to-five mall spas.",
           "Black Friday-style sales at Archives and Moi Ave send retail managers limping; reflexology Sundays before Monday restock become ritual. CBD construction on Haile Selassie detours temporarily—reception tracks city notices and texts alternate routes.",
@@ -2348,7 +2348,7 @@ const tierAExtra2: Record<string, Partial<AreaEnrichment>> = {
         heading: "Skyscraper specifics Nairobi Central guests cite",
         paragraphs: [
           "Kenyatta Ave tower security downstairs delays—text reception from lobby turnstiles.",
-          "Moi Ave hotel bellboys know our name—tip if they help lost delegates Argwings bound.",
+          "Moi Ave hotel bellboys know our name—tip if they help lost delegates Marcus Garvey Rd bound.",
           "University Way student budget Swedish honest—sixty minutes not ninety sometimes enough.",
           "City Hall Way protests detour maps shared live—Nairobi Central resilience community.",
         ],
@@ -2714,8 +2714,8 @@ for (const [slug, extra] of Object.entries(tierAExtra4)) {
 }
 
 const tierAExtra5: Record<string, Partial<AreaEnrichment>> = {
-  "cbd-nairobi": { localTips: ["Save 0746 203398 as 'Argwings spa' in CBD contacts."] },
-  westlands: { localTips: ["Westlands monthly packages: ask when commuting Argwings twice weekly."] },
+  "cbd-nairobi": { localTips: ["Save 0746 203398 as 'Kilimani spa' in CBD contacts."] },
+  westlands: { localTips: ["Westlands monthly packages: ask when commuting to Marcus Garvey Rd twice weekly."] },
   kitisuru: {
     faqs: [{ q: "Do Kitisuru families book multi-generational massage visits?", a: "Yes—grandparents, parents, and teens from Peponi Rd estates often stagger Marcus Garvey Rd rooms same afternoon. Call 0746 203398 with headcount and ages for appropriate pressure matching across Kitisuru households." }],
   },
@@ -2733,7 +2733,7 @@ const tierAExtra5: Record<string, Partial<AreaEnrichment>> = {
   },
   karen: {
     faqs: [{ q: "How do Karen guests time massage around Ngong Rd brunch traffic?", a: "Book 3 p.m. Sunday post-brunch when Karen Hub queues peak noon—Ngong north toward Marcus Garvey Rd flows smoother mid-afternoon. Call 0746 203398 holding room while finishing Karen Hub errands." }],
-    localTips: ["Karen safari returns: evening Argwings slots beat dusty immediate park exit chaos."],
+    localTips: ["Karen safari returns: evening Marcus Garvey Rd slots beat dusty immediate park exit chaos."],
   },
   langata: {
     faqs: [
@@ -2803,14 +2803,14 @@ for (const [slug, extra] of Object.entries(tierAExtra6)) {
 const tierAExtra7: Record<string, Partial<AreaEnrichment>> = {
   kabiro: { localTips: ["Kabiro James Gichuru junction: call 0746 203398 for last-turn voice guidance to Marcus Garvey Rd gate."] },
   karen: { localTips: ["Karen Ngong Sunday brunch: book 3 p.m. Marcus Garvey Rd slot before leaving Karen Hub queues."] },
-  kitisuru: { localTips: ["Kitisuru UN week: midday Argwings slots quieter than Peponi evening convoys."] },
+  kitisuru: { localTips: ["Kitisuru UN week: midday Marcus Garvey Rd slots quieter than Peponi evening convoys."] },
   langata: {
     faqs: [{ q: "Are Langata South C guests served from Marcus Garvey Rd spa?", a: "Yes—South C uses Ngong and Mombasa connectors similar to Langata constituency timing, roughly fifteen to twenty-five minutes to Kilimani Hot Massage at 0746 203398." }],
     localTips: ["Langata Wilson layover: sixty-minute express feasible with tight timing—call en route."],
   },
-  "nairobi-central": { localTips: ["Nairobi Central summit weeks: reserve Argwings massage before KICC badge pickup."] },
+  "nairobi-central": { localTips: ["Nairobi Central summit weeks: reserve Kilimani massage before KICC badge pickup."] },
   "parklands-highridge": { localTips: ["Aga Khan visiting hours end: Limuru flows smoother after 8 p.m. toward Marcus Garvey Rd."] },
-  riverside: { localTips: ["Riverside quarter-end: block Argwings rooms before final all-nighter week begins."] },
+  riverside: { localTips: ["Riverside quarter-end: block Marcus Garvey Rd rooms before final all-nighter week begins."] },
   "spring-valley": { localTips: ["Spring Valley gate delays: WhatsApp ETA after security clears Peponi-bound chauffeurs."] },
   starehe: { localTips: ["Starehe election days: call 0746 203398 live before Haile Selassie departures."] },
   "upper-hill": { localTips: ["Upper Hill year-end: book December 28 Marcus Garvey Rd recovery before towers empty."] },
@@ -2850,7 +2850,7 @@ const tierAExtra9Tips: Record<string, string[]> = {
   kabiro: ["Kabiro repeat visits: ask 0746 203398 about multi-session packages saving James Gichuru commute costs monthly."],
   langata: ["Langata constituency: pin Kilimani Hot Massage before Wilson red-eye departures—maps confuse at night."],
   "nairobi-central": ["Nairobi Central: Haile Selassie westbound after 9 p.m. fastest Marcus Garvey Rd commute most weeks."],
-  riverside: ["Riverside chauffeurs: share saved Argwings gate photo—first Lavington trip smoother for executives."],
+  riverside: ["Riverside chauffeurs: share saved Marcus Garvey Rd gate photo—first Kilimani trip smoother for executives."],
   "spring-valley": ["Spring Valley rotation month: book orientation-week massage before embassy social season peaks."],
   starehe: ["Starehe family credits: one 0746 203398 line serves Ngara, Pangani, and central wards equally."],
   "woodley-kenyatta-golf-course": ["Woodley Ngong construction: watch WhatsApp bypass alerts before Kenyatta Golf Course tournament weekends."],
@@ -2861,14 +2861,14 @@ for (const [slug, tips] of Object.entries(tierAExtra9Tips)) {
 }
 
 areaEnrichments.langata?.localTips.push("Langata: call 0746 203398 en route from Galleria for live Ngong traffic holds.");
-areaEnrichments.riverside?.localTips.push("Riverside: mid-week 2 p.m. Argwings slots quietest for executive privacy.");
+areaEnrichments.riverside?.localTips.push("Riverside: mid-week 2 p.m. Marcus Garvey Rd slots quietest for executive privacy.");
 areaEnrichments["spring-valley"]?.localTips.push("Spring Valley: unscented oils available—note at 0746 203398 booking.");
 areaEnrichments.starehe?.localTips.push("Starehe: ward name at booking speeds Haile Selassie routing advice.");
 areaEnrichments["woodley-kenyatta-golf-course"]?.localTips.push("Woodley: tournament Thursdays—reserve Argwings couples rooms early.");
 areaEnrichments.riverside?.localTips.push("Riverside Square: text lobby departure to 0746 203398 for Argwings room holds.");
 areaEnrichments.starehe?.localTips.push("Starehe Ngara: mid-morning Tuesday Argwings commutes beat Saturday market exits.");
 areaEnrichments["woodley-kenyatta-golf-course"]?.localTips.push("Woodley Adams: gym-then-massage same evening when Ngong flows north.");
-areaEnrichments["woodley-kenyatta-golf-course"]?.localTips.push("Woodley: save 0746 203398 for Kenyatta Golf post-round Argwings bookings.");
+areaEnrichments["woodley-kenyatta-golf-course"]?.localTips.push("Woodley: save 0746 203398 for Kenyatta Golf post-round Kilimani bookings.");
 
 type AreaInput = {
   slug: string;

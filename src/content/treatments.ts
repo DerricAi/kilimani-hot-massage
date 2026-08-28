@@ -21,7 +21,7 @@ export const treatments: Treatment[] = [
     slug: "swedish-massage",
     name: "Swedish Massage",
     shortName: "Swedish",
-    tagline: "Long, flowing strokes to melt tension after Nairobi traffic.",
+    tagline: "Classic effleurage and kneading—reset after Ngong Rd traffic or a Yaya Centre errand.",
     metaTitle: "Swedish Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Book Swedish massage on Marcus Garvey Rd, Kilimani. Open 24/7. Call or WhatsApp 0746 203398.",
     h1: "Swedish Massage in Kilimani, Nairobi",
@@ -140,7 +140,7 @@ export const treatments: Treatment[] = [
     slug: "deep-tissue-massage",
     name: "Deep Tissue Massage",
     shortName: "Deep Tissue",
-    tagline: "Focused pressure for desk necks, gym tightness, and road tension.",
+    tagline: "Slow, targeted pressure for trap knots, gym soreness, and Kilimani desk strain.",
     metaTitle: "Deep Tissue Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Deep tissue massage in Kilimani on Marcus Garvey Rd, Kilimani. Open 24/7. WhatsApp 0746 203398.",
     h1: "Deep Tissue Massage in Kilimani",
@@ -159,7 +159,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Deep Tissue Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Deep tissue uses slow, anchored strokes and forearm or elbow work to lengthen shortened muscle and fascia—especially upper trapezius, rhomboids, piriformis, and calves that tighten from brake-and-accelerator cycles. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For deep tissue sessions we emphasise methodical, breath-aware pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Fresh linens, unscented or aromatherapy oil warmed before you enter, and a two-minute pressure chat—that is how Swedish starts at Kilimani Hot Massage on Marcus Garvey Rd. Guests from Yaya Centre and Adlife Plaza step straight from ride-hail into a quiet suite without lobby queues.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Deep Tissue is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -175,10 +175,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Deep Tissue Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Deep Tissue Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Deep tissue fills weekday books for Ngong Rd commuters, CrossFit regulars off Ring Rd Kilimani, and Upper Hill bankers carrying trap tension. Many guests alternate: deep tissue after gym, Swedish on recovery days—same Marcus Garvey Rd suite, different pacing.",
           "Some guests choose deep tissue for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether deep tissue fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for deep tissue because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Expats comparing Nairobi gyms to home cities often start deep tissue here for trap and lumbar work that matches international spa standards—without CBD hotel visibility on Marcus Garvey Rd.",
         ],
       },
       {
@@ -202,7 +202,7 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
+          "Deep tissue guests often arrive from Upper Hill via Haile Selassie or from Westlands via James Gichuru—both merge toward Marcus Garvey Rd. Allow ten minutes at evening peak.",
           "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book deep tissue after dark for smooth entry.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
           "After deep tissue, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
@@ -259,17 +259,17 @@ export const treatments: Treatment[] = [
     slug: "nuru-massage",
     name: "Nuru Massage",
     shortName: "Nuru",
-    tagline: "Silky gel, full-body glide, private suite.",
+    tagline: "Warm gel glide in a dim suite—full-body contact with clear consent checkpoints.",
     metaTitle: "Nuru Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Private Nuru massage in Kilimani. Discreet suites, open 24/7. Call 0746 203398.",
     h1: "Nuru Massage in Kilimani, Nairobi",
     summary: "Nuru massage at Kilimani Hot Massage is a gel-based full-body experience in a private, climate-controlled suite—fluid contact from shoulders to calves without the friction of traditional oil alone. We prepare authentic nuru gel, warm the room, and stage shower access so the session feels seamless from arrival on Marcus Garvey Rd. Guests from Kilimani, Westlands, and Kileleshwa choose nuru for continuous glide and discreet adult relaxation near Yaya Centre and Valley Arcade. Open 24/7; WhatsApp 0746 203398.",
     benefits: [
       "Ultra-smooth glide with specialist nuru gel",
-      "Private suite with shower—discreet Lavington location",
+      "Private suite with shower—discreet Kilimani location",
       "Continuous full-body contact with therapist-led pacing",
       "Low-profile booking and check-in via WhatsApp",
-      "Climate-controlled room near Lavington Mall",
+      "Climate-controlled room near Yaya Centre",
       "Available any hour including late night from Upper Hill",
     ],
     sections: [
@@ -278,7 +278,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Nuru Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Nuru relies on colourless, odourless gel that stays slick longer than oil—enabling full-body slides, chest-to-back glides, and uninterrupted rhythm when both guest and therapist are gel-coated. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For nuru sessions we emphasise slow, fluid, sensual yet professional pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Deep tissue here means slow warm-up strokes before any firm work—no cold-table surprises on Marcus Garvey Rd. We note injuries on WhatsApp 0746 203398 so your therapist stages heat, gel, or extra trap time before you arrive from Kilimani or Westlands.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Nuru is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -294,10 +294,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Nuru Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Nuru Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Nuru guests include discreet professionals from Kilimani towers, couples exploring shared sessions, and travellers who want gel-based glide without hotel-spa visibility. Aisha and Nuri are frequently requested when guests WhatsApp from Yaya Centre after midnight.",
           "Some guests choose nuru for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether nuru fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for nuru because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Regional travellers familiar with Nuru abroad appreciate gel quality and suite privacy on Marcus Garvey Rd—distinct from anonymous roadside listings elsewhere in Nairobi.",
         ],
       },
       {
@@ -321,10 +321,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book nuru after dark for smooth entry.",
+          "Nuru sessions need shower access—arrive five minutes early if first visit. Drivers know Marcus Garvey Rd near Yaya Centre; mention Kilimani Hot Massage explicitly.",
+          "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After nuru, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "After Nuru, shower in-suite then message for a pin if your driver confuses Kilimani pins—gel sessions leave skin relaxed, not rushed.",
         ],
       },
       {
@@ -378,10 +378,10 @@ export const treatments: Treatment[] = [
     slug: "body-to-body-massage",
     name: "Body-to-Body Massage",
     shortName: "Body-to-Body",
-    tagline: "Close, continuous contact in a locked private room.",
+    tagline: "Skin-to-skin flow with draping choices—discreet Marcus Garvey Rd adult sessions.",
     metaTitle: "Body to Body Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Body-to-body massage on Marcus Garvey Rd, Kilimani. Open 24/7. WhatsApp 0746 203398.",
-    h1: "Body-to-Body Massage Lavington",
+    h1: "Body-to-Body Massage Kilimani",
     summary: "Body-to-body massage at Kilimani Hot Massage places skilled, consent-led contact at the centre of your session—close rhythmic work in a locked private suite off Marcus Garvey Rd. Ideal for guests from Yaya Centre, Kilimani, or Westlands hotels who want immersive touch without crowds. Warm oil or nuru gel, shower access, and clear boundaries before hands begin. We are open twenty-four seven near Valley Arcade and Lavington Mall—book discreetly on 0746 203398.",
     benefits: [
       "Private suite reserved exclusively for your booking",
@@ -397,7 +397,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Body-to-Body Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Body-to-body uses sustained skin contact—torso, arms, and legs working in tandem with yours—to create deep sensory immersion while maintaining professional boundaries discussed at intake. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For body-to-body sessions we emphasise close-contact, intentional, adult pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Nuru suites are prepared with gel temperature, airflow, and shower access checked before you walk in from Marcus Garvey Rd. Boundaries are confirmed in writing on WhatsApp when you book—standard for every Kilimani guest, whether local or visiting from Junction Mall.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Body-to-Body is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -413,10 +413,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Body-to-Body Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Body-to-Body Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Body-to-Body-to-body suits guests who want continuous contact and clear adult framing—common among Westlands hotel stays and Kilimani residents who prefer locked-suite privacy over mall spas. Book Aisha when you want consent-led pacing explained before hands begin.",
           "Some guests choose body-to-body for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether body-to-body fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for body-to-body because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Hotel guests from Westlands and Upper Hill choose body-to-body when they want adult contact with spa-grade hygiene—locked Kilimani suite, not in-room uncertainty.",
         ],
       },
       {
@@ -440,10 +440,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book body-to-body after dark for smooth entry.",
+          "Discreet arrivals: use street parking when instructed on WhatsApp. Marcus Garvey Rd sits between Yaya Centre energy and Valley Arcade calm.",
+          "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After body-to-body, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "After body-to-body, quiet ride-hail home to Kilimani or Kileleshwa suits most guests—avoid loud bars immediately if you wanted nervous-system downshift.",
         ],
       },
       {
@@ -497,7 +497,7 @@ export const treatments: Treatment[] = [
     slug: "four-hands-massage",
     name: "Four-Hands Massage",
     shortName: "Four-Hands",
-    tagline: "Two therapists, one synchronized rhythm.",
+    tagline: "Two therapists, one rhythm—our most immersive upgrade on Wood Avenue nights.",
     metaTitle: "Four Hands Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Four-hands massage in Kilimani. Two therapists, open 24/7. Call 0746 203398.",
     h1: "Four-Hands Massage in Kilimani",
@@ -516,7 +516,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Four-Hands Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Two therapists work as a unit—one mirroring the other on opposite sides or splitting upper and lower body—so your nervous system stops tracking a single point of contact and fully releases. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For four-hands sessions we emphasise synchronised, immersive pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Body-to-body sessions lock the door, confirm consent lines, and only then begin oil or gel work—no ambiguity at our Marcus Garvey Rd studio. Discreet entry from Ring Rd Kilimani or Wood Avenue; reception never announces guest names aloud.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Four-Hands is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -532,10 +532,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Four-Hands Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Four-Hands Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Four-Four-hands is a birthday and anniversary upgrade—Zuri and Lina pair most often. Kilimani couples message after Wood Avenue dinners; solo guests book four-hands when they want immersive rhythm without managing two separate appointments.",
           "Some guests choose four-hands for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether four-hands fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for four-hands because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Anniversary travellers and diaspora returnees often book four-hands once per trip—Zuri and Lina as the default pair when availability allows on Marcus Garvey Rd.",
         ],
       },
       {
@@ -559,10 +559,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book four-hands after dark for smooth entry.",
+          "Four-hands requires both therapists on site—confirm pairing when you book from Kilimani or Lavington. Side-street parking fits two vehicles on weeknights.",
+          "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After four-hands, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "Four-hands guests often celebrate with dessert near Adlife Plaza—book dinner after, not before, so synchrony is not rushed.",
         ],
       },
       {
@@ -617,7 +617,7 @@ export const treatments: Treatment[] = [
     name: "Sensual / Erotic Massage",
     shortName: "Sensual",
     tagline: "Tasteful, adult-oriented sensual massage in private suites.",
-    metaTitle: "Sensual Erotic Massage Lavington Nairobi | Kilimani Hot Massage",
+    metaTitle: "Sensual Erotic Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Discreet sensual massage in Kilimani, Nairobi. Open 24/7. WhatsApp 0746 203398.",
     h1: "Sensual Massage in Kilimani",
     summary: "Sensual massage at Kilimani Hot Massage is an adults-only experience in a locked private suite—warm oils, low lighting, and therapist-led pacing with clear consent at every stage. We serve guests from Kilimani, Kileleshwa, Westlands, and Upper Hill who want refined touch without crude atmosphere or hotel-lobby visibility. Discreet arrivals on Marcus Garvey Rd near Lavington Mall; open twenty-four seven. Enquire tastefully on WhatsApp 0746 203398.",
@@ -627,7 +627,7 @@ export const treatments: Treatment[] = [
       "Evening and overnight appointments welcome",
       "Easy discreet WhatsApp booking",
       "Premium oils and calm ambience",
-      "Central Lavington location near Yaya Centre and Valley Arcade",
+      "Central Kilimani location near Yaya Centre and Valley Arcade",
     ],
     sections: [
       {
@@ -635,7 +635,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Sensual / Erotic Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Sensual massage emphasises awakening nerve endings through slow oil glides, feathered touch, and breath-aware pacing—always adult, always consensual, never rushed or public. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For sensual sessions we emphasise tasteful, adult, unhurried pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Four-hands bookings require paired therapists on the same shift—we confirm both names on WhatsApp 0746 203398 before you leave Yaya Centre or Adlife Plaza. Rooms are widened and synchronized so elbows never compete for space on Marcus Garvey Rd.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Sensual is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -651,10 +651,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Sensual / Erotic Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Sensual / Erotic Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Sensual bookings peak on Friday and Saturday nights from Kilimani, Lavington, and Hurlingham—guests who want adult touch with spa hygiene standards. Aisha handles many sensual requests; boundaries are set in the first five minutes every time.",
           "Some guests choose sensual for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether sensual fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for sensual because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Discreet professionals across Nairobi County compare sensual offerings online—our Marcus Garvey Rd standard is consent-first pacing with trained staff, not ambiguous listings.",
         ],
       },
       {
@@ -678,7 +678,7 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
+          "Pin Kilimani Hot Massage on Marcus Garvey Rd—between Yaya Centre foot traffic and Adlife Plaza offices. James Gichuru from Kileleshwa and Ngong Rd from Upper Hill both feed the same corridor; message 0746 203398 with your starting landmark.",
           "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book sensual after dark for smooth entry.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
           "After sensual, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
@@ -735,7 +735,7 @@ export const treatments: Treatment[] = [
     slug: "couples-massage",
     name: "Couples Massage",
     shortName: "Couples",
-    tagline: "Side-by-side tables for two—same room, shared calm.",
+    tagline: "Twin tables, matched timing—book after Adlife Plaza or Junction dinners.",
     metaTitle: "Couples Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Couples massage in Kilimani. Two tables, open 24/7. Call 0746 203398.",
     h1: "Couples Massage in Kilimani, Nairobi",
@@ -754,7 +754,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Couples Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Side-by-side tables let couples share presence without sharing one therapist—conversation optional, intimacy in parallel relaxation. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For couples sessions we emphasise shared, romantic, calm pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Sensual sessions use low light, clear stop words, and therapist-led pacing—professional adult touch without crude atmosphere. Kilimani Hot Massage on Marcus Garvey Rd keeps the tone spa-first; boundaries are reconfirmed at the door every visit.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Couples is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -770,10 +770,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Couples Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Couples Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Couples massage is our strongest date-night SKU near Yaya Centre—partners mix Swedish and deep tissue in one room. Zuri stages shared suites; book forty-eight hours ahead on Valentine weekends when Marcus Garvey Rd parking fills early.",
           "Some guests choose couples for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether couples fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for couples because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Couples visiting from Karen or Runda for city weekends frequently end evenings with side-by-side tables—easy five-minute hop from Junction or Yaya Centre dining.",
         ],
       },
       {
@@ -797,10 +797,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book couples after dark for smooth entry.",
+          "Couples often dine near Yaya Centre then ride five minutes to Marcus Garvey Rd—message when you pay the bill and we warm both tables.",
+          "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After couples, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "Couples frequently continue to Wood Avenue wine bars—book massage before dinner so tables stay warm when you arrive from Marcus Garvey Rd.",
         ],
       },
       {
@@ -816,7 +816,7 @@ export const treatments: Treatment[] = [
     faqs: [
       {
         q: "Can we book different massage styles as a couple?",
-        a: "Yes. One partner may choose Swedish while the other chooses deep tissue or aromatherapy. Tell us on WhatsApp 0746 203398 when reserving your Lavington suite.",
+        a: "Yes. One partner may choose Swedish while the other chooses deep tissue or aromatherapy. Tell us on WhatsApp 0746 203398 when reserving your Kilimani suite.",
       },
       {
         q: "Is couples massage available overnight in Kilimani?",
@@ -854,7 +854,7 @@ export const treatments: Treatment[] = [
     slug: "aromatherapy-massage",
     name: "Aromatherapy Massage",
     shortName: "Aromatherapy",
-    tagline: "Essential-oil blends matched to your mood.",
+    tagline: "Scent you choose—lavender wind-down or citrus lift over warmed oil.",
     metaTitle: "Aromatherapy Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Aromatherapy massage on Marcus Garvey Rd, Kilimani. Open 24/7. WhatsApp 0746 203398.",
     h1: "Aromatherapy Massage Kilimani",
@@ -873,7 +873,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Aromatherapy Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Essential oils selected for therapeutic aroma—never overpowering—combined with effleurage and kneading that distributes scent evenly without irritating skin. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For aromatherapy sessions we emphasise gentle, sensory, restorative pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Couples rooms receive twin fresh setups—two tables, two oil warmers, matched start times. Tell us if partners want different modalities when you WhatsApp from Kilimani, Kileleshwa, or after dinner on Ngong Rd.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Aromatherapy is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -889,10 +889,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Aromatherapy Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Aromatherapy Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Aromatherapy fits stress-heavy weeks in Kilimani co-working spaces and quiet Sunday resets from Kileleshwa compounds. Zuri and Lina adjust blends for scent sensitivity—citrus for alertness, lavender for sleep-focused evenings.",
           "Some guests choose aromatherapy for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether aromatherapy fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for aromatherapy because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Scent-sensitive expats along Ngong Rd corridor request Zuri for light blends—English and Kiswahili intake keeps preferences clear before oil touches skin.",
         ],
       },
       {
@@ -916,10 +916,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book aromatherapy after dark for smooth entry.",
+          "Aromatherapy guests from Kileleshwa approach via Ring Rd or Mandera Rd into Marcus Garvey Rd. Mention scent allergies on WhatsApp so blends are ready.",
+          "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After aromatherapy, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "Lingering scent is subtle—safe for ride-share home to Kileleshwa without overpowering drivers when blends stay light.",
         ],
       },
       {
@@ -973,7 +973,7 @@ export const treatments: Treatment[] = [
     slug: "hot-stone-massage",
     name: "Hot Stone Massage",
     shortName: "Hot Stone",
-    tagline: "Heated basalt stones to loosen guarded muscle.",
+    tagline: "Heated basalt on guarded shoulders—rainy-season favourite near Yaya Centre.",
     metaTitle: "Hot Stone Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Hot stone massage in Kilimani. Open 24/7. Call 0746 203398.",
     h1: "Hot Stone Massage in Kilimani",
@@ -992,7 +992,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Hot Stone Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Basalt stones hold gentle heat that penetrates without scalding—placement opens back and shoulder fascia; gliding stones extend warmth through tight calves after Kilimani runs. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For hot stone sessions we emphasise warming, grounding pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Blends are mixed after your scent preference is noted—never overpowering in our small Marcus Garvey Rd suites. Unscented oil remains available for guests sensitive after a day in air-conditioned Kilimani offices.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Hot Stone is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -1008,10 +1008,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Hot Stone Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Hot Stone Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Hot stone spikes when Nairobi rains cool Ring Rd Kilimani flats—guests want heat before hands. Amara often pairs stones with Swedish back work; mention guarded shoulders when booking after Adlife Plaza meetings.",
           "Some guests choose hot stone for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether hot stone fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for hot stone because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Guests from colder climates notice immediate relief from heated stones on Marcus Garvey Rd—popular June through August when Nairobi evenings cool after rain.",
         ],
       },
       {
@@ -1035,7 +1035,7 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
+          "Hot stone needs stone staging time—book at least an hour ahead when possible. James Gichuru alternate saves minutes when Ngong Rd floods.",
           "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book hot stone after dark for smooth entry.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
           "After hot stone, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
@@ -1111,7 +1111,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Tantric Ritual at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Tantric ritual weaves breath cues, eye contact when comfortable, and slow oil work to build awareness through the body—sensual, meditative, and entirely private. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For tantric sessions we emphasise ritual, breath-led, intentional pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Basalt stones are heated to skin-safe temperature before you arrive—especially important on cool Kilimani evenings after rain. Stone layout is discussed during intake so shoulders or lumbar get priority based on your commute from Yaya or Valley Arcade.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Tantric is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -1127,10 +1127,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Tantric Ritual in Kilimani and Nairobi",
         paragraphs: [
-          "Tantric Ritual draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Tantric draws guests curious about breath-led ritual—not rushed adult novelty. Nuri paces sessions slowly; ideal after travel or high-stress project weeks when Kilimani professionals want downshift without losing structure.",
           "Some guests choose tantric for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether tantric fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for tantric because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Wellness-curious visitors read our tantric guide first—Nuri aligns expectations before ritual begins so Kilimani sessions feel structured, not chaotic.",
         ],
       },
       {
@@ -1154,7 +1154,7 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
+          "Pin Kilimani Hot Massage on Marcus Garvey Rd—between Yaya Centre foot traffic and Adlife Plaza offices. James Gichuru from Kileleshwa and Ngong Rd from Upper Hill both feed the same corridor; message 0746 203398 with your starting landmark.",
           "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book tantric after dark for smooth entry.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
           "After tantric, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
@@ -1211,7 +1211,7 @@ export const treatments: Treatment[] = [
     slug: "lingam-massage",
     name: "Lingam Massage",
     shortName: "Lingam",
-    tagline: "Focused male wellness massage in total privacy.",
+    tagline: "Male-focused wellness with clinical privacy—Marcus Garvey Rd, open 24/7.",
     metaTitle: "Lingam Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Private lingam massage in Kilimani. Open 24/7. Call 0746 203398.",
     h1: "Lingam Massage in Kilimani, Nairobi",
@@ -1230,7 +1230,7 @@ export const treatments: Treatment[] = [
         paragraphs: [
           "Lingam Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Lingam work centres respectful, skilled touch for male guests—combining body relaxation with focused genital massage when agreed at intake, always boundary-clear. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For lingam sessions we emphasise respectful, private, male-focused pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
-          "Hygiene and boundaries are clear from the first WhatsApp message to 0746 203398. We prepare oils, gel, stones, or aromatherapy blends before you arrive so transition from street to table is seamless. Whether you live near Lavington Mall or commute from Upper Hill, the standard is identical: premium touch, total privacy.",
+          "Tantric ritual begins with breath alignment and consent—not performance. Marcus Garvey Rd suites stay private and quiet; guests from Kilimani flats and Westlands hotels receive the same unhurried introduction.",
           "Guests from Kilimani, Kileleshwa, Upper Hill, and Westlands reach us on Marcus Garvey Rd, Kilimani in minutes when traffic on Ngong Rd or James Gichuru cooperates. We sit near Yaya Centre and  Valley Arcade—easy to find for first visits and repeat bookings alike. WhatsApp 0746 203398 with your ETA so your suite is ready; we are open twenty-four seven. Lingam is available any hour—morning reset, lunch break, or 2 a.m. after Upper Hill deadlines.",
         ],
       },
@@ -1246,10 +1246,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Who Books Lingam Massage in Kilimani and Nairobi",
         paragraphs: [
-          "Lingam Massage draws solo professionals, couples, and travellers from across Nairobi County. Lavington neighbours walk over; Kilimani and Kileleshwa clients pass Yaya Centre; Westlands guests cut via James Gichuru when lanes are clear. Upper Hill executives book late slots when meetings finally end.",
+          "Lingam wellness bookings come from Upper Hill executives and Westlands residents who want male-focused work without clinical coldness. Nuri leads most lingam sessions; WhatsApp confirms therapist and duration before Marcus Garvey Rd arrival.",
           "Some guests choose lingam for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether lingam fits your goal, message 0746 203398; we explain without pressure.",
           "Repeat visitors often arrive monthly or after stressful travel weeks. Referrals travel through WhatsApp groups in Kilimani condos and office channels in Westlands—we grow by consistency, not loud advertising. Your privacy on Marcus Garvey Rd is respected: low-key arrivals, locked suites, no shared waiting rooms.",
-          "International guests comparing Nairobi spas to Dubai or Bangkok standards frequently pick Kilimani Hot Massage for lingam because we combine discretion with genuine skill. Local landmarks—Lavington Mall, Valley Arcade, Yaya Centre—help drivers find us fast even if you are new to the city.",
+          "Male wellness seekers across Nairobi book lingam with explicit privacy—Marcus Garvey Rd location keeps commutes short from Upper Hill towers and Westlands hotels.",
         ],
       },
       {
@@ -1273,10 +1273,10 @@ export const treatments: Treatment[] = [
       {
         heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
         paragraphs: [
-          "Our studio sits on Marcus Garvey Rd, Kilimani, between Lavington Green and corridors leading to Valley Arcade and Yaya Centre. From Kilimani, follow Ngong Rd toward Kilimani; from Kileleshwa, James Gichuru or Denis Pritt depending on jams. Westlands routes often use James Gichuru southbound; Upper Hill drivers may loop via Ngong Rd.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book lingam after dark for smooth entry.",
+          "Lingam wellness: confirm therapist preference on WhatsApp 0746 203398. Marcus Garvey Rd keeps CBD and Upper Hill drives under twenty minutes at night.",
+          "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After lingam, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "After lingam wellness, water and rest beat immediate meetings—Upper Hill guests sometimes book last slot before sleep.",
         ],
       },
       {
