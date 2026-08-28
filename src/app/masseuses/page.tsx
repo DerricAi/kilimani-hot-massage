@@ -20,13 +20,13 @@ export default function MasseusesHubPage() {
       <JsonLd
         data={breadcrumbJsonLd([
           { name: "Home", url: absoluteUrl("/") },
-          { name: "Masseuses", url: absoluteUrl("/masseuses/") },
+          { name: "Massage Therapists", url: absoluteUrl("/masseuses/") },
         ])}
       />
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },
-          { name: "Masseuses" },
+          { name: "Massage Therapists" },
         ]}
       />
       <section className="section-pad mx-auto max-w-7xl py-10">
@@ -45,9 +45,9 @@ export default function MasseusesHubPage() {
             <Link
               key={m.slug}
               href={`/masseuses/${m.slug}/`}
-              className="rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-[var(--bronze)]/40"
+              className="rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-[var(--crimson)]/40"
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--bronze)]/15 font-display text-3xl text-[var(--bronze)]">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--crimson)]/15 font-display text-3xl text-[var(--crimson)]">
                 {m.name[0]}
               </div>
               <h2 className="mt-4 font-display text-2xl text-[var(--off-white)]">

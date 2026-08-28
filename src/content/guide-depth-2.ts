@@ -148,7 +148,7 @@ export const guideDepthSections2: Record<string, GuideSection[]> = {
         "Yaya Centre searchers often mean near Kilimani life. Marcus Garvey Rd sits in that mental map. Kilimani Hot Massage is the private-suite answer when mall spa energy is not what you want after errands.",
         "Combine a salon visit, grocery run, and massage only if ETAs are honest. Rushing from shop to suite with stress hormones high makes the first fifteen minutes harder—breathe in the car for two minutes first.",
         "Rain changes everything. WhatsApp from the parking deck if storms turn Ngong Rd ugly; we adjust rather than punish lateness born of weather.",
-        "Guests who know Valley Arcade coffee or Lavington Mall cinema use the same corridor. The spa is part of neighbourhood rhythm, not a tourist-only stop."
+        "Guests who know Yaya Centre coffee or Adlife Plaza errands use the same corridor. Our Marcus Garvey Rd studio is part of Kilimani rhythm, not a tourist-only stop."
       ]
     },
     {
@@ -194,7 +194,7 @@ export const guideDepthSections2: Record<string, GuideSection[]> = {
     {
       "heading": "How Kilimani Hot Massage applies this",
       "paragraphs": [
-        "Tourists should still orient to Lavington NAP first. Area pages help residents; the pin helps everyone.",
+        "Tourists should still orient to Kilimani Hot Massage NAP first. Area pages help residents; the Marcus Garvey Rd pin helps everyone.",
         "Citations and GBP remain Kilimani-centred. Do not confuse website area SEO with multi-location GBP spam—we do not do the latter.",
         "When heatmap cells in Kilimani or Westlands need photo support, that is an ops geotag task—not a reason to invent another studio.",
         "Explore /areas/, pick your hub, then WhatsApp 0746 203398. Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi."

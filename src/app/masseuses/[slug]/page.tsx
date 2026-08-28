@@ -64,7 +64,7 @@ export default async function MasseusePage({ params }: Props) {
         ]}
       />
       <article className="section-pad mx-auto max-w-3xl py-10">
-        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[var(--bronze)]/15 font-display text-4xl text-[var(--bronze)]">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[var(--crimson)]/15 font-display text-4xl text-[var(--crimson)]">
           {m.name[0]}
         </div>
         <h1 className="mt-6 font-display text-4xl text-[var(--off-white)] sm:text-5xl">
@@ -82,14 +82,14 @@ export default async function MasseusePage({ params }: Props) {
           ))}
         </div>
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">Specialties</h2>
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">Specialties</h2>
         <ul className="mt-4 flex flex-wrap gap-2">
           {specialtyTreatments.map((t) =>
             t ? (
               <li key={t.slug}>
                 <Link
                   href={`/massage-treatments/${t.slug}/`}
-                  className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                  className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
                 >
                   {t.name}
                 </Link>
@@ -102,7 +102,7 @@ export default async function MasseusePage({ params }: Props) {
           Languages: {m.languages.join(", ")}
         </p>
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
           Book {m.name} from nearby areas
         </h2>
         <ul className="mt-4 flex flex-wrap gap-2">
@@ -110,7 +110,7 @@ export default async function MasseusePage({ params }: Props) {
             <li key={a.slug}>
               <Link
                 href={areaMasseusePath(a.slug, m.slug)}
-                className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
               >
                 {m.name} in {a.name}
               </Link>
@@ -118,7 +118,7 @@ export default async function MasseusePage({ params }: Props) {
           ))}
         </ul>
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">FAQs</h2>
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">FAQs</h2>
         <div className="mt-4 space-y-3">
           {m.faqs.map((f) => (
             <details key={f.q} className="rounded-lg border border-white/10 px-4 py-3">

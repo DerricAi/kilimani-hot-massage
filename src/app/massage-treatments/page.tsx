@@ -45,9 +45,9 @@ export default function TreatmentsHubPage() {
             <Link
               key={t.slug}
               href={`/massage-treatments/${t.slug}/`}
-              className="rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-[var(--bronze)]/40"
+              className="rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-[var(--crimson)]/40"
             >
-              <h2 className="font-display text-2xl text-[var(--bronze)]">{t.name}</h2>
+              <h2 className="font-display text-2xl text-[var(--crimson)]">{t.name}</h2>
               <p className="mt-2 text-sm text-[var(--muted)]">{t.tagline}</p>
             </Link>
           ))}

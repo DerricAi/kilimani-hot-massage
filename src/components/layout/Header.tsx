@@ -25,7 +25,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[var(--charcoal)]/85 backdrop-blur-md">
       <div className="section-pad mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 lg:h-20">
         <Link href="/" className="group flex flex-col leading-none">
-          <span className="font-display text-xl text-[var(--bronze)] transition group-hover:text-[var(--bronze-light)] sm:text-2xl">
+          <span className="font-display text-xl text-[var(--crimson)] transition group-hover:text-[var(--crimson-light)] sm:text-2xl">
             Kilimani Hot Massage
           </span>
           <span className="mt-1 text-[10px] uppercase tracking-[0.28em] text-[var(--muted)]">
@@ -38,7 +38,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-[var(--off-white)]/80 transition hover:text-[var(--bronze)]"
+              className="text-sm text-[var(--off-white)]/80 transition hover:text-[var(--crimson)]"
             >
               {item.label}
             </Link>
@@ -48,16 +48,16 @@ export function Header() {
         <div className="flex items-center gap-2">
           <a
             href={`tel:${site.phoneTel}`}
-            className="hidden items-center gap-2 text-sm text-[var(--off-white)]/85 hover:text-[var(--bronze)] md:inline-flex"
+            className="hidden items-center gap-2 text-sm text-[var(--off-white)]/85 hover:text-[var(--crimson)] md:inline-flex"
           >
-            <Phone className="h-4 w-4 text-[var(--bronze)]" />
+            <Phone className="h-4 w-4 text-[var(--crimson)]" />
             {site.phoneDisplay}
           </a>
           <a
             href={whatsappLink("Hi Kilimani Hot Massage, I'd like to book a session.")}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex h-9 items-center rounded-md bg-[var(--bronze)] px-3 text-xs font-semibold text-[var(--charcoal)] hover:bg-[var(--bronze-light)] sm:px-4 sm:text-sm"
+            className="inline-flex h-9 items-center rounded-md bg-[var(--crimson)] px-3 text-xs font-semibold text-[var(--charcoal)] hover:bg-[var(--crimson-light)] sm:px-4 sm:text-sm"
           >
             Book Now
           </a>
@@ -74,7 +74,7 @@ export function Header() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="rounded-md px-3 py-2 text-sm hover:bg-white/5 hover:text-[var(--bronze)]"
+                    className="rounded-md px-3 py-2 text-sm hover:bg-white/5 hover:text-[var(--crimson)]"
                   >
                     {item.label}
                   </Link>

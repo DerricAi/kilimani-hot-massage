@@ -60,16 +60,16 @@ export default function GuidesHubPage() {
             <Link
               key={g.slug}
               href={guidePath(g.slug)}
-              className="flex flex-col rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-[var(--bronze)]/40"
+              className="flex flex-col rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-[var(--crimson)]/40"
             >
-              <p className="text-xs uppercase tracking-wider text-[var(--bronze)]">
+              <p className="text-xs uppercase tracking-wider text-[var(--crimson)]">
                 {g.tags.slice(0, 2).join(" · ")}
               </p>
               <h2 className="mt-3 font-display text-2xl text-[var(--off-white)]">
                 {g.title}
               </h2>
               <p className="mt-3 flex-1 text-sm text-[var(--muted)]">{g.excerpt}</p>
-              <span className="mt-4 text-sm text-[var(--bronze)]">Read guide →</span>
+              <span className="mt-4 text-sm text-[var(--crimson)]">Read guide →</span>
             </Link>
           ))}
         </div>

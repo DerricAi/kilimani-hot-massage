@@ -56,14 +56,14 @@ export default function AreasHubPage() {
             return (
               <div key={c.slug}>
                 <div className="flex flex-wrap items-baseline justify-between gap-3">
-                  <h2 className="font-display text-2xl text-[var(--bronze)]">
+                  <h2 className="font-display text-2xl text-[var(--crimson)]">
                     <Link href={areaPath(c.slug)} className="hover:underline">
                       {c.name}
                     </Link>
                   </h2>
                   <Link
                     href={areaPath(c.slug)}
-                    className="text-xs uppercase tracking-wider text-[var(--muted)] hover:text-[var(--bronze)]"
+                    className="text-xs uppercase tracking-wider text-[var(--muted)] hover:text-[var(--crimson)]"
                   >
                     Constituency hub →
                   </Link>
@@ -74,7 +74,7 @@ export default function AreasHubPage() {
                     <Link
                       key={a.slug}
                       href={areaPath(a.slug)}
-                      className="rounded-full border border-white/10 px-3 py-1.5 text-sm text-[var(--off-white)]/85 hover:border-[var(--bronze)]/40"
+                      className="rounded-full border border-white/10 px-3 py-1.5 text-sm text-[var(--off-white)]/85 hover:border-[var(--crimson)]/40"
                     >
                       {a.name}
                     </Link>
@@ -94,7 +94,7 @@ export default function AreasHubPage() {
                 <Link
                   key={a.slug}
                   href={areaPath(a.slug)}
-                  className="mb-2 block text-sm text-[var(--muted)] hover:text-[var(--bronze)]"
+                  className="mb-2 block text-sm text-[var(--muted)] hover:text-[var(--crimson)]"
                 >
                   {a.name}
                 </Link>

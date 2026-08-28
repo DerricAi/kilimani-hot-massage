@@ -88,7 +88,7 @@ export default async function GuideArticlePage({ params }: Props) {
         ]}
       />
       <article className="section-pad mx-auto max-w-3xl py-10">
-        <p className="text-xs uppercase tracking-[0.25em] text-[var(--bronze)]">
+        <p className="text-xs uppercase tracking-[0.25em] text-[var(--crimson)]">
           {g.publishedAt} · {g.tags.join(" · ")}
         </p>
         <h1 className="mt-3 font-display text-4xl text-[var(--off-white)] sm:text-5xl">
@@ -104,7 +104,7 @@ export default async function GuideArticlePage({ params }: Props) {
         <div className="mt-12 space-y-10">
           {g.sections.map((section) => (
             <section key={section.heading}>
-              <h2 className="font-display text-2xl text-[var(--bronze)]">
+              <h2 className="font-display text-2xl text-[var(--crimson)]">
                 {section.heading}
               </h2>
               <div className="prose-spa mt-4">
@@ -127,7 +127,7 @@ export default async function GuideArticlePage({ params }: Props) {
                   <li key={t.slug}>
                     <Link
                       href={`/massage-treatments/${t.slug}/`}
-                      className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                      className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
                     >
                       {t.name}
                     </Link>
@@ -149,7 +149,7 @@ export default async function GuideArticlePage({ params }: Props) {
                   <li key={a.slug}>
                     <Link
                       href={areaPath(a.slug)}
-                      className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                      className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
                     >
                       Massage in {a.name}
                     </Link>
@@ -171,7 +171,7 @@ export default async function GuideArticlePage({ params }: Props) {
                   <li key={m.slug}>
                     <Link
                       href={`/masseuses/${m.slug}/`}
-                      className="hover:text-[var(--bronze)]"
+                      className="hover:text-[var(--crimson)]"
                     >
                       {m.name} — {m.tagline}
                     </Link>
@@ -183,7 +183,7 @@ export default async function GuideArticlePage({ params }: Props) {
         ) : null}
 
         <section className="mt-14">
-          <h2 className="font-display text-2xl text-[var(--bronze)]">FAQs</h2>
+          <h2 className="font-display text-2xl text-[var(--crimson)]">FAQs</h2>
           <div className="mt-4 space-y-3">
             {g.faqs.map((f) => (
               <details
@@ -208,7 +208,7 @@ export default async function GuideArticlePage({ params }: Props) {
                   <li key={x.slug}>
                     <Link
                       href={guidePath(x.slug)}
-                      className="text-[var(--bronze)] hover:underline"
+                      className="text-[var(--crimson)] hover:underline"
                     >
                       {x.title}
                     </Link>
@@ -225,7 +225,7 @@ export default async function GuideArticlePage({ params }: Props) {
           />
         </div>
         <p className="mt-8 text-sm text-[var(--muted)]">
-          <Link href="/guides/" className="hover:text-[var(--bronze)]">
+          <Link href="/guides/" className="hover:text-[var(--crimson)]">
             ← All guides
           </Link>
         </p>

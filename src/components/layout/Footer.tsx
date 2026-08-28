@@ -13,7 +13,7 @@ export function Footer({ showMap = true }: { showMap?: boolean }) {
               <MapEmbed className="h-[260px] w-full md:h-[320px]" />
             </div>
             <div className="flex flex-col justify-center md:col-span-2">
-              <p className="font-display text-3xl text-[var(--bronze)]">Find us</p>
+              <p className="font-display text-3xl text-[var(--crimson)]">Find us</p>
               <h3 className="mt-1 font-display text-2xl text-[var(--off-white)]">
                 Visit our Kilimani spa
               </h3>
@@ -25,7 +25,7 @@ export function Footer({ showMap = true }: { showMap?: boolean }) {
                   href={site.mapsShort}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex h-10 items-center rounded-md bg-[var(--bronze)] px-4 text-sm font-semibold text-[var(--charcoal)]"
+                  className="inline-flex h-10 items-center rounded-md bg-[var(--crimson)] px-4 text-sm font-semibold text-[var(--charcoal)]"
                 >
                   Get directions
                 </a>
@@ -33,7 +33,7 @@ export function Footer({ showMap = true }: { showMap?: boolean }) {
                   href={whatsappLink("Hi Kilimani Hot Massage, I'd like to book.")}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex h-10 items-center rounded-md border border-[var(--bronze)]/40 px-4 text-sm"
+                  className="inline-flex h-10 items-center rounded-md border border-[var(--crimson)]/40 px-4 text-sm"
                 >
                   WhatsApp us
                 </a>
@@ -45,7 +45,7 @@ export function Footer({ showMap = true }: { showMap?: boolean }) {
 
       <div className="section-pad mx-auto grid max-w-7xl gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
-          <Link href="/" className="font-display text-3xl text-[var(--bronze)]">
+          <Link href="/" className="font-display text-3xl text-[var(--crimson)]">
             Kilimani Hot Massage
           </Link>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-[var(--muted)]">
@@ -63,17 +63,17 @@ export function Footer({ showMap = true }: { showMap?: boolean }) {
           </h4>
           <ul className="mt-4 space-y-3 text-sm text-[var(--muted)]">
             <li className="flex gap-2">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--bronze)]" />
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--crimson)]" />
               {site.addressLine}
             </li>
             <li className="flex gap-2">
-              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--bronze)]" />
-              <a href={`tel:${site.phoneTel}`} className="hover:text-[var(--bronze)]">
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--crimson)]" />
+              <a href={`tel:${site.phoneTel}`} className="hover:text-[var(--crimson)]">
                 {site.phoneDisplay}
               </a>
             </li>
             <li className="flex gap-2">
-              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-[var(--bronze)]" />
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-[var(--crimson)]" />
               {site.hoursShort} every day
             </li>
           </ul>
@@ -85,32 +85,32 @@ export function Footer({ showMap = true }: { showMap?: boolean }) {
           </h4>
           <ul className="mt-4 space-y-2 text-sm text-[var(--muted)]">
             <li>
-              <Link href="/massage-treatments/" className="hover:text-[var(--bronze)]">
+              <Link href="/massage-treatments/" className="hover:text-[var(--crimson)]">
                 Massage treatments
               </Link>
             </li>
             <li>
-              <Link href="/areas/" className="hover:text-[var(--bronze)]">
+              <Link href="/areas/" className="hover:text-[var(--crimson)]">
                 Areas we serve
               </Link>
             </li>
             <li>
-              <Link href="/masseuses/" className="hover:text-[var(--bronze)]">
+              <Link href="/masseuses/" className="hover:text-[var(--crimson)]">
                 Masseuses
               </Link>
             </li>
             <li>
-              <Link href="/guides/" className="hover:text-[var(--bronze)]">
+              <Link href="/guides/" className="hover:text-[var(--crimson)]">
                 Guides
               </Link>
             </li>
             <li>
-              <Link href="/about-us/" className="hover:text-[var(--bronze)]">
+              <Link href="/about-us/" className="hover:text-[var(--crimson)]">
                 About us
               </Link>
             </li>
             <li>
-              <Link href="/contact/" className="hover:text-[var(--bronze)]">
+              <Link href="/contact/" className="hover:text-[var(--crimson)]">
                 Contact
               </Link>
             </li>

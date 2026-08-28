@@ -22,7 +22,7 @@ export function MobileDock() {
     <div className="fixed bottom-0 left-0 right-0 z-50 flex border-t border-white/10 bg-[var(--charcoal)]/95 backdrop-blur md:hidden">
       <a
         href={`tel:${site.phoneTel}`}
-        className="flex flex-1 items-center justify-center gap-2 py-3 text-sm font-semibold text-[var(--bronze)]"
+        className="flex flex-1 items-center justify-center gap-2 py-3 text-sm font-semibold text-[var(--crimson)]"
       >
         <Phone className="h-4 w-4" />
         Call 0746 203398
@@ -44,7 +44,7 @@ export function CtaRow({ message }: { message?: string }) {
     <div className="flex flex-wrap gap-3">
       <a
         href={`tel:${site.phoneTel}`}
-        className="inline-flex h-11 items-center rounded-md bg-[var(--bronze)] px-5 text-sm font-semibold text-[var(--charcoal)] hover:bg-[var(--bronze-light)]"
+        className="inline-flex h-11 items-center rounded-md bg-[var(--crimson)] px-5 text-sm font-semibold text-[var(--charcoal)] hover:bg-[var(--crimson-light)]"
       >
         Call {site.phoneDisplay}
       </a>
@@ -54,7 +54,7 @@ export function CtaRow({ message }: { message?: string }) {
         )}
         target="_blank"
         rel="noreferrer"
-        className="inline-flex h-11 items-center rounded-md border border-[var(--bronze)]/50 px-5 text-sm font-semibold text-[var(--off-white)] hover:bg-[var(--bronze)]/10"
+        className="inline-flex h-11 items-center rounded-md border border-[var(--crimson)]/50 px-5 text-sm font-semibold text-[var(--off-white)] hover:bg-[var(--crimson)]/10"
       >
         WhatsApp Us
       </a>

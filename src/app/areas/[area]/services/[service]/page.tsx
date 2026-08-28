@@ -91,7 +91,7 @@ export default async function AreaServicePage({ params }: Props) {
 
         {combo.faqs.length ? (
           <section className="mt-12">
-            <h2 className="font-display text-2xl text-[var(--bronze)]">
+            <h2 className="font-display text-2xl text-[var(--crimson)]">
               FAQs — {treatment.shortName} in {area.name}
             </h2>
             <div className="mt-6 space-y-3">
@@ -110,14 +110,14 @@ export default async function AreaServicePage({ params }: Props) {
           </section>
         ) : null}
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
           Landmarks near {area.name}
         </h2>
         <p className="mt-2 text-sm text-[var(--muted)]">
           {area.landmarks.join(" · ")} — along {area.roads.slice(0, 3).join(", ")}.
         </p>
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
           Other services in {area.name}
         </h2>
         <ul className="mt-4 flex flex-wrap gap-2">
@@ -125,7 +125,7 @@ export default async function AreaServicePage({ params }: Props) {
             <li key={t.slug}>
               <Link
                 href={areaServicePath(area.slug, t.slug)}
-                className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
               >
                 {t.name}
               </Link>
@@ -136,7 +136,7 @@ export default async function AreaServicePage({ params }: Props) {
         <p className="mt-6 text-sm">
           <Link
             href={`/massage-treatments/${treatment.slug}/`}
-            className="text-[var(--bronze)] hover:underline"
+            className="text-[var(--crimson)] hover:underline"
           >
             Full {treatment.name} page →
           </Link>
@@ -144,7 +144,7 @@ export default async function AreaServicePage({ params }: Props) {
 
         {specialists.length ? (
           <>
-            <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+            <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
               Masseuses for {treatment.shortName}
             </h2>
             <ul className="mt-4 space-y-2">
@@ -152,7 +152,7 @@ export default async function AreaServicePage({ params }: Props) {
                 <li key={m.slug}>
                   <Link
                     href={`/areas/${area.slug}/masseuses/${m.slug}/`}
-                    className="hover:text-[var(--bronze)]"
+                    className="hover:text-[var(--crimson)]"
                   >
                     Book {m.name} in {area.name}
                   </Link>
@@ -163,7 +163,7 @@ export default async function AreaServicePage({ params }: Props) {
         ) : null}
 
         <div className="mt-12">
-          <Link href={areaPath(area.slug)} className="text-sm text-[var(--muted)] hover:text-[var(--bronze)]">
+          <Link href={areaPath(area.slug)} className="text-sm text-[var(--muted)] hover:text-[var(--crimson)]">
             ← Back to {area.name}
           </Link>
         </div>

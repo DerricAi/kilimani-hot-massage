@@ -73,7 +73,7 @@ export default async function TreatmentPage({ params }: Props) {
           {t.h1}
         </h1>
         <p className="mt-4 text-lg text-[var(--muted)]">{t.summary}</p>
-        <div className="relative mt-8 aspect-[3/2] overflow-hidden rounded-xl border border-[var(--bronze)]/20">
+        <div className="relative mt-8 aspect-[3/2] overflow-hidden rounded-xl border border-[var(--crimson)]/20">
           <Image
             src={img.src}
             alt={img.alt}
@@ -92,7 +92,7 @@ export default async function TreatmentPage({ params }: Props) {
         <div className="prose-spa mt-10">
           {t.sections.map((section) => (
             <section key={section.heading}>
-              <h2 className="font-display text-2xl text-[var(--bronze)]">
+              <h2 className="font-display text-2xl text-[var(--crimson)]">
                 {section.heading}
               </h2>
               {section.paragraphs.map((p) => (
@@ -102,14 +102,14 @@ export default async function TreatmentPage({ params }: Props) {
           ))}
         </div>
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">Benefits</h2>
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">Benefits</h2>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-[var(--muted)]">
           {t.benefits.map((b) => (
             <li key={b}>{b}</li>
           ))}
         </ul>
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
           We serve these areas
         </h2>
         <p className="mt-2 text-sm text-[var(--muted)]">
@@ -120,7 +120,7 @@ export default async function TreatmentPage({ params }: Props) {
             <li key={a.slug}>
               <Link
                 href={areaServicePath(a.slug, t.slug)}
-                className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
               >
                 {t.shortName} in {a.name}
               </Link>
@@ -128,14 +128,14 @@ export default async function TreatmentPage({ params }: Props) {
           ))}
         </ul>
         <p className="mt-4 text-sm">
-          <Link href="/areas/" className="text-[var(--bronze)] hover:underline">
+          <Link href="/areas/" className="text-[var(--crimson)] hover:underline">
             See all Nairobi areas we serve →
           </Link>
         </p>
 
         {relatedMasseuses.length ? (
           <>
-            <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+            <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
               Masseuses for {t.shortName}
             </h2>
             <ul className="mt-4 space-y-2">
@@ -143,7 +143,7 @@ export default async function TreatmentPage({ params }: Props) {
                 <li key={m.slug}>
                   <Link
                     href={`/masseuses/${m.slug}/`}
-                    className="text-[var(--off-white)] hover:text-[var(--bronze)]"
+                    className="text-[var(--off-white)] hover:text-[var(--crimson)]"
                   >
                     Book {m.name}
                   </Link>
@@ -155,7 +155,7 @@ export default async function TreatmentPage({ params }: Props) {
 
         {relatedGuides.length ? (
           <>
-            <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+            <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
               Related guides
             </h2>
             <ul className="mt-4 space-y-2">
@@ -163,7 +163,7 @@ export default async function TreatmentPage({ params }: Props) {
                 <li key={g.slug}>
                   <Link
                     href={guidePath(g.slug)}
-                    className="text-[var(--off-white)] hover:text-[var(--bronze)]"
+                    className="text-[var(--off-white)] hover:text-[var(--crimson)]"
                   >
                     {g.title}
                   </Link>
@@ -173,7 +173,7 @@ export default async function TreatmentPage({ params }: Props) {
           </>
         ) : null}
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">FAQs</h2>
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">FAQs</h2>
         <div className="mt-4 space-y-3">
           {t.faqs.map((f) => (
             <details

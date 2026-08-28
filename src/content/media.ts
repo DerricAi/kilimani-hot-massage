@@ -1,4 +1,4 @@
-/** Local media pack — geotagged WebP under public/images/ (Lavington GPS). */
+/** Local media pack — geotagged WebP under public/images/ (Kilimani GPS -1.293566, 36.76345). */
 export const media = {
   og: {
     src: "/images/og-kilimani-hot-massage.webp",

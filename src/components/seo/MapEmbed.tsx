@@ -8,7 +8,7 @@ export function MapEmbed({
   title?: string;
 }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-[var(--bronze)]/20 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+    <div className="overflow-hidden rounded-xl border border-[var(--crimson)]/20 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
       <iframe
         title={title}
         src={site.mapsEmbed}

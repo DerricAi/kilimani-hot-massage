@@ -90,7 +90,7 @@ export default async function AreaMasseusePage({ params }: Props) {
 
         {combo.faqs.length ? (
           <section className="mt-12">
-            <h2 className="font-display text-2xl text-[var(--bronze)]">
+            <h2 className="font-display text-2xl text-[var(--crimson)]">
               FAQs — booking {masseuse.name} from {area.name}
             </h2>
             <div className="mt-6 space-y-3">
@@ -109,7 +109,7 @@ export default async function AreaMasseusePage({ params }: Props) {
           </section>
         ) : null}
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
           {masseuse.name}&apos;s specialties in {area.name}
         </h2>
         <ul className="mt-4 flex flex-wrap gap-2">
@@ -118,7 +118,7 @@ export default async function AreaMasseusePage({ params }: Props) {
               <li key={t.slug}>
                 <Link
                   href={areaServicePath(area.slug, t.slug)}
-                  className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                  className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
                 >
                   {t.name} in {area.name}
                 </Link>
@@ -130,13 +130,13 @@ export default async function AreaMasseusePage({ params }: Props) {
         <p className="mt-6 text-sm">
           <Link
             href={`/masseuses/${masseuse.slug}/`}
-            className="text-[var(--bronze)] hover:underline"
+            className="text-[var(--crimson)] hover:underline"
           >
             Full profile for {masseuse.name} →
           </Link>
         </p>
 
-        <h2 className="mt-12 font-display text-2xl text-[var(--bronze)]">
+        <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">
           Other masseuses for {area.name}
         </h2>
         <ul className="mt-4 space-y-2">
@@ -144,7 +144,7 @@ export default async function AreaMasseusePage({ params }: Props) {
             <li key={m.slug}>
               <Link
                 href={areaMasseusePath(area.slug, m.slug)}
-                className="hover:text-[var(--bronze)]"
+                className="hover:text-[var(--crimson)]"
               >
                 {m.name}
               </Link>
@@ -155,7 +155,7 @@ export default async function AreaMasseusePage({ params }: Props) {
         <div className="mt-12">
           <Link
             href={areaPath(area.slug)}
-            className="text-sm text-[var(--muted)] hover:text-[var(--bronze)]"
+            className="text-sm text-[var(--muted)] hover:text-[var(--crimson)]"
           >
             ← Back to {area.name}
           </Link>

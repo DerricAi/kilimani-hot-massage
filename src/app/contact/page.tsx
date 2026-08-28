@@ -35,7 +35,7 @@ export default function ContactPage() {
         <p className="mt-4 max-w-2xl text-[var(--muted)]">
           The fastest way to book is a call or WhatsApp. We reply around the clock.
         </p>
-        <p className="mt-4 rounded-xl border border-[var(--bronze)]/25 bg-white/[0.03] px-4 py-3 text-sm text-[var(--off-white)]">
+        <p className="mt-4 rounded-xl border border-[var(--crimson)]/25 bg-white/[0.03] px-4 py-3 text-sm text-[var(--off-white)]">
           {site.napFooter}
         </p>
 
@@ -43,29 +43,29 @@ export default function ContactPage() {
           <div>
             <dl className="space-y-5 text-sm">
               <div>
-                <dt className="text-xs uppercase tracking-wider text-[var(--bronze)]">
+                <dt className="text-xs uppercase tracking-wider text-[var(--crimson)]">
                   Business name
                 </dt>
                 <dd className="mt-1 text-lg text-[var(--off-white)]">{site.name}</dd>
               </div>
               <div>
-                <dt className="text-xs uppercase tracking-wider text-[var(--bronze)]">
+                <dt className="text-xs uppercase tracking-wider text-[var(--crimson)]">
                   Phone & WhatsApp
                 </dt>
                 <dd className="mt-1 text-lg text-[var(--off-white)]">
-                  <a href={`tel:${site.phoneTel}`} className="hover:text-[var(--bronze)]">
+                  <a href={`tel:${site.phoneTel}`} className="hover:text-[var(--crimson)]">
                     {site.phoneDisplay}
                   </a>
                 </dd>
               </div>
               <div>
-                <dt className="text-xs uppercase tracking-wider text-[var(--bronze)]">
+                <dt className="text-xs uppercase tracking-wider text-[var(--crimson)]">
                   Address
                 </dt>
                 <dd className="mt-1 text-lg text-[var(--off-white)]">{site.addressLine}</dd>
               </div>
               <div>
-                <dt className="text-xs uppercase tracking-wider text-[var(--bronze)]">
+                <dt className="text-xs uppercase tracking-wider text-[var(--crimson)]">
                   Hours
                 </dt>
                 <dd className="mt-1 text-lg text-[var(--off-white)]">{site.hoursLabel}</dd>
@@ -76,11 +76,11 @@ export default function ContactPage() {
             </div>
             <p className="mt-6 text-sm text-[var(--muted)]">
               Browse{" "}
-              <Link href="/areas/" className="text-[var(--bronze)] hover:underline">
+              <Link href="/areas/" className="text-[var(--crimson)] hover:underline">
                 areas we serve
               </Link>{" "}
               or{" "}
-              <Link href="/massage-treatments/" className="text-[var(--bronze)] hover:underline">
+              <Link href="/massage-treatments/" className="text-[var(--crimson)] hover:underline">
                 massage treatments
               </Link>
               .

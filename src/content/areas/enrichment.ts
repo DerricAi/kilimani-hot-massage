@@ -443,7 +443,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
       },
       {
         q: "Are prices the same for all Dagoretti North wards?",
-        a: "One price list for the entire constituency—Kilimani to Lavington. No ward surcharges.",
+        a: "One price list for the entire constituency—Kilimani to Marcus Garvey Rd. No ward surcharges.",
       },
       {
         q: "Do you open during public holidays for Dagoretti North?",
@@ -471,7 +471,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
   westlands: {
     sections: [
       {
-        heading: "From Sarit to Lavington: Westlands' post-shopping ritual",
+        heading: "From Sarit to Kilimani: Westlands' post-shopping ritual",
         paragraphs: [
           "Westlands pulses with corporate towers, Sarit Centre weekends, and Westgate dining—but when the bags are heavy and shoulders tight, many residents drive Marcus Garvey Rd toward Kilimani Hot Massage instead of settling for mall chair massage. The hop takes ten to fifteen minutes via James Gichuru or direct Marcus Garvey Rd when Ring Road Westlands flows.",
           "UN Gigiri staff and Karura Forest runners also sit in Westlands constituency orbit. They treat our spa as a quiet counterweight to Waiyaki Way traffic—somewhere noise drops and therapists focus on recovery, not retail upsells.",
@@ -563,7 +563,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
   kitisuru: {
     sections: [
       {
-        heading: "Embassy ridge calm, Lavington table recovery",
+        heading: "Embassy ridge calm, Marcus Garvey Rd table recovery",
         paragraphs: [
           "Kitisuru ward climbs above Westlands—Peponi Rd mansions, UN Gigiri proximity, and Village Market weekends define the rhythm. Kilimani Hot Massage on Marcus Garvey Rd sits ten to fifteen minutes downslope via Peponi or Kitisuru Rd connectors, close enough for monthly maintenance, far enough for true quiet.",
           "Expatriate families and embassy staff form our Kitisuru core. They value English-friendly reception, predictable therapist quality, and hours that respect late diplomatic receptions on UN Ave.",
@@ -619,7 +619,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
       },
       {
         q: "Which Kitisuru roads feed Marcus Garvey Rd fastest?",
-        a: "Peponi Rd and Kitisuru Rd are primary—James Gichuru completes the link to Lavington. We advise live during convoy delays.",
+        a: "Peponi Rd and Kitisuru Rd are primary—James Gichuru completes the link to Marcus Garvey Rd. We advise live during convoy delays.",
       },
       {
         q: "Is couples massage available for Kitisuru visiting family?",
@@ -679,7 +679,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
         ],
       },
       {
-        heading: "Why Parklands chooses Lavington over local kiosks",
+        heading: "Why Parklands chooses our Kilimani studio over local kiosks",
         paragraphs: [
           "Parklands street massage lacks licensing consistency. Our Marcus Garvey Rd studio offers trained therapists, clean linens, and 24/7 accountability—0746 203398 always answered.",
           "Hospital visitors need predictable timing; we hold rooms when you text ETAs from Aga Khan gates.",
@@ -931,7 +931,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
   "upper-hill": {
     sections: [
       {
-        heading: "Banking towers to Lavington hush: Upper Hill escape",
+        heading: "Banking towers to Marcus Garvey hush: Upper Hill escape",
         paragraphs: [
           "Upper Hill stacks Kenya's banks, insurers, and hospital towers along Haile Selassie Ave and Upper Hill Rd—glass canyons where stress accumulates silently. Kilimani Hot Massage on Marcus Garvey Rd offers ten to fifteen minutes of descent into calm when Haile Selassie traffic allows, a deliberate contrast to fluorescent boardrooms.",
           "Kenya National Theatre and Nairobi Hospital precincts anchor the southern edge. Clinicians, actuaries, and fund managers share 0746 203398 as their after-shift line—open 24/7 when OR schedules or closing books run past midnight.",
@@ -1115,7 +1115,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
   "nairobi-central": {
     sections: [
       {
-        heading: "KICC shadow to Lavington stillness",
+        heading: "KICC shadow to Kilimani stillness",
         paragraphs: [
           "Nairobi Central ward is the CBD's administrative heart—KICC dome, Kenyatta Avenue towers, Moi Avenue hotels, and University Way institutions in one dense grid. Kilimani Hot Massage on Marcus Garvey Rd sits twelve to eighteen minutes west via Haile Selassie when city lights favor you—a pocket of quiet rare at KICC's doorstep.",
           "Government clerks, NGO officers, and hotel concierges along Moi Avenue know 0746 203398 as the reliable after-shift line. When conference season fills KICC halls, massage demand spikes—we staff accordingly.",
@@ -1231,7 +1231,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
         ],
       },
       {
-        heading: "Why Starehe crosses west to Lavington",
+        heading: "Why Starehe crosses west to Kilimani",
         paragraphs: [
           "Central kiosks lack consistent standards. Marcus Garvey Rd licensed therapists and 24/7 accountability matter for Starehe households investing in real recovery.",
           "Price transparency beats hotel spas near Railway Station.",
@@ -1483,7 +1483,7 @@ export const areaEnrichments: Record<string, AreaEnrichment> = {
   kabiro: {
     sections: [
       {
-        heading: "Kabiro hillside to Lavington valley table",
+        heading: "Kabiro hillside to Marcus Garvey Rd table",
         paragraphs: [
           "Kabiro ward climbs Dagoretti North's western fringe—steep lanes above Kawangware 56, James Gichuru Rd commerce, and Mountain View vistas. Kilimani Hot Massage twelve to eighteen minutes downslope on Marcus Garvey Rd offers consistent quality informal street options near Kabiro Rd cannot guarantee.",
           "Community identity runs strong in Kabiro; trust builds slowly. Regulars who brave James Gichuru traffic recommend us to neighbours—0746 203398 answered day and night builds that confidence.",
@@ -2900,7 +2900,7 @@ function generateTierBEnrichment(area: AreaInput): AreaEnrichment {
       {
         heading: `Landmarks ${area.name} guests use to find us`,
         paragraphs: [
-          `When ${area.name} visitors book, they often mention ${lm.join(", ")} as their starting point. Drivers typically merge toward Marcus Garvey Rd using ${rd[0] ?? "the nearest arterial"}; if traffic stacks near ${lm[2] ?? lm[0]}, ${rd[1] ?? "alternate roads"} offers a smoother approach to Lavington.`,
+          `When ${area.name} visitors book, they often mention ${lm.join(", ")} as their starting point. Drivers typically merge toward Marcus Garvey Rd using ${rd[0] ?? "the nearest arterial"}; if traffic stacks near ${lm[2] ?? lm[0]}, ${rd[1] ?? "alternate roads"} offers a smoother approach to our Kilimani studio on Marcus Garvey Rd.`,
           `First-time guests from ${area.name} should tell ride-hail drivers “${SPA}, Marcus Garvey Rd, Kilimani.” That phrasing works better than generic “massage near me” searches that scatter pins across Nairobi.`,
           `We serve ${area.name} alongside neighbours in ${nb.join(", ") || "surrounding areas"}—many share the same commute pattern and return monthly once they know the drive time from ${lm[0] ?? area.name}.`,
         ],

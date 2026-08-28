@@ -41,7 +41,7 @@ const guidesBase: Guide[] = [
       {
         heading: "Why this choice matters in Nairobi",
         paragraphs: [
-          "Guests driving along Marcus Garvey Rd, Ngong Rd, or James Gichuru often arrive with the same question: do I need a gentle full-body reset, or something that digs into stubborn knots? At Kilimani Hot Massage we offer both Swedish massage and deep tissue massage every hour of the day—so the decision is about feel and goals, not availability. That matters in a city where your free window might be 6 a.m. before an Upper Hill meeting or midnight after a Westlands dinner.",
+          "Standing on Ring Rd Kilimani after back-to-back calls, you might wonder whether tonight needs flowing Swedish calm or targeted deep tissue—and that fork is exactly what Marcus Garvey Rd guests ask us every week.",
           "Swedish massage uses long, flowing strokes and moderate kneading that circulate warmth through the whole body. Deep tissue slows down, sinks into adhesions, and prioritises problem areas like upper traps, lumbar, and calves that Nairobi traffic and laptop posture lock in place. Neither is universally better—they solve different days, and many regulars rotate between them week to week.",
           "If you live or work in Kilimani, or Kileleshwa, you are minutes from our door. Guests from further afield—Karen via Ngong Rd, or Parklands via Limuru connectors—still treat the comparison the same way: match the modality to tonight's body, then book Amara or Keisha by name when you want a therapist who specialises in both.",
         ],
@@ -139,7 +139,7 @@ const guidesBase: Guide[] = [
       {
         heading: "Book before you arrive",
         paragraphs: [
-          "Call or WhatsApp 0746 203398 with your preferred time and treatment. We confirm the suite and therapist so you are not waiting in a lobby. Because we are open 24/7, late-night and early-morning first visits are normal—especially for Upper Hill clinicians, CBD professionals, and Kilimani creatives whose only free hour sits outside mall spa schedules.",
+          "First massage in Nairobi can feel opaque: mall cubicles, hotel spas, or WhatsApp listings with unclear boundaries. At Kilimani Hot Massage on Marcus Garvey Rd, the flow is fixed—book, arrive near Yaya Centre, consent chat, private suite, shower if you want, quiet exit.",
           "Share any injuries, scent sensitivity, pregnancy status, or pressure preferences in the chat. That briefing saves time once you are in the room and helps your masseuse plan the sequence before she knocks. If you are choosing between Swedish and aromatherapy for a first visit, say you are new—we will steer you toward the calmer option unless you specifically want deeper work.",
           "Our booking guide lists the exact fields to include in a WhatsApp message: name, time, treatment, therapist if any, and where you are coming from. Guests driving from Upper Hill via Marcus Garvey Rd or from Westlands via James Gichuru often add an ETA so we warm the room on time.",
         ],
@@ -239,7 +239,7 @@ const guidesBase: Guide[] = [
       {
         heading: "What desk work does to your body in Nairobi",
         paragraphs: [
-          "Laptops pull the head forward, tighten the chest, and overload the upper traps. Add Nairobi commuting—Waiyaki Way into Westlands, Ring Rd Kilimani, Haile Selassie toward Upper Hill, or Mombasa Rd toward the CBD—and the lumbar and hips join the complaint list. By Thursday, many professionals feel a headache banding from the base of the skull or a dull ache across the shoulder blades that no amount of coffee fixes.",
+          "Balcony laptops on Wood Avenue and tower marathons in Upper Hill produce the same trap knots—this guide maps which Marcus Garvey Rd modalities target desk neck versus full-body reset.",
           "Massage will not replace ergonomics, standing desks, or walking meetings, but it is one of the fastest ways to interrupt the cycle before tension becomes a week-long migraine pattern. Guests who book every one to two weeks during project seasons often report easier sleep and fewer afternoon neck spikes.",
           "At Kilimani Hot Massage on Marcus Garvey Rd, desk-worker sessions are a core request—especially after 7 p.m. when offices finally quiet, and before 7 a.m. when some prefer to reset before stand-ups. We are open 24/7, so your calendar—not mall hours—dictates the slot.",
         ],
@@ -347,7 +347,7 @@ const guidesBase: Guide[] = [
       {
         heading: "What Nuru massage is",
         paragraphs: [
-          "Nuru uses a specialised gel that creates an ultra-smooth, continuous glide across the body. Sessions are held in private, climate-controlled suites with shower access so you can rinse before or after. The emphasis is fluid contact and unhurried pacing—not a rushed menu upsell or a confused hybrid of unrelated treatments.",
+          "Nuru at Kilimani Hot Massage is a locked-suite, adults-only gel session on Marcus Garvey Rd—this guide explains intake, boundaries, and discreet arrival from Adlife Plaza or Yaya Centre before you WhatsApp Aisha or Nuri.",
           "At Kilimani Hot Massage, Nuru is adults-only and consent-led. Preferences, boundaries, and any related requests (such as pairing with body-to-body or sensual massage) are confirmed before the suite door closes. Nothing is assumed from a brief WhatsApp line alone—we clarify so the room matches your intent.",
           "Nuru is not Swedish massage with a different oil. Classic Swedish uses oil and structured spa strokes; Nuru's gel tradition is about continuous, slippery contact and a different room setup. If you want traditional spa flow instead, book Swedish or aromatherapy and save Nuru for a night when that specific experience is what you are seeking.",
         ],
@@ -461,7 +461,7 @@ const guidesBase: Guide[] = [
       {
         heading: "Why couples book in Kilimani",
         paragraphs: [
-          "A shared suite beats coordinating two separate spa days across Nairobi. You relax in the same room with two therapists, then step back into Lavington for dinner near Valley Arcade or a quiet drive home through Kilimani or Kileleshwa. The logistics collapse into one WhatsApp thread and one arrival on Marcus Garvey Rd.",
+          "Couples massage in Kilimani means twin tables and matched timing on Marcus Garvey Rd—ideal after dinners near Yaya Centre, Wood Avenue, or Junction Mall when you want shared calm without mall-spa noise.",
           "Because we run 24/7, anniversary midnights, Sunday mornings, and midweek resets after school runs all work. Hurlingham and Kilimani couples often book after errands at Yaya Centre; Kileleshwa pairs swing by via James Gichuru without crossing the city.",
           "Privacy standards match solo bookings: locked suites, discreet check-in, no lobby performance. First-time couples can skim our first-visit guide for draping and pressure-check basics that apply to each table.",
         ],
@@ -575,7 +575,7 @@ const guidesBase: Guide[] = [
       {
         heading: "What the stones do",
         paragraphs: [
-          "Smooth basalt stones are heated and placed along the spine, then used in gliding strokes across back, shoulders, and sometimes legs. Heat encourages muscle to release before deeper hands-on work—especially useful when air-conditioning, cool evenings, and long drives leave you braced without realising it.",
+          "Rainy-season Nairobi tightens shoulders—heated basalt on Marcus Garvey Rd softens guarded muscle before hands finish the map; this guide explains when stones beat hands alone for Kilimani guests.",
           "Therapists monitor temperature constantly; say if anything feels too warm. Stones are never left unattended on thin skin or broken areas. Inflamed or acutely injured zones are skipped—mention recent injuries when you WhatsApp 0746 203398 so Amara or Keisha plan around them.",
           "The sensory effect is often described as melting rather than poking. Guests who fear deep tissue sometimes start with hot stone Swedish hybrids to teach the body that pressure can arrive with warmth instead of alarm.",
         ],
@@ -703,7 +703,7 @@ const guidesBase: Guide[] = [
       {
         heading: "The fastest path: WhatsApp",
         paragraphs: [
-          "Message https://wa.me/254746203398 (or tap WhatsApp on this site). Include: (1) your name, (2) preferred time, (3) treatment, (4) therapist name if any, (5) where you are coming from—e.g. Kilimani or Westlands—so we can estimate arrival. Optional sixth line: pressure preference, scent sensitivity, or celebration note.",
+          "Booking a 24/7 spa in Kilimani is simpler on WhatsApp than phone tag—send treatment, therapist optional, time window, and landmark; we confirm Marcus Garvey Rd suite staging before you leave Adlife Plaza or Ngong Rd.",
           "We reply with confirmation and any prep notes. Calling 0746 203398 works the same if you prefer voice—especially useful when driving and unable to type. English and Kiswahili are both fine on either channel.",
           "Save the number after your first visit. Regulars from Kilimani and Kilimani often rebook in one line: time, treatment, same therapist. We already have your preferences on thread history when you use the same WhatsApp account.",
         ],
@@ -825,7 +825,7 @@ const guidesBase: Guide[] = [
       {
         heading: "Minutes from Yaya Centre",
         paragraphs: [
-          "If your afternoon is at Yaya Centre or Valley Arcade, you do not need a crosstown trek for quality massage. Kilimani Hot Massage sits on Marcus Garvey Rd in the same Lavington / Kilimani corridor—typically a short hop by car or ride-hail when traffic cooperates.",
+          "Yaya Centre sits one junction cluster from Kilimani Hot Massage on Marcus Garvey Rd—this hyperlocal guide covers pins, parking, rainy-season routes, and same-afternoon booking from Adlife Plaza errands.",
           "Landmarks guests use: Yaya Centre, Lavington Mall, Valley Arcade, and further toward Upper Hill, Nairobi Hospital. Pin our Google profile from the site footer and cross-check Marcus Garvey Rd so you do not confuse parallel Lavington streets.",
           "Off-peak, the transfer from Yaya parking to our suite door can feel almost immediate. At rush hour, still nearby—but WhatsApp when you leave the mall so we hold the room without guessing your queue time at checkout.",
         ],
@@ -948,7 +948,7 @@ const guidesBase: Guide[] = [
       {
         heading: "Start with the modality",
         paragraphs: [
-          "Therapist fit follows the treatment. Classic Swedish, deep tissue, and hot stone point toward Amara or Keisha. Couples, aromatherapy, and four-hands point toward Zuri or Lina. Nuru, body-to-body, and sensual sessions point toward Aisha. Tantric ritual and lingam point toward Nuru.",
+          "Amara, Zuri, Aisha, Nuri, Keisha, and Lina each lead different modalities on Marcus Garvey Rd—this guide matches therapist to Swedish, deep tissue, couples, Nuru, or tantric intent before you WhatsApp 0746 203398.",
           "Browse full profiles under Masseuses for long bios and FAQs, then WhatsApp the name with your time slot to 0746 203398. Naming someone upfront prevents last-minute specialty mismatches on Marcus Garvey Rd.",
           "If you only know the problem—desk neck, date night, signature gel night—say that instead. We will suggest a therapist. Our Swedish versus deep tissue and Nuru guides help you narrow the modality first.",
         ],
@@ -1071,7 +1071,7 @@ const guidesBase: Guide[] = [
       {
         heading: "One studio, county-wide guests",
         paragraphs: [
-          "We do not operate pop-up clinics across Nairobi—we host you in Kilimani. Area pages exist so searchers in Kilimani, Embakasi, or Roysambu still find clear commute notes, landmark references, and direct links to book Swedish, Nuru, or a named masseuse.",
+          "Every Nairobi ward links to area×treatment and area×therapist pages, but every session still happens at Kilimani Hot Massage on Marcus Garvey Rd—this guide orients you to the county matrix without losing the single-studio NAP.",
           "Start at /areas/ for the constituency index, or jump to Lavington, Westlands, Karen, Upper Hill, or CBD pages. Each page lists treatments and all six masseuses with nested URLs, but the physical NAP stays constant: Marcus Garvey Rd, Kilimani Hot Massage, 0746 203398.",
           "This guide is the narrative map. Use it to understand which pockets are closest, which need traffic buffers, and how to share the right link with a friend in another ward.",
         ],

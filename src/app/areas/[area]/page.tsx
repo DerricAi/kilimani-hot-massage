@@ -97,7 +97,7 @@ export default async function AreaPage({ params }: Props) {
       />
 
       <article className="section-pad mx-auto max-w-7xl py-10">
-        <p className="text-xs uppercase tracking-[0.25em] text-[var(--bronze)]">
+        <p className="text-xs uppercase tracking-[0.25em] text-[var(--crimson)]">
           Massage near {area.name}
         </p>
         <h1 className="mt-3 font-display text-4xl text-[var(--off-white)] sm:text-5xl">
@@ -116,7 +116,7 @@ export default async function AreaPage({ params }: Props) {
 
         {enrichment.sections.map((section) => (
           <section key={section.heading} className="prose-spa mt-12 max-w-3xl">
-            <h2 className="font-display text-2xl text-[var(--bronze)]">
+            <h2 className="font-display text-2xl text-[var(--crimson)]">
               {section.heading}
             </h2>
             {section.paragraphs.map((paragraph) => (
@@ -169,7 +169,7 @@ export default async function AreaPage({ params }: Props) {
         ) : null}
 
         <section className="mt-14">
-          <h2 className="font-display text-3xl text-[var(--bronze)]">
+          <h2 className="font-display text-3xl text-[var(--crimson)]">
             Near you in {area.name}
           </h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -222,7 +222,7 @@ export default async function AreaPage({ params }: Props) {
                   <Link
                     key={t.slug}
                     href={areaServicePath(area.slug, t.slug)}
-                    className="glass-card group overflow-hidden rounded-xl transition hover:border-[var(--bronze)]/40"
+                    className="glass-card group overflow-hidden rounded-xl transition hover:border-[var(--crimson)]/40"
                   >
                     <div className="relative h-40 w-full overflow-hidden">
                       <Image
@@ -235,11 +235,11 @@ export default async function AreaPage({ params }: Props) {
                       <div className="absolute inset-0 bg-gradient-to-t from-[var(--charcoal)] via-transparent to-transparent" />
                     </div>
                     <div className="p-5">
-                      <h3 className="font-display text-xl text-[var(--bronze)]">
+                      <h3 className="font-display text-xl text-[var(--crimson)]">
                         {t.name} in {area.name}
                       </h3>
                       <p className="mt-2 text-sm text-[var(--muted)]">{t.tagline}</p>
-                      <span className="mt-3 inline-block text-xs text-[var(--bronze)]">
+                      <span className="mt-3 inline-block text-xs text-[var(--crimson)]">
                         View {t.shortName} in {area.name} →
                       </span>
                     </div>
@@ -261,13 +261,13 @@ export default async function AreaPage({ params }: Props) {
             {masseuses.map((m) => (
               <div
                 key={m.slug}
-                className="glass-card rounded-xl border border-white/10 p-5 transition hover:border-[var(--bronze)]/40"
+                className="glass-card rounded-xl border border-white/10 p-5 transition hover:border-[var(--crimson)]/40"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--bronze)]/15 font-display text-xl text-[var(--bronze)]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--crimson)]/15 font-display text-xl text-[var(--crimson)]">
                   {m.name[0]}
                 </div>
                 <h3 className="mt-3 font-display text-xl text-[var(--off-white)]">
-                  <Link href={areaMasseusePath(area.slug, m.slug)} className="hover:text-[var(--bronze)]">
+                  <Link href={areaMasseusePath(area.slug, m.slug)} className="hover:text-[var(--crimson)]">
                     {m.name}
                   </Link>
                 </h3>
@@ -278,7 +278,7 @@ export default async function AreaPage({ params }: Props) {
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Link
                     href={areaMasseusePath(area.slug, m.slug)}
-                    className="text-xs text-[var(--bronze)] hover:underline"
+                    className="text-xs text-[var(--crimson)] hover:underline"
                   >
                     Book {m.name} in {area.name}
                   </Link>
@@ -288,7 +288,7 @@ export default async function AreaPage({ params }: Props) {
                     )}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-xs text-[var(--bronze)] hover:underline"
+                    className="text-xs text-[var(--crimson)] hover:underline"
                   >
                     WhatsApp {m.name}
                   </a>
@@ -308,7 +308,7 @@ export default async function AreaPage({ params }: Props) {
                 <Link
                   key={n.slug}
                   href={areaPath(n.slug)}
-                  className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                  className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
                 >
                   {n.name}
                 </Link>
@@ -327,7 +327,7 @@ export default async function AreaPage({ params }: Props) {
                 <Link
                   key={s.slug}
                   href={areaPath(s.slug)}
-                  className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--bronze)]/40"
+                  className="rounded-full border border-white/10 px-3 py-1.5 text-sm hover:border-[var(--crimson)]/40"
                 >
                   {s.name}
                 </Link>
@@ -346,7 +346,7 @@ export default async function AreaPage({ params }: Props) {
                 <li key={g.slug}>
                   <Link
                     href={guidePath(g.slug)}
-                    className="text-[var(--bronze)] hover:underline"
+                    className="text-[var(--crimson)] hover:underline"
                   >
                     {g.title}
                   </Link>

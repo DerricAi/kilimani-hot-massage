@@ -25,7 +25,7 @@ export const treatments: Treatment[] = [
     metaTitle: "Swedish Massage Kilimani Nairobi near me | Kilimani Hot Massage",
     metaDescription: "Book Swedish massage on Marcus Garvey Rd, Kilimani. Open 24/7. Call or WhatsApp 0746 203398.",
     h1: "Swedish Massage in Kilimani, Nairobi",
-    summary: "Classic full-body Swedish massage with warm oil, measured pressure, and quiet private suites at Kilimani Hot Massage on Marcus Garvey Rd—ideal after a day on Ngong Rd, James Gichuru, or the commute from Westlands. Our therapists blend long effleurage, kneading, and gentle percussion so your nervous system can downshift without overwhelm. Sessions are unhurried, scent-light, and available any hour; many guests from Kilimani, Kileleshwa, and Upper Hill book Swedish as their reliable reset between meetings, gym days, and late flights.",
+    summary: "Swedish massage at Kilimani Hot Massage is unhurried full-body work on Marcus Garvey Rd—warm oil, measured effleurage, and quiet suites steps from Yaya Centre and Adlife Plaza. Ideal after Ngong Rd commutes, Ring Rd Kilimani gym days, or Upper Hill deadlines when you need nervous-system calm without aggressive pressure. Therapists adjust stroke depth continuously; sessions run any hour. Many Kilimani and Kileleshwa guests book Swedish as their standing reset—WhatsApp 0746 203398 to reserve.",
     benefits: [
       "Improves circulation and softens stiff shoulders from desk work and driving",
       "Calms the nervous system with rhythmic, predictable strokes",
@@ -36,7 +36,7 @@ export const treatments: Treatment[] = [
     ],
     sections: [
       {
-        heading: "What Swedish Massage Feels Like at Our Kilimani Spa",
+        heading: "Effleurage rhythm on Marcus Garvey Rd",
         paragraphs: [
           "Swedish massage is the foundation of Western spa work: long, gliding effleurage that warms tissue, petrissage kneading that softens knots without aggression, and light tapotement that wakes tired limbs. At Kilimani Hot Massage, we honour that tradition in climate-controlled suites designed for quiet—not hotel-lobby bustle. Your therapist works with warmed oil across back, neck, shoulders, arms, legs, and feet in a sequence that feels logical and complete, so you never wonder what comes next.",
           "Guests arriving from Yaya Centre, Valley Arcade, or Lavington Mall often describe the first ten minutes as a exhale they did not know they were holding. Nairobi traffic, air-conditioned offices, and screen time tighten the upper back and jaw; Swedish strokes invite those areas to release before deeper work is even necessary. We keep lighting soft, music optional, and conversation entirely your choice—some clients prefer silence, others a brief check-in on pressure.",
@@ -45,7 +45,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Session from Check-In to Aftercare",
+        heading: "Swedish session flow from door to shower",
         paragraphs: [
           "When you arrive at Kilimani Hot Massage, check-in is discreet and brief. We confirm your booking, offer water, and show you to a private suite where you can change in peace. Your therapist begins with a short consultation: any injuries, preferred pressure, scent sensitivity, and areas that need extra attention—common requests include neck and shoulders after Ngong Rd drives or lower back after gym sessions near Westlands.",
           "The massage typically starts face-down with back and shoulder work, then moves through hips, legs, and arms before you turn for front-of-body strokes where appropriate. Draping is maintained throughout; only the area being worked is uncovered. Pressure is adjusted continuously—Swedish should feel soothing and effective, never sharp unless you explicitly request deeper work that blends toward deep tissue.",
@@ -54,7 +54,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Swedish Massage in Kilimani and Nearby Neighbourhoods",
+        heading: "Who books Swedish after Yaya Centre and Ngong Rd days",
         paragraphs: [
           "Our Swedish guests come from across Nairobi County. Lavington and Kileleshwa residents walk or drive short distances; Kilimani and Hurlingham clients often pass Yaya Centre on the way. Westlands professionals cut through James Gichuru when traffic allows; Upper Hill office workers book late sessions when the CBD finally quiets. The common thread is wanting reliable, classic massage without novelty or uncertainty.",
           "First-time spa visitors often choose Swedish because it is familiar—similar to international hotel spas but more private and available at any hour. Couples sometimes start with side-by-side Swedish before exploring aromatherapy or hot stone upgrades. Solo travellers staying near Valley Arcade appreciate a consistent standard after long flights into JKIA and cross-town transfers.",
@@ -63,7 +63,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pressure, Oils, and How We Customise Your Swedish Session",
+        heading: "Pressure, oils, and custom Swedish on Wood Avenue nights",
         paragraphs: [
           "Swedish massage at Kilimani Hot Massage is not one fixed pressure. Light pressure suits guests who want nervous-system calm; medium pressure addresses typical desk-and-drive tension in trapezius and lumbar areas. We avoid confusing Swedish with deep tissue—if you need sustained, slow pressure into adhesions, we recommend booking deep tissue or combining modalities across visits.",
           "Oil choice matters. Unscented grapeseed or almond oil is standard; aromatherapy upgrades add lavender for sleep, citrus for uplift, or eucalyptus for clarity—always subtle, never overpowering in our small suites. Sensitive skin? Say so—we patch-test on request and keep fragrance minimal. Warm oil is prepared before you enter so the table never feels cold against your back.",
@@ -72,7 +72,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Swedish with Other Massage Treatments",
+        heading: "Swedish plus hot stone, aromatherapy, or deep focus",
         paragraphs: [
           "Swedish massage pairs beautifully with aromatherapy when you want scent layered onto familiar strokes—popular for couples anniversaries and solo self-care evenings. Hot stone warm-up before Swedish back work helps guarded muscles accept pressure sooner; ask when booking so stones are staged. Deep tissue on one area plus Swedish everywhere else is a hybrid many Ngong Rd commuters request monthly.",
           "Four-hands Swedish—two therapists mirroring strokes—is an immersive upgrade for special occasions; availability depends on paired staff, so WhatsApp ahead. Couples massage often means one partner on Swedish and another on deep tissue in the same suite; we synchronise timing so you finish together and leave relaxed rather than waiting.",
@@ -81,7 +81,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Finding Kilimani Hot Massage from Yaya Centre, Valley Arcade, and Beyond",
+        heading: "Directions from Yaya, Adlife Plaza, and Junction Mall",
         paragraphs: [
           "We are on Marcus Garvey Rd in Kilimani—minutes from Yaya Centre, Adlife Plaza, and Valley Arcade. From Kilimani, follow Ngong Rd toward Kilimani Green; from Kileleshwa, connect via James Gichuru or Denis Pritt depending on traffic. Westlands guests often take James Gichuru south; Upper Hill drivers loop through Ngong Rd or Langata Rd depending on time of day.",
           "Parking is straightforward compared to CBD spas; still, share your ETA on WhatsApp so we have your suite ready—especially after 10 p.m. when you want to slip in and out discreetly. Landmarks nearby help drivers: mention Lavington Green or proximity to Valley Arcade when ordering a ride; most local drivers know Marcus Garvey Rd.",
@@ -90,7 +90,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Why Guests Return for Swedish at Our 24/7 Kilimani Studio",
+        heading: "Why Kilimani regulars rebook Swedish monthly",
         paragraphs: [
           "Consistency keeps people coming back: same discreet entrance, same private-suite standard, same willingness to adjust pressure and timing. In a city where schedules change hourly, a spa that never closes on Marcus Garvey Rd becomes part of your routine—Swedish after late Upper Hill deadlines, Swedish before weekend plans in Karen, Swedish when jet lag hits after returning to Kileleshwa.",
           "Therapists at Kilimani Hot Massage train in classic Swedish sequencing but listen more than they lecture. That balance—competence plus humility—is why referrals spread through WhatsApp groups in Kilimani and office Slack channels in Westlands. We do not oversell; we deliver the massage you asked for, cleanly and kindly.",
@@ -144,7 +144,7 @@ export const treatments: Treatment[] = [
     metaTitle: "Deep Tissue Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Deep tissue massage in Kilimani on Marcus Garvey Rd, Kilimani. Open 24/7. WhatsApp 0746 203398.",
     h1: "Deep Tissue Massage in Kilimani",
-    summary: "Slow, deliberate deep tissue massage at Kilimani Hot Massage targets stubborn knots along the spine, shoulders, hips, and calves—common after desk work in Upper Hill, gym sessions in Kilimani, or long drives on Ngong Rd and James Gichuru from Westlands. Therapists warm tissue first, then sink into adhesions with breath-led pacing so pressure stays useful, not punishing. Private suites on Marcus Garvey Rd near Yaya Centre and Valley Arcade; open twenty-four seven. Call or WhatsApp 0746 203398.",
+    summary: "Deep tissue at our Kilimani studio targets trap knots, lumbar tightness, and gym soreness with slow, informed pressure—never sharp surprise on Marcus Garvey Rd. We warm tissue first, then map desk neck, IT bands, and hip flexors common to Nairobi commutes. Keisha and Amara lead most deep bookings from Westlands and Upper Hill; open 24/7 for post-midnight recovery. Book sixty or ninety minutes when one zone needs real time.",
     benefits: [
       "Targets chronic tightness from Nairobi commuting and office posture",
       "Therapists work with your breath, adjusting depth in real time",
@@ -155,7 +155,7 @@ export const treatments: Treatment[] = [
     ],
     sections: [
       {
-        heading: "What Deep Tissue Massage Is at Kilimani Hot Massage",
+        heading: "Deep tissue pressure map on Marcus Garvey Rd",
         paragraphs: [
           "Deep Tissue Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Deep tissue uses slow, anchored strokes and forearm or elbow work to lengthen shortened muscle and fascia—especially upper trapezius, rhomboids, piriformis, and calves that tighten from brake-and-accelerator cycles. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For deep tissue sessions we emphasise methodical, breath-aware pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -164,7 +164,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Deep Tissue Session from Arrival to Aftercare",
+        heading: "From warm-up strokes to trap release and aftercare",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For deep tissue massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -173,7 +173,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Deep Tissue Massage in Kilimani and Nairobi",
+        heading: "Desk neck, gym DOMS, and Ngong Rd drivers who book deep tissue",
         paragraphs: [
           "Deep tissue fills weekday books for Ngong Rd commuters, CrossFit regulars off Ring Rd Kilimani, and Upper Hill bankers carrying trap tension. Many guests alternate: deep tissue after gym, Swedish on recovery days—same Marcus Garvey Rd suite, different pacing.",
           "Some guests choose deep tissue for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether deep tissue fits your goal, message 0746 203398; we explain without pressure.",
@@ -182,7 +182,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Deep Tissue Appointment",
+        heading: "Custom zones: traps, lumbar, IT band, hip flexors",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For deep tissue massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in deep tissue read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -191,7 +191,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Deep Tissue with Other Treatments",
+        heading: "Deep tissue hybrids with Swedish and hot stone",
         paragraphs: [
           "Deep Tissue pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus deep tissue elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature deep tissue as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -200,16 +200,16 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Commute tips from Upper Hill, Westlands, and Kilimani",
         paragraphs: [
           "Deep tissue guests often arrive from Upper Hill via Haile Selassie or from Westlands via James Gichuru—both merge toward Marcus Garvey Rd. Allow ten minutes at evening peak.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book deep tissue after dark for smooth entry.",
+          "Pin Kilimani Hot Massage on Marcus Garvey Rd for ride-hail—mention Adlife Plaza if your driver knows Kilimani but not our gate. Save 0746 203398; we WhatsApp directions. Share ETA for after-dark deep tissue arrivals.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After deep tissue, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "Post deep tissue, hydrate and skip heavy gym for twenty-four hours—then enjoy a slow drive home via Valley Arcade without shoulder bracing.",
         ],
       },
       {
-        heading: "Why Guests Return for Deep Tissue at Our 24/7 Studio",
+        heading: "Why deep tissue becomes a fortnightly Kilimani habit",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—deep tissue after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the deep tissue experience you asked for, cleanly and kindly.",
@@ -263,7 +263,7 @@ export const treatments: Treatment[] = [
     metaTitle: "Nuru Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Private Nuru massage in Kilimani. Discreet suites, open 24/7. Call 0746 203398.",
     h1: "Nuru Massage in Kilimani, Nairobi",
-    summary: "Nuru massage at Kilimani Hot Massage is a gel-based full-body experience in a private, climate-controlled suite—fluid contact from shoulders to calves without the friction of traditional oil alone. We prepare authentic nuru gel, warm the room, and stage shower access so the session feels seamless from arrival on Marcus Garvey Rd. Guests from Kilimani, Westlands, and Kileleshwa choose nuru for continuous glide and discreet adult relaxation near Yaya Centre and Valley Arcade. Open 24/7; WhatsApp 0746 203398.",
+    summary: "Nuru massage at Kilimani Hot Massage uses warmed gel, locked-suite privacy, and consent-led pacing on Marcus Garvey Rd—minutes from Yaya Centre but away from hotel-lobby visibility. Aisha and Nuri handle most Nuru requests; boundaries are confirmed on WhatsApp before you travel. Adults only; shower access in-suite. Same-night slots are realistic when you message before leaving Adlife Plaza or Wood Avenue.",
     benefits: [
       "Ultra-smooth glide with specialist nuru gel",
       "Private suite with shower—discreet Kilimani location",
@@ -274,7 +274,7 @@ export const treatments: Treatment[] = [
     ],
     sections: [
       {
-        heading: "What Nuru Massage Is at Kilimani Hot Massage",
+        heading: "Gel prep and suite privacy for Nuru in Kilimani",
         paragraphs: [
           "Nuru Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Nuru relies on colourless, odourless gel that stays slick longer than oil—enabling full-body slides, chest-to-back glides, and uninterrupted rhythm when both guest and therapist are gel-coated. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For nuru sessions we emphasise slow, fluid, sensual yet professional pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -283,7 +283,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Nuru Session from Arrival to Aftercare",
+        heading: "Nuru intake, gel temperature, and shower aftercare",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For nuru massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -292,7 +292,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Nuru Massage in Kilimani and Nairobi",
+        heading: "Who requests Nuru on Marcus Garvey Rd after dark",
         paragraphs: [
           "Nuru guests include discreet professionals from Kilimani towers, couples exploring shared sessions, and travellers who want gel-based glide without hotel-spa visibility. Aisha and Nuri are frequently requested when guests WhatsApp from Yaya Centre after midnight.",
           "Some guests choose nuru for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether nuru fits your goal, message 0746 203398; we explain without pressure.",
@@ -301,7 +301,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Nuru Appointment",
+        heading: "Boundaries, gel amount, and focus areas for Nuru",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For nuru massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in nuru read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -310,7 +310,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Nuru with Other Treatments",
+        heading: "Nuru with body-to-body or couples staging",
         paragraphs: [
           "Nuru pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus nuru elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature nuru as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -319,7 +319,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Discreet arrival routes near Yaya and Adlife Plaza",
         paragraphs: [
           "Nuru sessions need shower access—arrive five minutes early if first visit. Drivers know Marcus Garvey Rd near Yaya Centre; mention Kilimani Hot Massage explicitly.",
           "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
@@ -328,7 +328,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Why Guests Return for Nuru at Our 24/7 Studio",
+        heading: "Why guests rebook Nuru with the same therapist",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—nuru after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the nuru experience you asked for, cleanly and kindly.",
@@ -393,7 +393,7 @@ export const treatments: Treatment[] = [
     ],
     sections: [
       {
-        heading: "What Body-to-Body Massage Is at Kilimani Hot Massage",
+        heading: "Skin-to-skin flow and consent on Marcus Garvey Rd",
         paragraphs: [
           "Body-to-Body Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Body-to-body uses sustained skin contact—torso, arms, and legs working in tandem with yours—to create deep sensory immersion while maintaining professional boundaries discussed at intake. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For body-to-body sessions we emphasise close-contact, intentional, adult pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -402,7 +402,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Body-to-Body Session from Arrival to Aftercare",
+        heading: "Body-to-body pacing from intake to shower",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For body-to-body massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -411,7 +411,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Body-to-Body Massage in Kilimani and Nairobi",
+        heading: "Guests who want continuous contact without mall visibility",
         paragraphs: [
           "Body-to-Body-to-body suits guests who want continuous contact and clear adult framing—common among Westlands hotel stays and Kilimani residents who prefer locked-suite privacy over mall spas. Book Aisha when you want consent-led pacing explained before hands begin.",
           "Some guests choose body-to-body for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether body-to-body fits your goal, message 0746 203398; we explain without pressure.",
@@ -420,7 +420,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Body-to-Body Appointment",
+        heading: "Oil, gel, draping, and boundary choices",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For body-to-body massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in body-to-body read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -429,7 +429,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Body-to-Body with Other Treatments",
+        heading: "Body-to-body before or after Nuru sessions",
         paragraphs: [
           "Body-to-Body pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus body-to-body elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature body-to-body as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -438,7 +438,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Low-profile ride-hail pins for Marcus Garvey Rd",
         paragraphs: [
           "Discreet arrivals: use street parking when instructed on WhatsApp. Marcus Garvey Rd sits between Yaya Centre energy and Valley Arcade calm.",
           "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
@@ -447,7 +447,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Why Guests Return for Body-to-Body at Our 24/7 Studio",
+        heading: "Repeat body-to-body bookings and therapist continuity",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—body-to-body after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the body-to-body experience you asked for, cleanly and kindly.",
@@ -512,7 +512,7 @@ export const treatments: Treatment[] = [
     ],
     sections: [
       {
-        heading: "What Four-Hands Massage Is at Kilimani Hot Massage",
+        heading: "Dual-therapist synchrony in Kilimani suites",
         paragraphs: [
           "Four-Hands Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Two therapists work as a unit—one mirroring the other on opposite sides or splitting upper and lower body—so your nervous system stops tracking a single point of contact and fully releases. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For four-hands sessions we emphasise synchronised, immersive pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -521,7 +521,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Four-Hands Session from Arrival to Aftercare",
+        heading: "Staging two therapists and one shared rhythm",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For four-hands massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -530,7 +530,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Four-Hands Massage in Kilimani and Nairobi",
+        heading: "Anniversary, birthday, and immersion seekers",
         paragraphs: [
           "Four-Four-hands is a birthday and anniversary upgrade—Zuri and Lina pair most often. Kilimani couples message after Wood Avenue dinners; solo guests book four-hands when they want immersive rhythm without managing two separate appointments.",
           "Some guests choose four-hands for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether four-hands fits your goal, message 0746 203398; we explain without pressure.",
@@ -539,7 +539,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Four-Hands Appointment",
+        heading: "Pairing Zuri and Lina—or mixed specialty pairs",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For four-hands massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in four-hands read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -548,7 +548,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Four-Hands with Other Treatments",
+        heading: "Four-hands plus couples or aromatherapy evenings",
         paragraphs: [
           "Four-Hands pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus four-hands elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature four-hands as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -557,7 +557,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Parking two guests on Marcus Garvey side streets",
         paragraphs: [
           "Four-hands requires both therapists on site—confirm pairing when you book from Kilimani or Lavington. Side-street parking fits two vehicles on weeknights.",
           "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
@@ -566,7 +566,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Why Guests Return for Four-Hands at Our 24/7 Studio",
+        heading: "Why four-hands beats two separate bookings",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—four-hands after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the four-hands experience you asked for, cleanly and kindly.",
@@ -631,7 +631,7 @@ export const treatments: Treatment[] = [
     ],
     sections: [
       {
-        heading: "What Sensual / Erotic Massage Is at Kilimani Hot Massage",
+        heading: "Adult-paced touch with spa hygiene on Marcus Garvey Rd",
         paragraphs: [
           "Sensual / Erotic Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Sensual massage emphasises awakening nerve endings through slow oil glides, feathered touch, and breath-aware pacing—always adult, always consensual, never rushed or public. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For sensual sessions we emphasise tasteful, adult, unhurried pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -640,7 +640,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Sensual Session from Arrival to Aftercare",
+        heading: "Consent checkpoints and unhurried sensual pacing",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For sensual / erotic massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -649,7 +649,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Sensual / Erotic Massage in Kilimani and Nairobi",
+        heading: "Guests who want refined adult touch—not crude listings",
         paragraphs: [
           "Sensual bookings peak on Friday and Saturday nights from Kilimani, Lavington, and Hurlingham—guests who want adult touch with spa hygiene standards. Aisha handles many sensual requests; boundaries are set in the first five minutes every time.",
           "Some guests choose sensual for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether sensual fits your goal, message 0746 203398; we explain without pressure.",
@@ -658,7 +658,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Sensual Appointment",
+        heading: "Lighting, oil, pressure, and stop-word preferences",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For sensual / erotic massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in sensual read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -667,7 +667,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Sensual with Other Treatments",
+        heading: "Sensual with tantric or aromatherapy wind-down",
         paragraphs: [
           "Sensual pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus sensual elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature sensual as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -676,16 +676,16 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Discreet WhatsApp booking before you leave Wood Avenue",
         paragraphs: [
           "Pin Kilimani Hot Massage on Marcus Garvey Rd—between Yaya Centre foot traffic and Adlife Plaza offices. James Gichuru from Kileleshwa and Ngong Rd from Upper Hill both feed the same corridor; message 0746 203398 with your starting landmark.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book sensual after dark for smooth entry.",
+          "Discreet arrivals: WhatsApp preferred for first questions. Mention Wood Avenue or Yaya Centre landmarks; we send a Marcus Garvey Rd pin after time confirmation.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After sensual, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "After sensual sessions, many Kilimani guests prefer straight home—suites stay private; reception does not delay exit.",
         ],
       },
       {
-        heading: "Why Guests Return for Sensual at Our 24/7 Studio",
+        heading: "Trust, boundaries, and therapist continuity",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—sensual after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the sensual experience you asked for, cleanly and kindly.",
@@ -739,18 +739,18 @@ export const treatments: Treatment[] = [
     metaTitle: "Couples Massage Kilimani Nairobi | Kilimani Hot Massage",
     metaDescription: "Couples massage in Kilimani. Two tables, open 24/7. Call 0746 203398.",
     h1: "Couples Massage in Kilimani, Nairobi",
-    summary: "Couples massage at Kilimani Hot Massage places two tables and two therapists in one private suite—share an evening of calm after dinner near Yaya Centre or a late wind-down when Ngong Rd finally clears. Each partner chooses Swedish, deep tissue, aromatherapy, or sensual work; we synchronise timing so you finish together. Romantic lighting, locked door, Marcus Garvey Rd discretion. Open 24/7—WhatsApp 0746 203398 for anniversary and date-night bookings from Kilimani, Kileleshwa, or Westlands.",
+    summary: "Couples massage at Kilimani Hot Massage means side-by-side tables, matched timing, and shared calm on Marcus Garvey Rd—popular after dinners near Yaya Centre, Adlife Plaza, or Junction Mall. Partners can choose the same modality or mix Swedish with deep tissue; Zuri stages most couples rooms. Book forty-eight hours ahead on Valentine weekends; weekday lunch slots from Kileleshwa are easier.",
     benefits: [
       "Two therapists with coordinated start and finish",
       "Matching or different modalities per partner",
       "Romantic lighting and private double suite",
       "Ideal for anniversaries and post-travel recovery together",
-      "Near Valley Arcade and Lavington Mall for dinner-then-spa nights",
+      "Near Yaya Centre and Wood Avenue for dinner-then-spa nights",
       "Twenty-four-hour booking for unconventional schedules",
     ],
     sections: [
       {
-        heading: "What Couples Massage Is at Kilimani Hot Massage",
+        heading: "Twin-table timing after Yaya Centre dinners",
         paragraphs: [
           "Couples Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Side-by-side tables let couples share presence without sharing one therapist—conversation optional, intimacy in parallel relaxation. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For couples sessions we emphasise shared, romantic, calm pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -759,7 +759,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Couples Session from Arrival to Aftercare",
+        heading: "Couples check-in, matched start, shared finish",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For couples massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -768,7 +768,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Couples Massage in Kilimani and Nairobi",
+        heading: "Date nights from Kilimani, Kileleshwa, and Karen",
         paragraphs: [
           "Couples massage is our strongest date-night SKU near Yaya Centre—partners mix Swedish and deep tissue in one room. Zuri stages shared suites; book forty-eight hours ahead on Valentine weekends when Marcus Garvey Rd parking fills early.",
           "Some guests choose couples for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether couples fits your goal, message 0746 203398; we explain without pressure.",
@@ -777,7 +777,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Couples Appointment",
+        heading: "Same modality or mixed Swedish and deep tissue",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For couples massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in couples read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -795,7 +795,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Combine dinner near Adlife Plaza with Marcus Garvey Rd massage",
         paragraphs: [
           "Couples often dine near Yaya Centre then ride five minutes to Marcus Garvey Rd—message when you pay the bill and we warm both tables.",
           "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
@@ -804,7 +804,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Why Guests Return for Couples at Our 24/7 Studio",
+        heading: "Anniversary rebooks and Valentine weekend planning",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—couples after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the couples experience you asked for, cleanly and kindly.",
@@ -864,12 +864,12 @@ export const treatments: Treatment[] = [
       "Swedish foundation—gentle enough for frequent visits",
       "Unscented oil available for scent-sensitive guests",
       "Pairs beautifully with hot stone and couples massage",
-      "Private suites near Valley Arcade and Lavington Mall",
+      "Private suites near Adlife Plaza and Valley Arcade",
       "Book any time via WhatsApp",
     ],
     sections: [
       {
-        heading: "What Aromatherapy Massage Is at Kilimani Hot Massage",
+        heading: "Scent-led calm near Ring Rd Kilimani flats",
         paragraphs: [
           "Aromatherapy Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Essential oils selected for therapeutic aroma—never overpowering—combined with effleurage and kneading that distributes scent evenly without irritating skin. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For aromatherapy sessions we emphasise gentle, sensory, restorative pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -878,7 +878,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Aromatherapy Session from Arrival to Aftercare",
+        heading: "Blend selection, stroke flow, and scent aftercare",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For aromatherapy massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -887,7 +887,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Aromatherapy Massage in Kilimani and Nairobi",
+        heading: "Stress weeks, Sunday resets, and scent-sensitive guests",
         paragraphs: [
           "Aromatherapy fits stress-heavy weeks in Kilimani co-working spaces and quiet Sunday resets from Kileleshwa compounds. Zuri and Lina adjust blends for scent sensitivity—citrus for alertness, lavender for sleep-focused evenings.",
           "Some guests choose aromatherapy for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether aromatherapy fits your goal, message 0746 203398; we explain without pressure.",
@@ -896,7 +896,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Aromatherapy Appointment",
+        heading: "Unscented fallback and citrus versus lavender choices",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For aromatherapy massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in aromatherapy read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -905,7 +905,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Aromatherapy with Other Treatments",
+        heading: "Aromatherapy Swedish and couples wind-down",
         paragraphs: [
           "Aromatherapy pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus aromatherapy elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature aromatherapy as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -914,7 +914,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Quiet slots from Kileleshwa via Mandera Rd",
         paragraphs: [
           "Aromatherapy guests from Kileleshwa approach via Ring Rd or Mandera Rd into Marcus Garvey Rd. Mention scent allergies on WhatsApp so blends are ready.",
           "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
@@ -923,7 +923,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Why Guests Return for Aromatherapy at Our 24/7 Studio",
+        heading: "Same blend preferences stored visit to visit",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—aromatherapy after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the aromatherapy experience you asked for, cleanly and kindly.",
@@ -988,7 +988,7 @@ export const treatments: Treatment[] = [
     ],
     sections: [
       {
-        heading: "What Hot Stone Massage Is at Kilimani Hot Massage",
+        heading: "Basalt heat on guarded shoulders—rainy Kilimani favourite",
         paragraphs: [
           "Hot Stone Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Basalt stones hold gentle heat that penetrates without scalding—placement opens back and shoulder fascia; gliding stones extend warmth through tight calves after Kilimani runs. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For hot stone sessions we emphasise warming, grounding pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -997,7 +997,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Hot Stone Session from Arrival to Aftercare",
+        heading: "Stone layout, heat checks, and cool-down",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For hot stone massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -1006,7 +1006,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Hot Stone Massage in Kilimani and Nairobi",
+        heading: "Cold-season bookings from Ring Rd and Wood Avenue",
         paragraphs: [
           "Hot stone spikes when Nairobi rains cool Ring Rd Kilimani flats—guests want heat before hands. Amara often pairs stones with Swedish back work; mention guarded shoulders when booking after Adlife Plaza meetings.",
           "Some guests choose hot stone for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether hot stone fits your goal, message 0746 203398; we explain without pressure.",
@@ -1015,7 +1015,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Hot Stone Appointment",
+        heading: "Stone focus: back, neck, feet, or full map",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For hot stone massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in hot stone read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -1024,7 +1024,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Hot Stone with Other Treatments",
+        heading: "Hot stone warm-up before deep tissue traps",
         paragraphs: [
           "Hot Stone pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus hot stone elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature hot stone as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -1033,16 +1033,16 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Book ahead so stones are staged on Marcus Garvey Rd",
         paragraphs: [
           "Hot stone needs stone staging time—book at least an hour ahead when possible. James Gichuru alternate saves minutes when Ngong Rd floods.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book hot stone after dark for smooth entry.",
+          "Hot stone needs staging time—book ahead when possible. James Gichuru alternate saves minutes when Ngong Rd floods toward Kilimani.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After hot stone, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "Heat can induce sleepiness—night bookings after hot stone often end with early bed near Yaya Centre rather than late Ngong Rd drives.",
         ],
       },
       {
-        heading: "Why Guests Return for Hot Stone at Our 24/7 Studio",
+        heading: "Heat-first relief when AC and rain tighten muscle",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—hot stone after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the hot stone experience you asked for, cleanly and kindly.",
@@ -1102,12 +1102,12 @@ export const treatments: Treatment[] = [
       "Private suite with no interruptions",
       "Experienced ritual-led therapists",
       "Overnight and late-evening availability",
-      "Discreet Lavington location near Valley Arcade",
+      "Discreet Marcus Garvey Rd suite near Adlife Plaza",
       "Clear adult consent conversation before beginning",
     ],
     sections: [
       {
-        heading: "What Tantric Ritual Is at Kilimani Hot Massage",
+        heading: "Breath-led ritual pacing in locked Kilimani suites",
         paragraphs: [
           "Tantric Ritual at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Tantric ritual weaves breath cues, eye contact when comfortable, and slow oil work to build awareness through the body—sensual, meditative, and entirely private. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For tantric sessions we emphasise ritual, breath-led, intentional pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -1116,7 +1116,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Tantric Session from Arrival to Aftercare",
+        heading: "Breath alignment, slow build, quiet exit",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For tantric ritual, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -1125,7 +1125,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Tantric Ritual in Kilimani and Nairobi",
+        heading: "Ritual-curious guests after high-stress project weeks",
         paragraphs: [
           "Tantric draws guests curious about breath-led ritual—not rushed adult novelty. Nuri paces sessions slowly; ideal after travel or high-stress project weeks when Kilimani professionals want downshift without losing structure.",
           "Some guests choose tantric for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether tantric fits your goal, message 0746 203398; we explain without pressure.",
@@ -1134,7 +1134,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Tantric Appointment",
+        heading: "Nuri-led pacing and boundary language",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For tantric ritual, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in tantric read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -1143,7 +1143,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Tantric with Other Treatments",
+        heading: "Tantric with lingam or sensual follow-on",
         paragraphs: [
           "Tantric pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus tantric elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature tantric as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -1152,16 +1152,16 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Unhurried slots—avoid stacking meetings after",
         paragraphs: [
           "Pin Kilimani Hot Massage on Marcus Garvey Rd—between Yaya Centre foot traffic and Adlife Plaza offices. James Gichuru from Kileleshwa and Ngong Rd from Upper Hill both feed the same corridor; message 0746 203398 with your starting landmark.",
-          "Ride-hail drivers usually know Marcus Garvey Rd once you mention Lavington Mall or Valley Arcade. Save 0746 203398 in your phone before travelling; we send pin-friendly directions on WhatsApp. Parking is simpler than CBD spas—still, share ETA when you book tantric after dark for smooth entry.",
+          "Tantric sessions are unhurried—avoid stacking meetings immediately after. Ride-hail to Marcus Garvey Rd; pin saves confusion near Adlife Plaza junction.",
           "First visit? Arrive five minutes early for a calm orientation—where to change, where to stow phone, how to signal pressure changes. Late from Westlands traffic? Message us; we adjust when possible without shortening your table time unfairly.",
-          "After tantric, neighbouring cafes at Yaya Centre or shops at Lavington Mall let you extend a relaxed evening—or head straight home to Kilimani or Kileleshwa for sleep.",
+          "Tantric aftercare is quiet time—many guests skip screens for an hour after returning to Kilimani flats.",
         ],
       },
       {
-        heading: "Why Guests Return for Tantric at Our 24/7 Studio",
+        heading: "Structured ritual versus rushed adult novelty",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—tantric after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the tantric experience you asked for, cleanly and kindly.",
@@ -1222,11 +1222,11 @@ export const treatments: Treatment[] = [
       "Flexible timing including late night after Ngong Rd traffic",
       "Hygiene-forward with shower and fresh linens",
       "Discreet WhatsApp enquiry and booking",
-      "Central Lavington near Yaya Centre",
+      "Central Kilimani on Marcus Garvey Rd near Yaya Centre",
     ],
     sections: [
       {
-        heading: "What Lingam Massage Is at Kilimani Hot Massage",
+        heading: "Male wellness focus with clinical privacy",
         paragraphs: [
           "Lingam Massage at Kilimani Hot Massage is delivered in private, climate-controlled suites on Marcus Garvey Rd, Kilimani. Lingam work centres respectful, skilled touch for male guests—combining body relaxation with focused genital massage when agreed at intake, always boundary-clear. Unlike crowded hotel spas, our rooms are reserved exclusively for your booking—quiet enough to hear your own breath after a long day crossing Ngong Rd or James Gichuru from Westlands.",
           "The experience begins the moment you step off Marcus Garvey Rd: discreet check-in, fresh linens, and a therapist who listens before hands meet skin. For lingam sessions we emphasise respectful, private, male-focused pacing—never rushed, never performative. Guests from Kilimani and Kileleshwa often say the suite feels removed from Nairobi noise even though Yaya Centre is minutes away.",
@@ -1235,7 +1235,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Your Lingam Session from Arrival to Aftercare",
+        heading: "Intake, pacing, and post-session rest",
         paragraphs: [
           "Check-in takes only a few minutes. We confirm preferences—pressure, focus areas, scent sensitivity, and any injuries—then leave you to settle in the suite. For lingam massage, typical sessions run sixty or ninety minutes; couples or four-hands bookings may run longer. Tell us your hard stop when booking from Westlands traffic so we pace accordingly.",
           "Your therapist works systematically: warming tissue, building rhythm, and checking pressure as the session unfolds. Draping stays in place except where work occurs; you can pause or adjust anytime. Many Valley Arcade and Kilimani guests shower afterward in-suite before heading home toward Kilimani or Kileleshwa.",
@@ -1244,7 +1244,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Who Books Lingam Massage in Kilimani and Nairobi",
+        heading: "Upper Hill and Westlands male wellness seekers",
         paragraphs: [
           "Lingam wellness bookings come from Upper Hill executives and Westlands residents who want male-focused work without clinical coldness. Nuri leads most lingam sessions; WhatsApp confirms therapist and duration before Marcus Garvey Rd arrival.",
           "Some guests choose lingam for recovery; others for celebration or quiet escape from hotel crowds near Valley Arcade. We serve adults only and keep consent explicit—especially for sensual modalities where communication matters. If you are unsure whether lingam fits your goal, message 0746 203398; we explain without pressure.",
@@ -1253,7 +1253,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How We Customise Every Lingam Appointment",
+        heading: "Therapist match, duration, and communication style",
         paragraphs: [
           "Customisation starts at booking: duration, therapist preference if you have one, oil scent or unscented, extra focus on neck, back, hips, or feet. For lingam massage, intensity scales to your request—speak up early and often. Heat, aromatherapy, or gel upgrades can be added when available; mention them on WhatsApp so supplies are staged.",
           "Room ambience adjusts to taste—dimmer light, quieter music, warmer blankets during rainy season along Ngong Rd. Therapists trained in lingam read body feedback: guarded shoulders soften before we deepen; sensitive areas get lighter contact. This responsiveness separates a template session from one you remember.",
@@ -1262,7 +1262,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Pairing Lingam with Other Treatments",
+        heading: "Lingam with tantric breath work",
         paragraphs: [
           "Lingam pairs naturally with Swedish for guests who want classic relaxation before or after focused work. Deep tissue on stubborn back bands plus lingam elsewhere is a hybrid Ngong Rd commuters request. Hot stone warm-up helps tissue accept pressure before deeper modalities.",
           "Four-hands and couples bookings can feature lingam as the core experience with two therapists synchronised. Aromatherapy layers scent onto oil or gel work without overpowering small suites. Plan combination visits on WhatsApp so both therapists and equipment are reserved.",
@@ -1271,7 +1271,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Getting Here from Yaya Centre, Valley Arcade, and Ngong Rd",
+        heading: "Night bookings from CBD under twenty minutes",
         paragraphs: [
           "Lingam wellness: confirm therapist preference on WhatsApp 0746 203398. Marcus Garvey Rd keeps CBD and Upper Hill drives under twenty minutes at night.",
           "Save 0746 203398 before you travel—we WhatsApp pin-friendly directions for Marcus Garvey Rd arrivals after dark.",
@@ -1280,7 +1280,7 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Why Guests Return for Lingam at Our 24/7 Studio",
+        heading: "Discreet repeat bookings with Nuri",
         paragraphs: [
           "Consistency brings people back: same discreet door, same private-suite standard, same 0746 203398 line that answers at 3 a.m. In a city that rarely sleeps, Kilimani Hot Massage on Marcus Garvey Rd becomes part of your rhythm—lingam after deadlines, before weekend plans, when jet lag hits.",
           "Therapists combine training with attentive listening—competence without ego. That balance is why referrals spread from Upper Hill offices to Kilimani friend groups. We do not oversell; we deliver the lingam experience you asked for, cleanly and kindly.",
