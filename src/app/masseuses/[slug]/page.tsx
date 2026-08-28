@@ -8,6 +8,7 @@ import { Breadcrumbs, breadcrumbJsonLd } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
+import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { personJsonLd, faqJsonLd } from "@/lib/schema";
 import { absoluteTitle } from "@/lib/seo-titles";
 
@@ -120,14 +121,7 @@ export default async function MasseusePage({ params }: Props) {
         </ul>
 
         <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">FAQs</h2>
-        <div className="mt-4 space-y-3">
-          {m.faqs.map((f) => (
-            <details key={f.q} className="rounded-lg border border-white/10 px-4 py-3">
-              <summary className="cursor-pointer">{f.q}</summary>
-              <p className="mt-2 text-sm text-[var(--muted)]">{f.a}</p>
-            </details>
-          ))}
-        </div>
+        <FaqAccordion faqs={m.faqs} className="mt-4 space-y-3" />
       </article>
     </>
   );

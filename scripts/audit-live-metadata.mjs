@@ -283,6 +283,64 @@ const ONPAGE_CHECKS = [
     countPattern: /href="\/massage-treatments\/[a-z-]+\/"/g,
     countMin: 12,
     countName: "Treatment links in grid",
+    extraCounts: [
+      {
+        pattern: /<h3 class="inline text-inherit font-medium">/g,
+        min: 11,
+        name: "FAQ H3 questions (semantic)",
+      },
+    ],
+  },
+  {
+    path: "/massage-treatments/swedish-massage/",
+    label: "Swedish treatment on-page",
+    checks: [
+      {
+        id: "h1",
+        pattern: /Swedish Massage in Kilimani/i,
+        name: 'H1 "Swedish Massage in Kilimani"',
+      },
+      {
+        id: "h2-benefits",
+        pattern: /<h2[^>]*>[\s\S]*?Benefits/i,
+        name: 'H2 "Benefits"',
+      },
+      {
+        id: "h2-faqs",
+        pattern: /<h2[^>]*>[\s\S]*?FAQs/i,
+        name: 'H2 "FAQs"',
+      },
+    ],
+    extraCounts: [
+      {
+        pattern: /<h3 class="inline text-inherit font-medium">/g,
+        min: 6,
+        name: "FAQ H3 questions",
+      },
+    ],
+  },
+  {
+    path: "/areas/lavington/",
+    label: "Lavington area on-page",
+    checks: [
+      {
+        id: "h1",
+        pattern: /Massage in Lavington/i,
+        name: 'H1 "Massage in Lavington"',
+      },
+      {
+        id: "h2-faq",
+        pattern: /Frequently asked questions — Lavington/i,
+        name: 'H2 FAQ section "Lavington"',
+      },
+    ],
+    extraCounts: [
+      {
+        pattern: /<h3 class="inline text-inherit font-medium">/g,
+        min: 1,
+        name: "FAQ H3 questions",
+      },
+    ],
   },
   {
     path: "/masseuses/",
@@ -299,6 +357,11 @@ const ONPAGE_CHECKS = [
     path: "/contact/",
     label: "Contact on-page",
     checks: [
+      {
+        id: "h2-rooms",
+        pattern: /<h2[^>]*>[\s\S]*?Private massage rooms/i,
+        name: 'H2 "Private massage rooms"',
+      },
       {
         id: "rooms-block",
         pattern: /Private massage rooms/i,
@@ -559,27 +622,36 @@ async function auditOnPage() {
       ...c,
       pass: status === 200 && c.pattern.test(text),
     }));
-    let countResult = null;
+    const allCounts = [];
     if (page.countPattern) {
-      const matches = text.match(page.countPattern) ?? [];
-      const unique = new Set(matches).size;
-      countResult = {
+      allCounts.push({
         name: page.countName,
-        count: unique,
         min: page.countMin,
-        pass: unique >= page.countMin,
-      };
+        count: new Set((text.match(page.countPattern) ?? [])).size,
+      });
     }
+    for (const ec of page.extraCounts ?? []) {
+      allCounts.push({
+        name: ec.name,
+        min: ec.min,
+        count: (text.match(ec.pattern) ?? []).length,
+      });
+    }
+    const countResults = allCounts.map((c) => ({
+      ...c,
+      pass: status === 200 && c.count >= c.min,
+    }));
     rows.push({
       label: page.label,
       path: page.path,
       httpStatus: status,
       checks: checkResults,
-      count: countResult,
+      counts: countResults,
+      count: countResults[0] ?? null,
       pass:
         status === 200 &&
         checkResults.every((c) => c.pass) &&
-        (countResult ? countResult.pass : true),
+        countResults.every((c) => c.pass),
     });
   }
   return rows;
@@ -597,7 +669,7 @@ function buildReport({ metadata, technical, schema, onpage, runAt }) {
 
 **Site:** ${LIVE_BASE}  
 **Run:** ${runAt}  
-**Repo branch audited against:** \`cursor/keyword-targeting-ec5b\`  
+**Repo branch audited against:** \`main\` (FaqAccordion h3 + heading audit)  
 **NAP lock:** \`${NAP}\`
 
 ---
@@ -703,8 +775,8 @@ Manual re-validation: [validator.schema.org](https://validator.schema.org/)
     for (const c of o.checks) {
       md += `| ${c.name} | ${statusIcon(c.pass)} |\n`;
     }
-    if (o.count) {
-      md += `| ${o.count.name} (${o.count.count}/${o.count.min}) | ${statusIcon(o.count.pass)} |\n`;
+    for (const c of o.counts ?? (o.count ? [o.count] : [])) {
+      md += `| ${c.name} (${c.count}/${c.min}) | ${statusIcon(c.pass)} |\n`;
     }
     md += `\n`;
   }
@@ -726,7 +798,7 @@ npm run build
 \`\`\`
 4. Flip checklist items from 🔍 Verify live → ✅ Verified live when Wave 2 sample passes
 
-**Expected post-deploy fixes:** Prof hybrid titles on all sample URLs, /massage-treatments/full-body-massage/ and /guides/massage-and-extras-kilimani/ return 200, sitemap ≥2,189 URLs, home keyword H2 + 11 FAQs + 12 treatment links, masseuse hub H1, contact private rooms block.
+**Expected post-deploy fixes:** Prof hybrid titles on all sample URLs, /massage-treatments/full-body-massage/ and /guides/massage-and-extras-kilimani/ return 200, sitemap ≥2,189 URLs, home keyword H2 + 11 FAQ H3s + 12 treatment links, masseuse hub H1, contact private rooms H2 block.
 
 ---
 

@@ -9,6 +9,7 @@ import { areas, areaPath } from "@/content/areas";
 import { guides, guidePath } from "@/content/guides";
 import { site } from "@/content/site";
 import { media, treatmentImage } from "@/content/media";
+import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
 import { absoluteTitle, profTitleHome } from "@/lib/seo-titles";
 
@@ -363,19 +364,13 @@ export default function HomePage() {
         <h2 className="font-display text-3xl text-[var(--off-white)]">
           Questions before you book
         </h2>
-        <div className="mt-8 space-y-4">
-          {homeFaqs.map((f) => (
-            <details
-              key={f.q}
-              className="glass-card rounded-xl px-5 py-4"
-            >
-              <summary className="cursor-pointer font-medium text-[var(--off-white)]">
-                {f.q}
-              </summary>
-              <p className="mt-3 text-sm text-[var(--muted)]">{f.a}</p>
-            </details>
-          ))}
-        </div>
+        <FaqAccordion
+          faqs={homeFaqs}
+          className="mt-8 space-y-4"
+          detailsClassName="glass-card rounded-xl px-5 py-4"
+          summaryClassName="cursor-pointer text-[var(--off-white)]"
+          answerClassName="mt-3 text-sm text-[var(--muted)]"
+        />
       </section>
     </>
   );

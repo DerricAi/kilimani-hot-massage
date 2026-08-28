@@ -1,7 +1,7 @@
 # Live Metadata Audit Report
 
 **Site:** https://kilimanihotmassage.co.ke  
-**Run:** 2026-08-28 13:44:22 UTC  
+**Run:** 2026-08-28 13:45:56 UTC  
 **Repo branch audited against:** `cursor/keyword-targeting-ec5b`  
 **NAP lock:** `Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi`
 
@@ -32,7 +32,7 @@
 | Contact | 200 | ❌ | ✅ | ✅ | ❌ |
 | Nuru treatment | 200 | ❌ | ❌ | ✅ | ❌ |
 | Full body treatment | 404 | ❌ | ❌ | ❌ | ❌ |
-| Kilimani area | 200 | ❌ | ❌ | ✅ | ❌ |
+| Kilimani area | 200 | ❌ | ✅ | ✅ | ❌ |
 | Masseuse Amara | 200 | ❌ | ✅ | ✅ | ❌ |
 | Massage and extras guide | 404 | ❌ | ❌ | ❌ | ❌ |
 | Lavington × Nuru combo | 200 | ❌ | ✅ | ✅ | ❌ |
@@ -151,14 +151,11 @@
 - **title**
   - Expected: `Massage Kilimani near me - Kilimani guests Marcus Garvey Rd spa open 24/7 | Kilimani Hot Massage`
   - Live: `Massage in Kilimani Nairobi | Kilimani Hot Massage | Kilimani Hot Massage`
-- **description**
-  - Expected: `Five to ten minutes from Yaya Centre and Adlife Plaza. Book massage for Kilimani guests at Kilimani Hot Massage on Marcus Garvey Rd. Open 24/7. Call 0746 203398.`
-  - Live: `About 5–10 minutes via Marcus Garvey Rd or James Gichuru Rd. Book massage for Kilimani guests at Kilimani Hot Massage on Marcus Garvey Rd. Open 24/7. Call 0746 203398.`
 - **ogTitle**
   - Expected: `Massage Kilimani near me - Kilimani guests Marcus Garvey Rd spa open 24/7 | Kilimani Hot Massage`
   - Live: `Kilimani Hot Massage | BEST Massage Spa Kilimani Nairobi`
 - **ogDescription**
-  - Expected: `Five to ten minutes from Yaya Centre and Adlife Plaza. Book massage for Kilimani guests at Kilimani Hot Massage on Marcus Garvey Rd. Open 24/7. Call 0746 203398.`
+  - Expected: `About 5–10 minutes via Marcus Garvey Rd or James Gichuru Rd. Book massage for Kilimani guests at Kilimani Hot Massage on Marcus Garvey Rd. Open 24/7. Call 0746 203398.`
   - Live: `Massage Spa Kilimani on Marcus Garvey Rd. Open 24/7. Call or WhatsApp 0746 203398.`
 - **ogUrl**
   - Expected: `https://kilimanihotmassage.co.ke/areas/kilimani/`
@@ -326,8 +323,10 @@ HTTP **200** · Overall ❌
 
 ## Wave 6 — Deploy checklist
 
-1. Merge `cursor/keyword-targeting-ec5b` → `main`
-2. Deploy static export / host rebuild for https://kilimanihotmassage.co.ke
+**Status (2026-08-28):** cursor/keyword-targeting-ec5b merged to main and pushed to GitHub (a5253ad). Repo build: **2,263** static pages. Production host still serves pre-merge build — re-run audit after deploy.
+
+1. ~~Merge cursor/keyword-targeting-ec5b → main~~ ✅ Done
+2. **Deploy** static export / host rebuild for https://kilimanihotmassage.co.ke (client-managed host)
 3. Re-run:
 ```bash
 npm run audit:live
@@ -335,7 +334,9 @@ npm run check:titles
 npm run check:keywords
 npm run build
 ```
-4. Flip checklist items from `🔍 Verify live` → `✅ Verified live` when Wave 2 sample passes
+4. Flip checklist items from 🔍 Verify live → ✅ Verified live when Wave 2 sample passes
+
+**Expected post-deploy fixes:** Prof hybrid titles on all sample URLs, /massage-treatments/full-body-massage/ and /guides/massage-and-extras-kilimani/ return 200, sitemap ≥2,189 URLs, home keyword H2 + 11 FAQs + 12 treatment links, masseuse hub H1, contact private rooms block.
 
 ---
 

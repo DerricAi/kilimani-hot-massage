@@ -12,6 +12,7 @@ import { Breadcrumbs, breadcrumbJsonLd } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl } from "@/content/site";
+import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd, personJsonLd } from "@/lib/schema";
 import { absoluteTitle } from "@/lib/seo-titles";
 
@@ -94,19 +95,13 @@ export default async function AreaMasseusePage({ params }: Props) {
             <h2 className="font-display text-2xl text-[var(--crimson)]">
               FAQs — booking {masseuse.name} from {area.name}
             </h2>
-            <div className="mt-6 space-y-3">
-              {combo.faqs.map((f) => (
-                <details
-                  key={f.q}
-                  className="rounded-xl border border-white/10 bg-white/[0.02] px-5 py-4"
-                >
-                  <summary className="cursor-pointer font-medium text-[var(--off-white)]">
-                    {f.q}
-                  </summary>
-                  <p className="mt-3 text-sm text-[var(--muted)]">{f.a}</p>
-                </details>
-              ))}
-            </div>
+            <FaqAccordion
+              faqs={combo.faqs}
+              className="mt-6 space-y-3"
+              detailsClassName="rounded-xl border border-white/10 bg-white/[0.02] px-5 py-4"
+              summaryClassName="cursor-pointer text-[var(--off-white)]"
+              answerClassName="mt-3 text-sm text-[var(--muted)]"
+            />
           </section>
         ) : null}
 

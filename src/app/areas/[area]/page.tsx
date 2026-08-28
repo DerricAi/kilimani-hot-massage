@@ -17,6 +17,7 @@ import { Breadcrumbs, breadcrumbJsonLd } from "@/components/seo/Breadcrumbs";
 import { JsonLd, MapEmbed } from "@/components/seo/MapEmbed";
 import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl, site, whatsappLink } from "@/content/site";
+import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
 import { treatmentImage } from "@/content/media";
 import { absoluteTitle, profTitleAreaHub } from "@/lib/seo-titles";
@@ -151,21 +152,13 @@ export default async function AreaPage({ params }: Props) {
             <h2 className="font-display text-2xl text-[var(--off-white)]">
               Frequently asked questions — {area.name}
             </h2>
-            <div className="mt-6 space-y-3">
-              {enrichment.faqs.map((faq) => (
-                <details
-                  key={faq.q}
-                  className="group rounded-lg border border-white/10 bg-white/[0.02]"
-                >
-                  <summary className="cursor-pointer px-4 py-3 font-medium text-[var(--off-white)] marker:content-none">
-                    {faq.q}
-                  </summary>
-                  <p className="border-t border-white/5 px-4 py-3 text-sm text-[var(--muted)]">
-                    {faq.a}
-                  </p>
-                </details>
-              ))}
-            </div>
+            <FaqAccordion
+              faqs={enrichment.faqs}
+              className="mt-6 space-y-3"
+              detailsClassName="group rounded-lg border border-white/10 bg-white/[0.02]"
+              summaryClassName="cursor-pointer px-4 py-3 text-[var(--off-white)] marker:content-none"
+              answerClassName="border-t border-white/5 px-4 py-3 text-sm text-[var(--muted)]"
+            />
           </section>
         ) : null}
 
