@@ -1,0 +1,495 @@
+{
+  "westlands": {
+    "intro": "Westlands is Nairobi's upscale commercial and residential hub west of the city centre, stretching from Waiyaki Way through Parklands to the UN Gigiri campus. Marcus Garvey Rd links Westlands directly to Lavington, making our spa a natural stop after shopping at Sarit or Westgate.",
+    "whyVisit": [
+      "Minutes from Sarit Centre and Westgate Mall",
+      "Strong corporate guest traffic from Riverside and Upper Hill",
+      "Easy Marcus Garvey Rd access to Kilimani Hot Massage",
+      "Open 24/7 for post-meeting recovery"
+    ],
+    "commute": "About 10–15 minutes via Marcus Garvey Rd or James Gichuru Rd",
+    "landmarks": [
+      "Sarit Centre",
+      "Westgate Mall",
+      "UN Gigiri",
+      "Karura Forest"
+    ],
+    "roads": [
+      "Waiyaki Way",
+      "Ring Road Westlands",
+      "James Gichuru Rd",
+      "Marcus Garvey Rd"
+    ],
+    "neighboringAreas": [
+      "kitisuru",
+      "parklands-highridge",
+      "karura",
+      "lavington",
+      "riverside"
+    ]
+  },
+  "dagoretti-north": {
+    "intro": "Dagoretti North covers Kilimani, Kileleshwa, Lavington, and the Kawangware fringe—some of Nairobi's most walkable middle-class neighbourhoods. Our spa on Marcus Garvey Rd sits at the heart of this constituency, minutes from Yaya Centre and Valley Arcade.",
+    "whyVisit": [
+      "Spa located inside Dagoretti North on Marcus Garvey Rd",
+      "Walkable from Kilimani, Kileleshwa, and Lavington",
+      "Popular with residents after Yaya Centre errands",
+      "24/7 availability for shift workers and travellers"
+    ],
+    "commute": "About 5–10 minutes within the constituency; spa is here",
+    "landmarks": [
+      "Yaya Centre",
+      "Valley Arcade",
+      "Adams Arcade",
+      "Lavington Mall"
+    ],
+    "roads": [
+      "Marcus Garvey Rd",
+      "Ngong Rd",
+      "James Gichuru Rd",
+      "Ring Rd Kilimani"
+    ],
+    "neighboringAreas": [
+      "lavington",
+      "kilimani",
+      "kileleshwa",
+      "kawangware",
+      "hurlingham"
+    ]
+  },
+  "dagoretti-south": {
+    "intro": "Dagoretti South spans the southern slopes toward Ngong Hills, including Waithaka, Uthiru, and Riruta along the Dagoretti–Karen corridor. Residents often commute north via Ngong Rd or Waiyaki Way for city services, including wellness stops in Kilimani.",
+    "whyVisit": [
+      "Quiet residential pockets away from CBD noise",
+      "Growing middle-class housing along Ngong Rd",
+      "Convenient Ngong Rd link toward Kilimani spa",
+      "Affordable massage option vs hotel spas"
+    ],
+    "commute": "About 20–30 minutes via Ngong Rd and Marcus Garvey Rd",
+    "landmarks": [
+      "Waithaka Market",
+      "Uthiru Shopping Centre",
+      "Riruta Estate",
+      "Dagoretti Corner"
+    ],
+    "roads": [
+      "Ngong Rd",
+      "Waiyaki Way",
+      "Dagoretti Rd",
+      "Kikuyu Rd"
+    ],
+    "neighboringAreas": [
+      "waithaka",
+      "uthiru-ruthimitu",
+      "riruta",
+      "karen",
+      "langata"
+    ]
+  },
+  "langata": {
+    "intro": "Langata constituency wraps around Nairobi National Park, Karen, Langata Road estates, and South C near Wilson Airport. It blends leafy suburbia with aviation and safari-adjacent tourism traffic.",
+    "whyVisit": [
+      "Karen and Langata Rd prestige addresses",
+      "Near Wilson Airport for transit guests",
+      "Ngong Rd connects directly toward Kilimani",
+      "Ideal after Nairobi National Park day trips"
+    ],
+    "commute": "About 15–25 minutes via Ngong Rd and Marcus Garvey Rd",
+    "landmarks": [
+      "Karen Hub",
+      "Wilson Airport",
+      "Nairobi National Park gate",
+      "Galleria Mall"
+    ],
+    "roads": [
+      "Langata Rd",
+      "Ngong Rd",
+      "Magadi Rd",
+      "Mombasa Rd"
+    ],
+    "neighboringAreas": [
+      "karen",
+      "south-c",
+      "nairobi-west",
+      "south-b",
+      "dagoretti-south"
+    ]
+  },
+  "kibra": {
+    "intro": "Kibra is one of Nairobi's most densely populated constituencies, bordering Woodley, Langata Rd, and Ngong Rd. Despite limited formal amenities, residents frequently travel to Kilimani and Lavington for healthcare and wellness.",
+    "whyVisit": [
+      "Large youthful population seeking affordable wellness",
+      "Close to Woodley/Kenyatta Golf Course ward",
+      "Short trip to Marcus Garvey Rd spa via Ngong Rd",
+      "24/7 hours suit informal-sector schedules"
+    ],
+    "commute": "About 15–20 minutes via Ngong Rd and Marcus Garvey Rd",
+    "landmarks": [
+      "Kibera Drive",
+      "Woodley Estate",
+      "National Housing",
+      "Olympic Estate"
+    ],
+    "roads": [
+      "Ngong Rd",
+      "Langata Rd",
+      "Kibera Dr",
+      "Railway line"
+    ],
+    "neighboringAreas": [
+      "woodley-kenyatta-golf-course",
+      "langata",
+      "kilimani",
+      "makina",
+      "laini-saba"
+    ]
+  },
+  "roysambu": {
+    "intro": "Roysambu lies along Thika Rd from Roysambu junction through Kahawa and Zimmerman toward Kiambu County. It is a major student and young-professional belt served by malls like Garden City and TRM.",
+    "whyVisit": [
+      "High Thika Rd commuter volume",
+      "Near TRM and Garden City for combined errands",
+      "Growing apartment blocks along Eastern Bypass links",
+      "Late-night spa option after Thika Rd traffic"
+    ],
+    "commute": "About 25–35 minutes via Thika Rd, Muthaiga Rd, and Marcus Garvey Rd",
+    "landmarks": [
+      "TRM",
+      "Garden City Mall",
+      "Roysambu Roundabout",
+      "Kahawa Barracks"
+    ],
+    "roads": [
+      "Thika Rd",
+      "Eastern Bypass",
+      "Roysambu Rd",
+      "Zimmerman Rd"
+    ],
+    "neighboringAreas": [
+      "roysambu-ward",
+      "kahawa",
+      "zimmerman",
+      "githurai",
+      "kasarani"
+    ]
+  },
+  "kasarani": {
+    "intro": "Kasarani covers the northeast quadrant from Mwiki and Clay City to Kasarani Stadium and Ruai toward the eastern bypass. Outer Ring Rd and Thika Rd feed heavy commuter flows into the city.",
+    "whyVisit": [
+      "Kasarani Stadium events draw regional visitors",
+      "Mwiki and Clay City dense residential base",
+      "Outer Ring Rd connectivity",
+      "Recovery massage after stadium weekends"
+    ],
+    "commute": "About 30–40 minutes via Outer Ring Rd, Thika Rd, and Marcus Garvey Rd",
+    "landmarks": [
+      "Kasarani Stadium",
+      "Mwiki Town",
+      "Clay City",
+      "All Saints Cathedral Kasarani"
+    ],
+    "roads": [
+      "Outer Ring Rd",
+      "Thika Rd",
+      "Mwiki Rd",
+      "Kasarani Mwiki Rd"
+    ],
+    "neighboringAreas": [
+      "kasarani-ward",
+      "mwiki",
+      "clay-city",
+      "njiru",
+      "roysambu"
+    ]
+  },
+  "ruaraka": {
+    "intro": "Ruaraka stretches from Baba Dogo and Lucky Summer along Outer Ring Rd to Korogocho and the Mathare valley edge. Industrial zones mix with dense informal settlements and new apartment blocks.",
+    "whyVisit": [
+      "Outer Ring Rd industrial corridor",
+      "Proximity to Eastleigh shopping districts",
+      "Affordable wellness destination in Kilimani",
+      "Useful after factory shift patterns"
+    ],
+    "commute": "About 25–35 minutes via Outer Ring Rd and Juja Rd toward city centre",
+    "landmarks": [
+      "Baba Dogo",
+      "Ruaraka Unga",
+      "Korogocho",
+      "Dandora boundary"
+    ],
+    "roads": [
+      "Outer Ring Rd",
+      "Juja Rd",
+      "Thika Rd",
+      "Baba Dogo Rd"
+    ],
+    "neighboringAreas": [
+      "baba-dogo",
+      "korogocho",
+      "mathare-north",
+      "pangani",
+      "eastleigh"
+    ]
+  },
+  "embakasi-south": {
+    "intro": "Embakasi South covers Pipeline, Imara Daima, and Kware along Mombasa Rd and the southern embakasi industrial belt. It serves airport-adjacent workers and logistics staff.",
+    "whyVisit": [
+      "Near JKIA and Nairobi Inland Container Depot",
+      "Pipeline estate commuter hub",
+      "Mombasa Rd artery traffic",
+      "Post-flight massage via Marcus Garvey Rd"
+    ],
+    "commute": "About 30–40 minutes via Mombasa Rd, Jogoo Rd, and Marcus Garvey Rd",
+    "landmarks": [
+      "Pipeline Estate",
+      "Imara Daima",
+      "Cabanas",
+      "Syokimau interchange"
+    ],
+    "roads": [
+      "Mombasa Rd",
+      "Jogoo Rd",
+      "Outer Ring Rd",
+      "Airport North Rd"
+    ],
+    "neighboringAreas": [
+      "pipeline",
+      "imara-daima",
+      "kware",
+      "south-c",
+      "embakasi-ward"
+    ]
+  },
+  "embakasi-north": {
+    "intro": "Embakasi North is defined by Dandora estates and Kariobangi North along the northeastern industrial rim. It connects to city centre via Jogoo Rd and Outer Ring Rd.",
+    "whyVisit": [
+      "Dandora estate residential mass",
+      "Kariobangi North market activity",
+      "Jogoo Rd primary corridor",
+      "Affordable spa alternative in Kilimani"
+    ],
+    "commute": "About 30–45 minutes via Jogoo Rd and Haile Selassie Ave",
+    "landmarks": [
+      "Dandora Dump site area",
+      "Kariobangi North",
+      "Dandora Phase IV",
+      "Outering Sports Club"
+    ],
+    "roads": [
+      "Jogoo Rd",
+      "Outer Ring Rd",
+      "Kariobangi Rd",
+      "Dandora Rd"
+    ],
+    "neighboringAreas": [
+      "dandora-area-i",
+      "kariobangi-north",
+      "komarock",
+      "baba-dogo",
+      "ruaraka"
+    ]
+  },
+  "embakasi-central": {
+    "intro": "Embakasi Central centres on Kayole, Komarock, and Matopeni—dense east-side neighbourhoods along Kangundo Rd and Outer Ring Rd. Kayole hosts one of Nairobi's busiest matatu stages.",
+    "whyVisit": [
+      "Kayole matatu hub connectivity",
+      "Komarock new housing developments",
+      "Outer Ring Rd access",
+      "Popular weekend spa trips to Kilimani"
+    ],
+    "commute": "About 30–40 minutes via Jogoo Rd or Outer Ring Rd",
+    "landmarks": [
+      "Kayole Stage",
+      "Komarock Estate",
+      "Matopeni",
+      "Savannah Estate"
+    ],
+    "roads": [
+      "Kangundo Rd",
+      "Outer Ring Rd",
+      "Jogoo Rd",
+      "Kayole Rd"
+    ],
+    "neighboringAreas": [
+      "kayole-central",
+      "komarock",
+      "donholm",
+      "embakasi-east",
+      "matopeni-spring-valley"
+    ]
+  },
+  "embakasi-east": {
+    "intro": "Embakasi East includes Utawala, Mihango, Donholm, and Savanna estates along the eastern bypass and Jogoo Rd corridor. It is popular with homeowners seeking space east of the city.",
+    "whyVisit": [
+      "Utawala gated-community belt",
+      "Donholm shopping and residential mix",
+      "Eastern Bypass connectivity",
+      "Family-oriented spa visits"
+    ],
+    "commute": "About 25–40 minutes via Jogoo Rd or Eastern Bypass",
+    "landmarks": [
+      "Donholm",
+      "Utawala",
+      "Greenspan Mall",
+      "Savanna Estate"
+    ],
+    "roads": [
+      "Jogoo Rd",
+      "Eastern Bypass",
+      "Mombasa Rd",
+      "Airport North Rd"
+    ],
+    "neighboringAreas": [
+      "donholm",
+      "utawala",
+      "embakasi-ward",
+      "upper-savanna",
+      "south-b"
+    ]
+  },
+  "embakasi-west": {
+    "intro": "Embakasi West covers Umoja I & II, Mowlem, and Kariobangi South—established east-side estates with strong community identity. Jogoo Rd and Outer Ring Rd serve daily commuters.",
+    "whyVisit": [
+      "Umoja estate mature housing",
+      "Kariobangi South markets",
+      "Jogoo Rd matatu routes",
+      "Evening spa slots after work"
+    ],
+    "commute": "About 30–40 minutes via Jogoo Rd toward city centre",
+    "landmarks": [
+      "Umoja I Market",
+      "Mowlem Estate",
+      "Kariobangi South",
+      "Innercore"
+    ],
+    "roads": [
+      "Jogoo Rd",
+      "Outer Ring Rd",
+      "Kariobangi Rd",
+      "Umoja Rd"
+    ],
+    "neighboringAreas": [
+      "umoja-i",
+      "umoja-ii",
+      "kayole-central",
+      "donholm",
+      "embakasi-central"
+    ]
+  },
+  "makadara": {
+    "intro": "Makadara sits south-east of CBD along Jogoo Rd, Mombasa Rd, and Landhies Rd, including Makongeni, Viwandani, and Kaloleni. It is a historic working-class constituency with strong transport links.",
+    "whyVisit": [
+      "Landhies Rd industrial heritage",
+      "Makongeni residential blocks",
+      "Jogoo Rd direct CBD link",
+      "Short hop to Kilimani via Ngong Rd"
+    ],
+    "commute": "About 20–30 minutes via Jogoo Rd and Ngong Rd",
+    "landmarks": [
+      "Makadara Railway Station",
+      "Kaloleni Estate",
+      "Viwandani",
+      "Harambee Estate"
+    ],
+    "roads": [
+      "Jogoo Rd",
+      "Mombasa Rd",
+      "Landhies Rd",
+      "Ngong Rd"
+    ],
+    "neighboringAreas": [
+      "makongeni",
+      "viwandani",
+      "south-b",
+      "embakasi-south",
+      "starehe"
+    ]
+  },
+  "kamukunji": {
+    "intro": "Kamukunji covers Eastleigh, Pumwani, California, and the Airbase area—Nairobi's wholesale and Somali-business heartland north-east of CBD. General Waruinge St and Juja Rd carry heavy traffic.",
+    "whyVisit": [
+      "Eastleigh 24-hour commerce",
+      "Pumwani maternity hospital landmark",
+      "Juja Rd corridor",
+      "Wholesale traders seeking evening relaxation"
+    ],
+    "commute": "About 20–30 minutes via Juja Rd and Haile Selassie Ave",
+    "landmarks": [
+      "Eastleigh Mall",
+      "Pumwani Hospital",
+      "Airbase",
+      "California Estate"
+    ],
+    "roads": [
+      "Juja Rd",
+      "General Waruinge St",
+      "First Avenue Eastleigh",
+      "Ring Rd"
+    ],
+    "neighboringAreas": [
+      "eastleigh",
+      "pumwani",
+      "pangani",
+      "nairobi-central",
+      "ruaraka"
+    ]
+  },
+  "starehe": {
+    "intro": "Starehe is central Nairobi—CBD, Ngara, Pangani, and Landimawe—wrapping the commercial core and northern fringe. Upper Hill and Haile Selassie Ave fall within this constituency.",
+    "whyVisit": [
+      "CBD professional lunch-break market",
+      "Ngara and Pangani dense housing",
+      "Haile Selassie Ave access",
+      "Central location for county-wide guests"
+    ],
+    "commute": "About 10–20 minutes via Haile Selassie Ave and Marcus Garvey Rd",
+    "landmarks": [
+      "Kenyatta International Convention Centre",
+      "Nairobi Railway Station",
+      "Ngara Market",
+      "University of Nairobi"
+    ],
+    "roads": [
+      "Haile Selassie Ave",
+      "Moi Ave",
+      "University Way",
+      "Marcus Garvey Rd"
+    ],
+    "neighboringAreas": [
+      "nairobi-central",
+      "cbd-nairobi",
+      "upper-hill",
+      "ngara",
+      "pangani"
+    ]
+  },
+  "mathare": {
+    "intro": "Mathare constituency follows the Mathare River valley from Huruma and Mabatini to Hospital ward and Mlango Kubwa. It is among Nairobi's most populous informal-settlement areas.",
+    "whyVisit": [
+      "Mathare River valley communities",
+      "Juja Rd and Thika Rd proximity",
+      "Strong social cohesion and local markets",
+      "Wellness trips to Lavington for special occasions"
+    ],
+    "commute": "About 25–35 minutes via Juja Rd and Pangani",
+    "landmarks": [
+      "Mathare Valley",
+      "Huruma Market",
+      "Mabatini",
+      "Ngei Estate"
+    ],
+    "roads": [
+      "Juja Rd",
+      "Thika Rd",
+      "Outer Ring Rd",
+      "Mathare North Dr"
+    ],
+    "neighboringAreas": [
+      "huruma",
+      "mabatini",
+      "pangani",
+      "korogocho",
+      "ruaraka"
+    ]
+  }
+}
