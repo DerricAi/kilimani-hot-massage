@@ -38,7 +38,7 @@ node scripts/geotag-images.mjs   # after new images
 
 > **Keyword map:** Priority terms → pages in [`src/content/target-keywords.ts`](../src/content/target-keywords.ts). Run `npm run check:keywords` after keyword rollout edits.
 
-**Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). As of 2026-08-28, production lags `cursor/keyword-targeting-ec5b` — titles, full-body page, massage-and-extras guide, and on-page keyword blocks fail live until deploy.
+**Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). As of 2026-08-28, `main` includes keyword rollout + audit tooling (merged); production still lags until host rebuild — titles, full-body page, massage-and-extras guide, and on-page keyword blocks fail live until deploy.
 
 **Index check (post-deploy):** `site:kilimanihotmassage.co.ke` — minimum 30 URLs; goal ≫ 30 (~2,175 in sitemap).
 

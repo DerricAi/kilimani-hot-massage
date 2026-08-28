@@ -713,15 +713,20 @@ Manual re-validation: [validator.schema.org](https://validator.schema.org/)
 
 ## Wave 6 — Deploy checklist
 
-1. Merge \`cursor/keyword-targeting-ec5b\` → \`main\`
-2. Deploy static export / host rebuild for ${LIVE_BASE}
-3. Re-run:\n\`\`\`bash
+**Status (2026-08-28):** cursor/keyword-targeting-ec5b merged to main and pushed to GitHub (a5253ad). Repo build: **2,263** static pages. Production host still serves pre-merge build — re-run audit after deploy.
+
+1. ~~Merge cursor/keyword-targeting-ec5b → main~~ ✅ Done
+2. **Deploy** static export / host rebuild for ${LIVE_BASE} (client-managed host)
+3. Re-run:
+\`\`\`bash
 npm run audit:live
 npm run check:titles
 npm run check:keywords
 npm run build
 \`\`\`
-4. Flip checklist items from \`🔍 Verify live\` → \`✅ Verified live\` when Wave 2 sample passes
+4. Flip checklist items from 🔍 Verify live → ✅ Verified live when Wave 2 sample passes
+
+**Expected post-deploy fixes:** Prof hybrid titles on all sample URLs, /massage-treatments/full-body-massage/ and /guides/massage-and-extras-kilimani/ return 200, sitemap ≥2,189 URLs, home keyword H2 + 11 FAQs + 12 treatment links, masseuse hub H1, contact private rooms block.
 
 ---
 
