@@ -10,7 +10,10 @@
     "check:unique": "node scripts/check-uniqueness.mjs",
     "check:titles": "node scripts/check-titles.mjs",
     "check:keywords": "node scripts/check-keywords.mjs",
-    "audit:live": "node scripts/audit-live-metadata.mjs --write-report"
+    "check:content": "node scripts/check-content-compliance.mjs",
+    "audit:live": "node scripts/audit-live-metadata.mjs --write-report",
+    "audit:live:content": "node scripts/audit-live-content.mjs --write-report",
+    "audit:prof": "node scripts/audit-prof.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

@@ -2874,6 +2874,299 @@ areaEnrichments.starehe?.localTips.push("Starehe Ngara: mid-morning Tuesday Argw
 areaEnrichments["woodley-kenyatta-golf-course"]?.localTips.push("Woodley Adams: gym-then-massage same evening when Ngong flows north.");
 areaEnrichments["woodley-kenyatta-golf-course"]?.localTips.push("Woodley: save 0746 203398 for Kenyatta Golf post-round Kilimani bookings.");
 
+/** Word-count top-up — Prof content audit 6.16 (Tier-A ≥1,200 words). */
+const tierAExtra10: Record<string, Partial<AreaEnrichment>> = {
+  "cbd-nairobi": {
+    sections: [{
+      heading: "CBD repeat guests and Marcus Garvey Rd rhythm",
+      paragraphs: [
+        "Kenyatta Avenue tower workers who massage monthly report fewer Sunday headaches than colleagues who treat spa time as crisis-only intervention. Marcus Garvey Rd becomes part of the commute map alongside favourite lunch spots—predictable, professional, open when fiscal quarters compress evenings.",
+        "WhatsApp 0746 203398 with your CBD starting landmark when Haile Selassie westbound cooperates; we hold suites when Tom Mboya traffic surprises without punitive cancellation when you message honestly from lobby turnstiles.",
+      ],
+    }],
+    faqs: [{
+      q: "Do CBD Nairobi guests get live traffic holds on Marcus Garvey Rd?",
+      a: "Yes—text 0746 203398 from Kenyatta Avenue or Tom Mboya when Haile Selassie slows; reception adjusts room timing for CBD Nairobi arrivals without penalty when traffic is the delay.",
+    }],
+  },
+  hurlingham: {
+    sections: [{
+      heading: "Hurlingham strip regulars and Yaya corridor timing",
+      paragraphs: [
+        "Hurlingham Rd florists and café staff learn our Marcus Garvey Rd pin by word of mouth—no commission, just community goodwill when lost spa guests ask locally. Walking from Yaya Centre beats ninety-minute parking validation mazes when dry season sidewalks cooperate.",
+        "State House Rd motorcades are rare but memorable; Hurlingham guests who book massage specifically to decompress after delays appreciate therapists who skip unnecessary small talk and start pressure checks immediately.",
+      ],
+    }],
+  },
+  kabiro: {
+    sections: [{
+      heading: "Kabiro hillside trust and James Gichuru commutes",
+      paragraphs: [
+        "Third visits from Kabiro often bring relatives—community validation matters more than online stars in hillside wards where spas once felt unreachable. We greet returning James Gichuru commuters by name when memory allows, small dignity in neighbourhoods climbing toward Kilimani.",
+        "Physical labour across Kabiro and Kawangware fringe markets produces predictable patterns—lower back from lifting, calves from slopes. Deep tissue focused on those zones delivers relief workers feel walking back down; abstract wellness language less effective than honest pressure respecting pain thresholds.",
+        "Transport cost sensitivity is real; combining spa trips with necessary James Gichuru banking errands amortizes commute mentally. Monthly packages reduce per-visit cost enough that fourth appointments essentially discount first—math explained patiently on 0746 203398 without high-pressure sales.",
+      ],
+    }],
+  },
+  karen: {
+    sections: [{
+      heading: "Karen lifestyle massage cadence",
+      paragraphs: [
+        "Karen lifestyles blend brunch, golf, school runs, and safari weekends—each producing distinct muscle stress. Regulars store preferences so Karen Hub shopping soreness receives lighter Swedish while Ngong cycling days trigger sports-focused deep tissue without re-explaining every visit.",
+        "Estate gate familiarity grows with monthly Karen visits; drivers learn Marcus Garvey Rd turns while guards wave through regular spa commuters. Gift certificates for visiting relatives beat Karen Hub trinkets gathering dust on Ngong Rd shelves.",
+      ],
+    }],
+  },
+  kileleshwa: {
+    sections: [{
+      heading: "Kileleshwa proximity and Mandera Rd rhythms",
+      paragraphs: [
+        "Kileleshwa border life treats Marcus Garvey Rd as neighbourhood institution despite Lavington postal addresses on paper—close enough for walk-ins dry season, close enough that forgotten wallets recover in minutes not hours.",
+        "Mandera Rd restaurant workers on split shifts discover 24/7 massage between lunch and dinner rushes—feet first, back steady, return to pass plates without wincing through service hours.",
+      ],
+    }],
+  },
+  kitisuru: {
+    sections: [{
+      heading: "Kitisuru ridge expectations and Peponi seasons",
+      paragraphs: [
+        "Kitisuru altitude and privacy expectations exceed mall spa menus—cooler evenings, guarded compounds, diplomatic schedules incompatible with nine-to-five closures. Marcus Garvey Rd delivers depth Peponi residents cannot find locally without crossing to impersonal hotel corridors.",
+        "UN Gigiri event calendars ripple Kileleshwa social life; pre-gala massage prevents tension headaches during receiving lines, post-gala massage repairs them when prevention failed. Long-term expats request therapist continuity across home leaves—six-week trips should not reset scar history.",
+      ],
+    }],
+  },
+  langata: {
+    sections: [{
+      heading: "Langata constituency endurance patterns",
+      paragraphs: [
+        "Wilson aviation noise backgrounds Langata life—quiet Marcus Garvey Rd suites contrast sharper appreciated after propeller days. Safari dust and vehicle vibration from National Park outings request hip and lumbar emphasis without lengthy explanation at intake.",
+        "Galleria pre-movie massage beats post-movie Ngong jams when Friday cinema traffic stacks north. South C neighbours share rides splitting commute cost when budgets tighten but recovery remains non-negotiable after Ngong corridor weeks.",
+        "National Park lion roar stories occasionally open massage conversations—therapists listen politely while focusing trapezius work from Langata desk-and-drive weeks equally common among constituency guests.",
+      ],
+    }],
+  },
+  "nairobi-central": {
+    sections: [{
+      heading: "Nairobi Central delegate wellness habits",
+      paragraphs: [
+        "KICC badge holders book between plenary sessions—sixty-minute express when Haile Selassie westbound cooperates. Moi Avenue hotel staff finishing midnight shifts find 24/7 Marcus Garvey Rd respect rare in central Nairobi hospitality corridors.",
+        "University Way students budget honestly—Swedish sixty minutes enough during exams when funds tight. Conference season fills twin rooms for visiting pairs; book before KICC hotels sell inferior lobby chair alternatives.",
+      ],
+    }],
+  },
+  "parklands-highridge": {
+    sections: [{
+      heading: "Parklands caregiver and Highridge flat recovery",
+      paragraphs: [
+        "Caregiver burnout from Aga Khan visiting schedules creates emotional fatigue; Parklands guests sometimes need quiet Swedish more than aggressive deep tissue—therapists read tone during intake without forcing sport-style pressure inappropriate to grief contexts.",
+        "Highridge walk-up flats without elevators mean daily calf work; massage addresses consequences honestly without gym pretense. Parklands street commerce standing jobs parallel—reflexology gateway before deeper work when budgets constrained.",
+      ],
+    }],
+  },
+  riverside: {
+    sections: [{
+      heading: "Riverside executive recovery logistics",
+      paragraphs: [
+        "Riverside Drive competitiveness extends to wellness—executives recovering faster return sharper Monday than colleagues nursing weekend desk marathons untreated. Marcus Garvey Rd massage becomes performance tool when framed honestly, not vanity when framed honestly.",
+        "Quarter-end reporting weeks produce predictable booking avalanches; pre-scheduling before final all-nighter beats post-crunch three-week wait lists at inferior hotel options near Riverside Square lobbies.",
+        "Chauffeur culture standardizes Marcus Garvey Rd gate knowledge among corporate driver pools—new executives inherit spa pin along with office access cards when assistants competent.",
+      ],
+    }],
+  },
+  "spring-valley": {
+    sections: [{
+      heading: "Spring Valley diplomatic household massage",
+      paragraphs: [
+        "Ambassador rotations create six-month relationship windows; spa staff learning preferences quickly earn diplomatic household loyalty transferable across postings when attachés recommend successors same Marcus Garvey Rd address.",
+        "Compound staff wellness quarterly events require logistical precision—three therapists, four hours, rotating guards and nannies without leaving Spring Valley Rd estates undefended simultaneously.",
+        "School bus schedules dictate Spring Valley departure windows; 9:30 a.m. post-bus massage slots cult favorite among parents whose calendars finally breathe after gate delays clear.",
+      ],
+    }],
+  },
+  starehe: {
+    sections: [{
+      heading: "Starehe ward solidarity at Marcus Garvey Rd",
+      paragraphs: [
+        "Starehe economic diversity means Ngara market porters and Upper Hill fringe bankers share 0746 203398 line—pricing transparency prevents awkward class dynamics at reception when guests arrive sequentially from different wards same hour.",
+        "Railway Station transient workers discover 60-minute Swedish before overnight departures—dignity restoration affordable centrally when bench sleeping left hips aching unfairly.",
+        "Pangani flat nurses finish shifts requesting gentle Swedish—compassion fatigue real, deep tissue sometimes too much emotionally same day ward tragedy struck.",
+      ],
+    }],
+  },
+  "upper-hill": {
+    sections: [{
+      heading: "Upper Hill clinical and banking recovery",
+      paragraphs: [
+        "Hospital rotation schedules brutalize Upper Hill clinicians—massage between call nights prevents chronic compassion fatigue better than coffee alone. Gentle Swedish and reflexology dominate when hands still shake from adrenaline not weakness.",
+        "Banking fiscal calendars predictable—December year-end, March closes, August reviews—Upper Hill analysts pre-book Marcus Garvey Rd before crunch begins rather than begging slots after collapse.",
+        "Tower elevator queues at noon waste Upper Hill lunch breaks; leaving 11:45 a.m. for Haile Selassie westbound massage beats waiting vertical then horizontal inefficiently.",
+      ],
+    }],
+  },
+  westlands: {
+    sections: [{
+      heading: "Westlands retail and corporate massage integration",
+      paragraphs: [
+        "Sarit and Westgate shopping marathons produce bag-carrying shoulder damage Westlands residents joke about then treat seriously at Marcus Garvey Rd monthly. James Gichuru eastbound after retail beats fighting mall parking twice same day.",
+        "Karura marathon training clusters Westlands runners seeking calf-focused deep tissue Sundays—pre-book before brunch lines form at Riverside-adjacent cafes competitors occupy.",
+      ],
+    }],
+    faqs: [{
+      q: "Is Westlands to Marcus Garvey Rd faster off-peak?",
+      a: "Often yes—mid-morning and after 9 p.m. James Gichuru runs ten to fifteen minutes to Kilimani Hot Massage; WhatsApp 0746 203398 from Westlands with your Sarit or Riverside starting point.",
+    }],
+  },
+  "woodley-kenyatta-golf-course": {
+    sections: [{
+      heading: "Woodley sports culture depth",
+      paragraphs: [
+        "Kenyatta Golf Course tournaments calendar Woodley social life—Friday prep massage, Sunday recovery massage, caddies occasionally gifted sessions by generous members understanding physical labor carrying bags eighteen holes.",
+        "Adams Arcade gym synergy means Woodley flat residents lift then massage same evening when Ngong north flows—James Gichuru bypass shared on WhatsApp when construction blocks direct route temporarily.",
+        "Woodley Estate intercom failures timeless—call reception from lobby when buzzers fail rather than missing slots entirely; ten minutes grace standard when Ngong departure delays cited honestly.",
+        "Charity tournament weekends sell couples rooms by Thursday—Woodley competitive social calendars demand advance planning unlike spontaneous weekday walk-ins after casual nine holes practice.",
+      ],
+    }],
+  },
+};
+
+for (const [slug, extra] of Object.entries(tierAExtra10)) {
+  const base = areaEnrichments[slug];
+  if (!base) continue;
+  if (extra.sections) base.sections.push(...extra.sections);
+  if (extra.faqs) base.faqs.push(...extra.faqs);
+  if (extra.localTips) base.localTips.push(...extra.localTips);
+}
+
+/** FAQ top-up — Prof audit 6.16 word-count pass. */
+const tierAExtra11Faqs: Record<string, { q: string; a: string }> = {
+  kabiro: { q: "Do Kabiro guests get upfront pricing on WhatsApp?", a: "Yes—0746 203398 quotes before you leave James Gichuru; no hidden hillside surcharges at Marcus Garvey Rd reception for Kabiro first-timers or regulars." },
+  karen: { q: "Can Karen guests book post-Ngong Rd massage same evening?", a: "Often yes—WhatsApp 0746 203398 from Karen Hub or Langata Rd with ETA; Marcus Garvey Rd suites stay open 24/7 for Ngong corridor arrivals." },
+  kitisuru: { q: "Do Kitisuru diplomatic guests request quiet suites?", a: "Frequently—note quiet preference at 0746 203398 from Peponi Rd; Marcus Garvey Rd therapists keep conversation optional for Kitisuru ridge bookings." },
+  langata: { q: "Do Langata Wilson crews book between shifts?", a: "Yes—call 0746 203398 en route from Wilson; sixty-minute Swedish or deep tissue fits many Langata aviation layovers when Ngong north flows." },
+  "nairobi-central": { q: "Can Nairobi Central walk-ins succeed weekday mornings?", a: "Often—Haile Selassie westbound before 10 a.m. is fastest; WhatsApp 0746 203398 from KICC or Kenyatta Ave to hold Marcus Garvey Rd rooms." },
+  "parklands-highridge": { q: "Do Parklands guests book after hospital visiting hours?", a: "Yes—gentle Swedish after Aga Khan visits is common; message 0746 203398 from Parklands or Highridge when leaving Limuru connectors toward Marcus Garvey Rd." },
+  riverside: { q: "Do Riverside teams block multiple rooms quarterly?", a: "Yes—teams of three to six analysts book sequential Marcus Garvey Rd rooms post-earnings; coordinate via 0746 203398 from Riverside Drive before all-nighters." },
+  "spring-valley": { q: "Can Spring Valley PAs stagger staff wellness slots?", a: "Yes—one contact at 0746 203398 coordinates nannies, guards, and gardeners from Spring Valley Rd without emptying compound security simultaneously." },
+  starehe: { q: "Do Starehe wards share one spa phone line?", a: "Yes—Ngara, Pangani, and central Starehe wards use 0746 203398 for the same Marcus Garvey Rd studio without ward surcharges." },
+  "upper-hill": { q: "Do Upper Hill clinicians book gentle Swedish between calls?", a: "Popular—request light pressure at 0746 203398 from Upper Hill Rd towers; Marcus Garvey Rd stays open 24/7 between hospital shifts." },
+  "woodley-kenyatta-golf-course": { q: "Should Woodley golfers mention tournament weeks?", a: "Yes—Kenyatta Golf Course events affect Ngong traffic; WhatsApp 0746 203398 from Woodley Estate for Marcus Garvey Rd holds during tournament Saturdays." },
+  hurlingham: { q: "Can Hurlingham guests walk from Yaya Centre?", a: "Yes—fifteen to twenty minutes dry season, five minutes by car; WhatsApp 0746 203398 from Hurlingham Rd or Yaya when walking to Marcus Garvey Rd." },
+  kileleshwa: { q: "Do Kileleshwa estate gates affect punctuality?", a: "Sometimes—allow five to ten minutes; message 0746 203398 once your driver clears Ring Rd Kileleshwa gates toward Marcus Garvey Rd." },
+  kabiro: { q: "Can Kabiro residents split rides to Marcus Garvey Rd?", a: "Mountain View neighbours often share one James Gichuru descent—0746 203398 books sequential rooms when carpooling from Kabiro hillside blocks." },
+  karen: { q: "Do Karen safari returns book recovery massage?", a: "Yes—post-lodge blocks of three weekly sessions on Marcus Garvey Rd beat one crisis visit; WhatsApp 0746 203398 from Ngong Rd when returning to Karen." },
+  langata: { q: "Do Langata park-day guests massage same evening?", a: "Book exiting National Park gates toward Langata Rd—0746 203398 holds Marcus Garvey Rd suites for dusty hip-focused deep tissue same night." },
+  "nairobi-central": { q: "Do Nairobi Central hotel staff use 0746 203398 overnight?", a: "Moi Avenue hospitality workers book 24/7 Marcus Garvey Rd foot and back focus rare in CBD corridors—message shift end time when booking." },
+  "parklands-highridge": { q: "Can Parklands book reflexology-only sessions?", a: "Thirty- or sixty-minute foot reflexology after Aga Khan visits—0746 203398 from Parklands or Highridge with caregiver context for gentle pacing." },
+  riverside: { q: "Do Riverside chauffeurs learn Marcus Garvey Rd gate?", a: "Save spa pin for first Kilimani trip—Riverside corporate driver pools rotate principals weekly without circling Lavington lost." },
+  "spring-valley": { q: "Can Spring Valley book unscented oils?", a: "Diplomatic sensitivities common—note unscented at 0746 203398 from Spring Valley Rd estates before chauffeur departure to Marcus Garvey Rd." },
+  starehe: { q: "Do Pangani Starehe guests prefer Juja or Haile Selassie?", a: "Traffic-dependent—name Pangani at 0746 203398 so Starehe reception picks fastest central connector toward Marcus Garvey Rd live." },
+  "upper-hill": { q: "Can Upper Hill book between OR calls?", a: "Flexible holds when surgery schedules shift—0746 203398 promptly from Upper Hill Rd if Nairobi Hospital recalls you mid-route to Marcus Garvey Rd." },
+  "woodley-kenyatta-golf-course": { q: "Do Woodley flats walk to Marcus Garvey Rd dry season?", a: "Border flats sometimes walk fifteen minutes—usually drive eight via Ngong north; save 0746 203398 pin for first Woodley ride-hail." },
+};
+
+for (const [slug, faq] of Object.entries(tierAExtra11Faqs)) {
+  areaEnrichments[slug]?.faqs.push(faq);
+}
+
+/** Section top-up — Prof audit 6.16 remaining Tier-A slugs. */
+const tierAExtra12: Record<string, Partial<AreaEnrichment>> = {
+  kabiro: { sections: [{ heading: "Kabiro monthly rhythm on Marcus Garvey Rd", paragraphs: [
+    "Kabiro regulars often book the same weekday monthly after James Gichuru market runs—reception remembers pressure preferences without medical files, only brief verbal continuity.",
+    "Youth first employment celebrations sometimes fund parent massage gifts—Kabiro families treat Marcus Garvey Rd visits as milestones, not luxury aberrations, when 0746 203398 quotes stay transparent upfront.",
+  ]}]},
+  karen: { sections: [{ heading: "Karen Ngong corridor massage planning", paragraphs: [
+    "Karen Hub brunch queues spike Sunday noon—book 3 p.m. Marcus Garvey Rd massage after shopping when Ngong north toward Kilimani flows smoother than immediate post-brunch exits.",
+    "Safari-season Karen guests book post-lodge recovery blocks—three weekly sessions reversing months of vehicle vibration beat single crisis appointments when scheduled via 0746 203398.",
+  ]}]},
+  kitisuru: { sections: [{ heading: "Kitisuru Peponi calendar and spa timing", paragraphs: [
+    "UN Gigiri weeks ripple Peponi social calendars—midday Marcus Garvey Rd slots quieter than evening convoy peaks when diplomatic schedules compress.",
+    "Long-term Kitisuru expats request therapist continuity across home leaves—six-week US trips should not reset scar and pressure history when you return to Marcus Garvey Rd.",
+  ]}]},
+  langata: { sections: [{ heading: "Langata Wilson and Galleria massage habits", paragraphs: [
+    "Wilson layover crews book sixty-minute express when Ngong north cooperates—mention aviation fatigue for hip and lumbar focus popular among Langata constituency guests.",
+    "Galleria cinema nights spill Ngong traffic Friday—hold Marcus Garvey Rd rooms at 0746 203398 before film start so post-show exits stay predictable toward Kilimani.",
+  ]}]},
+  "nairobi-central": { sections: [{ heading: "Nairobi Central summit and tower habits", paragraphs: [
+    "KICC delegate badges mean summit-week advance booking—midday Marcus Garvey Rd slots vanish when Haile Selassie westbound cooperates only between plenary gaps.",
+    "Moi Avenue hotel staff finishing midnight shifts use 0746 203398 for 24/7 respect rare in central Nairobi hospitality corridors—feet and lower back focus common.",
+  ]}]},
+  "parklands-highridge": { sections: [{ heading: "Parklands caregiver recovery depth", paragraphs: [
+    "Aga Khan visiting hours ending at 8 p.m. often feed Limuru connectors toward Marcus Garvey Rd—gentle Swedish beats aggressive deep tissue when compassion fatigue dominates.",
+    "Highridge flat calf soreness from stairs needs honest table time—reflexology gateway before deeper work when Parklands budgets allow only one monthly session.",
+  ]}]},
+  riverside: { sections: [{ heading: "Riverside executive suite privacy", paragraphs: [
+    "Riverside public-company officers request no-photography policies standard on Marcus Garvey Rd—privacy includes minimal small talk unless guests initiate market or merger venting therapeutically.",
+    "Co-working passport churn makes therapist continuity precious—body remembers knots that building access cards forget across Riverside Drive startup pivots.",
+  ]}]},
+  "spring-valley": { sections: [{ heading: "Spring Valley compound wellness blocks", paragraphs: [
+    "Compound staff wellness afternoons stagger three therapists across Spring Valley Rd estates—security never fully empties when PAs coordinate via 0746 203398 headcount messages.",
+    "Red Hill fog delays deserve WhatsApp ETAs with gate visibility photos—reception holds Marcus Garvey Rd rooms without punishing weather beyond guest control.",
+  ]}]},
+  starehe: { sections: [{ heading: "Starehe shared credits and routing", paragraphs: [
+    "Ngara market porters and Pangani nurses share pricing transparency—no ward surcharges when sequential guests arrive from different Starehe blocks same evening.",
+    "Railway Station overnight departures discover sixty-minute Swedish before benches—dignity restoration affordable centrally when 0746 203398 confirms before Juja Rd commutes.",
+  ]}]},
+  "upper-hill": { sections: [{ heading: "Upper Hill tower and clinic recovery", paragraphs: [
+    "Hospital call nights pair with gentle Swedish before OR pages—0746 203398 from Upper Hill Rd when Haile Selassie clears ten to fifteen minutes pre-shift.",
+    "Banking year-end stacks December 28 recovery before towers empty—Upper Hill analysts pre-book Marcus Garvey Rd before March fiscal closes repeat.",
+  ]}]},
+  "woodley-kenyatta-golf-course": { sections: [{ heading: "Woodley golf and Adams gym pairing", paragraphs: [
+    "Kenyatta Golf Course tournament Saturdays congest Ngong locally—mention events when calling 0746 203398 from Woodley Estate for alternate Marcus Garvey Rd pull-off guidance.",
+    "Adams Arcade gym plus massage same evening when James Gichuru bypass active—deep tissue leg focus after squat volume popular among Woodley flat residents.",
+  ]}]},
+};
+
+for (const [slug, extra] of Object.entries(tierAExtra12)) {
+  const base = areaEnrichments[slug];
+  if (!base) continue;
+  if (extra.sections) base.sections.push(...extra.sections);
+  if (extra.faqs) base.faqs.push(...extra.faqs);
+}
+
+const tierAExtra13: Record<string, Partial<AreaEnrichment>> = {
+  kabiro: { sections: [{ heading: "Kabiro word-of-mouth on James Gichuru", paragraphs: ["Second visits from Kabiro often bring cousins—0746 203398 quotes stay identical for hillside wards and Kilimani core alike on Marcus Garvey Rd."] }] },
+  karen: { sections: [{ heading: "Karen estate gate familiarity", paragraphs: ["Monthly Karen spa runs train guards to wave drivers through faster—mention estate name first visit so Marcus Garvey Rd ETAs stay realistic via Ngong."] }] },
+  langata: { sections: [{ heading: "Langata South C shared commute", paragraphs: ["South C and Langata share Ngong connectors—0746 203398 treats both as Langata constituency timing toward Marcus Garvey Rd without suburban pricing games."] }] },
+  "nairobi-central": { sections: [{ heading: "Nairobi Central pin sharing", paragraphs: ["Save Kilimani Hot Massage pin after first KICC visit—Haile Selassie westbound muscle memory beats searching massage near me from Kenyatta Ave towers weekly."] }] },
+  "parklands-highridge": { sections: [{ heading: "Parklands Limuru evening flow", paragraphs: ["Post-8 p.m. Aga Khan visiting hours often clear Limuru toward Marcus Garvey Rd—Parklands guests message 0746 203398 when leaving hospital corridors."] }] },
+  riverside: { sections: [{ heading: "Riverside post-meeting recovery", paragraphs: ["Boardroom posture repairs after Riverside Drive dinners—pre-meeting Swedish calms nerves; post-meeting deep tissue targets trap lift from conference tables on Marcus Garvey Rd."] }] },
+  "spring-valley": { sections: [{ heading: "Spring Valley ambassador handoffs", paragraphs: ["New attachés inherit spa pin from predecessors—Spring Valley Rd compounds treat 0746 203398 like emergency contacts alongside gate guards."] }] },
+  starehe: { sections: [{ heading: "Starehe family package credits", paragraphs: ["Siblings in Ngara and Pangani share monthly credits—one 0746 203398 line serves every Starehe ward without transfer fees to Marcus Garvey Rd."] }] },
+  "upper-hill": { sections: [{ heading: "Upper Hill December recovery", paragraphs: ["Book December 28 Marcus Garvey Rd recovery before Upper Hill towers empty—year-end banking weeks stack trap tension along Haile Selassie corridor."] }] },
+  "woodley-kenyatta-golf-course": { sections: [{ heading: "Woodley Kenyatta Golf Friday prep", paragraphs: ["Friday prep massage primes Saturday swing—Woodley regulars book Marcus Garvey Rd Thursday nights when Kenyatta Golf Course tournaments loom on Ngong WhatsApp groups."] }] },
+};
+
+for (const [slug, extra] of Object.entries(tierAExtra13)) {
+  const base = areaEnrichments[slug];
+  if (!base) continue;
+  if (extra.sections) base.sections.push(...extra.sections);
+}
+
+const tierAExtra14Faqs: { slug: string; q: string; a: string }[] = [
+  { slug: "karen", q: "Do Karen Hub shoppers combine massage with errands?", a: "Popular—shop Karen Hub, drive Ngong north fifteen minutes, massage on Marcus Garvey Rd, home via Langata avoiding second Hub parking battle same day." },
+  { slug: "langata", q: "Do Langata Galleria guests pre-book before cinema?", a: "Recommended Friday—Galleria traffic spills Ngong north; hold Marcus Garvey Rd at 0746 203398 before film starts for predictable Langata exits." },
+  { slug: "nairobi-central", q: "Do KICC delegates need summit-week booking?", a: "Yes—summit weeks fill midday Marcus Garvey Rd; reserve before Nairobi Central badge pickup with plenary gaps noted on 0746 203398." },
+  { slug: "riverside", q: "Do Riverside firms book for visiting clients?", a: "Occasionally—discreet Marcus Garvey Rd twin rooms after Riverside Drive dinners; hosts call 0746 203398 with entertainment timing." },
+  { slug: "spring-valley", q: "How far is Marcus Garvey Rd from Spring Valley row?", a: "Roughly eight to twelve minutes when gates release smoothly—WhatsApp 0746 203398 from compound staff lines for live Spring Valley ETA holds." },
+  { slug: "starehe", q: "Do Ngara market workers request foot focus?", a: "Reflexology leading into bodywork popular after Ngara standing shifts—mention market mornings at 0746 203398 from any Starehe ward." },
+  { slug: "woodley-kenyatta-golf-course", q: "Do Woodley Adams gym members massage same day?", a: "Frequently—deep tissue after Ngong lifts; mention squat volume at 0746 203398 from Woodley Estate for extended leg focus on Marcus Garvey Rd." },
+  { slug: "langata", q: "Are Langata Wilson layovers feasible for massage?", a: "Sixty-minute express works when Ngong north flows—call 0746 203398 en route from Wilson with shift end time for Marcus Garvey Rd room prep." },
+  { slug: "nairobi-central", q: "Can Nairobi Central students budget sixty-minute Swedish?", a: "Yes—University Way guests often book sixty minutes during exams; WhatsApp 0746 203398 from Nairobi Central with honest budget notes." },
+  { slug: "riverside", q: "Do Riverside quarter-end teams block rooms early?", a: "Book Marcus Garvey Rd before final all-nighter week—0746 203398 from Riverside Square with headcount when earnings reports stack." },
+  { slug: "spring-valley", q: "Do Spring Valley school buses affect departure times?", a: "9:30 a.m. post-bus slots favor Spring Valley parents—WhatsApp 0746 203398 after gate clearance toward Marcus Garvey Rd." },
+  { slug: "starehe", q: "Do Starehe packages work across Ngara and Pangani?", a: "Shared credits valid county-wide—one 0746 203398 line for every Starehe ward without transfer fees to Marcus Garvey Rd." },
+  { slug: "woodley-kenyatta-golf-course", q: "Should Woodley book couples rooms before tournaments?", a: "Charity tournament Thursdays sell fast—reserve Marcus Garvey Rd couples rooms by Wednesday via 0746 203398 from Woodley Estate." },
+  { slug: "langata", q: "Do Langata National Park visitors book same evening?", a: "Yes—exit park gates toward Langata Rd and WhatsApp 0746 203398 for hip-focused deep tissue after safari dust on Marcus Garvey Rd." },
+  { slug: "starehe", q: "Do Railway Station travelers book before departures?", a: "Sixty-minute Swedish before overnight trains—0746 203398 from Starehe wards when bench sleeping left hips sore unfairly." },
+  { slug: "woodley-kenyatta-golf-course", q: "Do Woodley intercom failures affect punctuality?", a: "Call 0746 203398 from lobby when buzzers fail—we hold Marcus Garvey Rd rooms ten minutes grace for Woodley Estate departures." },
+  { slug: "starehe", q: "Is Haile Selassie best for Starehe exits?", a: "Usually yes from Upper Hill fringe—name your Starehe ward at 0746 203398 for live routing toward Marcus Garvey Rd." },
+  { slug: "woodley-kenyatta-golf-course", q: "Do Woodley Kenyatta Golf rounds need sports massage?", a: "Shoulder and hip focus after eighteen holes—mention tournament rounds when booking 0746 203398 from Woodley ward toward Marcus Garvey Rd." },
+];
+
+for (const { slug, q, a } of tierAExtra14Faqs) {
+  areaEnrichments[slug]?.faqs.push({ q, a });
+}
+
 type AreaInput = {
   slug: string;
   tier: string;

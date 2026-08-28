@@ -37,7 +37,9 @@ export const guideDepthSections2: Record<string, GuideSection[]> = {
         "Solo travellers and hotel guests near Yaya should share driver timing. Couples should share whether both are first-timers. Desk workers should name the worst zone in one sentence: right trap and thumb side forearm is perfect.",
         "Aftercare is simple: water, easy movement, optional early night. If you feel emotionally open after bodywork—common—plan a quiet ride toward Kilimani or Westlands rather than an argument-ready meeting.",
         "Second visit tips: name the therapist, name what worked, name what to change. Continuity compounds. Browse /masseuses/ and /massage-treatments/ between visits so your vocabulary stays precise.",
-        "We are open 24/7, which means a first visit at midnight after a delayed dinner is allowed. Still message ahead. NAP: Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi."
+        "We are open 24/7, which means a first visit at midnight after a delayed dinner is allowed. Still message ahead. NAP: Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi.",
+        "Save our WhatsApp pin after visit one—Marcus Garvey Rd gate photos beat arguing with ride-hail maps when Yaya Centre traffic stacks.",
+        "Browse /massage-treatments/ before arrival if vocabulary helps—Swedish, deep tissue, and couples each have dedicated pages linked from home and guides hub."
       ]
     }
   ],
@@ -57,7 +59,9 @@ export const guideDepthSections2: Record<string, GuideSection[]> = {
         "Pair bodywork with one boring habit: a timer that forces a sixty-second shoulder roll every hour. Massage then maintains rather than rescues. Rescue mode is still welcome; maintenance mode is cheaper in fatigue.",
         "If headaches accompany desk life, say whether they feel muscular or migrainous. We are a spa, not a hospital—red-flag symptoms belong with a clinician first. Soft tissue care can still support neck ease when cleared.",
         "Women and men both under-report jaw clenching. If you wake with dental awareness after sprint weeks, ask for careful work along jaw-adjacent zones within your therapist scope and comfort.",
-        "Book the antidote on the calendar like a standup: WhatsApp 0746 203398 with desk neck, deep tissue or Swedish, after 8pm. Marcus Garvey Rd is the offsite that actually restores you."
+        "Book the antidote on the calendar like a standup: WhatsApp 0746 203398 with desk neck, deep tissue or Swedish, after 8pm. Marcus Garvey Rd is the offsite that actually restores you.",
+        "Upper Hill and Westlands tower workers: mention headset strain and laptop posture in one WhatsApp line—therapists extend cervical minutes without you negotiating mid-session.",
+        "Monthly cadence beats crisis booking: standing Thursday slots after Haile Selassie westbound commutes keep desk neck manageable through fiscal quarters on Marcus Garvey Rd."
       ]
     }
   ],
@@ -97,7 +101,9 @@ export const guideDepthSections2: Record<string, GuideSection[]> = {
         "Anniversaries near Valley Arcade restaurants pair well with a post-dessert massage window. Late seats are why 24/7 hours exist.",
         "If one partner is massage-anxious, book Swedish pressure for both on the first shared visit. Deep tissue experiments can wait until trust in the room is established.",
         "Photos of the session are not part of the experience—keep phones away. Presence is the point of paying for a private room.",
-        "Reserve with WhatsApp 0746 203398: couples, Saturday 7pm, Zuri and Lina if available. Kilimani Hot Massage on Marcus Garvey Rd will confirm."
+        "Reserve with WhatsApp 0746 203398: couples, Saturday 7pm, Zuri and Lina if available. Kilimani Hot Massage on Marcus Garvey Rd will confirm.",
+        "Build ten minutes buffer from Karen or CBD dinners—couples rooms stay held when you message leaving the restaurant, not only at reservation time.",
+        "Four-hands upgrades need paired staff—message early Friday from Kilimani or Lavington when Zuri and Lina synchrony is part of the date plan on Marcus Garvey Rd."
       ]
     }
   ],
@@ -157,7 +163,9 @@ export const guideDepthSections2: Record<string, GuideSection[]> = {
         "If you are staying in a Kilimani rental, drop a pin share on WhatsApp and we will sanity-check the route language.",
         "Treatments near Yaya are the full menu: Swedish through signature adult suites. Proximity does not shrink the catalogue.",
         "Bring a light jacket for post-session cool air. Soft tissue work lowers your thermostat sometimes.",
-        "Message 0746 203398 with near Yaya, ETA 20 minutes, Swedish. We will be ready on Marcus Garvey Rd."
+        "Message 0746 203398 with near Yaya, ETA 20 minutes, Swedish. We will be ready on Marcus Garvey Rd.",
+        "Adlife Plaza and Valley Arcade errands pair naturally with Marcus Garvey Rd massage—same Kilimani corridor, five-minute hop when junctions cooperate.",
+        "Rainy season: WhatsApp from Yaya parking when Ngong Rd floods—we adjust holds while you reroute via James Gichuru toward Kilimani Hot Massage."
       ]
     }
   ],
@@ -177,7 +185,9 @@ export const guideDepthSections2: Record<string, GuideSection[]> = {
         "If you freeze with choice architecture, write: deep tissue, firm but not brutal, evening. Coordination will match a therapist.",
         "Returning to the same masseuse builds tissue memory—she remembers your left scapula story. Continuity is worth scheduling around.",
         "Four-hands casting is a chemistry problem as much as a skill problem; requesting a known pair reduces variance.",
-        "Choose, then book: WhatsApp 0746 203398. Studio on Marcus Garvey Rd, open 24/7."
+        "Choose, then book: WhatsApp 0746 203398. Studio on Marcus Garvey Rd, open 24/7.",
+        "Read /masseuses/ profiles before peak Friday hours—specialty fit beats personality guessing when your traps need firm deep tissue not scent-led calm.",
+        "Returning to the same masseuse accelerates results—WhatsApp 0746 203398 with Amara, Keisha, or Aisha by name when continuity matters for Marcus Garvey Rd visits."
       ]
     }
   ],
@@ -197,7 +207,42 @@ export const guideDepthSections2: Record<string, GuideSection[]> = {
         "Tourists should still orient to Kilimani Hot Massage NAP first. Area pages help residents; the Marcus Garvey Rd pin helps everyone.",
         "Citations and GBP remain Kilimani-centred. Do not confuse website area SEO with multi-location GBP spam—we do not do the latter.",
         "When heatmap cells in Kilimani or Westlands need photo support, that is an ops geotag task—not a reason to invent another studio.",
-        "Explore /areas/, pick your hub, then WhatsApp 0746 203398. Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi."
+        "Explore /areas/, pick your hub, then WhatsApp 0746 203398. Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi.",
+        "Ward pages link to every treatment and masseuse lander—use them when sharing with friends in Parklands, Karen, or CBD who search by neighbourhood name rather than studio address.",
+        "Constituency hubs explain commute truth; combo URLs like /areas/lavington/services/nuru-massage/ carry local directions while NAP stays Marcus Garvey Rd Kilimani Hot Massage 0746 203398."
+      ]
+    }
+  ],
+  "massage-and-extras-kilimani": [
+    {
+      heading: "Local depth: consent-led adult bodywork in Kilimani",
+      paragraphs: [
+        "Massage and extras near me is a high-intent local search—guests want adult pacing, private suites, and honest boundaries without hotel-lobby visibility. Kilimani Hot Massage on Marcus Garvey Rd answers with WhatsApp intake first: name the modality, confirm adults only, confirm locked-room privacy before you leave Yaya Centre or Westlands.",
+        "Nuru gel glide, body-to-body rhythm, erotic-paced oil work, and lingam-focused sessions each live on dedicated treatment pages. This guide connects search language to those pages so your booking message matches the suite you enter—no ambiguous extras added to Swedish without explicit consent.",
+        "Aisha and Nuri handle many Nuru-heavy requests; boundaries are discussed in-thread, not assumed at the door. Discreet Marcus Garvey Rd arrivals suit professionals from Upper Hill towers and Kilimani flats who cannot risk mall-spa visibility after dinner.",
+        "We do not publish explicit menus online. White-hat SEO means honest orientation—what extras means here, how to book, how consent works—not misleading claims or unsafe practices. Adults only; intoxication or coercion ends sessions immediately.",
+        "After adult work, shower access is standard. Most guests prefer a quiet ride toward Kileleshwa or home rather than crowded Yaya corridors still buzzing from errands. Reception never delays exit or creates lobby performance.",
+        "Compare our Nuru massage guide and choosing-a-masseuse guide before peak weekend hours. Same-night slots remain realistic when you WhatsApp before leaving Ngong Rd or James Gichuru—open 24/7 includes 2 a.m. bookings after late Kilimani dinners."
+      ]
+    },
+    {
+      heading: "How Kilimani Hot Massage applies massage and extras bookings",
+      paragraphs: [
+        "Message template: massage and extras, Nuru or erotic, tonight 10 p.m., coming from Westlands, prefer Aisha if available. Reception replies with confirmation, pin, and intake reminders—not pressure to upgrade beyond what you named.",
+        "Couples requesting adult modalities need both partners to consent in writing on WhatsApp. Side-by-side tables and four-hands upgrades require paired staff—book early for Friday Wood Avenue date nights.",
+        "Standard Swedish and deep tissue remain fully therapeutic and draped. Do not expect extras during a classic session unless you explicitly booked a different category; therapists maintain boundary clarity without awkward mid-session sales.",
+        "Payment and duration stay in-thread. Walk-ins for adult modalities are discouraged—gel, oil, and room staging depend on advance notice. Call or WhatsApp 0746 203398 before travel from Valley Arcade, Adlife Plaza, or county-wide drives.",
+        "Privacy includes low-profile check-in, no shared waiting room, and staff trained to avoid commentary in public spaces. Marcus Garvey Rd street parking is usually available; message vehicle size if you need the widest pull-off.",
+        "Questions welcome any hour. NAP locked: Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi. Massage and extras near me in Kilimani means this studio—not vague listings or competitor copy from other suburbs."
+      ]
+    },
+    {
+      "heading": "Cross-links for massage and extras guests",
+      "paragraphs": [
+        "Start with our Nuru massage guide and sensual-erotic treatment page before WhatsApp booking. Choosing-a-masseuse guide helps when you want Aisha or Nuri by name for adult modalities on Marcus Garvey Rd.",
+        "Kilimani and Westlands guests should pin Marcus Garvey Rd before leaving dinner—discreet arrivals matter for professional bookings. Open 24/7 includes post-midnight sessions after Yaya Centre or Wood Avenue evenings.",
+        "Compare body-to-body and lingam treatment pages if your search started ambiguous—each adult modality has distinct consent scripts and suite setup on Marcus Garvey Rd, booked only via explicit WhatsApp request.",
+        "Hotel guests near Adlife Plaza should book adult modalities before lobby visibility becomes awkward—Marcus Garvey Rd private suites stay the Kilimani standard for massage and extras near me searches."
       ]
     }
   ]

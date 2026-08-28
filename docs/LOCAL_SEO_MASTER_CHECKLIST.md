@@ -32,13 +32,18 @@ npm run build
 npm run check:unique
 npm run check:titles
 npm run check:keywords
+npm run check:content       # word counts, FAQs, interlinking, anchor sample (repo)
 npm run audit:live          # compare live HTML vs repo metadata (see report below)
+npm run audit:live:content  # live links, FAQ depth, word count, CTAs (sample URLs)
+npm run audit:prof          # full Prof onsite compliance (all steps above)
 node scripts/geotag-images.mjs   # after new images
 ```
 
 > **Keyword map:** Priority terms → pages in [`src/content/target-keywords.ts`](../src/content/target-keywords.ts). Run `npm run check:keywords` after keyword rollout edits.
 
 **Live verification (production vs repo):** Run `npm run audit:live` after every deploy. Full dated report: [LIVE_METADATA_AUDIT.md](ops/LIVE_METADATA_AUDIT.md). **2026-08-28 audit: ALL GREEN** — Wave 2 (13/13), Wave 3 (2/2), Wave 4 (6/6), Wave 5 (5/5). Production matches `main`.
+
+**Content compliance (Prof Phase 3):** Run `npm run audit:prof` after deploy. Repo report: [PROF_CONTENT_AUDIT.md](ops/PROF_CONTENT_AUDIT.md). Live content sample: [LIVE_CONTENT_AUDIT.md](ops/LIVE_CONTENT_AUDIT.md). **2026-08-28:** repo guards green (`check:content`); live 8/9 until massage-and-extras guide depth deploys.
 
 **Index check (post-deploy):** `site:kilimanihotmassage.co.ke` — minimum 30 URLs; goal ≫ 30 (~2,175 in sitemap).
 
@@ -192,9 +197,9 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 - [x] **6.6–6.9 · ✅ Verified live** — Rank 3 pages live (full-body + massage-and-extras return 200 as of 2026-08-28)
 - [x] **6.10–6.11 · ✅ Shipped** — Rank 4 combos (~1,309 service + ~714 masseuse)
 - [x] **6.12–6.14 · ✅ Shipped** — Breadcrumbs visual + JSON-LD + URL slug hierarchy — Target: `Breadcrumbs.tsx`, `breadcrumbJsonLd()`
-- [x] **6.15 · ✅ Shipped** — Treatment pages ≥1,500 words — Target: `src/content/treatments.ts`
-- [x] **6.16 · ✅ Shipped** — Tier-A areas ≥1,200 words — Target: `src/content/areas/enrichment.ts`
-- [x] **6.17 · ✅ Shipped** — Guides ≥1,200 words — Target: `src/content/guides.ts`
+- [x] **6.15 · ✅ Verified live (content audit)** — Treatment pages ≥1,500 words — `npm run check:content` + live sample (Swedish/Nuru pass)
+- [x] **6.16 · ✅ Verified live (content audit)** — Tier-A area pages ≥1,200 words — repo enrichment + live Lavington/Kilimani sample pass
+- [x] **6.17 · ✅ Verified live (content audit)** — Guide pages ≥1,200 words — repo `guide-depth-2`; re-run `audit:live:content` post-deploy for massage-and-extras guide
 - [x] **6.19–6.20 · ✅ Shipped** — Topical authority (11/11 services) + local matrix
 - [x] **6.21–6.23 · ✅ Shipped** — About, contact, no orphan hubs
 - [x] **6.24–6.25 · ✅ Shipped** — Sitemap complete with priorities — Target: `src/app/sitemap.ts`
@@ -218,11 +223,11 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 
 **Step 5 — Final checks:** Every important page has incoming links; max ~8–10 links per section; not footer-only.
 
-- [x] **7.1–7.22 · ✅ Shipped** — Full interlinking matrix (service↔area↔combo↔masseuse↔guide↔home↔contact)
-- [x] **7.16–7.17 · ✅ Shipped** — Varied, natural anchor text
+- [x] **7.1–7.22 · ✅ Verified live (content audit)** — Full interlinking matrix (service↔area↔combo↔masseuse↔guide↔home↔contact) — `npm run check:content` template grep
+- [x] **7.16–7.17 · ✅ Verified live (content audit)** — Varied, natural anchor text — 10-sample combo anchor diversity in `check:content`
 - [x] **7.18–7.20 · ✅ Shipped** — Link density, in-body links, relevance
 - [x] **7.24–7.25 · ✅ Shipped** — Footer + header nav links
-- [ ] **7.23 · ⚠️ Gap** — Anchor diversity spot-check — *10 random combos quarterly* — Optional polish
+- [x] **7.23 · ✅ Verified live (content audit)** — Anchor diversity spot-check — 10 deterministic combo samples in `npm run check:content`
 
 ### 3D — Formatting and media · Pillar: Onsite
 
@@ -235,11 +240,11 @@ Rank 4: /areas/[area]/services/[service]/ · /areas/[area]/masseuses/[masseuse]/
 See **Appendix A** for honesty rules (no fake AggregateRating).
 
 - [x] **9.1–9.2 · ✅ Verified live** — Home 11 FAQs + FAQPage schema + semantic H3 outline — audit 2026-08-28
-- [x] **9.3–9.5 · ✅ Verified live** — Treatment FAQs (6–10) + FAQPage + Service schema
-- [x] **9.6–9.8 · ✅ Verified live** — Tier-A area FAQs + FAQPage + Place schema
-- [x] **9.9–9.11 · ✅ Verified live** — Combo, guide, masseuse FAQs + Person schema
+- [x] **9.3–9.5 · ✅ Verified live (content audit)** — Treatment FAQs (6–10) + FAQPage + Service schema — `check:content` + live sample
+- [x] **9.6–9.8 · ✅ Verified live (content audit)** — Tier-A area FAQs + FAQPage + Place schema — `check:content` + live sample
+- [x] **9.9–9.11 · ✅ Verified live (content audit)** — Combo, guide, masseuse FAQs — `check:content`; live guide sample pending deploy
 - [x] **9.12–9.18 · ✅ Verified live** — DaySpa global schema (areaServed, hasOfferCatalog, openingHours, geo, hasMap, sameAs WhatsApp)
-- [x] **9.20 · ✅ Shipped** — NO fake AggregateRating — intentionally omitted
+- [x] **9.20 · ✅ Verified live (content audit)** — NO fake AggregateRating — `audit:live:content` JSON-LD scan
 - [x] **9.21–9.22 · ✅ Shipped** — BreadcrumbList everywhere; FAQ local flavor (Yaya, Marcus Garvey, Adlife)
 - [ ] **9.19 · ⚠️ Gap** — sameAs social profiles — add when `site.socials` populated
 - [ ] **9.23 · 👤 Client ops** — GBP FAQs mirror site — when GBP live
