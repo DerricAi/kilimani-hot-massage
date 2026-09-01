@@ -78,7 +78,7 @@ export const areas: Area[] = [
       "kawangware",
       "hurlingham",
     ],
-    intro: "Dagoretti North covers Kilimani, Kileleshwa, Lavington, and the Kawangware fringe—some of Nairobi's most walkable middle-class neighbourhoods. Our spa on Marcus Garvey Rd sits at the heart of this constituency, minutes from Yaya Centre and Valley Arcade.",
+    intro: "Dagoretti North covers Kilimani, Kileleshwa, Lavington, and the Kawangware fringe, some of Nairobi's most walkable middle-class neighbourhoods. Our spa on Marcus Garvey Rd sits at the heart of this constituency, minutes from Yaya Centre and Valley Arcade.",
     whyVisit: [
       "Spa located inside Dagoretti North on Marcus Garvey Rd",
       "Walkable from Kilimani, Kileleshwa, and Lavington",
@@ -393,7 +393,7 @@ export const areas: Area[] = [
       "embakasi-east",
       "matopeni-spring-valley",
     ],
-    intro: "Embakasi Central centres on Kayole, Komarock, and Matopeni—dense east-side neighbourhoods along Kangundo Rd and Outer Ring Rd. Kayole hosts one of Nairobi's busiest matatu stages.",
+    intro: "Embakasi Central centres on Kayole, Komarock, and Matopeni, dense east-side neighbourhoods along Kangundo Rd and Outer Ring Rd. Kayole hosts one of Nairobi's busiest matatu stages.",
     whyVisit: [
       "Kayole matatu hub connectivity",
       "Komarock new housing developments",
@@ -463,7 +463,7 @@ export const areas: Area[] = [
       "donholm",
       "embakasi-central",
     ],
-    intro: "Embakasi West covers Umoja I & II, Mowlem, and Kariobangi South—established east-side estates with strong community identity. Jogoo Rd and Outer Ring Rd serve daily commuters.",
+    intro: "Embakasi West covers Umoja I & II, Mowlem, and Kariobangi South, established east-side estates with strong community identity. Jogoo Rd and Outer Ring Rd serve daily commuters.",
     whyVisit: [
       "Umoja estate mature housing",
       "Kariobangi South markets",
@@ -533,7 +533,7 @@ export const areas: Area[] = [
       "nairobi-central",
       "ruaraka",
     ],
-    intro: "Kamukunji covers Eastleigh, Pumwani, California, and the Airbase area—Nairobi's wholesale and Somali-business heartland north-east of CBD. General Waruinge St and Juja Rd carry heavy traffic.",
+    intro: "Kamukunji covers Eastleigh, Pumwani, California, and the Airbase area. Nairobi's wholesale and Somali-business heartland north-east of CBD. General Waruinge St and Juja Rd carry heavy traffic.",
     whyVisit: [
       "Eastleigh 24-hour commerce",
       "Pumwani maternity hospital landmark",
@@ -568,7 +568,7 @@ export const areas: Area[] = [
       "ngara",
       "pangani",
     ],
-    intro: "Starehe is central Nairobi—CBD, Ngara, Pangani, and Landimawe—wrapping the commercial core and northern fringe. Upper Hill and Haile Selassie Ave fall within this constituency.",
+    intro: "Starehe is central Nairobi. CBD, Ngara, Pangani, and Landimawe, wrapping the commercial core and northern fringe. Upper Hill and Haile Selassie Ave fall within this constituency.",
     whyVisit: [
       "CBD professional lunch-break market",
       "Ngara and Pangani dense housing",
@@ -813,7 +813,7 @@ export const areas: Area[] = [
       "adams-arcade",
       "woodley-kenyatta-golf-course",
     ],
-    intro: "Kilimani is Nairobi's cafe-and-gym belt—Yaya Centre, Ngong Rd, and Ring Rd Kilimani draw young professionals and expats. Kilimani Hot Massage on nearby Marcus Garvey Rd is a five-minute drive from most Kilimani blocks.",
+    intro: "Kilimani is Nairobi's cafe-and-gym belt. Yaya Centre, Ngong Rd, and Ring Rd Kilimani draw young professionals and expats. Kilimani Hot Massage on nearby Marcus Garvey Rd is a five-minute drive from most Kilimani blocks.",
     whyVisit: [
       "Five-minute drive from most Kilimani blocks",
       "Post-gym deep tissue demand",
@@ -918,7 +918,7 @@ export const areas: Area[] = [
       "spring-valley",
       "dagoretti-north",
     ],
-    intro: "Kileleshwa pairs tree-lined residential streets with Mandera Rd eateries and proximity to State House Rd. Marcus Garvey Rd runs along its eastern edge—our spa is essentially next door.",
+    intro: "Kileleshwa pairs tree-lined residential streets with Mandera Rd eateries and proximity to State House Rd. Marcus Garvey Rd runs along its eastern edge, our spa is essentially next door.",
     whyVisit: [
       "Spa virtually next door on Marcus Garvey Rd",
       "Mandera Rd dining scene",
@@ -988,7 +988,7 @@ export const areas: Area[] = [
       "dagoretti-south",
       "riruta",
     ],
-    intro: "Mutuini ward occupies the southern Dagoretti hills with views toward Ngong and scattered smallholder plots. Ngong Rd connects residents north to Karen, Kilimani, and Lavington—many continue to our Kilimani spa.",
+    intro: "Mutuini ward occupies the southern Dagoretti hills with views toward Ngong and scattered smallholder plots. Ngong Rd connects residents north to Karen, Kilimani, and Lavington, many continue to our Kilimani spa.",
     whyVisit: [
       "Hillside Dagoretti character",
       "Ngong Rd northbound access",
@@ -1163,7 +1163,7 @@ export const areas: Area[] = [
       "kibra",
       "dagoretti-south",
     ],
-    intro: "Karen ward is synonymous with Nairobi's leafy suburbia—Ngong Rd, Karen Hub, and weekend brunch culture. After shopping or golf, many residents drive to Kilimani Hot Massage on Marcus Garvey Rd.",
+    intro: "Karen ward is synonymous with Nairobi's leafy suburbia. Ngong Rd, Karen Hub, and weekend brunch culture. After shopping or golf, many residents drive to Kilimani Hot Massage on Marcus Garvey Rd.",
     whyVisit: [
       "Karen Hub and boutique shopping",
       "Ngong Rd prestige corridor",
@@ -1443,7 +1443,7 @@ export const areas: Area[] = [
       "mugumo-ini",
       "kibra",
     ],
-    intro: "Woodley/Kenyatta Golf Course ward blends Woodley Estate flats, golf greens, and Ngong Rd frontage. It borders Kilimani and Langata—minutes from Kilimani Hot Massage.",
+    intro: "Woodley/Kenyatta Golf Course ward blends Woodley Estate flats, golf greens, and Ngong Rd frontage. It borders Kilimani and Langata, minutes from Kilimani Hot Massage.",
     whyVisit: [
       "Kenyatta Golf Course greens",
       "Woodley Estate flats",
@@ -1758,7 +1758,7 @@ export const areas: Area[] = [
       "roysambu",
       "kasarani",
     ],
-    intro: "Kasarani ward hosts the iconic Kasarani Stadium, Safaricom investment, and All Saints Cathedral—northeast Nairobi's civic heart. Event-goers and residents alike head to Kilimani for recovery massage.",
+    intro: "Kasarani ward hosts the iconic Kasarani Stadium, Safaricom investment, and All Saints Cathedral, northeast Nairobi's civic heart. Event-goers and residents alike head to Kilimani for recovery massage.",
     whyVisit: [
       "Kasarani Stadium national venue",
       "Safaricom and corporate offices",
@@ -2143,7 +2143,7 @@ export const areas: Area[] = [
       "embakasi-ward",
       "embakasi-south",
     ],
-    intro: "Pipeline ward is named for the Pipeline Estate along Outer Ring Rd and Mombasa Rd—one of east Nairobi's largest residential zones. Pipeline commuters know the jog to Kilimani for quality massage.",
+    intro: "Pipeline ward is named for the Pipeline Estate along Outer Ring Rd and Mombasa Rd, one of east Nairobi's largest residential zones. Pipeline commuters know the jog to Kilimani for quality massage.",
     whyVisit: [
       "Pipeline Estate mass housing",
       "Outer Ring Rd artery",
@@ -2388,7 +2388,7 @@ export const areas: Area[] = [
       "embakasi-central",
       "matopeni-spring-valley",
     ],
-    intro: "Kayole North ward anchors the northern Kayole grid near Kangundo Rd with hardware shops and estate bars. Kayole's famous stage sends matatus citywide—and many continue to Kilimani.",
+    intro: "Kayole North ward anchors the northern Kayole grid near Kangundo Rd with hardware shops and estate bars. Kayole's famous stage sends matatus citywide, and many continue to Kilimani.",
     whyVisit: [
       "Kayole North estates",
       "Kangundo Rd commerce",
@@ -2423,7 +2423,7 @@ export const areas: Area[] = [
       "donholm",
       "embakasi-central",
     ],
-    intro: "Kayole Central ward is Kayole's commercial heart—banks, churches, and the busiest matatu stage in east Nairobi. After market days, residents treat themselves in Kilimani.",
+    intro: "Kayole Central ward is Kayole's commercial heart, banks, churches, and the busiest matatu stage in east Nairobi. After market days, residents treat themselves in Kilimani.",
     whyVisit: [
       "Kayole central business zone",
       "Busiest east-side stage",
@@ -3263,7 +3263,7 @@ export const areas: Area[] = [
       "landimawe",
       "starehe",
     ],
-    intro: "Nairobi Central ward is the CBD itself—KICC, Kenyatta Avenue, and Moi Avenue skyscrapers. Executives slip out for lunch-hour massage at nearby Kilimani Hot Massage on Marcus Garvey Rd.",
+    intro: "Nairobi Central ward is the CBD itself. KICC, Kenyatta Avenue, and Moi Avenue skyscrapers. Executives slip out for lunch-hour massage at nearby Kilimani Hot Massage on Marcus Garvey Rd.",
     whyVisit: [
       "CBD skyscraper district",
       "KICC landmark",
@@ -3333,7 +3333,7 @@ export const areas: Area[] = [
       "nairobi-central",
       "starehe",
     ],
-    intro: "Pangani ward sits along Juja Rd and Thika Rd with Pangani flats, schools, and matatu stages. It bridges Eastleigh and the CBD—Our Kilimani studio is a straight run down Haile Selassie.",
+    intro: "Pangani ward sits along Juja Rd and Thika Rd with Pangani flats, schools, and matatu stages. It bridges Eastleigh and the CBD. Our Kilimani studio is a straight run down Haile Selassie.",
     whyVisit: [
       "Pangani flats",
       "Juja Rd stages",
@@ -3578,7 +3578,7 @@ export const areas: Area[] = [
       "eastleigh",
       "mathare",
     ],
-    intro: "Mlango Kubwa ward occupies the northern Mathare valley mouth toward Eastleigh and Pangani. Juja Rd descends through heavy traffic—plan extra time then relax at Kilimani Hot Massage.",
+    intro: "Mlango Kubwa ward occupies the northern Mathare valley mouth toward Eastleigh and Pangani. Juja Rd descends through heavy traffic, plan extra time then relax at Kilimani Hot Massage.",
     whyVisit: [
       "Mlango Kubwa valley mouth",
       "Eastleigh approach",
@@ -3613,7 +3613,7 @@ export const areas: Area[] = [
       "hurlingham",
       "dagoretti-north",
     ],
-    intro: "Lavington residents reach Kilimani Hot Massage on Marcus Garvey Rd in minutes—leafy cul-de-sacs, Yaya Centre errands, and Valley Arcade stops all feed a short hop to our Kilimani studio. Guests walk or drive from home across this prestige suburb.",
+    intro: "Lavington residents reach Kilimani Hot Massage on Marcus Garvey Rd in minutes, leafy cul-de-sacs, Yaya Centre errands, and Valley Arcade stops all feed a short hop to our Kilimani studio. Guests walk or drive from home across this prestige suburb.",
     whyVisit: [
       "Spa is located here on Marcus Garvey Rd",
       "Lavington Mall and Green Shopping",
@@ -3648,7 +3648,7 @@ export const areas: Area[] = [
       "hurlingham",
       "starehe",
     ],
-    intro: "Upper Hill is Nairobi's banking and hospital district—Kenya National Theatre, hospitals, and tower blocks along Upper Hill Rd and Haile Selassie Ave. Professionals duck out to Kilimani for discreet massage.",
+    intro: "Upper Hill is Nairobi's banking and hospital district. Kenya National Theatre, hospitals, and tower blocks along Upper Hill Rd and Haile Selassie Ave. Professionals duck out to Kilimani for discreet massage.",
     whyVisit: [
       "Kenya National Theatre area",
       "Hospital and bank towers",
@@ -3683,7 +3683,7 @@ export const areas: Area[] = [
       "upper-hill",
       "dagoretti-north",
     ],
-    intro: "Hurlingham suburb spans Hurlingham Road shops, the Marcus Garvey Rd corridor, and proximity to Yaya Centre. Our spa sits on the same road—Hurlingham guests often arrive on foot.",
+    intro: "Hurlingham suburb spans Hurlingham Road shops, the Marcus Garvey Rd corridor, and proximity to Yaya Centre. Our spa sits on the same road. Hurlingham guests often arrive on foot.",
     whyVisit: [
       "Same road as the spa",
       "Hurlingham shopping strip",
@@ -3788,7 +3788,7 @@ export const areas: Area[] = [
       "loresho",
       "westlands",
     ],
-    intro: "Runda is among Nairobi's most exclusive suburbs—Runda Estate, UN adjacent, and diplomatic missions off Kiambu Rd. Runda residents expect quality matching Kilimani Hot Massage standards.",
+    intro: "Runda is among Nairobi's most exclusive suburbs. Runda Estate, UN adjacent, and diplomatic missions off Kiambu Rd. Runda residents expect quality matching Kilimani Hot Massage standards.",
     whyVisit: [
       "Runda Estate exclusivity",
       "UN and diplomatic proximity",
@@ -3928,7 +3928,7 @@ export const areas: Area[] = [
       "pangani",
       "kamukunji",
     ],
-    intro: "Eastleigh suburb—distinct from Eastleigh wards—is Nairobi's 24-hour Somali commercial capital with malls, hotels, and forex bureaus. Wholesale traders recharge at Kilimani Hot Massage after marathon buying trips.",
+    intro: "Eastleigh suburb, distinct from Eastleigh wards, is Nairobi's 24-hour Somali commercial capital with malls, hotels, and forex bureaus. Wholesale traders recharge at Kilimani Hot Massage after marathon buying trips.",
     whyVisit: [
       "24-hour commerce capital",
       "Eastleigh Mall",
@@ -3963,7 +3963,7 @@ export const areas: Area[] = [
       "ngara",
       "starehe",
     ],
-    intro: "CBD Nairobi is Kenya's commercial heart—from Kenyatta Avenue and Moi Avenue to Tom Mboya Street and the Archives. City workers escape to Kilimani Hot Massage for noise-free massage suites.",
+    intro: "CBD Nairobi is Kenya's commercial heart, from Kenyatta Avenue and Moi Avenue to Tom Mboya Street and the Archives. City workers escape to Kilimani Hot Massage for noise-free massage suites.",
     whyVisit: [
       "Kenya commercial heart",
       "Archives and Tom Mboya St",
@@ -4033,7 +4033,7 @@ export const areas: Area[] = [
       "kayole-central",
       "embakasi-east",
     ],
-    intro: "Donholm suburb combines Donholm estate, Greenspan Mall, and Jogoo Rd frontage—east Nairobi's familiar address. Donholm shoppers extend trips west to Kilimani for massage.",
+    intro: "Donholm suburb combines Donholm estate, Greenspan Mall, and Jogoo Rd frontage, east Nairobi's familiar address. Donholm shoppers extend trips west to Kilimani for massage.",
     whyVisit: [
       "Donholm estate",
       "Greenspan Mall",
@@ -4068,7 +4068,7 @@ export const areas: Area[] = [
       "valley-arcade",
       "dagoretti-north",
     ],
-    intro: "Adams Arcade is a Ngong Rd landmark where Kilimani meets Kibra—Adams Arcade Shopping Centre anchors food, banking, and matatu stages. It is a ten-minute hop to Kilimani Hot Massage.",
+    intro: "Adams Arcade is a Ngong Rd landmark where Kilimani meets Kibra. Adams Arcade Shopping Centre anchors food, banking, and matatu stages. It is a ten-minute hop to Kilimani Hot Massage.",
     whyVisit: [
       "Adams Arcade Shopping Centre",
       "Ngong Rd landmark",
@@ -4103,7 +4103,7 @@ export const areas: Area[] = [
       "hurlingham",
       "adams-arcade",
     ],
-    intro: "Valley Arcade shopping centre and surrounding flats sit on Marcus Garvey Rd opposite Lavington Green—minutes from our spa doors. Valley Arcade residents treat us as their neighbourhood massage spot.",
+    intro: "Valley Arcade shopping centre and surrounding flats sit on Marcus Garvey Rd opposite Lavington Green, minutes from our spa doors. Valley Arcade residents treat us as their neighbourhood massage spot.",
     whyVisit: [
       "Valley Arcade Shopping Centre",
       "Opposite Lavington Green",

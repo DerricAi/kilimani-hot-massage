@@ -6,7 +6,7 @@ export const media = {
   },
   hero: {
     src: "/images/hero-marcus-garvey-kilimani-spa.webp",
-    alt: "Private massage spa atmosphere near Marcus Garvey Rd, Kilimani",
+    alt: "Woman in studio activewear at Kilimani Hot Massage spa on Marcus Garvey Rd, Kilimani",
   },
   masseuseAmbiance: {
     src: "/images/masseuse-portrait-ambiance-kilimani.webp",

@@ -50,7 +50,7 @@ export function Footer({ showMap = true }: { showMap?: boolean }) {
           </Link>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-[var(--muted)]">
             Premium massage spa on Marcus Garvey Rd, Kilimani. Open 24/7 for guests
-            across Nairobi County—from Kilimani and Westlands to Karen and the CBD.
+            across Nairobi County, from Kilimani and Westlands to Karen and the CBD.
           </p>
           <p className="mt-4 text-sm font-medium text-[var(--off-white)]/90">
             {site.napFooter}

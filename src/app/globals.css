@@ -103,10 +103,6 @@ h3,
   backdrop-filter: blur(12px);
 }
 
-.section-divider {
-  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
-}
-
 .section-pad {
   padding-inline: 1rem;
 }

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "Massage Kilimani & Spa Kilimani on Marcus Garvey Rd — massage near me, massage spa near me, Swedish, Nuru, full body & couples. Open 24/7. Call 0746 203398.",
+    "Massage Kilimani & Spa Kilimani on Marcus Garvey Rd, massage near me, massage spa near me, Swedish, Nuru, full body & couples. Open 24/7. Call 0746 203398.",
   openGraph: {
     locale: "en_KE",
     siteName: site.name,

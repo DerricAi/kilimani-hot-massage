@@ -8,7 +8,7 @@ import { masseuses } from "@/content/masseuses";
 import { areas, areaPath } from "@/content/areas";
 import { guides, guidePath } from "@/content/guides";
 import { site } from "@/content/site";
-import { media, treatmentImage } from "@/content/media";
+import { media } from "@/content/media";
 import { pageMetadata } from "@/lib/seo";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
@@ -19,34 +19,34 @@ const homeTitle = profTitleHome();
 export const metadata: Metadata = pageMetadata({
   title: homeTitle,
   description:
-    "Massage Kilimani & Spa Kilimani on Marcus Garvey Rd — massage near me, massage spa near me, Swedish, Nuru, full body & couples. Open 24/7. Call or WhatsApp 0746 203398.",
+    "Massage Kilimani & Spa Kilimani on Marcus Garvey Rd, massage near me, massage spa near me, Swedish, Nuru, full body & couples. Open 24/7. Call or WhatsApp 0746 203398.",
   path: "/",
 });
 
 const homeFaqs = [
   {
     q: "Is there a massage spa near me in Kilimani?",
-    a: "Yes—Kilimani Hot Massage is a massage spa near me on Marcus Garvey Rd, steps from Yaya Centre and Adlife Plaza. Swedish, Nuru, full body, couples, and private suites run 24/7. WhatsApp 0746 203398 with your ETA.",
+    a: "Yes. Kilimani Hot Massage is a massage spa near me on Marcus Garvey Rd, steps from Yaya Centre and Adlife Plaza. Swedish, Nuru, full body, couples, and private suites run 24/7. WhatsApp 0746 203398 with your ETA.",
   },
   {
     q: "Do you offer private massage rooms near me on Marcus Garvey Rd?",
-    a: "Every booking gets a locked private massage room near me—not a shared hotel lobby or mall cubicle. Suites on Marcus Garvey Rd include shower access, fresh linens, and discreet street parking. Message before you leave Kilimani or Westlands.",
+    a: "Every booking gets a locked private massage room near me, not a shared hotel lobby or mall cubicle. Suites on Marcus Garvey Rd include shower access, fresh linens, and discreet street parking. Message before you leave Kilimani or Westlands.",
   },
   {
     q: "Can I book a masseuse near me tonight?",
-    a: "Yes—name Amara, Zuri, Aisha, Nuri, Keisha, or Lina when you WhatsApp 0746 203398. We staff a masseuse near me any hour, including post-midnight from Ngong Rd dinners or Upper Hill deadlines.",
+    a: "Yes, name Amara, Zuri, Aisha, Nuri, Keisha, or Lina when you WhatsApp 0746 203398. We staff a masseuse near me any hour, including post-midnight from Ngong Rd dinners or Upper Hill deadlines.",
   },
   {
     q: "Where exactly is the spa on Marcus Garvey Rd?",
-    a: "Kilimani Hot Massage sits on Marcus Garvey Rd in Kilimani—between Yaya Centre, Adlife Plaza, and the Valley Arcade corridor. WhatsApp 0746 203398 for a pin if your driver knows the neighbourhood but not the gate.",
+    a: "Kilimani Hot Massage sits on Marcus Garvey Rd in Kilimani, between Yaya Centre, Adlife Plaza, and the Valley Arcade corridor. WhatsApp 0746 203398 for a pin if your driver knows the neighbourhood but not the gate.",
   },
   {
     q: "Do you really stay open all night?",
-    a: "Yes—twenty-four hours, seven days. Kilimani dinner crowds, redeye flights, and Upper Hill deadline nights all book past midnight. Same reception line at 3 p.m. or 3 a.m.",
+    a: "Yes, twenty-four hours, seven days. Kilimani dinner crowds, redeye flights, and Upper Hill deadline nights all book past midnight. Same reception line at 3 p.m. or 3 a.m.",
   },
   {
     q: "What's the fastest way to book?",
-    a: "WhatsApp is quickest: send treatment, preferred therapist (optional), and time window. Call 0746 203398 if you prefer voice—we confirm suite and therapist before you leave Yaya or Junction.",
+    a: "WhatsApp is quickest: send treatment, preferred therapist (optional), and time window. Call 0746 203398 if you prefer voice, we confirm suite and therapist before you leave Yaya or Junction.",
   },
   {
     q: "Which neighbourhoods drive to you most?",
@@ -58,20 +58,20 @@ const homeFaqs = [
   },
   {
     q: "Do you have couples rooms and four-hands?",
-    a: "Yes—side-by-side couples tables and four-hands upgrades with paired staff. Weekend evenings from Wood Avenue and Ngong Rd fill early; weekday lunch slots are easier.",
+    a: "Yes, side-by-side couples tables and four-hands upgrades with paired staff. Weekend evenings from Wood Avenue and Ngong Rd fill early; weekday lunch slots are easier.",
   },
   {
     q: "Where do I park on Marcus Garvey Rd?",
-    a: "Street and side-lane parking is usually available—message when you are five minutes out and we suggest the quietest pull-off for your vehicle size.",
+    a: "Street and side-lane parking is usually available, message when you are five minutes out and we suggest the quietest pull-off for your vehicle size.",
   },
   {
-    q: "First visit—what happens at the door?",
+    q: "First visit, what happens at the door?",
     a: "Brief check-in, pressure and boundary chat, then your suite. Robes, showers, and water are ready. Read our first-visit guide or ask anything on WhatsApp before you travel.",
   },
 ];
 
 const whyKilimani = [
-  "Locked private suites—not mall cubicles with lobby noise",
+  "Locked private suites, not mall cubicles with lobby noise",
   "Marcus Garvey Rd address you can pin in ride-hail apps",
   "Six named therapists across Swedish, Nuru, couples, and sports recovery",
   "Twelve modalities without sending you to a second location",
@@ -100,62 +100,35 @@ export default function HomePage() {
               "radial-gradient(circle at 20% 20%, rgba(200,56,90,0.22), transparent 50%), radial-gradient(circle at 80% 0%, rgba(36,36,36,0.8), transparent 40%), linear-gradient(135deg, rgba(18,18,18,0.3), rgba(18,18,18,0.92))",
           }}
         />
-        <div className="section-pad relative mx-auto grid min-h-[90vh] max-w-7xl items-center py-20 lg:grid-cols-2 lg:gap-16">
-          <div className="animate-fade-up">
-            <p className="inline-flex items-center gap-2 rounded-full border border-[var(--crimson)]/30 bg-[var(--crimson)]/10 px-3 py-1 text-xs uppercase tracking-[0.28em] text-[var(--crimson-light)]">
-              Marcus Garvey Rd · Kilimani
-            </p>
-            <h1 className="mt-6 font-display text-4xl leading-[1.05] text-[var(--off-white)] sm:text-5xl lg:text-6xl">
+        <div className="section-pad relative mx-auto grid max-w-7xl items-center gap-8 py-8 lg:min-h-[90vh] lg:grid-cols-2 lg:gap-16 lg:py-20">
+          <div className="order-2 animate-fade-up lg:order-1">
+            <h1 className="font-display text-4xl leading-[1.05] text-[var(--off-white)] sm:text-5xl lg:text-6xl">
               Massage Spa Kilimani
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-              Street-front suites on Marcus Garvey Rd—minutes from Yaya Centre, Adlife Plaza,
-              and Wood Avenue. Swedish, deep tissue, Nuru, couples, and discreet adult sessions
-              with trained therapists, open every hour of the week.
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+              Private suites on Marcus Garvey Rd, minutes from Yaya Centre. Swedish, deep tissue,
+              Nuru, and couples, booked on WhatsApp.
             </p>
             <div className="mt-8">
               <CtaRow />
             </div>
-            <p className="mt-6 text-sm text-[var(--muted)]">{site.napFooter}</p>
           </div>
-          <div className="animate-fade-up-delay relative mt-12 lg:mt-0">
-            <div className="absolute -left-4 top-8 hidden h-32 w-1 rounded-full bg-gradient-to-b from-[var(--crimson)] to-transparent lg:block" />
-            <div className="relative h-[440px] overflow-hidden rounded-2xl border border-[var(--crimson)]/25 shadow-[0_24px_80px_rgba(200,56,90,0.12)]">
+          <div className="order-1 animate-fade-up-delay relative lg:order-2">
+            <div className="relative min-h-[52vh] overflow-hidden rounded-2xl border border-[var(--crimson)]/25 shadow-[0_24px_80px_rgba(200,56,90,0.12)] lg:min-h-0 lg:h-[440px]">
               <Image
                 src={media.hero.src}
                 alt={media.hero.alt}
                 fill
                 priority
-                className="object-cover"
+                unoptimized
+                className="object-cover object-[center_20%]"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--charcoal)] via-[var(--charcoal)]/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-[var(--charcoal)]/80 p-6 backdrop-blur">
-                <p className="font-display text-2xl text-[var(--crimson-light)]">Open 24/7</p>
-                <p className="mt-1 text-sm text-[var(--off-white)]/85">
-                  Yaya Centre · Adlife Plaza · Valley Arcade
-                </p>
-              </div>
             </div>
+            <p className="mt-3 text-center text-xs text-[var(--muted)] lg:text-left">
+              {site.napFooter}
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section className="border-b border-white/5 bg-[var(--charcoal-soft)]/60">
-        <div className="section-pad mx-auto grid max-w-7xl gap-4 py-8 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            { label: "Hours", value: "24 / 7 / 365" },
-            { label: "Therapists", value: "6 specialists" },
-            { label: "Treatments", value: "12 modalities" },
-            { label: "Areas served", value: "All Nairobi County" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center sm:text-left">
-              <p className="text-xs uppercase tracking-widest text-[var(--crimson)]">
-                {stat.label}
-              </p>
-              <p className="mt-1 font-display text-xl text-[var(--off-white)]">{stat.value}</p>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -169,7 +142,7 @@ export default function HomePage() {
               Massage Therapists in Kilimani
             </h2>
             <p className="mt-3 max-w-xl text-[var(--muted)]">
-              Amara, Zuri, Aisha, Nuri, Keisha, and Lina work from Marcus Garvey Rd—name your
+              Amara, Zuri, Aisha, Nuri, Keisha, and Lina work from Marcus Garvey Rd, name your
               preference on WhatsApp and we staff the suite accordingly.
             </p>
           </div>
@@ -202,7 +175,7 @@ export default function HomePage() {
           Spa near me on Marcus Garvey Rd
         </h2>
         <p className="mt-3 max-w-2xl text-[var(--muted)]">
-          Spa Kilimani guests and spa near me searches land here—street-front suites with Swedish,
+          Spa Kilimani guests and spa near me searches land here, street-front suites with Swedish,
           Nuru, full body, couples, and adult sessions. Pick a treatment below or WhatsApp 0746
           203398 for the fastest slot.
         </p>
@@ -225,7 +198,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-divider bg-[var(--charcoal-soft)]/50 py-20">
+      <section className="bg-[var(--charcoal-soft)]/50 py-20">
         <div className="section-pad mx-auto max-w-7xl">
           <p className="text-xs uppercase tracking-[0.3em] text-[var(--crimson)]">
             Massage menu
@@ -234,37 +207,22 @@ export default function HomePage() {
             Treatments on Marcus Garvey Rd
           </h2>
           <p className="mt-3 max-w-2xl text-[var(--muted)]">
-            Pick a modality—each links to a full Kilimani guide with FAQs, therapist matches,
+            Pick a modality. Each links to a full Kilimani guide with FAQs, therapist matches,
             and area combo pages across Nairobi.
           </p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {treatments.map((t) => {
-              const img = treatmentImage(t.slug);
-              return (
-                <Link
-                  key={t.slug}
-                  href={`/massage-treatments/${t.slug}/`}
-                  className="glass-card group overflow-hidden rounded-xl transition hover:border-[var(--crimson)]/40"
-                >
-                  <div className="relative h-36 w-full overflow-hidden">
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      fill
-                      className="object-cover transition duration-500 group-hover:scale-105"
-                      sizes="(min-width: 1024px) 33vw, 50vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[var(--charcoal)] via-transparent to-transparent" />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-display text-lg text-[var(--crimson-light)]">
-                      {t.name}
-                    </h3>
-                    <p className="mt-2 text-sm text-[var(--muted)]">{t.tagline}</p>
-                  </div>
-                </Link>
-              );
-            })}
+            {treatments.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/massage-treatments/${t.slug}/`}
+                className="glass-card rounded-xl p-5 transition hover:border-[var(--crimson)]/40"
+              >
+                <h3 className="font-display text-lg text-[var(--crimson-light)]">
+                  {t.name}
+                </h3>
+                <p className="mt-2 text-sm text-[var(--muted)]">{t.tagline}</p>
+              </Link>
+            ))}
           </div>
           <div className="mt-8">
             <Link
@@ -300,7 +258,7 @@ export default function HomePage() {
         </h2>
         <p className="mt-3 max-w-2xl text-[var(--muted)]">
           Every ward gets its own landing page with local commute notes, treatment combos, and
-          therapist links—start with Kilimani or browse the full county matrix.
+          therapist links, start with Kilimani or browse the full county matrix.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           {featuredAreas.map((slug) => {
@@ -330,7 +288,7 @@ export default function HomePage() {
         </h2>
         <p className="mt-3 max-w-2xl text-[var(--muted)]">
           Modality comparisons, Yaya Centre directions, couples booking tips, and first-visit
-          etiquette—written for Marcus Garvey Rd guests, not generic copy.
+          etiquette, written for Marcus Garvey Rd guests, not generic copy.
         </p>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {guides.slice(0, 6).map((g) => (
@@ -353,7 +311,7 @@ export default function HomePage() {
 
       <section className="section-pad mx-auto max-w-7xl py-16">
         <h2 className="font-display text-3xl text-[var(--off-white)]">
-          Studio location — Kilimani
+          Studio location: Kilimani
         </h2>
         <p className="mt-3 text-[var(--muted)]">{site.napFooter}</p>
         <div className="mt-8">

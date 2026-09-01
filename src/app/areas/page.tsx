@@ -15,7 +15,7 @@ import { profTitleHub } from "@/lib/seo-titles";
 export const metadata: Metadata = pageMetadata({
   title: profTitleHub("areas"),
   description:
-    "Kilimani Hot Massage serves guests across Nairobi County—17 constituencies, 85 wards, and key suburbs. Open 24/7 on Marcus Garvey Rd.",
+    "Kilimani Hot Massage serves guests across Nairobi County, 17 constituencies, 85 wards, and key suburbs. Open 24/7 on Marcus Garvey Rd.",
   path: "/areas/",
 });
 
@@ -42,7 +42,7 @@ export default function AreasHubPage() {
         </h1>
         <p className="mt-4 max-w-3xl text-[var(--muted)]">
           Our studio is on Marcus Garvey Rd in Kilimani. Guests visit from every
-          constituency—each area page lists every massage service and every masseuse, with
+          constituency, each area page lists every massage service and every masseuse, with
           nested pages for local search.
         </p>
         <div className="mt-6">

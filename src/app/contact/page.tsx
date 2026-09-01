@@ -95,7 +95,7 @@ export default function ContactPage() {
             Private massage rooms
           </h2>
           <p className="mt-4 max-w-2xl text-[var(--muted)]">
-            Every session uses a locked private massage room on Marcus Garvey Rd—suites with shower
+            Every session uses a locked private massage room on Marcus Garvey Rd, suites with shower
             access, fresh linens, and street parking, open 24/7. This is not a hotel lobby spa or
             shared mall cubicle; massage rooms near me searches should land here when you want
             discreet Kilimani bodywork. WhatsApp 0746 203398 with your ETA and preferred therapist.

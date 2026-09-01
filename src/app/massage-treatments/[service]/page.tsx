@@ -115,7 +115,7 @@ export default async function TreatmentPage({ params }: Props) {
           We serve these areas
         </h2>
         <p className="mt-2 text-sm text-[var(--muted)]">
-          Guests book {t.name} from neighbourhoods across Nairobi—including:
+          Guests book {t.name} from neighbourhoods across Nairobi, including:
         </p>
         <ul className="mt-4 flex flex-wrap gap-2">
           {relatedAreas.map((a) => (

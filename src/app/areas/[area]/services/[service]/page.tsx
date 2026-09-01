@@ -80,7 +80,7 @@ export default async function AreaServicePage({ params }: Props) {
         <p className="mt-4 text-[var(--muted)]">{area.commute}</p>
         <div className="mt-6">
           <CtaRow
-            message={`Hi, I'd like to book ${treatment.name} — I'm coming from ${area.name}.`}
+            message={`Hi, I'd like to book ${treatment.name}: I'm coming from ${area.name}.`}
           />
         </div>
         <div className="prose-spa mt-10">
@@ -92,7 +92,7 @@ export default async function AreaServicePage({ params }: Props) {
         {combo.faqs.length ? (
           <section className="mt-12">
             <h2 className="font-display text-2xl text-[var(--crimson)]">
-              FAQs — {treatment.shortName} in {area.name}
+              FAQs: {treatment.shortName} in {area.name}
             </h2>
             <FaqAccordion
               faqs={combo.faqs}
@@ -108,7 +108,7 @@ export default async function AreaServicePage({ params }: Props) {
           Landmarks near {area.name}
         </h2>
         <p className="mt-2 text-sm text-[var(--muted)]">
-          {area.landmarks.join(" · ")} — along {area.roads.slice(0, 3).join(", ")}.
+          {area.landmarks.join(" · ")}, along {area.roads.slice(0, 3).join(", ")}.
         </p>
 
         <h2 className="mt-12 font-display text-2xl text-[var(--crimson)]">

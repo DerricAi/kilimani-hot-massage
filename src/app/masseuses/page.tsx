@@ -11,7 +11,7 @@ import { profTitleMasseuseHub } from "@/lib/seo-titles";
 export const metadata: Metadata = pageMetadata({
   title: profTitleMasseuseHub(),
   description:
-    "Masseuse near me in Kilimani—Amara, Zuri, Aisha, Nuri, Keisha, and Lina in private massage rooms on Marcus Garvey Rd. Open 24/7. WhatsApp 0746 203398.",
+    "Masseuse near me in Kilimani. Amara, Zuri, Aisha, Nuri, Keisha, and Lina in private massage rooms on Marcus Garvey Rd. Open 24/7. WhatsApp 0746 203398.",
   path: "/masseuses/",
 });
 
@@ -35,7 +35,7 @@ export default function MasseusesHubPage() {
           Masseuse near me in Kilimani, Nairobi
         </h1>
         <p className="mt-4 max-w-2xl text-[var(--muted)]">
-          Request Amara, Zuri, Aisha, Nuri, Keisha, or Lina by name—each masseuse near me works
+          Request Amara, Zuri, Aisha, Nuri, Keisha, or Lina by name, each masseuse near me works
           from private massage rooms near me on Marcus Garvey Rd, not a shared hotel lobby. Open
           around the clock for Kilimani and county-wide guests.
         </p>

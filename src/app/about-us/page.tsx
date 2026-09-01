@@ -9,7 +9,7 @@ import { profTitleHub } from "@/lib/seo-titles";
 export const metadata: Metadata = pageMetadata({
   title: profTitleHub("about"),
   description:
-    "About Kilimani Hot Massage—premium 24/7 massage spa on Marcus Garvey Rd, Kilimani, Nairobi.",
+    "About Kilimani Hot Massage: premium 24/7 massage spa on Marcus Garvey Rd, Kilimani, Nairobi.",
   path: "/about-us/",
 });
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
           <p>
             Kilimani Hot Massage is a private massage spa on Marcus Garvey Rd in
             Kilimani, Nairobi. We designed the studio for guests who want calm rooms,
-            trained therapists, and true 24/7 availability—without hotel-spa formality.
+            trained therapists, and true 24/7 availability, without hotel-spa formality.
           </p>
           <p>
             Our menu spans classic Swedish and deep tissue through aromatherapy and hot

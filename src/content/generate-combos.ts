@@ -40,57 +40,57 @@ const TOP_SERVICES = [
 /** Hand-tuned opening paragraphs for high-value Tier A area×service pairs. */
 const serviceComboExtras: Record<string, string> = {
   "kilimani|swedish-massage":
-    "Swedish massage is the default first booking for Kilimani locals on Marcus Garvey Rd—quiet arrival, warm oil, and a full-body reset before heading back toward Yaya Centre or Adlife Plaza.",
+    "Swedish massage is the default first booking for Kilimani locals on Marcus Garvey Rd, quiet arrival, warm oil, and a full-body reset before heading back toward Yaya Centre or Adlife Plaza.",
   "kilimani|deep-tissue-massage":
     "From Kilimani apartments and offices, deep tissue on Marcus Garvey Rd is the after-hours answer to laptop shoulders and commute grip along Ring Rd Kilimani.",
   "kilimani|nuru-massage":
-    "Nuru sessions in Kilimani stay suite-locked and discreet—gel-led body glide for adults who want privacy steps from Marcus Garvey Rd, not a hotel spa corridor.",
+    "Nuru sessions in Kilimani stay suite-locked and discreet, gel-led body glide for adults who want privacy steps from Marcus Garvey Rd, not a hotel spa corridor.",
   "kilimani|body-to-body-massage":
-    "Body to Body Massage Kilimani bookings peak from Wood Avenue and Yaya Centre—locked suites on Marcus Garvey Rd with consent checkpoints before gel or oil work begins.",
+    "Body to Body Massage Kilimani bookings peak from Wood Avenue and Yaya Centre, locked suites on Marcus Garvey Rd with consent checkpoints before gel or oil work begins.",
   "kilimani|sensual-erotic-massage":
-    "Erotic Massage Kilimani guests choose Marcus Garvey Rd for adult-paced touch with spa hygiene—Aisha handles many requests; boundaries confirmed on WhatsApp first.",
+    "Erotic Massage Kilimani guests choose Marcus Garvey Rd for adult-paced touch with spa hygiene. Aisha handles many requests; boundaries confirmed on WhatsApp first.",
   "kilimani|lingam-massage":
-    "Lingam Massage Nairobi searches from Kilimani land here—male-focused wellness in a private suite minutes from Yaya Centre, open 24/7.",
+    "Lingam Massage Nairobi searches from Kilimani land here, male-focused wellness in a private suite minutes from Yaya Centre, open 24/7.",
   "kilimani|full-body-massage":
-    "Full Body Massage Kilimani is the umbrella menu entry for head-to-toe oil work—Swedish flow with pressure you choose, five minutes from Ring Rd Kilimani gyms.",
+    "Full Body Massage Kilimani is the umbrella menu entry for head-to-toe oil work. Swedish flow with pressure you choose, five minutes from Ring Rd Kilimani gyms.",
   "kilimani|couples-massage":
-    "Kilimani couples book side-by-side tables after Wood Avenue dinners—Zuri stages shared suites five minutes from Yaya Centre.",
+    "Kilimani couples book side-by-side tables after Wood Avenue dinners. Zuri stages shared suites five minutes from Yaya Centre.",
   "lavington|swedish-massage":
-    "Lavington guests often book Swedish after errands near Valley Arcade—a short hop to our Kilimani studio on Marcus Garvey Rd for classic strokes when the day finally ends.",
+    "Lavington guests often book Swedish after errands near Valley Arcade, a short hop to our Kilimani studio on Marcus Garvey Rd for classic strokes when the day finally ends.",
   "lavington|deep-tissue-massage":
     "Deep tissue is a top rebook from Lavington commuters carrying desk tension; we warm tissue first on Marcus Garvey Rd before working traps and lumbar.",
   "lavington|nuru-massage":
-    "Lavington professionals request discreet Nuru on Marcus Garvey Rd when hotel corridors feel too visible—Aisha and Nuri handle most bookings.",
+    "Lavington professionals request discreet Nuru on Marcus Garvey Rd when hotel corridors feel too visible. Aisha and Nuri handle most bookings.",
   "lavington|couples-massage":
-    "Lavington date nights often end with couples massage in Kilimani—drive from James Gichuru after babysitter handoff.",
+    "Lavington date nights often end with couples massage in Kilimani, drive from James Gichuru after babysitter handoff.",
   "westlands|swedish-massage":
     "Westlands professionals crossing toward Kilimani choose Swedish when they want full-body ease without another crowded mall spa waitlist.",
   "westlands|deep-tissue-massage":
-    "After Waiyaki Way traffic, Westlands guests ask for deep tissue focused on neck, hips, and lower back—then drive home softer.",
+    "After Waiyaki Way traffic, Westlands guests ask for deep tissue focused on neck, hips, and lower back, then drive home softer.",
   "westlands|nuru-massage":
     "Westlands hotel guests book Nuru on Marcus Garvey Rd for suite privacy away from lobby elevators.",
   "westlands|couples-massage":
-    "Westlands couples skip mall spas for twin-table calm on Marcus Garvey Rd—message before leaving Sarit or Westgate.",
+    "Westlands couples skip mall spas for twin-table calm on Marcus Garvey Rd, message before leaving Sarit or Westgate.",
   "kileleshwa|swedish-massage":
     "Kileleshwa is minutes from Marcus Garvey Rd; Swedish massage here is the neighbourhood reset for quiet evenings and early starts.",
   "kileleshwa|deep-tissue-massage":
-    "Kileleshwa desk workers book deep tissue after Mandera Rd commutes—trap focus without crossing town twice.",
+    "Kileleshwa desk workers book deep tissue after Mandera Rd commutes, trap focus without crossing town twice.",
   "kileleshwa|nuru-massage":
-    "Kileleshwa guests who want adult privacy choose Nuru on Marcus Garvey Rd—discreet pin, locked suite.",
+    "Kileleshwa guests who want adult privacy choose Nuru on Marcus Garvey Rd, discreet pin, locked suite.",
   "kileleshwa|couples-massage":
     "Kileleshwa couples coordinate babysitters then book side-by-side tables on Marcus Garvey Rd.",
   "karen|couples-massage":
-    "Karen couples planning a shared evening often drive in for side-by-side tables—mention anniversary or hotel stay when you WhatsApp so we prep the room.",
+    "Karen couples planning a shared evening often drive in for side-by-side tables, mention anniversary or hotel stay when you WhatsApp so we prep the room.",
   "karen|swedish-massage":
-    "Karen weekend drivers book Swedish in Kilimani after Ngong Rd errands—unhurried reset before Sunday traffic home.",
+    "Karen weekend drivers book Swedish in Kilimani after Ngong Rd errands, unhurried reset before Sunday traffic home.",
   "karen|deep-tissue-massage":
     "Karen gym regulars target IT bands and lumbar on Marcus Garvey Rd after long Ngong Rd drives.",
   "karen|nuru-massage":
-    "Karen guests wanting discreet adult sessions book Nuru on Marcus Garvey Rd—WhatsApp before you leave Langata.",
+    "Karen guests wanting discreet adult sessions book Nuru on Marcus Garvey Rd. WhatsApp before you leave Langata.",
   "upper-hill|deep-tissue-massage":
-    "Upper Hill desk days and conference weeks end best with deep tissue in Kilimani—pressure that targets the exact zones long sitting creates.",
+    "Upper Hill desk days and conference weeks end best with deep tissue in Kilimani, pressure that targets the exact zones long sitting creates.",
   "upper-hill|swedish-massage":
-    "Upper Hill bankers book Swedish after tower deadlines—Marcus Garvey Rd is the quiet offsite.",
+    "Upper Hill bankers book Swedish after tower deadlines. Marcus Garvey Rd is the quiet offsite.",
   "upper-hill|nuru-massage":
     "Upper Hill executives request discreet Nuru on Marcus Garvey Rd after late deal nights.",
   "upper-hill|couples-massage":
@@ -98,35 +98,35 @@ const serviceComboExtras: Record<string, string> = {
   "cbd-nairobi|swedish-massage":
     "CBD guests leaving Tom Mboya, Kenyatta Avenue, or hotel stays book Swedish for a full unwind before returning east or west across town.",
   "cbd-nairobi|deep-tissue-massage":
-    "CBD office workers escape west to Marcus Garvey Rd for trap and lumbar deep tissue—open past midnight.",
+    "CBD office workers escape west to Marcus Garvey Rd for trap and lumbar deep tissue, open past midnight.",
   "cbd-nairobi|nuru-massage":
-    "CBD visitors book Nuru in Kilimani when hotel spas feel too public—locked suite on Marcus Garvey Rd.",
+    "CBD visitors book Nuru in Kilimani when hotel spas feel too public, locked suite on Marcus Garvey Rd.",
   "cbd-nairobi|couples-massage":
-    "CBD couples celebrate with side-by-side massage in Kilimani—book before dinner reservations fill.",
+    "CBD couples celebrate with side-by-side massage in Kilimani, book before dinner reservations fill.",
   "parklands-highridge|aromatherapy-massage":
-    "Parklands and Highridge guests favour aromatherapy when scent-led calm beats another loud night out—unscented oil always available on request.",
+    "Parklands and Highridge guests favour aromatherapy when scent-led calm beats another loud night out, unscented oil always available on request.",
   "parklands-highridge|swedish-massage":
     "Parklands guests cross Limuru connectors for Swedish calm on Marcus Garvey Rd after Forest Rd noise.",
   "parklands-highridge|deep-tissue-massage":
-    "Highridge flats residents book deep tissue after desk neck—James Gichuru link to Kilimani is short off-peak.",
+    "Highridge flats residents book deep tissue after desk neck. James Gichuru link to Kilimani is short off-peak.",
   "parklands-highridge|couples-massage":
     "Parklands couples book twin tables on Marcus Garvey Rd for anniversaries away from mall corridors.",
   "hurlingham|swedish-massage":
-    "Hurlingham guests pass Yaya Centre for Swedish resets on Marcus Garvey Rd—five-minute hop when junctions move.",
+    "Hurlingham guests pass Yaya Centre for Swedish resets on Marcus Garvey Rd, five-minute hop when junctions move.",
   "hurlingham|deep-tissue-massage":
     "Hurlingham desk tension meets deep tissue on Marcus Garvey Rd after State House Rd commutes.",
   "hurlingham|couples-massage":
-    "Hurlingham date nights extend to couples massage in Kilimani—message when you leave dinner.",
+    "Hurlingham date nights extend to couples massage in Kilimani, message when you leave dinner.",
   "hurlingham|nuru-massage":
     "Hurlingham professionals book discreet Nuru on Marcus Garvey Rd with WhatsApp intake first.",
   "riverside|swedish-massage":
     "Riverside corporate guests book Swedish on Marcus Garvey Rd after Riverside Drive meetings.",
   "riverside|deep-tissue-massage":
-    "Riverside executives target trap release on Marcus Garvey Rd—chauffeurs know the Kilimani pin.",
+    "Riverside executives target trap release on Marcus Garvey Rd, chauffeurs know the Kilimani pin.",
   "riverside|couples-massage":
     "Riverside couples book side-by-side tables for quiet celebration in Kilimani suites.",
   "riverside|nuru-massage":
-    "Riverside guests wanting privacy book Nuru on Marcus Garvey Rd—not hotel lobby visibility.",
+    "Riverside guests wanting privacy book Nuru on Marcus Garvey Rd, not hotel lobby visibility.",
   "spring-valley|swedish-massage":
     "Spring Valley diplomatic households book Swedish on Marcus Garvey Rd after gate delays clear.",
   "spring-valley|deep-tissue-massage":
@@ -134,13 +134,13 @@ const serviceComboExtras: Record<string, string> = {
   "spring-valley|couples-massage":
     "Spring Valley couples drive eight minutes to twin-table calm on Marcus Garvey Rd.",
   "spring-valley|nuru-massage":
-    "Spring Valley guests request discreet Nuru sessions in Kilimani—consent confirmed on WhatsApp.",
+    "Spring Valley guests request discreet Nuru sessions in Kilimani, consent confirmed on WhatsApp.",
   "langata|swedish-massage":
     "Langata drivers book Swedish in Kilimani after Wilson Airport or mall errands on Ngong Rd.",
   "langata|deep-tissue-massage":
     "Langata gym-goers book deep tissue on Marcus Garvey Rd before Sunday traffic toward Karen.",
   "langata|couples-massage":
-    "Langata couples plan anniversary massage in Kilimani—side-by-side tables, matched timing.",
+    "Langata couples plan anniversary massage in Kilimani, side-by-side tables, matched timing.",
   "langata|nuru-massage":
     "Langata guests wanting adult privacy book Nuru on Marcus Garvey Rd with locked-suite entry.",
   "kitisuru|swedish-massage":
@@ -156,7 +156,7 @@ const serviceComboExtras: Record<string, string> = {
   "kabiro|deep-tissue-massage":
     "Kabiro commuters book deep tissue after Ngong Rd matatu legs and market carrying.",
   "kabiro|couples-massage":
-    "Kabiro couples treat anniversaries with couples massage in Kilimani—book ahead weekends.",
+    "Kabiro couples treat anniversaries with couples massage in Kilimani, book ahead weekends.",
   "kabiro|nuru-massage":
     "Kabiro guests wanting adult sessions book Nuru on Marcus Garvey Rd with clear WhatsApp intake.",
   "starehe|swedish-massage":
@@ -174,9 +174,9 @@ const serviceComboExtras: Record<string, string> = {
   "nairobi-central|couples-massage":
     "Central couples book side-by-side tables on Marcus Garvey Rd before late dinners.",
   "nairobi-central|nuru-massage":
-    "Central visitors book Nuru in Kilimani suites—discreet WhatsApp booking first.",
+    "Central visitors book Nuru in Kilimani suites, discreet WhatsApp booking first.",
   "dagoretti-north|swedish-massage":
-    "Dagoretti North wards share one Marcus Garvey Rd studio—Swedish is the constituency default reset.",
+    "Dagoretti North wards share one Marcus Garvey Rd studio. Swedish is the constituency default reset.",
   "dagoretti-north|deep-tissue-massage":
     "From Adams Arcade to Kilimani Green, deep tissue on Marcus Garvey Rd targets commute tension.",
   "dagoretti-north|couples-massage":
@@ -190,33 +190,33 @@ const serviceComboExtras: Record<string, string> = {
   "woodley-kenyatta-golf-course|couples-massage":
     "Woodley couples book twin tables in Kilimani after club dinners.",
   "woodley-kenyatta-golf-course|nuru-massage":
-    "Woodley guests wanting privacy book Nuru on Marcus Garvey Rd—WhatsApp before travel.",
+    "Woodley guests wanting privacy book Nuru on Marcus Garvey Rd. WhatsApp before travel.",
 };
 
 /** Hand-tuned openings for Tier A area×masseuse pairs. */
 const masseuseComboExtras: Record<string, string> = {
   "kilimani|amara":
-    "Kilimani guests request Amara for Swedish and deep tissue after Yaya Centre errands—steady pressure on Marcus Garvey Rd without chatter.",
+    "Kilimani guests request Amara for Swedish and deep tissue after Yaya Centre errands, steady pressure on Marcus Garvey Rd without chatter.",
   "kilimani|zuri":
-    "Zuri stages aromatherapy and couples rooms for Kilimani date nights—scent-light suites on Marcus Garvey Rd.",
+    "Zuri stages aromatherapy and couples rooms for Kilimani date nights, scent-light suites on Marcus Garvey Rd.",
   "kilimani|aisha":
-    "Aisha handles discreet Nuru requests from Kilimani towers—consent confirmed before gel prep on Marcus Garvey Rd.",
+    "Aisha handles discreet Nuru requests from Kilimani towers, consent confirmed before gel prep on Marcus Garvey Rd.",
   "kilimani|nuri":
     "Nuri leads tantric and lingam sessions for Kilimani professionals who want breath-led pacing on Marcus Garvey Rd.",
   "kilimani|keisha":
     "Keisha is the Kilimani go-to for firm deep tissue after Ring Rd gym days and Ngong Rd commutes.",
   "kilimani|lina":
-    "Lina pairs with Zuri for four-hands immersion—popular Kilimani anniversary bookings on Marcus Garvey Rd.",
+    "Lina pairs with Zuri for four-hands immersion, popular Kilimani anniversary bookings on Marcus Garvey Rd.",
   "lavington|amara":
-    "Lavington regulars ask for Amara by name—short James Gichuru hop to Marcus Garvey Rd for trap and Swedish work.",
+    "Lavington regulars ask for Amara by name, short James Gichuru hop to Marcus Garvey Rd for trap and Swedish work.",
   "lavington|zuri":
     "Zuri synchronises couples tables for Lavington date nights ending on Marcus Garvey Rd.",
   "westlands|keisha":
     "Westlands gym crowd books Keisha for sports-leaning deep tissue after Waiyaki Way traffic.",
   "westlands|zuri":
-    "Westlands couples request Zuri for aromatherapy evenings in Kilimani—away from mall noise.",
+    "Westlands couples request Zuri for aromatherapy evenings in Kilimani, away from mall noise.",
   "kileleshwa|amara":
-    "Kileleshwa guests book Amara for quiet Swedish and deep tissue—Mandera Rd commute melts on Marcus Garvey Rd.",
+    "Kileleshwa guests book Amara for quiet Swedish and deep tissue. Mandera Rd commute melts on Marcus Garvey Rd.",
   "upper-hill|keisha":
     "Upper Hill desk neck meets Keisha's firm deep tissue on Marcus Garvey Rd after tower deadlines.",
   "karen|zuri":
@@ -256,20 +256,20 @@ function neighborsLine(area: Area): string {
 function pressureParagraph(area: Area, treatment: Treatment, key: string): string {
   const road = area.roads[0] ?? "Marcus Garvey Rd";
   const templates = [
-    `From ${area.name}, ${treatment.shortName.toLowerCase()} guests often arrive with ${road} traffic tension, desk hours, or gym soreness. ${treatment.name} on Marcus Garvey Rd uses clear pressure checks—open 24/7 for late ${area.name} arrivals.`,
+    `From ${area.name}, ${treatment.shortName.toLowerCase()} guests often arrive with ${road} traffic tension, desk hours, or gym soreness. ${treatment.name} on Marcus Garvey Rd uses clear pressure checks, open 24/7 for late ${area.name} arrivals.`,
     `${area.name} commuters mention ${road} grip and laptop posture; ${treatment.name} maps those patterns in a locked Kilimani suite with unhurried pacing.`,
     `Whether you leave ${area.name} after shifts near ${area.landmarks[0] ?? area.name} or a long ${road} drive, ${treatment.shortName.toLowerCase()} at Kilimani Hot Massage targets the zones you flag on WhatsApp.`,
-    `Nairobi rhythm in ${area.name} stacks meetings, matatus, and gym days—${treatment.name} on Marcus Garvey Rd is the deliberate counterweight with private-suite calm.`,
+    `Nairobi rhythm in ${area.name} stacks meetings, matatus, and gym days, ${treatment.name} on Marcus Garvey Rd is the deliberate counterweight with private-suite calm.`,
   ];
   return pick(key + "|pressure", templates);
 }
 
 function aftercareLine(treatment: Treatment, key: string): string {
   const templates = [
-    `After ${treatment.shortName.toLowerCase()}, hydrate and take a quiet exit—many ${treatment.shortName.toLowerCase()} guests head toward Yaya Centre or straight home without mall detours.`,
-    `Post-session: water, easy movement, and a calm ride from Marcus Garvey Rd—avoid stacking intense gym work immediately after deeper ${treatment.shortName.toLowerCase()} pressure.`,
+    `After ${treatment.shortName.toLowerCase()}, hydrate and take a quiet exit, many ${treatment.shortName.toLowerCase()} guests head toward Yaya Centre or straight home without mall detours.`,
+    `Post-session: water, easy movement, and a calm ride from Marcus Garvey Rd, avoid stacking intense gym work immediately after deeper ${treatment.shortName.toLowerCase()} pressure.`,
     `${treatment.shortName} aftercare is simple on Marcus Garvey Rd: shower if you wish, rehydrate, and message us if you want the same therapist next visit.`,
-    `Most guests leave Kilimani softer than they arrived—plan a low-noise hour after ${treatment.shortName.toLowerCase()} before diving back into Ngong Rd traffic.`,
+    `Most guests leave Kilimani softer than they arrived, plan a low-noise hour after ${treatment.shortName.toLowerCase()} before diving back into Ngong Rd traffic.`,
   ];
   return pick(key + "|after", templates);
 }
@@ -278,7 +278,7 @@ function bookingLine(area: Area, treatment: Treatment, landmark: string): string
   return pick(`${area.slug}|${treatment.slug}|book`, [
     `${neighborsLine(area)} WhatsApp ${site.phoneDisplay} from ${area.name}, name ${treatment.name}, and mention ${landmark} as your starting landmark.`,
     `Locals near ${landmark} and visitors across ${area.constituencyName} book the same way: call ${site.phoneDisplay}, say ${area.name}, request ${treatment.shortName}.`,
-    `Whether you live in ${area.name} or are staying near ${landmark}, Marcus Garvey Rd check-in stays discreet—message treatment and ETA on WhatsApp.`,
+    `Whether you live in ${area.name} or are staying near ${landmark}, Marcus Garvey Rd check-in stays discreet, message treatment and ETA on WhatsApp.`,
   ]);
 }
 
@@ -292,7 +292,7 @@ function buildServiceParagraphs(area: Area, treatment: Treatment): string[] {
     serviceComboExtras[extraKey] ??
     pick(extraKey, [
       `${treatment.name} ranks among top bookings for guests travelling from ${area.name}. ${area.commute} Marcus Garvey Rd suites keep ${treatment.shortName.toLowerCase()} private and unhurried.`,
-      `Guests from ${area.name} choose ${treatment.name} at Kilimani Hot Massage when mall spas feel loud—${area.commute}`,
+      `Guests from ${area.name} choose ${treatment.name} at Kilimani Hot Massage when mall spas feel loud, ${area.commute}`,
       `${area.name} visitors book ${treatment.shortName} on Marcus Garvey Rd for ${treatment.tagline.toLowerCase().replace(/\.$/, "")}. ${area.commute}`,
     ]);
 
@@ -301,14 +301,14 @@ function buildServiceParagraphs(area: Area, treatment: Treatment): string[] {
     area.intro,
     pick(extraKey + "|near", [
       `Near ${landmark} and ${landmark2} along ${road}, Kilimani Hot Massage delivers ${treatment.shortName.toLowerCase()} without hotel-lobby visibility. ${treatment.summary}`,
-      `Drivers from ${area.name} merge toward ${road} and ${road2} for ${treatment.name} on Marcus Garvey Rd—${treatment.summary}`,
+      `Drivers from ${area.name} merge toward ${road} and ${road2} for ${treatment.name} on Marcus Garvey Rd, ${treatment.summary}`,
       `Starting from ${landmark}? ${treatment.name} sessions anchor on Marcus Garvey Rd with Adlife Plaza and Yaya Centre as familiar pins. ${treatment.summary}`,
     ]),
     bookingLine(area, treatment, landmark),
     pressureParagraph(area, treatment, extraKey),
     pick(extraKey + "|flow", [
       `Session flow: discreet check-in on Marcus Garvey Rd, locked suite, ${treatment.shortName.toLowerCase()} tailored to your zones, then quiet exit.`,
-      `Arrive on Marcus Garvey Rd, confirm pressure and boundaries, enjoy ${treatment.shortName.toLowerCase()} in a private Kilimani suite—no lobby performance.`,
+      `Arrive on Marcus Garvey Rd, confirm pressure and boundaries, enjoy ${treatment.shortName.toLowerCase()} in a private Kilimani suite, no lobby performance.`,
       `Your ${treatment.name} visit follows a simple arc: WhatsApp booking, Marcus Garvey Rd arrival, therapist-led ${treatment.shortName.toLowerCase()}, optional shower.`,
     ]),
     aftercareLine(treatment, extraKey),
@@ -323,7 +323,7 @@ function buildServiceFaqs(area: Area, treatment: Treatment): FaqItem[] {
   return [
     {
       q: `How do I book ${treatment.name} from ${area.name}?`,
-      a: `WhatsApp or call ${site.phoneDisplay}. Say you are coming from ${area.name}, name ${treatment.name}, and share your preferred time—we confirm availability for our 24/7 Kilimani studio.`,
+      a: `WhatsApp or call ${site.phoneDisplay}. Say you are coming from ${area.name}, name ${treatment.name}, and share your preferred time, we confirm availability for our 24/7 Kilimani studio.`,
     },
     {
       q: `How long is the drive from ${area.name} to Kilimani Hot Massage?`,
@@ -331,7 +331,7 @@ function buildServiceFaqs(area: Area, treatment: Treatment): FaqItem[] {
     },
     {
       q: `Is ${treatment.name} available overnight for ${area.name} guests?`,
-      a: `Yes. We are open 24 hours. Late sessions after work near ${landmark} or along ${road} are common—book ahead on busy weekend nights.`,
+      a: `Yes. We are open 24 hours. Late sessions after work near ${landmark} or along ${road} are common, book ahead on busy weekend nights.`,
     },
     {
       q: `Where exactly is the spa relative to ${area.name}?`,
@@ -339,7 +339,7 @@ function buildServiceFaqs(area: Area, treatment: Treatment): FaqItem[] {
     },
     {
       q: `Can I request a specific masseuse for ${treatment.shortName} from ${area.name}?`,
-      a: `Yes—name your preferred therapist when you WhatsApp. If she is unavailable, we suggest another specialist for ${treatment.name}.`,
+      a: `Yes, name your preferred therapist when you WhatsApp. If she is unavailable, we suggest another specialist for ${treatment.name}.`,
     },
     {
       q: `What should I bring for a session from ${area.name}?`,
@@ -358,7 +358,7 @@ function buildMasseuseParagraphs(area: Area, masseuse: Masseuse): string[] {
     masseuseComboExtras[extraKey] ??
     pick(extraKey, [
       `${masseuse.name} welcomes ${area.name} guests at our Marcus Garvey Rd studio. ${area.commute}`,
-      `From ${area.name}, ${masseuse.name} is a frequent request for ${specs}—${area.commute}`,
+      `From ${area.name}, ${masseuse.name} is a frequent request for ${specs}, ${area.commute}`,
       `${area.name} visitors ask for ${masseuse.name} by name when booking ${specs} on Marcus Garvey Rd. ${area.commute}`,
     ]);
 
@@ -369,12 +369,12 @@ function buildMasseuseParagraphs(area: Area, masseuse: Masseuse): string[] {
     pick(extraKey + "|reach", [
       `Near ${landmark} or ${landmark2}, message ${masseuse.name} on WhatsApp ${site.phoneDisplay} before you leave ${area.name}.`,
       `Driving from ${road} across ${area.constituencyName}? Name ${masseuse.name} when booking so we confirm her shift.`,
-      `Whether you start at ${landmark} or deeper in ${area.name}, ${masseuse.name} sessions happen on Marcus Garvey Rd—pin sent on request.`,
+      `Whether you start at ${landmark} or deeper in ${area.name}, ${masseuse.name} sessions happen on Marcus Garvey Rd, pin sent on request.`,
     ]),
     `${masseuse.tagline} Specialties: ${specs}. Open 24/7 for ${area.name} guests finishing late or booking early quiet.`,
     pick(extraKey + "|combo", [
       `${neighborsLine(area)} Many combine dinner near ${landmark} with ${masseuse.name} afterward on Marcus Garvey Rd.`,
-      `Guests from neighbouring wards share the same ${masseuse.name} booking line—mention ${area.name} for commute-aware holds.`,
+      `Guests from neighbouring wards share the same ${masseuse.name} booking line, mention ${area.name} for commute-aware holds.`,
       `${area.name} regulars rebook ${masseuse.name} monthly; first-timers should name specialties when messaging.`,
     ]),
     `Full profile: /masseuses/${masseuse.slug}/. Area hub: /areas/${area.slug}/. WhatsApp ${site.phoneDisplay} with ${masseuse.name} and ${area.name}.`,
@@ -389,7 +389,7 @@ function buildMasseuseFaqs(area: Area, masseuse: Masseuse): FaqItem[] {
     },
     {
       q: `Does ${masseuse.name} work overnight for ${area.name} guests?`,
-      a: `Our studio is open 24/7. Therapist schedules rotate—ask early for late-night slots from ${area.name}.`,
+      a: `Our studio is open 24/7. Therapist schedules rotate, ask early for late-night slots from ${area.name}.`,
     },
     {
       q: `What treatments does ${masseuse.name} offer for visitors from ${area.name}?`,
@@ -414,7 +414,7 @@ for (const slug of TIER_A_SLUGS) {
         .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
         .join(" ");
       serviceComboExtras[k] =
-        `${areaName} guests book ${svc.replace(/-/g, " ")} on Marcus Garvey Rd—WhatsApp ${site.phoneDisplay} from ${areaName} with your ETA.`;
+        `${areaName} guests book ${svc.replace(/-/g, " ")} on Marcus Garvey Rd. WhatsApp ${site.phoneDisplay} from ${areaName} with your ETA.`;
     }
   }
 }
@@ -457,7 +457,7 @@ export function buildAreaMasseuseCombo(
     masseuse,
     metaTitle: profTitleMasseuseCombo(masseuse.name, area.name),
     metaDescription: `Request ${masseuse.name} when visiting from ${area.name}. ${masseuse.tagline} Open 24/7 in Kilimani. WhatsApp ${site.phoneDisplay}.`,
-    h1: `Book ${masseuse.name} — serving ${area.name}`,
+    h1: `Book ${masseuse.name}: serving ${area.name}`,
     paragraphs,
     faqs,
   };

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
@@ -19,7 +18,6 @@ import { CtaRow } from "@/components/cta/Conversion";
 import { absoluteUrl, site, whatsappLink } from "@/content/site";
 import { FaqAccordion } from "@/components/seo/FaqAccordion";
 import { faqJsonLd } from "@/lib/schema";
-import { treatmentImage } from "@/content/media";
 import { pageMetadata } from "@/lib/seo";
 import { profTitleAreaHub } from "@/lib/seo-titles";
 
@@ -74,7 +72,7 @@ export default async function AreaPage({ params }: Props) {
     {
       "@context": "https://schema.org",
       "@type": "Place",
-      name: `${site.name} — serving ${area.name}`,
+      name: `${site.name}: serving ${area.name}`,
       url: absoluteUrl(areaPath(area.slug)),
       description: area.intro,
     },
@@ -151,7 +149,7 @@ export default async function AreaPage({ params }: Props) {
         {enrichment.faqs.length ? (
           <section className="mt-14 max-w-3xl">
             <h2 className="font-display text-2xl text-[var(--off-white)]">
-              Frequently asked questions — {area.name}
+              Frequently asked questions: {area.name}
             </h2>
             <FaqAccordion
               faqs={enrichment.faqs}
@@ -201,7 +199,7 @@ export default async function AreaPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="section-divider mt-16 bg-[var(--charcoal-soft)]/40 py-14">
+        <section className="mt-16 bg-[var(--charcoal-soft)]/40 py-14">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-display text-3xl text-[var(--off-white)]">
               Massage Treatments in {area.name}
@@ -211,36 +209,21 @@ export default async function AreaPage({ params }: Props) {
               tips.
             </p>
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {treatments.map((t) => {
-                const img = treatmentImage(t.slug);
-                return (
-                  <Link
-                    key={t.slug}
-                    href={areaServicePath(area.slug, t.slug)}
-                    className="glass-card group overflow-hidden rounded-xl transition hover:border-[var(--crimson)]/40"
-                  >
-                    <div className="relative h-40 w-full overflow-hidden">
-                      <Image
-                        src={img.src}
-                        alt={img.alt}
-                        fill
-                        className="object-cover transition duration-500 group-hover:scale-105"
-                        sizes="(min-width: 1024px) 33vw, 50vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[var(--charcoal)] via-transparent to-transparent" />
-                    </div>
-                    <div className="p-5">
-                      <h3 className="font-display text-xl text-[var(--crimson)]">
-                        {t.name} in {area.name}
-                      </h3>
-                      <p className="mt-2 text-sm text-[var(--muted)]">{t.tagline}</p>
-                      <span className="mt-3 inline-block text-xs text-[var(--crimson)]">
-                        View {t.shortName} in {area.name} →
-                      </span>
-                    </div>
-                  </Link>
-                );
-              })}
+              {treatments.map((t) => (
+                <Link
+                  key={t.slug}
+                  href={areaServicePath(area.slug, t.slug)}
+                  className="glass-card rounded-xl p-5 transition hover:border-[var(--crimson)]/40"
+                >
+                  <h3 className="font-display text-xl text-[var(--crimson)]">
+                    {t.name} in {area.name}
+                  </h3>
+                  <p className="mt-2 text-sm text-[var(--muted)]">{t.tagline}</p>
+                  <span className="mt-3 inline-block text-xs text-[var(--crimson)]">
+                    View {t.shortName} in {area.name} →
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
@@ -250,7 +233,7 @@ export default async function AreaPage({ params }: Props) {
             Massage Therapists in {area.name}
           </h2>
           <p className="mt-2 text-[var(--muted)]">
-            Request a therapist by name—each has a {area.name}-specific booking page.
+            Request a therapist by name, each has a {area.name}-specific booking page.
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {masseuses.map((m) => (

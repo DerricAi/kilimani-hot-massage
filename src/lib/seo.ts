@@ -29,7 +29,7 @@ export function pageMetadata({
       siteName: site.name,
       title,
       description,
-      images: [{ url: imageUrl, alt: `${site.name} — Massage Spa Kilimani` }],
+      images: [{ url: imageUrl, alt: `${site.name}. Massage Spa Kilimani` }],
     },
     twitter: {
       card: "summary_large_image",

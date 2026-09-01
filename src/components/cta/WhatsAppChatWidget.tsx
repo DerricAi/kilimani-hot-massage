@@ -77,7 +77,7 @@ export function WhatsAppChatWidget() {
           </div>
           <div className="bg-[#ECE5DD] px-3 py-3">
             <p className="rounded-lg rounded-tl-sm bg-white px-3 py-2 text-sm text-neutral-800 shadow-sm">
-              Hi — WhatsApp is the fastest way to book. We reply 24/7.
+              Hi. WhatsApp is the fastest way to book. We reply 24/7.
             </p>
             <a
               href={chatHref}

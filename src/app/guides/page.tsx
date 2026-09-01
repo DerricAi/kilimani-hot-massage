@@ -11,7 +11,7 @@ import { profTitleHub } from "@/lib/seo-titles";
 export const metadata: Metadata = pageMetadata({
   title: profTitleHub("guides"),
   description:
-    "Massage guides for Kilimani and Nairobi—Swedish vs deep tissue, first visits, Nuru, couples, 24/7 booking on Marcus Garvey Rd. WhatsApp 0746 203398.",
+    "Massage guides for Kilimani and Nairobi. Swedish vs deep tissue, first visits, Nuru, couples, 24/7 booking on Marcus Garvey Rd. WhatsApp 0746 203398.",
   path: "/guides/",
 });
 
@@ -50,7 +50,7 @@ export default function GuidesHubPage() {
         </h1>
         <p className="mt-4 max-w-2xl text-[var(--muted)]">
           Practical articles on treatments, first visits, booking our 24/7 spa, and getting
-          here from across Nairobi County—written for real guests, not keyword stuffing.
+          here from across Nairobi County, written for real guests, not keyword stuffing.
         </p>
         <div className="mt-6">
           <CtaRow message="Hi, I read your guides and I'd like to book at Kilimani Hot Massage." />

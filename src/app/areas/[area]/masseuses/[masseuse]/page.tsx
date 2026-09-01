@@ -79,7 +79,7 @@ export default async function AreaMasseusePage({ params }: Props) {
         <p className="mt-4 text-[var(--muted)]">{area.commute}</p>
         <div className="mt-6">
           <CtaRow
-            message={`Hi, I'd like to book with ${masseuse.name} for a session — I'm in ${area.name}.`}
+            message={`Hi, I'd like to book with ${masseuse.name} for a session. I'm in ${area.name}.`}
           />
         </div>
         <div className="prose-spa mt-10">
@@ -91,7 +91,7 @@ export default async function AreaMasseusePage({ params }: Props) {
         {combo.faqs.length ? (
           <section className="mt-12">
             <h2 className="font-display text-2xl text-[var(--crimson)]">
-              FAQs — booking {masseuse.name} from {area.name}
+              FAQs: booking {masseuse.name} from {area.name}
             </h2>
             <FaqAccordion
               faqs={combo.faqs}

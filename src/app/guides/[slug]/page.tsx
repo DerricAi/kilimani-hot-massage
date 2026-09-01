@@ -169,7 +169,7 @@ export default async function GuideArticlePage({ params }: Props) {
                       href={`/masseuses/${m.slug}/`}
                       className="hover:text-[var(--crimson)]"
                     >
-                      {m.name} — {m.tagline}
+                      {m.name}, {m.tagline}
                     </Link>
                   </li>
                 ) : null
