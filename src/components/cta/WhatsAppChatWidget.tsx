@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { X } from "lucide-react";
+import { X, Phone } from "lucide-react";
 import { site, whatsappLink } from "@/content/site";
 
 const chatHref = whatsappLink(
@@ -56,9 +56,18 @@ export function WhatsAppChatWidget() {
   if (!visible) return null;
 
   return (
-    <div
-      className="pointer-events-none fixed right-4 bottom-[max(1rem,env(safe-area-inset-bottom))] z-50 flex flex-col items-end gap-3 md:right-6 md:bottom-6 motion-safe:animate-fade-up"
-    >
+    <>
+      <a
+        href={`tel:${site.phoneTel}`}
+        aria-label={`Call ${site.phoneDisplay}`}
+        className="fixed left-4 bottom-[max(1rem,env(safe-area-inset-bottom))] z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--crimson)] text-white shadow-lg ring-2 ring-white/40 transition hover:scale-105 motion-reduce:hover:scale-100 md:left-6 md:bottom-6 motion-safe:animate-fade-up"
+      >
+        <Phone className="h-7 w-7" strokeWidth={2.25} />
+      </a>
+
+      <div
+        className="pointer-events-none fixed right-4 bottom-[max(1rem,env(safe-area-inset-bottom))] z-50 flex flex-col items-end gap-3 md:right-6 md:bottom-6 motion-safe:animate-fade-up"
+      >
       {panelOpen ? (
         <div className="pointer-events-auto w-[min(18.5rem,calc(100vw-2rem))] overflow-hidden rounded-xl bg-white shadow-2xl">
           <div className="flex items-start justify-between gap-3 bg-[#075E54] px-3 py-2.5 text-white">
@@ -101,6 +110,7 @@ export function WhatsAppChatWidget() {
       >
         <WhatsAppGlyph className="h-8 w-8" />
       </a>
-    </div>
+      </div>
+    </>
   );
 }

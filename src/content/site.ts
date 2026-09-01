@@ -13,7 +13,6 @@ export const site = {
   napFooter: "Kilimani Hot Massage · 0746 203398 · Marcus Garvey Rd, Nairobi",
   hoursLabel: "Open 24 Hours (7 days a week)",
   hoursShort: "Open 24/7",
-  topBar: "Open 24/7 | Private Spa on Marcus Garvey Rd, Kilimani",
   url: "https://kilimanihotmassage.co.ke",
   mapsShort: "https://share.google/KmKDbFZFxQTmNz0ex",
   mapsEmbed:

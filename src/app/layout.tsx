@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { TopBar, Header } from "@/components/layout/Header";
+import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppChatWidget } from "@/components/cta/WhatsAppChatWidget";
 import { JsonLd } from "@/components/seo/MapEmbed";
@@ -47,7 +47,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${display.variable} ${sans.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
         <JsonLd data={daySpaJsonLd()} />
-        <TopBar />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

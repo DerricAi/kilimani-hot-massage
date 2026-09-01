@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Phone, Menu, X } from "lucide-react";
-import { site, whatsappLink } from "@/content/site";
+import { site } from "@/content/site";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -11,14 +11,6 @@ const nav = [
   { href: "/about-us/", label: "About" },
   { href: "/contact/", label: "Contact" },
 ];
-
-export function TopBar() {
-  return (
-    <div className="border-b border-white/5 bg-[var(--charcoal)]/90 text-center text-xs tracking-wide text-[var(--muted)] sm:text-sm">
-      <p className="section-pad py-2">{site.topBar}</p>
-    </div>
-  );
-}
 
 export function Header() {
   return (
@@ -54,12 +46,10 @@ export function Header() {
             {site.phoneDisplay}
           </a>
           <a
-            href={whatsappLink("Hi Kilimani Hot Massage, I'd like to book a session.")}
-            target="_blank"
-            rel="noreferrer"
+            href={`tel:${site.phoneTel}`}
             className="inline-flex h-9 items-center rounded-md bg-[var(--crimson)] px-3 text-xs font-semibold text-[var(--charcoal)] hover:bg-[var(--crimson-light)] sm:px-4 sm:text-sm"
           >
-            Book Now
+            Call Now
           </a>
           <details className="relative lg:hidden">
             <summary className="flex h-9 w-9 list-none items-center justify-center rounded-md border border-white/10 [&::-webkit-details-marker]:hidden">

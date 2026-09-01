@@ -106,8 +106,8 @@ export default function HomePage() {
               Massage Spa Kilimani
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-              Private suites on Marcus Garvey Rd, minutes from Yaya Centre. Swedish, deep tissue,
-              Nuru, and couples, booked on WhatsApp.
+              Private apartment on Marcus Garvey Rd, minutes from Yaya Centre. Swedish, deep tissue,
+              Nuru, and erotic Massage, booked on WhatsApp.
             </p>
             <div className="mt-8">
               <CtaRow />
@@ -125,9 +125,6 @@ export default function HomePage() {
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             </div>
-            <p className="mt-3 text-center text-xs text-[var(--muted)] lg:text-left">
-              {site.napFooter}
-            </p>
           </div>
         </div>
       </section>
